@@ -4,6 +4,7 @@ import ClubLogo from '@/components/ClubLogo';
 import { Rating } from '@/components/PlayerCard';
 import { getPlayer, getAllSlugs } from '@/lib/players';
 import { ARCHETYPE_ICONS } from '@/lib/archetypeIcons';
+import PositionCourt from '@/components/PositionCourt';
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -113,6 +114,8 @@ export default async function PlayerPage({ params }) {
               <dd>{p.milliyet}</dd>
             </div>
           </dl>
+
+          <PositionCourt pozisyon={p.pozisyon} renk={p.takimRenk} />
 
           {p.milliyetNotu && <p className="note">{p.milliyetNotu}</p>}
         </div>
