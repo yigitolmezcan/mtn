@@ -39,7 +39,7 @@ function StatBlock({ comp, featured }) {
         {comp.items.map(([v, k]) => (
           <div className="stat" key={k}>
             <div className="stat__v">{v}</div>
-            <div className="stat__k">{k}</div>
+            <div className="stat__k" lang="en">{k}</div>
           </div>
         ))}
       </div>
@@ -89,15 +89,17 @@ export default async function PlayerPage({ params }) {
             </div>
           </div>
 
-          <h1 className="head__h1">{p.ad}</h1>
-          <div className="head__meta">
-            <span className="head__pos" lang="en">{p.pozisyon}</span>
-            {p.arketip && (
-              <span className="tag tag--soft" lang="en">
-                {ArketipIcon && <ArketipIcon size={14} strokeWidth={2} color="currentColor" />}
-                {p.arketip}
-              </span>
-            )}
+          <div className="head__top">
+            <div className="head__idcol">
+              <h1 className="head__h1">{p.ad}</h1>
+              {p.arketip && (
+                <span className="tag tag--soft">
+                  {ArketipIcon && <ArketipIcon size={14} strokeWidth={2} color="currentColor" />}
+                  <span lang="en">{p.arketip}</span>
+                </span>
+              )}
+            </div>
+            <div className="head__pos" lang="en">{p.pozisyon}</div>
           </div>
 
           <dl className="vitalrow">
@@ -127,11 +129,7 @@ export default async function PlayerPage({ params }) {
           <p className="verdict">{p.ozet}</p>
           <Rating value={p.mtnRating} size="lg" />
         </div>
-        {p.ratingNotu ? (
-          <p className="rating-note">{p.ratingNotu}</p>
-        ) : (
-          <p className="rating-pending">MtN Rating gerekçesi henüz eklenmedi.</p>
-        )}
+        {p.ratingNotu && <p className="rating-note">{p.ratingNotu}</p>}
       </section>
 
       <section className="blk wrap">
@@ -188,12 +186,12 @@ export default async function PlayerPage({ params }) {
       <section className="blk wrap">
         {p.youtubeUrl ? (
           <a className="hl hl--ready" href={p.youtubeUrl} target="_blank" rel="noopener noreferrer">
-            YouTube&apos;da highlights izle
+            <span>YouTube&apos;da <span lang="en">highlights</span> izle</span>
           </a>
         ) : (
           <>
             <button className="hl" disabled>
-              Highlights eklenecek
+              <span><span lang="en">Highlights</span> eklenecek</span>
             </button>
             <p className="hl__note">Video bağlantısı henüz eklenmedi</p>
           </>

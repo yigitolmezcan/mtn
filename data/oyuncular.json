@@ -4,43 +4,58 @@
     "anadolu-efes": {
       "ad": "Anadolu Efes",
       "marka": "#0B2C6B",
-      "vurgu": "#4B7CE0"
+      "vurgu": "#4B7CE0",
+      "renk1": "#0B2C6B",
+      "renk2": "var(--bone)"
     },
     "besiktas": {
       "ad": "Beşiktaş",
       "marka": "#000000",
-      "vurgu": "#E4E1DC"
+      "vurgu": "#E4E1DC",
+      "renk1": "#000000",
+      "renk2": "var(--bone)"
     },
     "baskonia": {
       "ad": "Baskonia",
       "marka": "#0A2A5E",
-      "vurgu": "#E0455C"
+      "vurgu": "#E0455C",
+      "renk1": "#0A2A5E",
+      "renk2": "#E0455C"
     },
     "paris-basketball": {
       "ad": "Paris Basketball",
       "marka": "#1A1A1A",
-      "vurgu": "#00E5FF"
+      "vurgu": "#00E5FF",
+      "renk1": "#1A1A1A",
+      "renk2": "#00E5FF"
     },
     "fenerbahce-beko": {
       "ad": "Fenerbahçe",
       "marka": "#0A2472",
-      "vurgu": "#F2D42E"
+      "vurgu": "#F2D42E",
+      "renk1": "#0A2472",
+      "renk2": "#F2D42E"
     },
     "asvel": {
       "ad": "LDLC ASVEL",
       "marka": "#1A1A1A",
-      "vurgu": "#EAEAEA"
+      "vurgu": "#EAEAEA",
+      "renk1": "#1A1A1A",
+      "renk2": "#EAEAEA"
     },
     "barcelona": {
       "ad": "FC Barcelona",
       "marka": "#A50044",
-      "vurgu": "#004D98"
+      "vurgu": "#004D98",
+      "renk1": "#A50044",
+      "renk2": "#004D98"
     },
     "olimpia-milano": {
       "ad": "Olimpia Milano",
       "marka": "#C8102E",
       "vurgu": "#C8102E",
-      "seritGradient": "linear-gradient(180deg, #C8102E 50%, var(--bone) 50%)"
+      "renk1": "#C8102E",
+      "renk2": "var(--bone)"
     }
   },
   "oyuncular": [
@@ -831,16 +846,16 @@
           "t": "Pick-and-roll'da skor + pas dengesi"
         },
         {
-          "t": "Çok ligli Avrupa tecrübesi"
+          "t": "Kendi şutunu yaratma yeteneği"
         },
         {
-          "t": "Şampiyonluk tecrübesi",
+          "t": "Üst düzeyde şampiyonluk kazanma tecrübesi",
           "v": "LKL 2024"
         }
       ],
       "gelisimAlanlari": [
         {
-          "t": "İlk kez EuroLeague seviyesinde test edilecek"
+          "t": "EuroLeague seviyesinde ilk kez test"
         },
         {
           "t": "Savunmada boy dezavantajı",
@@ -848,7 +863,7 @@
         }
       ],
       "arketip": "Floor General",
-      "mtnRating": null,
+      "mtnRating": "8.0",
       "ratingNotu": null,
       "benzerOyuncular": [
         "Tyrece Rice"

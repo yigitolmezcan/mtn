@@ -209,6 +209,8 @@ takım + logo · oyuncu adı · pozisyon (kısaltma) · tek cümlelik özet · M
 Yeni bir görsel eleman gerekirse mevcut bir sınıfı modifier ile genişlet
 (`.tag` → `.tag--soft` gibi), sıfırdan yeni bileşen yazma.
 
+Kart şeridi her kulüpte iki renkli (üst/alt split) olarak render edilir; renkler `takimlar` içindeki `renk1`/`renk2` alanlarından gelir. Bu artık istisna değil, standart.
+
 ---
 
 ## 12. Teknik yapı
