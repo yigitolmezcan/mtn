@@ -172,7 +172,7 @@ Pozisyon eşleşmesi **yeterli değil.** Şunlara bakılır:
 
 rol · hücum tarzı · fiziksel profil · kendi şutunu yaratma · savunma rolü
 
-**Her oyuncuda tam olarak 2 benzer oyuncu bulunur. Üç veya daha fazla yazılmaz.** Sayı doldurmak için isim ekleme.
+**Her oyuncu için 1 ila 2 benzer oyuncu yazılır. 3 veya daha fazla yazılmaz. Karşılaştırma çok net ve güçlüyse tek isim yeterlidir.** Sayı doldurmak için isim ekleme.
 
 Örnek hata: Tyson Etienne için TJ Shorts ve Markquis Nowell yazmak.
 İkisi de 1.80 altı, değerleri oyun kurmaktan gelen oyunculardır.

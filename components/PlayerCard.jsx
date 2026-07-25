@@ -14,7 +14,10 @@ export default function PlayerCard({ player }) {
     <Link
       href={`/oyuncu/${player.slug}`}
       className="card"
-      style={{ '--team': player.takimRenk }}
+      style={{
+        '--team': player.takimRenk,
+        ...(player.seritGradient ? { '--serit': player.seritGradient } : {}),
+      }}
     >
       <div className="card__club">
         <span className="card__cname">{player.takim}</span>

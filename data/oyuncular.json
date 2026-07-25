@@ -35,6 +35,12 @@
       "ad": "FC Barcelona",
       "marka": "#A50044",
       "vurgu": "#004D98"
+    },
+    "olimpia-milano": {
+      "ad": "Olimpia Milano",
+      "marka": "#C8102E",
+      "vurgu": "#C8102E",
+      "seritGradient": "linear-gradient(180deg, #C8102E 50%, var(--bone) 50%)"
     }
   },
   "oyuncular": [
@@ -767,6 +773,87 @@
         "Yago dos Santos"
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=g057FwSGhDE"
+    },
+    {
+      "slug": "rj-cole",
+      "ad": "RJ Cole",
+      "resmiAd": "R.J. Cole",
+      "takimSlug": "olimpia-milano",
+      "pozisyon": "PG",
+      "boy": "1.85 m",
+      "yas": "26",
+      "milliyet": "ABD",
+      "milliyetNotu": null,
+      "geldigiKulup": "Reyer Venezia",
+      "geldigiLig": "Serie A (İtalya)",
+      "transferNotu": "Geçen sezon final serisinde 3-1 mağlup olduğu Olimpia Milano'ya, bükemediği bileği öperek katıldı.",
+      "ozet": "Pick-and-roll'da iki yönlü tehdit oluşturan, yüksek hacimli skor üretimine sahip tecrübeli bir oyun kurucu.",
+      "featuredStats": {
+        "yarisma": "EuroCup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "12.9",
+            "PPG"
+          ],
+          [
+            "2.4",
+            "RPG"
+          ],
+          [
+            "4.4",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "Serie A",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "16.4",
+              "PPG"
+            ],
+            [
+              "3.1",
+              "RPG"
+            ],
+            [
+              "4.8",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Pick-and-roll'da skor + pas dengesi"
+        },
+        {
+          "t": "Çok ligli Avrupa tecrübesi"
+        },
+        {
+          "t": "Şampiyonluk tecrübesi",
+          "v": "LKL 2024"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "İlk kez EuroLeague seviyesinde test edilecek"
+        },
+        {
+          "t": "Savunmada boy dezavantajı",
+          "v": "1.85 m"
+        }
+      ],
+      "arketip": "Floor General",
+      "mtnRating": null,
+      "ratingNotu": null,
+      "benzerOyuncular": [
+        "Tyrece Rice"
+      ],
+      "youtubeUrl": null
     }
   ]
 }
