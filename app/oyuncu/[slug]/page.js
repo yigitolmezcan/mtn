@@ -86,7 +86,10 @@ export default async function PlayerPage({ params }) {
           </div>
 
           <h1 className="head__h1">{p.ad}</h1>
-          <div className="head__pos">{p.pozisyon}</div>
+          <div className="head__meta">
+            <span className="head__pos">{p.pozisyon}</span>
+            {p.arketip && <span className="tag tag--soft">{p.arketip}</span>}
+          </div>
 
           <dl className="vitalrow">
             <div className="vital">
