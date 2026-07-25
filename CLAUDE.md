@@ -28,6 +28,8 @@ Tahmin etme, öneri yapma, "şu civarda olabilir" deme. Kullanıcıdan iste.
 
 Aynı şey `ratingNotu` için de geçerli.
 
+Rating gerekçesi transferi "iyi/kötü" olarak etiketlemez, oyuncuyu tarif eder.
+
 ---
 
 ## 2. Uydurma yok
@@ -211,6 +213,8 @@ Yeni bir görsel eleman gerekirse mevcut bir sınıfı modifier ile genişlet
 
 Kart şeridi her kulüpte iki renkli (üst/alt split) olarak render edilir; renkler `takimlar` içindeki `renk1`/`renk2` alanlarından gelir. Bu artık istisna değil, standart.
 
+Kulüp kimliği yalnızca takım rengi (şerit, kulüp adı) ile taşınır. Gerçek kulüp logosu kullanılmıyor — kararlı bir tercih, tekrar gündeme getirilmesin.
+
 ---
 
 ## 12. Teknik yapı
@@ -219,18 +223,15 @@ Kart şeridi her kulüpte iki renkli (üst/alt split) olarak render edilir; renk
 data/oyuncular.json       ← TÜM içerik burada
 lib/players.js            ← veriyi okur, kulüp bilgisini ekler
 components/PlayerCard.jsx ← ana sayfa kartı
-components/ClubLogo.jsx   ← logo, dosya yoksa sessizce gizlenir
 app/page.js               ← ana sayfa
 app/oyuncu/[slug]/page.js ← oyuncu profili
 app/globals.css           ← tasarım sistemi
-public/logos/<slug>.svg   ← kulüp logoları
 ```
 
 **Oyuncu eklemek = yalnızca `data/oyuncular.json`'a bir blok eklemek.**
 Başka hiçbir dosyaya dokunulmaz. Kod değişikliği gerekmez.
 
-Yeni kulüp gelirse: `takimlar` bölümüne slug + ad + `marka` + `vurgu` renkleri,
-logo da aynı slug adıyla `public/logos/` içine.
+Yeni kulüp gelirse: `takimlar` bölümüne slug + ad + `marka` + `vurgu` + `renk1` + `renk2` renkleri eklenir.
 
 `marka` = kulübün asıl markası. `vurgu` = koyu zeminde okunan renk.
 Arayüz `vurgu` kullanır. Örnek: Paris Basketball → marka `#1A1A1A`, vurgu `#00E5FF`.

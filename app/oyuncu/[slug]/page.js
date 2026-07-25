@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import ClubLogo from '@/components/ClubLogo';
 import { Rating } from '@/components/PlayerCard';
 import { getPlayer, getAllSlugs } from '@/lib/players';
 import { ARCHETYPE_ICONS } from '@/lib/archetypeIcons';
@@ -90,7 +89,6 @@ export default async function PlayerPage({ params }) {
       <header className="head">
         <div className="wrap head__inner">
           <div className="crest">
-            <ClubLogo src={p.logoUrl} alt={`${p.takim} logosu`} size={32} />
             <div>
               <div className="crest__name" lang={p.digerDil ? 'en' : 'tr'}>{p.takim}</div>
               <div className="crest__meta">EuroLeague · 2026-27</div>
