@@ -1,0 +1,507 @@
+{
+  "sezon": "2026-27",
+  "takimlar": {
+    "anadolu-efes": {
+      "ad": "Anadolu Efes",
+      "marka": "#0B2C6B",
+      "vurgu": "#4B7CE0"
+    },
+    "besiktas": {
+      "ad": "Beşiktaş",
+      "marka": "#000000",
+      "vurgu": "#E4E1DC"
+    },
+    "baskonia": {
+      "ad": "Baskonia",
+      "marka": "#0A2A5E",
+      "vurgu": "#E0455C"
+    },
+    "paris-basketball": {
+      "ad": "Paris Basketball",
+      "marka": "#1A1A1A",
+      "vurgu": "#00E5FF"
+    },
+    "fenerbahce-beko": {
+      "ad": "Fenerbahçe Beko",
+      "marka": "#0A2472",
+      "vurgu": "#F2D42E"
+    }
+  },
+  "oyuncular": [
+    {
+      "slug": "santi-yusta",
+      "ad": "Santi Yusta",
+      "resmiAd": "Santiago Yusta",
+      "takimSlug": "anadolu-efes",
+      "pozisyon": "SF / PF",
+      "boy": "2.00 m",
+      "yas": "29",
+      "milliyet": "İspanya",
+      "milliyetNotu": null,
+      "geldigiKulup": "Casademont Zaragoza",
+      "geldigiLig": "Liga Endesa (İspanya)",
+      "transferNotu": null,
+      "ozet": "Topsuz hareketlilikle skor üretebilen, şut verimliliği yüksek, EuroLeague seviyesini test edecek tecrübeli İspanyol kanat.",
+      "featuredStats": {
+        "yarisma": "Liga Endesa",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "15.9",
+            "PPG"
+          ],
+          [
+            "3.8",
+            "RPG"
+          ],
+          [
+            "1.7",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "FIBA Europe Cup",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "13.7",
+              "PPG"
+            ],
+            [
+              "3.5",
+              "RPG"
+            ],
+            [
+              "2.1",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Perde çıkışlarında skor üretimi"
+        },
+        {
+          "t": "Potaya yakın atışlarda yüksek verim",
+          "v": "%56.0 2PT"
+        },
+        {
+          "t": "Serbest atış çizgisinde güvenilirlik",
+          "v": "%84.4 FT"
+        },
+        {
+          "t": "Play-off seviyesinde rol tecrübesi"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Birebir yaratıcılıkta eksiklik"
+        },
+        {
+          "t": "EuroLeague kanatlarına göre ortalama atletizm"
+        }
+      ],
+      "mtnRating": "7.1",
+      "ratingNotu": "EuroLeague'e hazır, güvenilir bir rotasyon kanadı. Büyük yıldız olmasa da doğru rolde birçok takım için değer yaratabilecek bir profil.",
+      "benzerOyuncular": [
+        "Xabi López-Arostegui",
+        "Alberto Abalde"
+      ],
+      "youtubeUrl": null
+    },
+    {
+      "slug": "mady-sissoko",
+      "ad": "Mady Sissoko",
+      "resmiAd": "Mady Goundo Sissoko",
+      "takimSlug": "besiktas",
+      "pozisyon": "C",
+      "boy": "2.06 m",
+      "yas": "25",
+      "milliyet": "Mali",
+      "milliyetNotu": null,
+      "geldigiKulup": "Pallacanestro Trieste",
+      "geldigiLig": "Serie A (İtalya)",
+      "transferNotu": "Sezonun son bölümünde kısa süreliğine Real Madrid forması giydi.",
+      "ozet": "Size'ı ve kulaç açıklığıyla çember koruması sağlayan, pick-and-roll'da dikey tehdit oluşturan gelişime açık atletik pivot.",
+      "featuredStats": {
+        "yarisma": "Basketball Champions League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "13.0",
+            "PPG"
+          ],
+          [
+            "8.7",
+            "RPG"
+          ],
+          [
+            "1.4",
+            "BPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "Serie A",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "10.2",
+              "PPG"
+            ],
+            [
+              "7.3",
+              "RPG"
+            ],
+            [
+              "0.6",
+              "BPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Pick-and-roll'da dikey tehdit ve güvenilir devrilme bitiriciliği"
+        },
+        {
+          "t": "Çember koruması ve doğru rotasyon zamanlaması",
+          "v": "1.4 BPG"
+        },
+        {
+          "t": "İki potada da ribaund devamlılığı",
+          "v": "8.7 RPG"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Çember çevresinde sınırlı bitiriş çeşitliliği"
+        },
+        {
+          "t": "Switch savunmasında sınırlı yana hareketlilik"
+        }
+      ],
+      "mtnRating": "8.2",
+      "ratingNotu": "Atletik kapasitesi yüksek, en üst seviyede kendini kanıtlamaya hazır bir pivot. Beşiktaş'ın EuroLeague'e dönüşü, bireysel yükselişi için uygun bir zemin sunuyor.",
+      "benzerOyuncular": [
+        "Ebuka Izundu",
+        "Tonye Jekiri"
+      ],
+      "youtubeUrl": null
+    },
+    {
+      "slug": "dj-stewart",
+      "ad": "DJ Stewart",
+      "resmiAd": "D.J. Stewart Jr.",
+      "takimSlug": "baskonia",
+      "pozisyon": "SF / SG",
+      "boy": "1.97 m",
+      "yas": "27",
+      "milliyet": "ABD / Kuzey Makedonya",
+      "milliyetNotu": "Kuzey Makedonya pasaportu sayesinde ACB'de yabancı kontenjanı işgal etmiyor.",
+      "geldigiKulup": "Cedevita Olimpija",
+      "geldigiLig": "ABA Ligi (Adriyatik)",
+      "transferNotu": null,
+      "ozet": "Çok pozisyonlu savunma yapabilen, topsuz hareketliliğiyle alan paylaşımına katkı veren atletik modern kanat.",
+      "featuredStats": {
+        "yarisma": "EuroCup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "13.9",
+            "PPG"
+          ],
+          [
+            "3.4",
+            "RPG"
+          ],
+          [
+            "1.5",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "ABA Ligi",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "12.5",
+              "PPG"
+            ],
+            [
+              "4.2",
+              "RPG"
+            ],
+            [
+              "1.8",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Geçiş hücumunda atletik avantaj"
+        },
+        {
+          "t": "Disiplinli şut seçimi, yüksek verim",
+          "v": "%53.0 FG"
+        },
+        {
+          "t": "1'den 3'e çok pozisyonlu savunma",
+          "v": "1.3 SPG"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Yüksek volümde kanıtlanmamış şut istikrarı"
+        },
+        {
+          "t": "Sınırlı oyun kurma katkısı"
+        }
+      ],
+      "mtnRating": "8.5",
+      "ratingNotu": "Baskonia'nın özgür ve tempolu oyununa çok uygun bir forvet profili. Şut istikrarını ve top yönlendirme becerisini geliştirdiği takdirde daha üst seviyeler için ideal.",
+      "benzerOyuncular": [
+        "Semi Ojeleye",
+        "Oshae Brissett"
+      ],
+      "youtubeUrl": null
+    },
+    {
+      "slug": "maozinha-pereira",
+      "ad": "Maozinha Pereira",
+      "resmiAd": "João Marcello Cardoso Pereira",
+      "takimSlug": "paris-basketball",
+      "pozisyon": "SF / PF",
+      "boy": "2.03 m",
+      "yas": "25",
+      "milliyet": "Brezilya",
+      "milliyetNotu": null,
+      "geldigiKulup": "Manisa Basket",
+      "geldigiLig": "Basketbol Süper Ligi (Türkiye)",
+      "transferNotu": "Manisa öncesinde Memphis Grizzlies ve NBA G League'de forma giydi.",
+      "ozet": "Yüksek motoru, atletizmi ve ribaundlardaki devamlılığıyla ön alana enerji getiren, geçiş hücumlarında ve çember çevresi bitirişlerde etkili enerjik forvet.",
+      "featuredStats": {
+        "yarisma": "Basketbol Süper Ligi",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "11.7",
+            "PPG"
+          ],
+          [
+            "6.0",
+            "RPG"
+          ],
+          [
+            "1.6",
+            "BPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Yüksek motor, sürekli koşu temposu"
+        },
+        {
+          "t": "Lob ve çember çevresi bitiriş kapasitesi"
+        },
+        {
+          "t": "Yardım savunmasında blok katkısı",
+          "v": "1.6 BPG"
+        },
+        {
+          "t": "Milli takım seviyesinde rol tecrübesi"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "EuroLeague seviyesinde kanıtlanmamış üretim"
+        },
+        {
+          "t": "Alçak post savunmasında fiziksel dezavantaj",
+          "v": "80 KG"
+        }
+      ],
+      "mtnRating": "7.5",
+      "ratingNotu": null,
+      "benzerOyuncular": [
+        "Chima Moneke",
+        "Yves Pons"
+      ],
+      "youtubeUrl": null
+    },
+    {
+      "slug": "ignas-sargiunas",
+      "ad": "Ignas Sargiunas",
+      "resmiAd": "Ignas Šargiūnas",
+      "takimSlug": "fenerbahce-beko",
+      "pozisyon": "SG / PG",
+      "boy": "1.94 m",
+      "yas": "26",
+      "milliyet": "Litvanya",
+      "milliyetNotu": null,
+      "geldigiKulup": "Rytas Vilnius",
+      "geldigiLig": "LKL (Litvanya)",
+      "transferNotu": "Rytas ile 2025-26 Basketbol Şampiyonlar Ligi şampiyonluğu yaşadı.",
+      "ozet": "Oyunun iki alanında da kendini gösterebilen, perde çıkışı şut yeteneği ve ikinci top yönlendirici rolüyle yarı saha hücumuna alan açan topsuz skorer.",
+      "featuredStats": {
+        "yarisma": "Basketball Champions League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "11.2",
+            "PPG"
+          ],
+          [
+            "3.1",
+            "RPG"
+          ],
+          [
+            "2.4",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "LKL",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "12.9",
+              "PPG"
+            ],
+            [
+              "2.8",
+              "APG"
+            ],
+            [
+              "1.4",
+              "SPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Perde çıkışlarında şut üretimi"
+        },
+        {
+          "t": "Spot-up ve pull-up dengesi"
+        },
+        {
+          "t": "İkinci top yönlendirici olarak güvenilir kararlar"
+        },
+        {
+          "t": "Pas hatlarında aktif eller",
+          "v": "1.4 SPG"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "EuroLeague rotasyonunda kanıtlanmamış rol"
+        },
+        {
+          "t": "Birebir savunmada sınırlı lateral hız"
+        }
+      ],
+      "mtnRating": "7.3",
+      "ratingNotu": null,
+      "benzerOyuncular": [
+        "Rokas Giedraitis",
+        "Marius Grigonis"
+      ],
+      "youtubeUrl": null
+    },
+    {
+      "slug": "tyson-etienne",
+      "ad": "Tyson Etienne",
+      "resmiAd": "Tyson Etienne",
+      "takimSlug": "paris-basketball",
+      "pozisyon": "PG / SG",
+      "boy": "1.84 m",
+      "yas": "26",
+      "milliyet": "ABD",
+      "milliyetNotu": null,
+      "geldigiKulup": "Brooklyn Nets",
+      "geldigiLig": "NBA (ABD)",
+      "transferNotu": "Kariyerinde ilk kez Avrupa'da oynayacak.",
+      "ozet": "Derin şut menziline sahip, kendi şutunu yaratabilen ve yüksek hacimli skor üretimiyle izolasyon ve pick-and-roll tehdidi oluşturan dinamik combo guard.",
+      "featuredStats": {
+        "yarisma": "NBA G League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "16.3",
+            "PPG"
+          ],
+          [
+            "3.8",
+            "APG"
+          ],
+          [
+            "2.8",
+            "RPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "NBA",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "7.9",
+              "PPG"
+            ],
+            [
+              "1.7",
+              "APG"
+            ],
+            [
+              "1.1",
+              "RPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Derin menzilden yüksek hacimde şut",
+          "v": "%39.4 3PT"
+        },
+        {
+          "t": "Pull-up ve step-back üzerinden kendi şutunu yaratma"
+        },
+        {
+          "t": "Pick-and-roll'da top yönlendirici olarak tehdit"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Avrupa temposuna ve fiziğine uyum süreci"
+        },
+        {
+          "t": "Savunmada fiziksel dezavantaj",
+          "v": "1.84 M"
+        }
+      ],
+      "mtnRating": "7.8",
+      "ratingNotu": null,
+      "benzerOyuncular": [
+        "Justin Robinson",
+        "Duane Washington"
+      ],
+      "youtubeUrl": null
+    }
+  ]
+}
