@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import ClubLogo from '@/components/ClubLogo';
 import { Rating } from '@/components/PlayerCard';
 import { getPlayer, getAllSlugs } from '@/lib/players';
+import { ARCHETYPE_ICONS } from '@/lib/archetypeIcons';
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -28,7 +29,7 @@ function StatBlock({ comp, featured }) {
   return (
     <div className={`comp${featured ? '' : ' comp--minor'}`}>
       <div className="comp__head">
-        <span>
+        <span lang="en">
           {comp.yarisma} · {comp.sezon}
         </span>
         {featured && <span className="tag">Öne Çıkan</span>}
@@ -67,6 +68,8 @@ export default async function PlayerPage({ params }) {
   const p = getPlayer(slug);
   if (!p) notFound();
 
+  const ArketipIcon = p.arketip ? ARCHETYPE_ICONS[p.arketip] : null;
+
   return (
     <main className="profile" style={{ '--team': p.takimRenk }}>
       <div className="wrap">
@@ -87,8 +90,13 @@ export default async function PlayerPage({ params }) {
 
           <h1 className="head__h1">{p.ad}</h1>
           <div className="head__meta">
-            <span className="head__pos">{p.pozisyon}</span>
-            {p.arketip && <span className="tag tag--soft">{p.arketip}</span>}
+            <span className="head__pos" lang="en">{p.pozisyon}</span>
+            {p.arketip && (
+              <span className="tag tag--soft" lang="en">
+                {ArketipIcon && <ArketipIcon size={14} strokeWidth={2} color="currentColor" />}
+                {p.arketip}
+              </span>
+            )}
           </div>
 
           <dl className="vitalrow">

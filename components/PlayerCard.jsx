@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import PositionCourt from './PositionCourt';
 
 export function Rating({ value, size = 'sm' }) {
   return (
@@ -19,9 +20,10 @@ export default function PlayerCard({ player }) {
       <div className="card__club">
         <span className="card__cname">{player.takim}</span>
       </div>
+      <PositionCourt pozisyon={player.pozisyon} renk={player.takimRenk} />
 
       <h2 className="card__name">{player.ad}</h2>
-      <div className="card__pos">{player.pozisyon}</div>
+      <div className="card__pos" lang="en">{player.pozisyon}</div>
       <p className="card__quote">{player.ozet}</p>
 
       <div className="card__foot">

@@ -93,6 +93,9 @@ a{color:inherit;text-decoration:none}
 }
 .card__pos{font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-dim)}
 .card__quote{margin-top:16px;font-size:15px;line-height:1.58;color:var(--paper)}
+.pos-court{position:absolute;top:22px;right:22px;width:58px;height:58px;opacity:.85;pointer-events:none}
+.pos-court rect,.pos-court path,.pos-court line,.pos-court circle:not(.zone){fill:none;stroke:var(--line);stroke-width:2}
+.pos-court .zone{fill:var(--line-soft);stroke:none}
 .card__foot{
   margin-top:auto;padding-top:22px;
   display:flex;align-items:flex-end;justify-content:space-between;gap:16px;
@@ -118,6 +121,7 @@ a{color:inherit;text-decoration:none}
   font-size:25px;letter-spacing:-.026em;margin-bottom:13px;
 }
 .explain__p{color:var(--muted);max-width:58ch;font-size:15.5px}
+.explain__p + .explain__p{margin-top:10px}
 .sitefoot{
   border-top:1px solid var(--line-soft);padding:24px var(--pad) 40px;
   font-size:10px;color:var(--muted-dim);
@@ -147,7 +151,7 @@ a{color:inherit;text-decoration:none}
 }
 .head__pos{font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--paper)}
 .head__meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.tag--soft{color:var(--muted);border-color:var(--line)}
+.tag.tag--soft{color:var(--muted);border-color:var(--line)}
 .vitalrow{display:flex;flex-wrap:wrap;gap:0 28px;margin-top:22px;padding-top:17px;border-top:1px solid var(--line-soft)}
 .vital{padding:4px 0}
 .vital dt{font-size:9.5px;color:var(--muted-dim);margin-bottom:5px}
@@ -178,7 +182,7 @@ a{color:inherit;text-decoration:none}
 .comp{margin-bottom:20px}
 .comp:last-child{margin-bottom:0}
 .comp__head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:9.5px;color:var(--muted-dim);margin-bottom:10px}
-.tag{font-size:8.5px;color:var(--court);border:1px solid var(--court);border-radius:3px;padding:2px 6px;letter-spacing:.13em}
+.tag{display:inline-flex;align-items:center;gap:4px;font-size:8.5px;color:var(--court);border:1px solid var(--court);border-radius:3px;padding:2px 6px;letter-spacing:.13em}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:6px;overflow:hidden}
 .stat{background:var(--surface);padding:16px 14px}
 .comp--minor .stat{background:transparent;padding:12px 14px}

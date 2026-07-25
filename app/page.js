@@ -31,11 +31,10 @@ export default function Home() {
       <section className="explain">
         <div className="eyebrow">Değerlendirme</div>
         <h2 className="explain__h2">MtN Rating nedir?</h2>
+        <p className="explain__p">Formüllerden ziyade sezgiye dayanır.</p>
         <p className="explain__p">
-          MtN Rating, bir oyuncunun EuroLeague seviyesindeki mevcut değerini 10 üzerinden
-          özetleyen editöryel bir değerlendirmedir. İstatistiksel bir hesaplama değildir;
-          oyuncunun rolü, geldiği rekabet seviyesi ve katıldığı takımın ihtiyaçları birlikte
-          ele alınarak verilir.
+          Oyuncunun istatistiğini değil; rolünü, takımının ihtiyacını ve EuroLeague&apos;in
+          gerçekliğine ne kadar hazır olduğunu tartan 10 üzerinden editoryal bir skor.
         </p>
       </section>
     </main>
