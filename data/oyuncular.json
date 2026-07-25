@@ -22,9 +22,19 @@
       "vurgu": "#00E5FF"
     },
     "fenerbahce-beko": {
-      "ad": "Fenerbahçe Beko",
+      "ad": "Fenerbahçe",
       "marka": "#0A2472",
       "vurgu": "#F2D42E"
+    },
+    "asvel": {
+      "ad": "LDLC ASVEL",
+      "marka": "#1A1A1A",
+      "vurgu": "#EAEAEA"
+    },
+    "barcelona": {
+      "ad": "FC Barcelona",
+      "marka": "#A50044",
+      "vurgu": "#004D98"
     }
   },
   "oyuncular": [
@@ -110,7 +120,8 @@
         "Xabi López-Arostegui",
         "Alberto Abalde"
       ],
-      "youtubeUrl": null
+      "youtubeUrl": null,
+      "arketip": "Scoring Wing"
     },
     {
       "slug": "mady-sissoko",
@@ -191,7 +202,8 @@
         "Ebuka Izundu",
         "Tonye Jekiri"
       ],
-      "youtubeUrl": null
+      "youtubeUrl": null,
+      "arketip": "Athletic Center"
     },
     {
       "slug": "dj-stewart",
@@ -272,7 +284,8 @@
         "Semi Ojeleye",
         "Oshae Brissett"
       ],
-      "youtubeUrl": null
+      "youtubeUrl": null,
+      "arketip": "Athletic Forward"
     },
     {
       "slug": "maozinha-pereira",
@@ -337,7 +350,8 @@
         "Chima Moneke",
         "Yves Pons"
       ],
-      "youtubeUrl": null
+      "youtubeUrl": null,
+      "arketip": "Athletic Forward"
     },
     {
       "slug": "ignas-sargiunas",
@@ -420,7 +434,8 @@
         "Rokas Giedraitis",
         "Marius Grigonis"
       ],
-      "youtubeUrl": null
+      "youtubeUrl": null,
+      "arketip": "Combo Guard"
     },
     {
       "slug": "tyson-etienne",
@@ -501,7 +516,257 @@
         "Justin Robinson",
         "Duane Washington"
       ],
+      "youtubeUrl": null,
+      "arketip": "Combo Guard"
+    },
+    {
+      "slug": "both-gach",
+      "ad": "Both Gach",
+      "resmiAd": "Both Gach",
+      "takimSlug": "asvel",
+      "pozisyon": "SG / SF",
+      "boy": "2.01 m",
+      "yas": "27",
+      "milliyet": "ABD / Güney Sudan",
+      "milliyetNotu": null,
+      "geldigiKulup": "JL Bourg",
+      "geldigiLig": "LNB Élite (Fransa)",
+      "transferNotu": null,
+      "ozet": "Yüksek tempoda etkili olan, dış şut tehdidini potaya atak ve birebir skor üretimiyle birleştiren çok yönlü skorer kanat.",
+      "featuredStats": {
+        "yarisma": "EuroCup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "13.4",
+            "PPG"
+          ],
+          [
+            "3.4",
+            "RPG"
+          ],
+          [
+            "43.8",
+            "FG%"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "LNB Élite",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "13.0",
+              "PPG"
+            ],
+            [
+              "2.9",
+              "RPG"
+            ],
+            [
+              "1.9",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Geçiş hücumunda skor üretimi"
+        },
+        {
+          "t": "Üç sayı çizgisinin gerisinden tehdit"
+        },
+        {
+          "t": "Drive ile potaya atak"
+        },
+        {
+          "t": "Kendi şutunu yaratabilme"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Karar vericilik ve pas çeşitliliği"
+        },
+        {
+          "t": "Low-post savunmasında fiziksel direnç"
+        }
+      ],
+      "mtnRating": "8.3",
+      "ratingNotu": "Skor üretimini farklı yollarla sağlayabilen ve ikincil top yönlendirici rolünü üstlenebilen hazır bir hücum kanadı. Karar kalitesini yükseltmesi, EuroLeague seviyesindeki rolünün sınırlarını belirleyecek.",
+      "benzerOyuncular": [
+        "Isaia Cordinier",
+        "Jordan Nwora"
+      ],
+      "youtubeUrl": null,
+      "arketip": "Scoring Wing"
+    },
+    {
+      "slug": "marcus-bingham",
+      "ad": "Marcus Bingham Jr.",
+      "resmiAd": "Marcus Bingham Jr.",
+      "takimSlug": "fenerbahce-beko",
+      "pozisyon": "C",
+      "arketip": "Athletic Center",
+      "boy": "2.13 m",
+      "yas": "26",
+      "milliyet": "ABD",
+      "milliyetNotu": null,
+      "geldigiKulup": "UNICS Kazan",
+      "geldigiLig": "VTB United League (Rusya)",
+      "transferNotu": null,
+      "ozet": "Atletik yapısı ve yüzü dönük hücum çeşitliliğiyle Fenerbahçe'nin pota altına farklı bir boyut katabilecek modern bir uzun.",
+      "featuredStats": {
+        "yarisma": "VTB United League",
+        "sezon": "2024-25",
+        "items": [
+          [
+            "15.6",
+            "PPG"
+          ],
+          [
+            "7.1",
+            "RPG"
+          ],
+          [
+            "1.8",
+            "BPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "VTB United League Playoffs",
+          "sezon": "2024-25",
+          "items": [
+            [
+              "13.8",
+              "PPG"
+            ],
+            [
+              "6.5",
+              "RPG"
+            ],
+            [
+              "2.0",
+              "BPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Yüzü dönük hücum tehdidi"
+        },
+        {
+          "t": "Geçiş hücumlarında etkili bitiricilik"
+        },
+        {
+          "t": "Dış şut potansiyeli"
+        },
+        {
+          "t": "Atletizmi ve mobilitesi"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Temaslı uzunlara karşı fiziksel direnç"
+        },
+        {
+          "t": "Savunmada pozisyon disiplini"
+        }
+      ],
+      "mtnRating": "8.9",
+      "ratingNotu": "EuroLeague tecrübesi bulunmasa da atletizmi, hücum çeşitliliği ve fiziksel tavanı sayesinde yaz döneminin en yüksek potansiyelli uzun transferlerinden biri. Doğru sistem içinde iki yönlü etkisiyle fark yaratabilecek bir profil.",
+      "benzerOyuncular": [
+        "Mfiondu Kabengele",
+        "Chimezie Metu"
+      ],
       "youtubeUrl": null
+    },
+    {
+      "slug": "umoja-gibson",
+      "ad": "Umoja Gibson",
+      "resmiAd": "Umoja Adeyemi Gibson",
+      "takimSlug": "barcelona",
+      "pozisyon": "PG",
+      "arketip": "Scoring Point Guard",
+      "boy": "1.85 m",
+      "yas": "28",
+      "milliyet": "ABD",
+      "milliyetNotu": null,
+      "geldigiKulup": "Cedevita Olimpija",
+      "geldigiLig": "ABA Ligi (Adriyatik)",
+      "transferNotu": null,
+      "ozet": "Pick-and-roll'da skor ve pas üretebilen, dış şuta ve çizgiye gitmeye yatkın dinamik bir skorer oyun kurucu.",
+      "featuredStats": {
+        "yarisma": "EuroCup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "15.9",
+            "PPG"
+          ],
+          [
+            "4.9",
+            "APG"
+          ],
+          [
+            "17.2",
+            "PIR"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "ABA Ligi",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "15.5",
+              "PPG"
+            ],
+            [
+              "5.1",
+              "APG"
+            ],
+            [
+              "1.4",
+              "SPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Pick-and-roll'da skor ve pas dengesi"
+        },
+        {
+          "t": "Drive ile dış şut tehdidi"
+        },
+        {
+          "t": "Teması alarak serbest atış çizgisine gitme"
+        },
+        {
+          "t": "Pas hatlarında aktif eller"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "EuroLeague seviyesinde fiziksel dezavantaj"
+        },
+        {
+          "t": "Baskı altında top kaybı kontrolü"
+        }
+      ],
+      "mtnRating": "8.4",
+      "ratingNotu": "EuroCup'ta hücum sorumluluğunu taşıyabileceğini kanıtlayan üretken bir oyun kurucu. Şut tehdidi ve pick-and-roll yaratıcılığı Barcelona rotasyonuna hazır katkı sunabilir; savunmada hedef olmaması ve karar kalitesini koruması rolünün büyüklüğünü belirleyecek.",
+      "benzerOyuncular": [
+        "Carsen Edwards",
+        "Yago dos Santos"
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=g057FwSGhDE"
     }
   ]
 }
