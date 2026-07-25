@@ -47,6 +47,14 @@ function StatBlock({ comp, featured }) {
   );
 }
 
+function getYoutubeId(url) {
+  try {
+    const u = new URL(url);
+    if (u.hostname.includes('youtu.be')) return u.pathname.slice(1);
+    return u.searchParams.get('v');
+  } catch { return null; }
+}
+
 function Ledger({ items, kind }) {
   const sign = kind === 'plus' ? '+' : '−';
   return (
@@ -84,7 +92,7 @@ export default async function PlayerPage({ params }) {
           <div className="crest">
             <ClubLogo src={p.logoUrl} alt={`${p.takim} logosu`} size={32} />
             <div>
-              <div className="crest__name">{p.takim}</div>
+              <div className="crest__name" lang={p.digerDil ? 'en' : 'tr'}>{p.takim}</div>
               <div className="crest__meta">EuroLeague · 2026-27</div>
             </div>
           </div>
@@ -184,17 +192,21 @@ export default async function PlayerPage({ params }) {
       </section>
 
       <section className="blk wrap">
+        <div className="lbl">İzle</div>
         {p.youtubeUrl ? (
-          <a className="hl hl--ready" href={p.youtubeUrl} target="_blank" rel="noopener noreferrer">
-            <span>YouTube&apos;da <span lang="en">highlights</span> izle</span>
-          </a>
+          <div className="hl-embed">
+            <iframe
+              src={`https://www.youtube.com/embed/${getYoutubeId(p.youtubeUrl)}`}
+              title={`${p.ad} highlights`}
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
         ) : (
-          <>
-            <button className="hl" disabled>
-              <span><span lang="en">Highlights</span> eklenecek</span>
-            </button>
-            <p className="hl__note">Video bağlantısı henüz eklenmedi</p>
-          </>
+          <button className="hl" disabled>
+            <span><span lang="en">Highlights</span> eklenecek</span>
+          </button>
         )}
       </section>
     </main>

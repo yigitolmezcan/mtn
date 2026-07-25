@@ -28,8 +28,8 @@ a{color:inherit;text-decoration:none}
 .wrap{max-width:1080px;margin:0 auto;padding:0 var(--pad)}
 
 /* letterspaced label treatment — no monospace anywhere */
-.lbl,.eyebrow,.topbar__season,.vital dt,.stat__k,.node__league,.hl,.rail,
-.sitefoot,.hl__note,.crest__name,.card__cname,.card__rlbl,.comp__head,.tag,.metric,.backlink{
+.lbl,.eyebrow,.topbar__season,.vital dt,.stat__k,.hl,.rail,
+.sitefoot,.crest__name,.card__cname,.card__rlbl,.comp__head,.tag,.metric,.backlink{
   font-family:var(--sans);text-transform:uppercase;letter-spacing:.15em;font-weight:600;
 }
 
@@ -183,7 +183,7 @@ a{color:inherit;text-decoration:none}
 .transfer{display:flex;flex-direction:column}
 .node__club{font-family:var(--display);font-variation-settings:'wdth' 100,'wght' 650;font-size:21px;letter-spacing:-.025em}
 .node--to .node__club{color:var(--team)}
-.node__league{font-size:10px;color:var(--muted-dim);margin-top:6px}
+.node__league{font-size:10px;color:var(--muted-dim);margin-top:6px;letter-spacing:.05em}
 .link{display:flex;align-items:center;gap:11px;padding:10px 0 10px 3px;margin:4px 0}
 .link__stem{width:1px;height:24px;background:var(--line);margin-left:7px}
 .link__arrow{font-size:13px;color:var(--court)}
@@ -229,7 +229,8 @@ a{color:inherit;text-decoration:none}
 }
 .hl--ready{background:var(--court);color:#100803;border-color:var(--court);cursor:pointer}
 .hl--ready:hover{filter:brightness(1.07)}
-.hl__note{margin-top:11px;font-size:9.5px;color:var(--muted-dim);text-align:center;font-weight:500}
+.hl-embed{position:relative;width:100%;max-width:520px;margin:0 auto;aspect-ratio:16/9;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+.hl-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}

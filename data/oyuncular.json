@@ -20,14 +20,16 @@
       "marka": "#0A2A5E",
       "vurgu": "#E0455C",
       "renk1": "#0A2A5E",
-      "renk2": "#E0455C"
+      "renk2": "#E0455C",
+      "digerDil": true
     },
     "paris-basketball": {
       "ad": "Paris Basketball",
       "marka": "#1A1A1A",
       "vurgu": "#00E5FF",
       "renk1": "#1A1A1A",
-      "renk2": "#00E5FF"
+      "renk2": "#00E5FF",
+      "digerDil": true
     },
     "fenerbahce-beko": {
       "ad": "Fenerbahçe",
@@ -55,7 +57,8 @@
       "marka": "#C8102E",
       "vurgu": "#C8102E",
       "renk1": "#C8102E",
-      "renk2": "var(--bone)"
+      "renk2": "var(--bone)",
+      "digerDil": true
     }
   },
   "oyuncular": [
@@ -866,7 +869,7 @@
       "mtnRating": "8.0",
       "ratingNotu": null,
       "benzerOyuncular": [
-        "Tyrece Rice"
+        "Tyrese Rice"
       ],
       "youtubeUrl": null
     }

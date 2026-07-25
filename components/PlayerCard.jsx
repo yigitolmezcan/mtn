@@ -17,7 +17,7 @@ export default function PlayerCard({ player }) {
       style={{ '--team': player.takimRenk, '--serit1': player.renk1, '--serit2': player.renk2 }}
     >
       <div className="card__club">
-        <span className="card__cname">{player.takim}</span>
+        <span className="card__cname" lang={player.digerDil ? 'en' : 'tr'}>{player.takim}</span>
       </div>
 
       <h2 className="card__name">{player.ad}</h2>
