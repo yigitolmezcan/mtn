@@ -66,6 +66,14 @@
       "vurgu": "#DC052D",
       "renk1": "#DC052D",
       "renk2": "var(--bone)"
+    },
+    "hapoel-tel-aviv": {
+      "ad": "Hapoel Tel Aviv",
+      "marka": "#C8102E",
+      "vurgu": "#C8102E",
+      "renk1": "var(--bone)",
+      "renk2": "#C8102E",
+      "digerDil": true
     }
   },
   "oyuncular": [
@@ -959,6 +967,162 @@
       "benzerOyuncular": [
         "Stephane Lasme",
         "Bryant Dunston"
+      ],
+      "youtubeUrl": null
+    },
+    {
+      "slug": "khadeen-carrington",
+      "ad": "Khadeen Carrington",
+      "resmiAd": "Khadeen Akil Reynold Carrington Jr.",
+      "takimSlug": "hapoel-tel-aviv",
+      "pozisyon": "SG / PG",
+      "boy": "1.93 m",
+      "yas": "30",
+      "milliyet": "ABD",
+      "milliyetNotu": "İsrail vatandaşlığına sahip, milli takımda da forma giyiyor.",
+      "geldigiKulup": "Hapoel Jerusalem",
+      "geldigiLig": "Ligat HaAl (İsrail)",
+      "transferNotu": null,
+      "ozet": "Pick-and-roll'da asist ve skor üretimini dengeleyen, solak yapısıyla ayrışan deneyimli bir guard.",
+      "featuredStats": {
+        "yarisma": "EuroCup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "14.8",
+            "PPG"
+          ],
+          [
+            "2.2",
+            "RPG"
+          ],
+          [
+            "2.1",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "Ligat HaAl",
+          "sezon": "2022-2026 (4 sezon)",
+          "items": [
+            [
+              "13.2",
+              "PPG"
+            ],
+            [
+              "2.5",
+              "RPG"
+            ],
+            [
+              "2.2",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Pick-and-roll'da asist üretimi"
+        },
+        {
+          "t": "Yüksek hacimde skor üretimi",
+          "v": "14.8 PPG"
+        },
+        {
+          "t": "Solak olmasına rağmen güçlü sağ el"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Birebir savunmada gelişime açık"
+        }
+      ],
+      "arketip": "Combo Guard",
+      "mtnRating": "7.6",
+      "ratingNotu": null,
+      "benzerOyuncular": [
+        "Fabien Causeur",
+        "Rokas Jokubaitis"
+      ],
+      "youtubeUrl": null
+    },
+    {
+      "slug": "conor-morgan",
+      "ad": "Conor Morgan",
+      "resmiAd": "Conor Seamus William Morgan",
+      "takimSlug": "besiktas",
+      "pozisyon": "PF / C",
+      "boy": "2.06 m",
+      "yas": "31",
+      "milliyet": "Kanada",
+      "milliyetNotu": null,
+      "geldigiKulup": "London Lions",
+      "geldigiLig": "BBL (İngiltere)",
+      "transferNotu": "Beşiktaş'ta üçüncü sezonuna çıkıyor; kulübün EuroLeague'e dönüşüyle birlikte kariyerinde ilk kez bu kulvarda oynayacak.",
+      "ozet": "Dış şut kapasitesi ve savunma zekâsıyla değer üreten, 4 ve 5 numarada rol alabilen çok yönlü bir uzun.",
+      "featuredStats": {
+        "yarisma": "EuroCup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "8.6",
+            "PPG"
+          ],
+          [
+            "4.2",
+            "RPG"
+          ],
+          [
+            "2.3",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "Basketbol Süper Ligi",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "9.7",
+              "PPG"
+            ],
+            [
+              "4.5",
+              "RPG"
+            ],
+            [
+              "1.8",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Dış şut tehdidiyle spacing katkısı",
+          "v": "%42.4 3PT"
+        },
+        {
+          "t": "Savunmada pozisyon bilinci"
+        },
+        {
+          "t": "Kısa roll'larda etkili karar alma"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Atletizm ve ayak hızı sınırlı"
+        }
+      ],
+      "arketip": "Stretch Big",
+      "mtnRating": "7.7",
+      "ratingNotu": null,
+      "benzerOyuncular": [
+        "Zach LeDay",
+        "Dinos Mitoglou"
       ],
       "youtubeUrl": null
     }

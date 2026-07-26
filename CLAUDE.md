@@ -213,6 +213,8 @@ Yeni bir görsel eleman gerekirse mevcut bir sınıfı modifier ile genişlet
 
 Kart şeridi her kulüpte iki renkli (üst/alt split) olarak render edilir; renkler `takimlar` içindeki `renk1`/`renk2` alanlarından gelir. Bu artık istisna değil, standart.
 
+Yeni kulüp eklerken rengi mevcut kulüplerle karşılaştır. Ton çok yakınsa (aynı "kırmızı-krem" ailesi gibi) resmi ton korunur ama `renk1`/`renk2` sırası tersine çevrilerek görsel ayrışma sağlanır.
+
 Kulüp kimliği yalnızca takım rengi (şerit, kulüp adı) ile taşınır. Gerçek kulüp logosu kullanılmıyor — kararlı bir tercih, tekrar gündeme getirilmesin.
 
 ---

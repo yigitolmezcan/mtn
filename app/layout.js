@@ -39,6 +39,7 @@ export default function RootLayout({ children }) {
         <footer className="wrap sitefoot">
           <span>Meet the Newcomers</span>
           <span>2026-27 EuroLeague</span>
+          <a href="https://x.com/yolmezcan" target="_blank" rel="noopener noreferrer">@yolmezcan</a>
         </footer>
       </body>
     </html>
