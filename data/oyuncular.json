@@ -74,6 +74,30 @@
       "renk1": "var(--bone)",
       "renk2": "#C8102E",
       "digerDil": true
+    },
+    "virtus-bologna": {
+      "ad": "Virtus Bologna",
+      "marka": "#000000",
+      "vurgu": "#F2D42E",
+      "renk1": "#000000",
+      "renk2": "#F2D42E",
+      "digerDil": true
+    },
+    "dubai-basketball": {
+      "ad": "Dubai Basketball",
+      "marka": "#1A1A1A",
+      "vurgu": "#C8A951",
+      "renk1": "#1A1A1A",
+      "renk2": "#C8A951",
+      "digerDil": true
+    },
+    "zalgiris": {
+      "ad": "Zalgiris Kaunas",
+      "marka": "#00A651",
+      "vurgu": "#00A651",
+      "renk1": "#00A651",
+      "renk2": "var(--bone)",
+      "digerDil": true
     }
   },
   "oyuncular": [
@@ -1123,6 +1147,214 @@
       "benzerOyuncular": [
         "Zach LeDay",
         "Dinos Mitoglou"
+      ],
+      "youtubeUrl": null
+    },
+    {
+      "slug": "rasheed-bello",
+      "ad": "Rasheed Bello",
+      "resmiAd": "Rasheed Bello",
+      "takimSlug": "virtus-bologna",
+      "pozisyon": "PG / SG",
+      "boy": "1.83 m",
+      "yas": "23",
+      "milliyet": "ABD",
+      "milliyetNotu": null,
+      "geldigiKulup": "Windrose Antwerp Giants",
+      "geldigiLig": "BNXT Ligi (Belçika/Hollanda)",
+      "transferNotu": "Anvers'te lig, kupa ve BNXT Ligi şampiyonluklarını art arda kazanıp final serisinde MVP seçildi.",
+      "ozet": "Anvers'te tarihi bir şampiyonluk sezonu yaşayıp Finals MVP'si seçilen, oyun kurup skor da üretebilen genç bir guard.",
+      "featuredStats": {
+        "yarisma": "FIBA Europe Cup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "15.5",
+            "PPG"
+          ],
+          [
+            "5.7",
+            "APG"
+          ],
+          [
+            "2.8",
+            "RPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "BNXT Ligi",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "16.9",
+              "PPG"
+            ],
+            [
+              "5.7",
+              "APG"
+            ],
+            [
+              "2.8",
+              "RPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Pick-and-roll'da skor + pas dengesi"
+        },
+        {
+          "t": "Kritik maçlarda üretkenlik",
+          "v": "Finals MVP"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Üst düzey ligde kanıtlanmamış yetenek"
+        }
+      ],
+      "arketip": "Combo Guard",
+      "mtnRating": "7.5",
+      "ratingNotu": null,
+      "benzerOyuncular": [
+        "Paris Lee"
+      ],
+      "youtubeUrl": null
+    },
+    {
+      "slug": "davion-mintz",
+      "ad": "Davion Mintz",
+      "resmiAd": "Davion Mintz",
+      "takimSlug": "dubai-basketball",
+      "pozisyon": "SG",
+      "boy": "1.93 m",
+      "yas": "28",
+      "milliyet": "ABD",
+      "milliyetNotu": null,
+      "geldigiKulup": "Würzburg Baskets",
+      "geldigiLig": "Bundesliga (Almanya)",
+      "transferNotu": null,
+      "ozet": "Kendi şutunu yaratabilen, mid-range'de verimli, şut oriyantasyonu yüksek bir skorer guard.",
+      "featuredStats": {
+        "yarisma": "Basketball Champions League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "15.6",
+            "PPG"
+          ],
+          [
+            "3.2",
+            "RPG"
+          ],
+          [
+            "2.3",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "Bundesliga",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "16.4",
+              "PPG"
+            ],
+            [
+              "3.3",
+              "RPG"
+            ],
+            [
+              "3.0",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Kendi şutunu yaratma yeteneği"
+        },
+        {
+          "t": "Mid-range'de yüksek verim"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Top kaybı oranı yüksek"
+        },
+        {
+          "t": "Şut seçiminde tutarsızlık"
+        }
+      ],
+      "arketip": "Scoring Wing",
+      "mtnRating": "7.6",
+      "ratingNotu": null,
+      "benzerOyuncular": [
+        "Jordan Loyd",
+        "Armoni Brooks"
+      ],
+      "youtubeUrl": null
+    },
+    {
+      "slug": "marek-blazevic",
+      "ad": "Marek Blazevic",
+      "resmiAd": "Marek Blaževič",
+      "takimSlug": "zalgiris",
+      "pozisyon": "C",
+      "boy": "2.11 m",
+      "yas": "24",
+      "milliyet": "Litvanya",
+      "milliyetNotu": null,
+      "geldigiKulup": "Tofaş",
+      "geldigiLig": "Basketbol Süper Ligi (Türkiye)",
+      "transferNotu": "2020-2022 döneminde de Zalgiris formasını giymişti, ancak o dönem sınırlı rol alan genç bir oyuncuydu; şimdi çok daha gelişmiş bir profille geri dönüyor.",
+      "ozet": "Low post'ta ve pick-and-roll devrilmelerinde usta, çember çevresinde elit seviyede bitiren bir hücumcu pivot.",
+      "featuredStats": {
+        "yarisma": "Basketball Champions League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "15.6",
+            "PPG"
+          ],
+          [
+            "6.6",
+            "RPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Low post'ta usta bitiricilik"
+        },
+        {
+          "t": "Pick-and-roll devrilmelerinde etkinlik"
+        },
+        {
+          "t": "Çember çevresinde elit bitiriş"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Atletizm sınırlı"
+        },
+        {
+          "t": "Ribaund üretimi zayıf"
+        }
+      ],
+      "arketip": "Post Scorer",
+      "mtnRating": "7.7",
+      "ratingNotu": null,
+      "benzerOyuncular": [
+        "Ante Žižić",
+        "Donatas Motiejūnas"
       ],
       "youtubeUrl": null
     }

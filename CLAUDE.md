@@ -55,7 +55,7 @@ Yalnızca şu kısaltmalar: **PG, SG, SF, PF, C**
 
 ## 4. Arketipler
 
-`arketip` **kapalı listedir.** Yalnızca aşağıdaki 12 değerden biri kullanılır.
+`arketip` **kapalı listedir.** Yalnızca aşağıdaki 13 değerden biri kullanılır.
 Liste dışına çıkma. Uyan bir karşılık bulamıyorsan yeni etiket uydurma —
 kullanıcıya sor.
 
@@ -66,7 +66,9 @@ kullanıcıya sor.
 `3&D Wing` · `Scoring Wing` · `Point Forward` · `Athletic Forward`
 
 **Bigs**
-`Stretch Big` · `Athletic Center` · `Rim Protector`
+`Stretch Big` · `Athletic Center` · `Rim Protector` · `Post Scorer`
+
+`Post Scorer`: düşük post ve pick-and-roll bitirişlerinden skor üreten, şut menzili veya elit savunma/atletizmle tanımlanmayan içeri oyuncusu.
 
 Kurallar:
 

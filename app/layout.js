@@ -29,7 +29,18 @@ export default function RootLayout({ children }) {
       <body>
         <header className="topbar">
           <div className="wrap topbar__inner">
-            <a className="topbar__mark" href="/">Meet the Newcomers</a>
+            <a className="topbar__mark" href="/" aria-label="Meet the Newcomers">
+              <svg width="24" height="24" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="95" cy="88" r="58" fill="none" stroke="#E0742F" strokeWidth="9" />
+                <circle cx="95" cy="88" r="37" fill="#E0742F" />
+                <line x1="95" y1="55" x2="95" y2="121" stroke="#0A0A0B" strokeWidth="4" />
+                <line x1="62" y1="88" x2="128" y2="88" stroke="#0A0A0B" strokeWidth="4" />
+                <path d="M95 55 Q57 88 95 121" fill="none" stroke="#0A0A0B" strokeWidth="4" />
+                <path d="M95 55 Q133 88 95 121" fill="none" stroke="#0A0A0B" strokeWidth="4" />
+                <line x1="138" y1="123" x2="172" y2="157" stroke="#E0742F" strokeWidth="15" strokeLinecap="round" />
+                <circle cx="172" cy="157" r="9" fill="#E0742F" />
+              </svg>
+            </a>
             <span className="topbar__season">2026-27</span>
           </div>
         </header>
