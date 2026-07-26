@@ -129,6 +129,10 @@ Transition, Switch, Help defense, Combo guard, Size, İkinci top yönlendirici
 **Yasak kelimeler:** "elit" (gerçekten hak edilmedikçe), abartılı pazarlama dili.
 Ton sakin ve profesyoneldir; heyecanlı değil.
 
+Özet ve madde metinlerinde pozisyon isimleri Türkçeye çevrilmez (ör. "power forward" → "güç forvet" yazılmaz). Genel terimler ("forvet", "uzun", "pivot") serbesttir, İngilizce kısaltmanın birebir çevirisi yazılmaz.
+
+Solaklık gibi fiziksel detaylar yalnızca gerçekten ayırt edici olduğunda güçlü yön olarak yazılır, her solak oyuncuda otomatik belirtilmez.
+
 ### Madde yazım kuralı
 
 Güçlü yönler ve gelişim alanları **isim öbeği** olarak yazılır.

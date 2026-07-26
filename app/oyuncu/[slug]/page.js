@@ -4,6 +4,7 @@ import { Rating } from '@/components/PlayerCard';
 import { getPlayer, getAllSlugs } from '@/lib/players';
 import { ARCHETYPE_ICONS } from '@/lib/archetypeIcons';
 import PositionCourt from '@/components/PositionCourt';
+import ShareButton from '@/components/ShareButton';
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -80,10 +81,11 @@ export default async function PlayerPage({ params }) {
 
   return (
     <main className="profile" style={{ '--team': p.takimRenk }}>
-      <div className="wrap">
+      <div className="wrap profile-nav">
         <Link href="/" className="backlink">
           ← Tüm transferler
         </Link>
+        <ShareButton url={`https://meetthenewcomers.com/oyuncu/${p.slug}`} />
       </div>
 
       <header className="head">

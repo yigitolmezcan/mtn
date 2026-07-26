@@ -48,9 +48,12 @@ export default function RootLayout({ children }) {
         {children}
 
         <footer className="wrap sitefoot">
-          <span>Meet the Newcomers</span>
-          <span>2026-27 EuroLeague</span>
-          <a href="https://x.com/yolmezcan" target="_blank" rel="noopener noreferrer">@yolmezcan</a>
+          <p className="sitefoot__disclaimer">Bu bağımsız bir editoryal projedir; EuroLeague veya kulüplerle resmi bir bağlantısı yoktur.</p>
+          <div className="sitefoot__row">
+            <span>Meet the Newcomers</span>
+            <span>2026-27 EuroLeague</span>
+            <a href="https://x.com/yolmezcan" target="_blank" rel="noopener noreferrer">@yolmezcan</a>
+          </div>
         </footer>
       </body>
     </html>

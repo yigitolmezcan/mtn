@@ -78,17 +78,17 @@
     "virtus-bologna": {
       "ad": "Virtus Bologna",
       "marka": "#000000",
-      "vurgu": "#F2D42E",
+      "vurgu": "#ECEAE7",
       "renk1": "#000000",
-      "renk2": "#F2D42E",
+      "renk2": "var(--bone)",
       "digerDil": true
     },
     "dubai-basketball": {
       "ad": "Dubai Basketball",
       "marka": "#1A1A1A",
-      "vurgu": "#C8A951",
-      "renk1": "#1A1A1A",
-      "renk2": "#C8A951",
+      "vurgu": "#C9A227",
+      "renk1": "var(--bone)",
+      "renk2": "#C9A227",
       "digerDil": true
     },
     "zalgiris": {
@@ -97,6 +97,14 @@
       "vurgu": "#00A651",
       "renk1": "#00A651",
       "renk2": "var(--bone)",
+      "digerDil": true
+    },
+    "valencia-basket": {
+      "ad": "Valencia Basket",
+      "marka": "#F5A623",
+      "vurgu": "#F5A623",
+      "renk1": "#F5A623",
+      "renk2": "#000000",
       "digerDil": true
     }
   },
@@ -1355,6 +1363,144 @@
       "benzerOyuncular": [
         "Ante Žižić",
         "Donatas Motiejūnas"
+      ],
+      "youtubeUrl": null
+    },
+    {
+      "slug": "mo-gueye",
+      "ad": "Mo Gueye",
+      "resmiAd": "Mouhamadou Gueye",
+      "takimSlug": "valencia-basket",
+      "pozisyon": "C / PF",
+      "boy": "2.06 m",
+      "yas": "28",
+      "milliyet": "ABD",
+      "milliyetNotu": "Senegal pasaportuna da sahip.",
+      "geldigiKulup": "Charlotte Hornets",
+      "geldigiLig": "NBA (ABD)",
+      "transferNotu": "NBA deneyimi sınırlı (2 maç); asıl üretimini G League'de kaydetti.",
+      "ozet": "Fiziksel oynayan, çember çevresi bitirişleri güçlü, yüksek motorlu bir uzun.",
+      "featuredStats": {
+        "yarisma": "G League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "14.9",
+            "PPG"
+          ],
+          [
+            "7.4",
+            "RPG"
+          ],
+          [
+            "1.4",
+            "BPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Çember çevresi bitiricilik"
+        },
+        {
+          "t": "Açık sahada yüksek motor"
+        },
+        {
+          "t": "Fiziksel savunma"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Kendi skorunu yaratma yeteneği düşük"
+        },
+        {
+          "t": "Üst düzeyde anlamlı süre almamış"
+        }
+      ],
+      "arketip": "Athletic Center",
+      "mtnRating": "8.0",
+      "ratingNotu": null,
+      "benzerOyuncular": [
+        "Mathias Lessort",
+        "Wenyen Gabriel"
+      ],
+      "youtubeUrl": null
+    },
+    {
+      "slug": "tobias-jensen",
+      "ad": "Tobias Jensen",
+      "resmiAd": "Tobias Brahe Jensen",
+      "takimSlug": "bayern-munich",
+      "pozisyon": "PG / SG",
+      "boy": "1.98 m",
+      "yas": "22",
+      "milliyet": "Danimarka",
+      "milliyetNotu": null,
+      "geldigiKulup": "Ratiopharm Ulm",
+      "geldigiLig": "Bundesliga (Almanya)",
+      "transferNotu": null,
+      "ozet": "Saha görüşü ve oyun kurma zekâsıyla öne çıkan, Alman altyapısının yetiştirdiği bir floor general.",
+      "featuredStats": {
+        "yarisma": "EuroCup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "11.0",
+            "PPG"
+          ],
+          [
+            "4.7",
+            "APG"
+          ],
+          [
+            "3.4",
+            "RPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "Bundesliga",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "9.3",
+              "PPG"
+            ],
+            [
+              "3.6",
+              "APG"
+            ],
+            [
+              "3.5",
+              "RPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Üstün saha görüşü"
+        },
+        {
+          "t": "Pick-and-roll'da isabetli karar alma"
+        },
+        {
+          "t": "Genç yaşta yüksek EuroCup üretimi"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Dış şutta tutarsızlık"
+        }
+      ],
+      "arketip": "Floor General",
+      "mtnRating": "7.6",
+      "ratingNotu": null,
+      "benzerOyuncular": [
+        "Rokas Jokubaitis",
+        "Nigel Williams-Goss"
       ],
       "youtubeUrl": null
     }
