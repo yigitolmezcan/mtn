@@ -59,6 +59,13 @@
       "renk1": "#C8102E",
       "renk2": "var(--bone)",
       "digerDil": true
+    },
+    "bayern-munich": {
+      "ad": "Bayern Münih",
+      "marka": "#DC052D",
+      "vurgu": "#DC052D",
+      "renk1": "#DC052D",
+      "renk2": "var(--bone)"
     }
   },
   "oyuncular": [
@@ -870,6 +877,88 @@
       "ratingNotu": null,
       "benzerOyuncular": [
         "Tyrese Rice"
+      ],
+      "youtubeUrl": null
+    },
+    {
+      "slug": "austin-wiley",
+      "ad": "Austin Wiley",
+      "resmiAd": "Austin Jermaine Wiley",
+      "takimSlug": "bayern-munich",
+      "pozisyon": "C",
+      "boy": "2.08 m",
+      "yas": "27",
+      "milliyet": "ABD",
+      "milliyetNotu": null,
+      "geldigiKulup": "Hapoel Jerusalem",
+      "geldigiLig": "Ligat HaAl (İsrail)",
+      "transferNotu": "2023-24 sezonunda Tofaş forması altında Türkiye Ligi MVP'si seçildi.",
+      "ozet": "Rim protection ve ribaund üretimiyle değer yaratan, birden fazla ligde istikrarını kanıtlamış güçlü bir pivot.",
+      "featuredStats": {
+        "yarisma": "EuroCup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "10.4",
+            "PPG"
+          ],
+          [
+            "9.5",
+            "RPG"
+          ],
+          [
+            "1.5",
+            "BPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "Ligat HaAl",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "10.2",
+              "PPG"
+            ],
+            [
+              "9.1",
+              "RPG"
+            ],
+            [
+              "1.3",
+              "BPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Pick-and-roll'da güvenilir bitiricilik"
+        },
+        {
+          "t": "Çember savunmasında elit seviye etki",
+          "v": "1.5 BPG"
+        },
+        {
+          "t": "Birden fazla ligde ribaund liderliği",
+          "v": "9.5 RPG"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Kısa mesafede finish kalitesi sınırlı"
+        },
+        {
+          "t": "Low post hücumunda sınırlı repertuar"
+        }
+      ],
+      "arketip": "Rim Protector",
+      "mtnRating": "8.5",
+      "ratingNotu": null,
+      "benzerOyuncular": [
+        "Stephane Lasme",
+        "Bryant Dunston"
       ],
       "youtubeUrl": null
     }
