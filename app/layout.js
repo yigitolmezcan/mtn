@@ -1,7 +1,8 @@
 import './globals.css';
-import { X } from 'lucide-react';
 import { getAllPlayers } from '@/lib/players';
-import TopbarSearch from '@/components/TopbarSearch';
+import { LanguageProvider } from '@/lib/LanguageContext';
+import Topbar from '@/components/Topbar';
+import Footer from '@/components/Footer';
 
 export const metadata = {
   metadataBase: new URL('https://meetthenewcomers.com'),
@@ -34,25 +35,13 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <header className="topbar">
-          <div className="wrap topbar__inner">
-            <TopbarSearch players={searchData} />
-            <span className="topbar__season">2026-27</span>
-          </div>
-        </header>
+        <LanguageProvider>
+          <Topbar players={searchData} />
 
-        {children}
+          {children}
 
-        <footer className="wrap sitefoot">
-          <p className="sitefoot__disclaimer">Bu bağımsız bir editoryal projedir; EuroLeague veya kulüplerle resmi bir bağlantısı yoktur.</p>
-          <div className="sitefoot__row">
-            <span>Meet the Newcomers</span>
-            <a href="https://x.com/yolmezcan" target="_blank" rel="noopener noreferrer" className="follow-btn">
-              <X size={12} strokeWidth={2} />
-              <span>Takip Et</span>
-            </a>
-          </div>
-        </footer>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

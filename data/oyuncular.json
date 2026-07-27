@@ -119,10 +119,13 @@
       "yas": "29",
       "milliyet": "İspanya",
       "milliyetNotu": null,
+      "milliyetNotuEn": null,
       "geldigiKulup": "Casademont Zaragoza",
       "geldigiLig": "Liga Endesa (İspanya)",
       "transferNotu": null,
+      "transferNotuEn": null,
       "ozet": "Topsuz hareketlilikle skor üretebilen, şut verimliliği yüksek, EuroLeague seviyesini test edecek tecrübeli İspanyol kanat.",
+      "ozetEn": "A high-efficiency off-ball scorer and experienced Spanish wing set to test himself at EuroLeague level.",
       "featuredStats": {
         "yarisma": "Liga Endesa",
         "sezon": "2025-26",
@@ -177,6 +180,22 @@
           "t": "Play-off seviyesinde rol tecrübesi"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Off-screen scoring production"
+        },
+        {
+          "t": "High efficiency on close-range shots",
+          "v": "56.0% 2PT"
+        },
+        {
+          "t": "Reliable free-throw shooting",
+          "v": "84.4% FT"
+        },
+        {
+          "t": "Playoff-level role experience"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "Birebir yaratıcılıkta eksiklik"
@@ -185,8 +204,17 @@
           "t": "EuroLeague kanatlarına göre ortalama atletizm"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Limited one-on-one shot creation"
+        },
+        {
+          "t": "Average athleticism by EuroLeague wing standards"
+        }
+      ],
       "mtnRating": "7.1",
       "ratingNotu": "EuroLeague'e hazır, güvenilir bir rotasyon kanadı. Büyük yıldız olmasa da doğru rolde birçok takım için değer yaratabilecek bir profil.",
+      "ratingNotuEn": "A reliable rotation wing ready for EuroLeague. Not a star, but a profile that can create value for many teams in the right role.",
       "benzerOyuncular": [
         "Xabi López-Arostegui",
         "Alberto Abalde"
@@ -204,10 +232,13 @@
       "yas": "25",
       "milliyet": "Mali",
       "milliyetNotu": null,
+      "milliyetNotuEn": null,
       "geldigiKulup": "Pallacanestro Trieste",
       "geldigiLig": "Serie A (İtalya)",
       "transferNotu": "Sezonun son bölümünde kısa süreliğine Real Madrid forması giydi.",
+      "transferNotuEn": "Briefly played for Real Madrid late in the season.",
       "ozet": "Size'ı ve kulaç açıklığıyla çember koruması sağlayan, pick-and-roll'da dikey tehdit oluşturan gelişime açık atletik pivot.",
+      "ozetEn": "An athletic, still-developing center who protects the rim with his size and wingspan and creates a vertical threat in pick-and-roll.",
       "featuredStats": {
         "yarisma": "Basketball Champions League",
         "sezon": "2025-26",
@@ -259,6 +290,19 @@
           "v": "8.7 RPG"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Vertical threat and reliable roll finishing in pick-and-roll"
+        },
+        {
+          "t": "Rim protection with sound rotation timing",
+          "v": "1.4 BPG"
+        },
+        {
+          "t": "Consistent rebounding at both ends",
+          "v": "8.7 RPG"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "Çember çevresinde sınırlı bitiriş çeşitliliği"
@@ -267,8 +311,17 @@
           "t": "Switch savunmasında sınırlı yana hareketlilik"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Limited finishing variety around the rim"
+        },
+        {
+          "t": "Limited lateral mobility in switch defense"
+        }
+      ],
       "mtnRating": "8.2",
       "ratingNotu": "Atletik kapasitesi yüksek, en üst seviyede kendini kanıtlamaya hazır bir pivot. Beşiktaş'ın EuroLeague'e dönüşü, bireysel yükselişi için uygun bir zemin sunuyor.",
+      "ratingNotuEn": "A high-upside athletic center ready to prove himself at the highest level. Beşiktaş's return to EuroLeague offers fertile ground for his individual growth.",
       "benzerOyuncular": [
         "Ebuka Izundu",
         "Tonye Jekiri"
@@ -286,10 +339,13 @@
       "yas": "27",
       "milliyet": "ABD / Kuzey Makedonya",
       "milliyetNotu": "Kuzey Makedonya pasaportu sayesinde ACB'de yabancı kontenjanı işgal etmiyor.",
+      "milliyetNotuEn": "His North Macedonian passport means he doesn't count against ACB's foreign-player quota.",
       "geldigiKulup": "Cedevita Olimpija",
       "geldigiLig": "ABA Ligi (Adriyatik)",
       "transferNotu": null,
+      "transferNotuEn": null,
       "ozet": "Çok pozisyonlu savunma yapabilen, topsuz hareketliliğiyle alan paylaşımına katkı veren atletik modern kanat.",
+      "ozetEn": "A modern, athletic wing who defends multiple positions and contributes floor spacing through his off-ball movement.",
       "featuredStats": {
         "yarisma": "EuroCup",
         "sezon": "2025-26",
@@ -341,6 +397,19 @@
           "v": "1.3 SPG"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Athletic advantage in transition"
+        },
+        {
+          "t": "Disciplined shot selection with high efficiency",
+          "v": "53.0% FG"
+        },
+        {
+          "t": "Multi-positional defense from 1 to 3",
+          "v": "1.3 SPG"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "Yüksek volümde kanıtlanmamış şut istikrarı"
@@ -349,8 +418,17 @@
           "t": "Sınırlı oyun kurma katkısı"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Unproven shooting consistency at high volume"
+        },
+        {
+          "t": "Limited playmaking contribution"
+        }
+      ],
       "mtnRating": "8.5",
       "ratingNotu": "Baskonia'nın özgür ve tempolu oyununa çok uygun bir forvet profili. Şut istikrarını ve top yönlendirme becerisini geliştirdiği takdirde daha üst seviyeler için ideal.",
+      "ratingNotuEn": "A forward profile very well suited to Baskonia's free-flowing, up-tempo style. If he develops his shooting consistency and ball-handling, he projects well for higher levels.",
       "benzerOyuncular": [
         "Semi Ojeleye",
         "Oshae Brissett"
@@ -368,10 +446,13 @@
       "yas": "25",
       "milliyet": "Brezilya",
       "milliyetNotu": null,
+      "milliyetNotuEn": null,
       "geldigiKulup": "Manisa Basket",
       "geldigiLig": "Basketbol Süper Ligi (Türkiye)",
       "transferNotu": "Manisa öncesinde Memphis Grizzlies ve NBA G League'de forma giydi.",
+      "transferNotuEn": "Played for the Memphis Grizzlies and in the NBA G League before joining Manisa.",
       "ozet": "Yüksek motoru, atletizmi ve ribaundlardaki devamlılığıyla ön alana enerji getiren, geçiş hücumlarında ve çember çevresi bitirişlerde etkili enerjik forvet.",
+      "ozetEn": "A high-motor forward who brings energy up front with his athleticism and rebounding consistency, effective in transition and around the rim.",
       "featuredStats": {
         "yarisma": "Basketbol Süper Ligi",
         "sezon": "2025-26",
@@ -406,6 +487,21 @@
           "t": "Milli takım seviyesinde rol tecrübesi"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "High motor with a constant running pace"
+        },
+        {
+          "t": "Lob and around-the-rim finishing ability"
+        },
+        {
+          "t": "Shot-blocking contribution in help defense",
+          "v": "1.6 BPG"
+        },
+        {
+          "t": "Role experience at the national team level"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "EuroLeague seviyesinde kanıtlanmamış üretim"
@@ -415,8 +511,18 @@
           "v": "80 KG"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Unproven production at EuroLeague level"
+        },
+        {
+          "t": "Physical disadvantage defending the low post",
+          "v": "80 KG"
+        }
+      ],
       "mtnRating": "7.5",
       "ratingNotu": null,
+      "ratingNotuEn": null,
       "benzerOyuncular": [
         "Chima Moneke",
         "Yves Pons"
@@ -434,10 +540,13 @@
       "yas": "26",
       "milliyet": "Litvanya",
       "milliyetNotu": null,
+      "milliyetNotuEn": null,
       "geldigiKulup": "Rytas Vilnius",
       "geldigiLig": "LKL (Litvanya)",
       "transferNotu": "Rytas ile 2025-26 Basketbol Şampiyonlar Ligi şampiyonluğu yaşadı.",
+      "transferNotuEn": "Won the 2025-26 Basketball Champions League with Rytas.",
       "ozet": "Oyunun iki alanında da kendini gösterebilen, perde çıkışı şut yeteneği ve ikinci top yönlendirici rolüyle yarı saha hücumuna alan açan topsuz skorer.",
+      "ozetEn": "An off-ball scorer who opens up half-court offense through his catch-and-shoot ability and secondary playmaking.",
       "featuredStats": {
         "yarisma": "Basketball Champions League",
         "sezon": "2025-26",
@@ -491,6 +600,21 @@
           "v": "1.4 SPG"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Shot production off screens"
+        },
+        {
+          "t": "Balance between spot-up and pull-up shooting"
+        },
+        {
+          "t": "Reliable decision-making as a secondary ball-handler"
+        },
+        {
+          "t": "Active hands in passing lanes",
+          "v": "1.4 SPG"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "EuroLeague rotasyonunda kanıtlanmamış rol"
@@ -499,8 +623,17 @@
           "t": "Birebir savunmada sınırlı lateral hız"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Unproven role in a EuroLeague rotation"
+        },
+        {
+          "t": "Limited lateral speed in one-on-one defense"
+        }
+      ],
       "mtnRating": "7.3",
       "ratingNotu": null,
+      "ratingNotuEn": null,
       "benzerOyuncular": [
         "Rokas Giedraitis",
         "Marius Grigonis"
@@ -518,10 +651,13 @@
       "yas": "26",
       "milliyet": "ABD",
       "milliyetNotu": null,
+      "milliyetNotuEn": null,
       "geldigiKulup": "Brooklyn Nets",
       "geldigiLig": "NBA (ABD)",
       "transferNotu": "Kariyerinde ilk kez Avrupa'da oynayacak.",
+      "transferNotuEn": "Will play in Europe for the first time in his career.",
       "ozet": "Derin şut menziline sahip, kendi şutunu yaratabilen ve yüksek hacimli skor üretimiyle izolasyon ve pick-and-roll tehdidi oluşturan dinamik combo guard.",
+      "ozetEn": "A dynamic combo guard with deep shooting range who can create his own shot, posing a high-volume scoring threat in isolation and pick-and-roll.",
       "featuredStats": {
         "yarisma": "NBA G League",
         "sezon": "2025-26",
@@ -572,6 +708,18 @@
           "t": "Pick-and-roll'da top yönlendirici olarak tehdit"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "High-volume shooting from deep range",
+          "v": "39.4% 3PT"
+        },
+        {
+          "t": "Self-creation off the pull-up and step-back"
+        },
+        {
+          "t": "Threat as a ball-handler in pick-and-roll"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "Avrupa temposuna ve fiziğine uyum süreci"
@@ -581,8 +729,18 @@
           "v": "1.84 M"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Adjustment period to European pace and physicality"
+        },
+        {
+          "t": "Physical disadvantage on defense",
+          "v": "1.84 M"
+        }
+      ],
       "mtnRating": "7.8",
       "ratingNotu": null,
+      "ratingNotuEn": null,
       "benzerOyuncular": [
         "Justin Robinson",
         "Duane Washington"
@@ -600,10 +758,13 @@
       "yas": "27",
       "milliyet": "ABD / Güney Sudan",
       "milliyetNotu": null,
+      "milliyetNotuEn": null,
       "geldigiKulup": "JL Bourg",
       "geldigiLig": "LNB Élite (Fransa)",
       "transferNotu": null,
+      "transferNotuEn": null,
       "ozet": "Yüksek tempoda etkili olan, dış şut tehdidini potaya atak ve birebir skor üretimiyle birleştiren çok yönlü skorer kanat.",
+      "ozetEn": "A versatile scoring wing who thrives at a high tempo, combining outside shooting with rim attacks and one-on-one scoring.",
       "featuredStats": {
         "yarisma": "EuroCup",
         "sezon": "2025-26",
@@ -656,6 +817,20 @@
           "t": "Kendi şutunu yaratabilme"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Scoring production in transition"
+        },
+        {
+          "t": "Threat from beyond the three-point line"
+        },
+        {
+          "t": "Rim attacks off the drive"
+        },
+        {
+          "t": "Ability to create his own shot"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "Karar vericilik ve pas çeşitliliği"
@@ -664,8 +839,17 @@
           "t": "Low-post savunmasında fiziksel direnç"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Decision-making and passing variety"
+        },
+        {
+          "t": "Physical resistance defending the low post"
+        }
+      ],
       "mtnRating": "8.3",
       "ratingNotu": "Skor üretimini farklı yollarla sağlayabilen ve ikincil top yönlendirici rolünü üstlenebilen hazır bir hücum kanadı. Karar kalitesini yükseltmesi, EuroLeague seviyesindeki rolünün sınırlarını belirleyecek.",
+      "ratingNotuEn": "A ready-made offensive wing who can score in multiple ways and take on a secondary ball-handling role. Improving his decision-making will define the ceiling of his role at EuroLeague level.",
       "benzerOyuncular": [
         "Isaia Cordinier",
         "Jordan Nwora"
@@ -684,10 +868,13 @@
       "yas": "26",
       "milliyet": "ABD",
       "milliyetNotu": null,
+      "milliyetNotuEn": null,
       "geldigiKulup": "UNICS Kazan",
       "geldigiLig": "VTB United League (Rusya)",
       "transferNotu": null,
+      "transferNotuEn": null,
       "ozet": "Atletik yapısı ve yüzü dönük hücum çeşitliliğiyle Fenerbahçe'nin pota altına farklı bir boyut katabilecek modern bir uzun.",
+      "ozetEn": "A modern big whose athleticism and face-up scoring versatility could add a different dimension to Fenerbahçe's frontcourt.",
       "featuredStats": {
         "yarisma": "VTB United League",
         "sezon": "2024-25",
@@ -740,6 +927,20 @@
           "t": "Atletizmi ve mobilitesi"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Face-up scoring threat"
+        },
+        {
+          "t": "Effective finishing in transition"
+        },
+        {
+          "t": "Outside shooting potential"
+        },
+        {
+          "t": "Athleticism and mobility"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "Temaslı uzunlara karşı fiziksel direnç"
@@ -748,8 +949,17 @@
           "t": "Savunmada pozisyon disiplini"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Physical resistance against bruising bigs"
+        },
+        {
+          "t": "Positional discipline on defense"
+        }
+      ],
       "mtnRating": "8.9",
       "ratingNotu": "EuroLeague tecrübesi bulunmasa da atletizmi, hücum çeşitliliği ve fiziksel tavanı sayesinde yaz döneminin en yüksek potansiyelli uzun transferlerinden biri. Doğru sistem içinde iki yönlü etkisiyle fark yaratabilecek bir profil.",
+      "ratingNotuEn": "Despite lacking EuroLeague experience, his athleticism, offensive versatility, and physical ceiling make him one of the highest-upside big-man signings of the summer. A profile that can make an immediate offensive impact in the right system.",
       "benzerOyuncular": [
         "Mfiondu Kabengele",
         "Chimezie Metu"
@@ -767,10 +977,13 @@
       "yas": "28",
       "milliyet": "ABD",
       "milliyetNotu": null,
+      "milliyetNotuEn": null,
       "geldigiKulup": "Cedevita Olimpija",
       "geldigiLig": "ABA Ligi (Adriyatik)",
       "transferNotu": null,
+      "transferNotuEn": null,
       "ozet": "Pick-and-roll'da skor ve pas üretebilen, dış şuta ve çizgiye gitmeye yatkın dinamik bir skorer oyun kurucu.",
+      "ozetEn": "A dynamic scoring point guard who can score and create in pick-and-roll, comfortable shooting from outside or getting to the line.",
       "featuredStats": {
         "yarisma": "EuroCup",
         "sezon": "2025-26",
@@ -823,6 +1036,20 @@
           "t": "Pas hatlarında aktif eller"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Balance of scoring and passing in pick-and-roll"
+        },
+        {
+          "t": "Outside shot threat off the drive"
+        },
+        {
+          "t": "Getting to the free-throw line through contact"
+        },
+        {
+          "t": "Active hands in passing lanes"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "EuroLeague seviyesinde fiziksel dezavantaj"
@@ -831,8 +1058,17 @@
           "t": "Baskı altında top kaybı kontrolü"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Physical disadvantage at EuroLeague level"
+        },
+        {
+          "t": "Turnover control under pressure"
+        }
+      ],
       "mtnRating": "8.4",
       "ratingNotu": "EuroCup'ta hücum sorumluluğunu taşıyabileceğini kanıtlayan üretken bir oyun kurucu. Şut tehdidi ve pick-and-roll yaratıcılığı Barcelona rotasyonuna hazır katkı sunabilir; savunmada hedef olmaması ve karar kalitesini koruması rolünün büyüklüğünü belirleyecek.",
+      "ratingNotuEn": "A productive point guard who proved in EuroCup he can carry offensive responsibility. His shooting threat and pick-and-roll creativity can offer ready-made value to Barcelona's rotation; avoiding becoming a defensive liability and maintaining his decision-making will determine the size of his role.",
       "benzerOyuncular": [
         "Carsen Edwards",
         "Yago dos Santos"
@@ -849,10 +1085,13 @@
       "yas": "26",
       "milliyet": "ABD",
       "milliyetNotu": null,
+      "milliyetNotuEn": null,
       "geldigiKulup": "Reyer Venezia",
       "geldigiLig": "Serie A (İtalya)",
       "transferNotu": "Geçen sezon final serisinde 3-1 mağlup olduğu Olimpia Milano'ya, bükemediği bileği öperek katıldı.",
+      "transferNotuEn": "After falling 3-1 to Olimpia Milano in last season's finals, he's now making peace with them from the inside.",
       "ozet": "Pick-and-roll'da iki yönlü tehdit oluşturan, yüksek hacimli skor üretimine sahip tecrübeli bir oyun kurucu.",
+      "ozetEn": "An experienced point guard who poses a scoring-and-playmaking threat in pick-and-roll, with a track record of high-volume scoring.",
       "featuredStats": {
         "yarisma": "EuroCup",
         "sezon": "2025-26",
@@ -903,6 +1142,18 @@
           "v": "LKL 2024"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Scoring + passing balance in pick-and-roll"
+        },
+        {
+          "t": "Ability to create his own shot"
+        },
+        {
+          "t": "Championship-winning experience at a high level",
+          "v": "LKL 2024"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "EuroLeague seviyesinde ilk kez test"
@@ -912,9 +1163,19 @@
           "v": "1.85 m"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "First test at EuroLeague level"
+        },
+        {
+          "t": "Height disadvantage on defense",
+          "v": "1.85 m"
+        }
+      ],
       "arketip": "Floor General",
       "mtnRating": "8.0",
       "ratingNotu": null,
+      "ratingNotuEn": null,
       "benzerOyuncular": [
         "Tyrese Rice"
       ],
@@ -930,10 +1191,13 @@
       "yas": "27",
       "milliyet": "ABD",
       "milliyetNotu": null,
+      "milliyetNotuEn": null,
       "geldigiKulup": "Hapoel Jerusalem",
       "geldigiLig": "Ligat HaAl (İsrail)",
       "transferNotu": "2023-24 sezonunda Tofaş forması altında Türkiye Ligi MVP'si seçildi.",
+      "transferNotuEn": "Named Turkish League MVP with Tofaş in the 2023-24 season.",
       "ozet": "Çember savunması ve ribaund sezgileriyle değer yaratan, birden fazla ligde istikrarını kanıtlamış güçlü bir pivot.",
+      "ozetEn": "A strong center who creates value through rim protection and rebounding instincts, having proven his consistency across multiple leagues.",
       "featuredStats": {
         "yarisma": "EuroCup",
         "sezon": "2025-26",
@@ -985,6 +1249,19 @@
           "v": "9.5 RPG"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Reliable finishing in pick-and-roll"
+        },
+        {
+          "t": "Elite-level impact protecting the rim",
+          "v": "1.5 BPG"
+        },
+        {
+          "t": "Rebounding leadership across multiple leagues",
+          "v": "9.5 RPG"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "Kısa mesafede finish kalitesi sınırlı"
@@ -993,9 +1270,18 @@
           "t": "Low post hücumunda sınırlı repertuar"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Limited finishing quality at short range"
+        },
+        {
+          "t": "Limited repertoire in low-post offense"
+        }
+      ],
       "arketip": "Rim Protector",
       "mtnRating": "8.5",
       "ratingNotu": null,
+      "ratingNotuEn": null,
       "benzerOyuncular": [
         "Stephane Lasme",
         "Bryant Dunston"
@@ -1012,10 +1298,13 @@
       "yas": "30",
       "milliyet": "ABD",
       "milliyetNotu": "İsrail vatandaşlığına sahip, milli takımda da forma giyiyor.",
+      "milliyetNotuEn": "Holds Israeli citizenship and also plays for the national team.",
       "geldigiKulup": "Hapoel Jerusalem",
       "geldigiLig": "Ligat HaAl (İsrail)",
       "transferNotu": null,
+      "transferNotuEn": null,
       "ozet": "Pick-and-roll'da asist ve skor üretimini dengeleyen, solak yapısıyla ayrışan deneyimli bir guard.",
+      "ozetEn": "An experienced guard who balances scoring and playmaking in pick-and-roll, standing out for his left-handed game.",
       "featuredStats": {
         "yarisma": "EuroCup",
         "sezon": "2025-26",
@@ -1066,14 +1355,32 @@
           "t": "Solak olmasına rağmen güçlü sağ el"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Assist production in pick-and-roll"
+        },
+        {
+          "t": "High-volume scoring production",
+          "v": "14.8 PPG"
+        },
+        {
+          "t": "Strong off-hand despite left-handed dominance"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "Birebir savunmada gelişime açık"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Room to grow in one-on-one defense"
+        }
+      ],
       "arketip": "Combo Guard",
       "mtnRating": "7.6",
       "ratingNotu": null,
+      "ratingNotuEn": null,
       "benzerOyuncular": [
         "Fabien Causeur",
         "Rokas Jokubaitis"
@@ -1090,10 +1397,13 @@
       "yas": "31",
       "milliyet": "Kanada",
       "milliyetNotu": null,
+      "milliyetNotuEn": null,
       "geldigiKulup": "London Lions",
       "geldigiLig": "BBL (İngiltere)",
       "transferNotu": "Beşiktaş'ta üçüncü sezonuna çıkıyor; kulübün EuroLeague'e dönüşüyle birlikte kariyerinde ilk kez bu kulvarda oynayacak.",
+      "transferNotuEn": "Entering his third season with Beşiktaş; with the club's return to EuroLeague, he'll play at this level for the first time in his career.",
       "ozet": "Dış şut kapasitesi ve savunma zekâsıyla değer üreten, 4 ve 5 numarada rol alabilen çok yönlü bir uzun.",
+      "ozetEn": "A versatile big who can play both the 4 and 5, generating value through his outside shooting and defensive IQ.",
       "featuredStats": {
         "yarisma": "EuroCup",
         "sezon": "2025-26",
@@ -1144,14 +1454,32 @@
           "t": "Kısa roll'larda etkili karar alma"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Spacing contribution through his outside shot threat",
+          "v": "42.4% 3PT"
+        },
+        {
+          "t": "Positional awareness on defense"
+        },
+        {
+          "t": "Effective decision-making on short rolls"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "Atletizm ve ayak hızı sınırlı"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Limited athleticism and foot speed"
+        }
+      ],
       "arketip": "Stretch Big",
       "mtnRating": "7.7",
       "ratingNotu": null,
+      "ratingNotuEn": null,
       "benzerOyuncular": [
         "Zach LeDay",
         "Dinos Mitoglou"
@@ -1168,10 +1496,13 @@
       "yas": "23",
       "milliyet": "ABD",
       "milliyetNotu": null,
+      "milliyetNotuEn": null,
       "geldigiKulup": "Windrose Antwerp Giants",
       "geldigiLig": "BNXT Ligi (Belçika/Hollanda)",
       "transferNotu": "Anvers'te lig, kupa ve BNXT Ligi şampiyonluklarını art arda kazanıp final serisinde MVP seçildi.",
+      "transferNotuEn": "Won the league, cup, and BNXT League titles back-to-back with Antwerp, and was named Finals MVP.",
       "ozet": "Yüksek enerjisiyle oynayan, skor üretimi güçlü, genç ve oldukça dinamik bir oyun kurucu guard profili.",
+      "ozetEn": "A young, high-energy point guard with strong scoring output and a highly dynamic game.",
       "featuredStats": {
         "yarisma": "FIBA Europe Cup",
         "sezon": "2025-26",
@@ -1219,14 +1550,29 @@
           "v": "Finals MVP"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Scoring + passing balance in pick-and-roll"
+        },
+        {
+          "t": "Productivity in high-stakes games",
+          "v": "Finals MVP"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "Üst düzey ligde kanıtlanmamış yetenek"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Unproven talent at a top-level league"
+        }
+      ],
       "arketip": "Combo Guard",
       "mtnRating": "7.5",
       "ratingNotu": null,
+      "ratingNotuEn": null,
       "benzerOyuncular": [
         "Paris Lee"
       ],
@@ -1242,10 +1588,13 @@
       "yas": "28",
       "milliyet": "ABD",
       "milliyetNotu": null,
+      "milliyetNotuEn": null,
       "geldigiKulup": "Würzburg Baskets",
       "geldigiLig": "Bundesliga (Almanya)",
       "transferNotu": null,
+      "transferNotuEn": null,
       "ozet": "Kendi şutunu yaratabilen, mid-range'de verimli, şut oriyantasyonu yüksek bir skorer guard.",
+      "ozetEn": "A shoot-first guard who can create his own shot and operates efficiently from mid-range.",
       "featuredStats": {
         "yarisma": "Basketball Champions League",
         "sezon": "2025-26",
@@ -1292,6 +1641,14 @@
           "t": "Mid-range'de yüksek verim"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Ability to create his own shot"
+        },
+        {
+          "t": "High efficiency from mid-range"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "Top kaybı oranı yüksek"
@@ -1300,9 +1657,18 @@
           "t": "Şut seçiminde tutarsızlık"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "High turnover rate"
+        },
+        {
+          "t": "Inconsistency in shot selection"
+        }
+      ],
       "arketip": "Scoring Wing",
       "mtnRating": "7.6",
       "ratingNotu": null,
+      "ratingNotuEn": null,
       "benzerOyuncular": [
         "Jordan Loyd",
         "Armoni Brooks"
@@ -1319,10 +1685,13 @@
       "yas": "24",
       "milliyet": "Litvanya",
       "milliyetNotu": null,
+      "milliyetNotuEn": null,
       "geldigiKulup": "Tofaş",
       "geldigiLig": "Basketbol Süper Ligi (Türkiye)",
       "transferNotu": "2020-2022 döneminde de Zalgiris formasını giymişti, ancak o dönem sınırlı rol alan genç bir oyuncuydu; şimdi çok daha gelişmiş bir profille geri dönüyor.",
+      "transferNotuEn": "Also wore the Zalgiris jersey from 2020-2022, though as a young player with a limited role at the time; he now returns as a far more developed player.",
       "ozet": "Low post'ta ve pick-and-roll devrilmelerinde usta, çember çevresinde elit seviyede bitiren bir hücumcu pivot.",
+      "ozetEn": "A scoring big who excels in the low post and on pick-and-roll rolls, finishing at an elite level around the rim.",
       "featuredStats": {
         "yarisma": "Basketball Champions League",
         "sezon": "2025-26",
@@ -1349,6 +1718,17 @@
           "t": "Çember çevresinde elit bitiriş"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Skilled finishing in the low post"
+        },
+        {
+          "t": "Effectiveness on pick-and-roll rolls"
+        },
+        {
+          "t": "Elite finishing around the rim"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "Atletizm sınırlı"
@@ -1357,9 +1737,18 @@
           "t": "Ribaund üretimi zayıf"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Limited athleticism"
+        },
+        {
+          "t": "Weak rebounding production"
+        }
+      ],
       "arketip": "Post Scorer",
       "mtnRating": "7.7",
       "ratingNotu": null,
+      "ratingNotuEn": null,
       "benzerOyuncular": [
         "Ante Žižić",
         "Donatas Motiejūnas"
@@ -1376,10 +1765,13 @@
       "yas": "28",
       "milliyet": "ABD",
       "milliyetNotu": "Senegal pasaportuna da sahip.",
+      "milliyetNotuEn": "Also holds a Senegalese passport.",
       "geldigiKulup": "Charlotte Hornets",
       "geldigiLig": "NBA (ABD)",
       "transferNotu": "NBA deneyimi sınırlı (2 maç); asıl üretimini G League'de kaydetti.",
+      "transferNotuEn": "Limited NBA experience (2 games); his real production came in the G League.",
       "ozet": "NBA'den gelen, çember çevresi bitirişleri ve yüksek motoruyla açık sahada etkili, fiziksel oynayan bir uzun.",
+      "ozetEn": "An NBA-experienced big who plays a physical style, effective in the open floor through his finishing around the rim and high motor.",
       "featuredStats": {
         "yarisma": "G League",
         "sezon": "2025-26",
@@ -1410,6 +1802,17 @@
           "t": "Fiziksel gücüyle savunmada baskı kurma"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Finishing around the rim"
+        },
+        {
+          "t": "High motor in the open floor"
+        },
+        {
+          "t": "Physical toughness on defense"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "Kendi skorunu yaratma yeteneği düşük"
@@ -1418,9 +1821,18 @@
           "t": "Üst düzeyde kanıtlanmamış oyun süresi"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Low ability to create his own shot"
+        },
+        {
+          "t": "Unproven playing time at a high level"
+        }
+      ],
       "arketip": "Athletic Center",
       "mtnRating": "8.0",
       "ratingNotu": null,
+      "ratingNotuEn": null,
       "benzerOyuncular": [
         "Mathias Lessort",
         "Wenyen Gabriel"
@@ -1437,10 +1849,13 @@
       "yas": "22",
       "milliyet": "Danimarka",
       "milliyetNotu": null,
+      "milliyetNotuEn": null,
       "geldigiKulup": "Ratiopharm Ulm",
       "geldigiLig": "Bundesliga (Almanya)",
       "transferNotu": null,
+      "transferNotuEn": null,
       "ozet": "Saha görüşü ve oyun kurma zekâsıyla öne çıkan, Alman altyapısının yetiştirdiği bir floor general.",
+      "ozetEn": "A floor general product of the German development system, standing out for his court vision and playmaking IQ.",
       "featuredStats": {
         "yarisma": "EuroCup",
         "sezon": "2025-26",
@@ -1490,14 +1905,31 @@
           "t": "Genç yaşta yüksek EuroCup üretimi"
         }
       ],
+      "gucluYonlerEn": [
+        {
+          "t": "Outstanding court vision"
+        },
+        {
+          "t": "Sound decision-making in pick-and-roll"
+        },
+        {
+          "t": "High EuroCup production at a young age"
+        }
+      ],
       "gelisimAlanlari": [
         {
           "t": "Dış şutta tutarsızlık"
         }
       ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Inconsistency in outside shooting"
+        }
+      ],
       "arketip": "Floor General",
       "mtnRating": "7.6",
       "ratingNotu": null,
+      "ratingNotuEn": null,
       "benzerOyuncular": [
         "Rokas Jokubaitis",
         "Nigel Williams-Goss"

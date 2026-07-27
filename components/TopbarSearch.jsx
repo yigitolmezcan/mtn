@@ -1,10 +1,12 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import { useLang } from '@/lib/LanguageContext';
 
 const norm = (s) => s.toLocaleLowerCase('tr-TR');
 
 export default function TopbarSearch({ players }) {
+  const { t } = useLang();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
   const inputRef = useRef(null);
@@ -52,7 +54,7 @@ export default function TopbarSearch({ players }) {
           <line x1="138" y1="123" x2="172" y2="157" stroke="#E0742F" strokeWidth="15" strokeLinecap="round" />
           <circle cx="172" cy="157" r="9" fill="#E0742F" />
         </svg>
-        <span className="tsearch__label">Ara...</span>
+        <span className="tsearch__label">{t.search}</span>
       </button>
 
       {open && (
@@ -60,13 +62,13 @@ export default function TopbarSearch({ players }) {
           <input
             ref={inputRef}
             className="tsearch__input"
-            placeholder="Oyuncu ara..."
+            placeholder={t.search}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
           {query.trim() && (
             <ul className="tsearch__results">
-              {results.length === 0 && <li className="tsearch__empty">Sonuç bulunamadı</li>}
+              {results.length === 0 && <li className="tsearch__empty">{t.noResults}</li>}
               {results.map((p) => (
                 <li key={p.slug}>
                   <Link href={`/oyuncu/${p.slug}`} onClick={() => { setOpen(false); setQuery(''); }}>

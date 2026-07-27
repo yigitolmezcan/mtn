@@ -1,16 +1,25 @@
+'use client';
 import Link from 'next/link';
 import PlayerPhoto from './PlayerPhoto';
+import { useLang } from '@/lib/LanguageContext';
+import { ratingColor } from '@/lib/ratingColor';
 
 export function Rating({ value, size = 'sm' }) {
+  const color = value ? ratingColor(value) : undefined;
   return (
     <div className={`rating rating--${size}`}>
-      <span className={`rating__n${value ? '' : ' is-pending'}`}>{value ?? '—'}</span>
+      <span className={`rating__n${value ? '' : ' is-pending'}`} style={color ? { color } : undefined}>
+        {value ?? '—'}
+      </span>
       <span className="rating__d">/10</span>
     </div>
   );
 }
 
 export default function PlayerCard({ player }) {
+  const { lang } = useLang();
+  const ozet = lang === 'en' ? (player.ozetEn || player.ozet) : player.ozet;
+
   return (
     <Link
       href={`/oyuncu/${player.slug}`}
@@ -25,7 +34,7 @@ export default function PlayerCard({ player }) {
           <span className="card__pos" lang="en">{player.pozisyon}</span>
         </div>
       </div>
-      <p className="card__quote">{player.ozet}</p>
+      <p className="card__quote">{ozet}</p>
 
       <div className="card__foot">
         <span className="card__rlbl">MtN <span lang="en">Rating</span></span>

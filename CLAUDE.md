@@ -260,7 +260,23 @@ Arayüz `vurgu` kullanır. Örnek: Paris Basketball → marka `#1A1A1A`, vurgu `
 
 ---
 
-## 14. Yeni oyuncu eklerken kontrol listesi
+## 14. İngilizce İçerik Kuralları
+
+- Her metin alanının (ozet, gucluYonler[].t, gelisimAlanlari[].t,
+  transferNotu, milliyetNotu, ratingNotu) İngilizce karşılığı aynı
+  isimle + "En" son ekiyle tutulur (ozetEn, ratingNotuEn gibi).
+- Çeviri birebir değil, doğal bir Avrupalı scout'un yazacağı
+  gibi olur. Basketbol terimleri (pick-and-roll, combo guard,
+  floor general vb.) zaten İngilizce, değiştirilmez.
+- Pozisyon kısaltmaları (PG/SG/SF/PF/C), arketipler, istatistik
+  kısaltmaları (PPG/RPG/APG) zaten İngilizce — ayrı çeviri gerekmez.
+- Benzer oyuncu isimleri ve kulüp isimleri çevrilmez.
+- Yeni oyuncu eklerken artık İngilizce alanlar da doldurulur —
+  bu kalıcı bir kural, tek seferlik değil.
+
+---
+
+## 15. Yeni oyuncu eklerken kontrol listesi
 
 - [ ] Pozisyon PG/SG/SF/PF/C mi, role göre mi seçilmiş?
 - [ ] İsim taraftarın aradığı biçimde mi, `resmiAd` dolu mu?
