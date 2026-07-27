@@ -3,7 +3,12 @@ import PlayerCard from '@/components/PlayerCard';
 import { useLang } from '@/lib/LanguageContext';
 
 export default function HomeView({ players, sezon }) {
-  const { t } = useLang();
+  const { lang, t } = useLang();
+
+  const buildDate = new Date();
+  const formatted = lang === 'tr'
+    ? buildDate.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })
+    : buildDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
   return (
     <main className="wrap">
@@ -14,9 +19,9 @@ export default function HomeView({ players, sezon }) {
         </h1>
         <p className="hero__p">{t.heroSubtitle}</p>
         <div className="rail">
-          <b>{sezon} {t.season}</b>
+          <b>{t.playersScouted(players.length)}</b>
           <span>·</span>
-          <span>{players.length} {t.players}</span>
+          <span>{t.lastUpdated}: {formatted}</span>
         </div>
       </section>
 
