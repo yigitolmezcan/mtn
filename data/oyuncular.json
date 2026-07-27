@@ -1935,6 +1935,97 @@
         "Nigel Williams-Goss"
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=ru1oOM22xz8"
+    },
+    {
+      "slug": "johnny-juzang",
+      "ad": "Johnny Juzang",
+      "resmiAd": "Jonathan Anh Juzang",
+      "takimSlug": "fenerbahce-beko",
+      "pozisyon": "SF / SG",
+      "boy": "1.97 m",
+      "yas": "25",
+      "milliyet": "ABD",
+      "milliyetNotu": null,
+      "geldigiKulup": "Zenit St. Petersburg",
+      "geldigiLig": "VTB Ligi (Rusya)",
+      "transferNotu": "NBA'de Utah Jazz ve Minnesota Timberwolves formaları giydikten sonra sezon ortasında Zenit'e geçti; Avrupa'ya uyum sürecini orada tamamlamış olması, doğrudan büyük kulüplere geçen BJ Boston ve Jordan Nwora gibi oyuncuların yaşadığı adaptasyon sorunlarını yaşamasını engelleyebilir.",
+      "transferNotuEn": "After stints with the Utah Jazz and Minnesota Timberwolves, he moved to Zenit mid-season; having already completed his European adjustment year there may spare him the transition struggles players like BJ Boston and Jordan Nwora faced jumping straight into a top club.",
+      "ozet": "Üç sayı çizgisinin gerisinden yüksek isabet oranı yakalayan, NBA tecrübeli bir nişancı kanat.",
+      "ozetEn": "Known for hitting at a high clip from beyond the arc, this NBA-tested sharpshooter is fresh off a season adjusting to Europe.",
+      "featuredStats": {
+        "yarisma": "VTB Ligi",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "14.0",
+            "PPG"
+          ],
+          [
+            "2.4",
+            "RPG"
+          ],
+          [
+            "1.9",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Üç sayı üretiminde yüksek hacim"
+        },
+        {
+          "t": "Spacing'e doğrudan katkı"
+        },
+        {
+          "t": "NBA seviyesinde rekabet tecrübesi"
+        },
+        {
+          "t": "NBA'de kanıtlanmış üç sayı isabeti",
+          "v": "%39.6 3PT (NBA)"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "High-volume three-point production"
+        },
+        {
+          "t": "Direct floor-spacing contribution"
+        },
+        {
+          "t": "NBA-level competitive experience"
+        },
+        {
+          "t": "Proven three-point shooting touch",
+          "v": "39.6% 3PT (NBA)"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Savunmada gelişime açık alan"
+        },
+        {
+          "t": "VTB Ligi'nin görece düşük rekabet seviyesi"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Room to grow on defense"
+        },
+        {
+          "t": "VTB League's relatively modest competitiveness"
+        }
+      ],
+      "arketip": "Sharpshooter",
+      "mtnRating": "8.3",
+      "ratingNotu": null,
+      "ratingNotuEn": null,
+      "benzerOyuncular": [
+        "Jordan Nwora",
+        "Tarik Biberović"
+      ],
+      "youtubeUrl": null
     }
   ]
 }

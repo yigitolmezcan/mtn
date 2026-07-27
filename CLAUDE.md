@@ -133,6 +133,8 @@ Ton sakin ve profesyoneldir; heyecanlı değil.
 
 Solaklık gibi fiziksel detaylar yalnızca gerçekten ayırt edici olduğunda güçlü yön olarak yazılır, her solak oyuncuda otomatik belirtilmez.
 
+İngilizce özetlerde de açılış kalıbı çeşitlendirilir — her profilin "A/An" ile başlaması tekdüze ve yapay durur. Mevcut oyuncularda bu kalıba düşülmüş durumlar var; ayrı bir revizyon turunda ele alınacak, yeni eklenen oyuncularda uygulanır.
+
 ### Madde yazım kuralı
 
 Güçlü yönler ve gelişim alanları **isim öbeği** olarak yazılır.

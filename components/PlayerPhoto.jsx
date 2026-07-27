@@ -8,6 +8,7 @@ export default function PlayerPhoto({ slug, renk, name, size = 56 }) {
 
   function advance() {
     if (ext === 'png') setExt('jpg');
+    else if (ext === 'jpg') setExt('avif');
     else setFailed(true);
   }
 
