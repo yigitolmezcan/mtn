@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import PlayerPhoto from './PlayerPhoto';
 
 export function Rating({ value, size = 'sm' }) {
   return (
@@ -16,12 +17,14 @@ export default function PlayerCard({ player }) {
       className="card"
       style={{ '--team': player.takimRenk, '--serit1': player.renk1, '--serit2': player.renk2 }}
     >
-      <div className="card__club">
-        <span className="card__cname" lang={player.digerDil ? 'en' : 'tr'}>{player.takim}</span>
+      <div className="card__id">
+        <PlayerPhoto slug={player.slug} renk={player.takimRenk} name={player.ad} />
+        <div className="card__idtext">
+          <span className="card__cname" lang={player.digerDil ? 'en' : 'tr'}>{player.takim}</span>
+          <h2 className="card__name">{player.ad}</h2>
+          <span className="card__pos" lang="en">{player.pozisyon}</span>
+        </div>
       </div>
-
-      <h2 className="card__name">{player.ad}</h2>
-      <div className="card__pos" lang="en">{player.pozisyon}</div>
       <p className="card__quote">{player.ozet}</p>
 
       <div className="card__foot">

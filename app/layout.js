@@ -1,4 +1,5 @@
 import './globals.css';
+import { X } from 'lucide-react';
 import { getAllPlayers } from '@/lib/players';
 import TopbarSearch from '@/components/TopbarSearch';
 
@@ -46,8 +47,10 @@ export default function RootLayout({ children }) {
           <p className="sitefoot__disclaimer">Bu bağımsız bir editoryal projedir; EuroLeague veya kulüplerle resmi bir bağlantısı yoktur.</p>
           <div className="sitefoot__row">
             <span>Meet the Newcomers</span>
-            <span>2026-27 EuroLeague</span>
-            <a href="https://x.com/yolmezcan" target="_blank" rel="noopener noreferrer">@yolmezcan</a>
+            <a href="https://x.com/yolmezcan" target="_blank" rel="noopener noreferrer" className="follow-btn">
+              <X size={12} strokeWidth={2} />
+              <span>Takip Et</span>
+            </a>
           </div>
         </footer>
       </body>

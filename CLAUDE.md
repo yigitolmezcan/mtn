@@ -241,6 +241,8 @@ Başka hiçbir dosyaya dokunulmaz. Kod değişikliği gerekmez.
 
 Yeni kulüp gelirse: `takimlar` bölümüne slug + ad + `marka` + `vurgu` + `renk1` + `renk2` renkleri eklenir.
 
+Oyuncu fotoğrafları `public/players/<slug>.png` (veya `.jpg`) konumundan okunur, sadece ana sayfa kartlarında kullanılır. Dosya yoksa sessizce gizlenir, kart metin-only haline döner. Bu, kaldırılan kulüp logosu mekanizmasından farklı ve ayrı bir özelliktir — kulüp logosu kuralı hâlâ geçerli, bu yalnızca oyuncu fotoğrafı için.
+
 `marka` = kulübün asıl markası. `vurgu` = koyu zeminde okunan renk.
 Arayüz `vurgu` kullanır. Örnek: Paris Basketball → marka `#1A1A1A`, vurgu `#00E5FF`.
 
