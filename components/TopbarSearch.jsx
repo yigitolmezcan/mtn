@@ -52,6 +52,7 @@ export default function TopbarSearch({ players }) {
           <line x1="138" y1="123" x2="172" y2="157" stroke="#E0742F" strokeWidth="15" strokeLinecap="round" />
           <circle cx="172" cy="157" r="9" fill="#E0742F" />
         </svg>
+        <span className="tsearch__label">Ara...</span>
       </button>
 
       {open && (
