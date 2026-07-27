@@ -2026,6 +2026,78 @@
         "Tarik Biberović"
       ],
       "youtubeUrl": null
+    },
+    {
+      "slug": "jaylen-nowell",
+      "ad": "Jaylen Nowell",
+      "resmiAd": "Jaylen Clinton Andrew Nowell",
+      "takimSlug": "besiktas",
+      "pozisyon": "SG",
+      "boy": "1.93 m",
+      "yas": "27",
+      "milliyet": "ABD",
+      "milliyetNotu": null,
+      "milliyetNotuEn": null,
+      "geldigiKulup": "Gigantes de Carolina",
+      "geldigiLig": "BSN (Porto Riko)",
+      "transferNotu": null,
+      "transferNotuEn": null,
+      "ozet": "Kendi şutunu yaratabilen, yüksek yetenek setiyle kolay basket atabilen NBA tecrübeli bir skorer guard.",
+      "ozetEn": "Capable of creating his own shot, this NBA-experienced scoring guard shoots easily thanks to a high-level skill set.",
+      "featuredStats": {
+        "yarisma": "NBA G League",
+        "sezon": "2024-25",
+        "items": [
+          [
+            "24.0",
+            "PPG"
+          ],
+          [
+            "4.1",
+            "RPG"
+          ],
+          [
+            "5.6",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Birebirde adam geçme yeteneği"
+        },
+        {
+          "t": "Yüksek yetenek setiyle kolay atış çeşitliliği"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Ability to create his own shot"
+        },
+        {
+          "t": "Easy scoring variety through a high-level skill set"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Düşük savunma konsantrasyonu"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Low defensive awareness"
+        }
+      ],
+      "arketip": "Scoring Wing",
+      "mtnRating": "7.9",
+      "ratingNotu": null,
+      "ratingNotuEn": null,
+      "benzerOyuncular": [
+        "Kevin Punter",
+        "Malcolm Delaney"
+      ],
+      "youtubeUrl": null
     }
   ]
 }

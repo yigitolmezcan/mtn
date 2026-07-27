@@ -191,7 +191,7 @@ a{color:inherit;text-decoration:none}
 }
 .head__top{display:flex;flex-direction:column;gap:12px}
 .head__idcol{display:flex;flex-direction:column;gap:10px}
-.head__pos{font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--paper)}
+.head__pos{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--paper)}
 @media(min-width:860px){
   .head__top{flex-direction:row;align-items:center;justify-content:space-between;gap:24px}
   .head__pos{
