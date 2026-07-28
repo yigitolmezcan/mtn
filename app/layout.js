@@ -5,7 +5,7 @@ import Topbar from '@/components/Topbar';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  metadataBase: new URL('https://meetthenewcomers.com'),
+  metadataBase: new URL('https://meetnewcomers.com'),
   title: {
     default: "Meet the Newcomers — EuroLeague'in Yeni İsimleri",
     template: '%s — Meet the Newcomers',

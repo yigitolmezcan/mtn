@@ -1,7 +1,7 @@
 import { getAllSlugs } from '@/lib/players';
 
 export default function sitemap() {
-  const base = 'https://meetthenewcomers.com';
+  const base = 'https://meetnewcomers.com';
   const players = getAllSlugs().map((slug) => ({
     url: `${base}/oyuncu/${slug}`,
     changeFrequency: 'weekly',

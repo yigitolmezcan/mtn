@@ -76,7 +76,7 @@ export default function PlayerProfile({ p }) {
         <Link href="/" className="backlink">
           ← {t.allTransfers}
         </Link>
-        <ShareButton url={`https://meetthenewcomers.com/oyuncu/${p.slug}`} />
+        <ShareButton url={`https://meetnewcomers.com/oyuncu/${p.slug}`} />
       </div>
 
       <header className="head">
