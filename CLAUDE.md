@@ -113,6 +113,8 @@ Güncel atamalar için data/oyuncular.json dosyasına bak.
 
 İstatistik kısaltmaları İngilizce: **PPG, RPG, APG, BPG, SPG, FG, 3PT, FT**
 
+`ozet`/`ozetEn` kart için tek cümle olarak kalır. Profildeki Değerlendirme bölümü ayrı bir alan olan `ozetDetay`/`ozetDetayEn` kullanır (2-3 cümle, ilk cümlesi genelde `ozet` ile aynı başlar). Yeni oyuncu eklerken dört alanı da doldur.
+
 ---
 
 ## 7. Scouting dili

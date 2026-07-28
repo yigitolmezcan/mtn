@@ -63,7 +63,7 @@ export default function PlayerProfile({ p }) {
   const { lang, t } = useLang();
   const ArketipIcon = p.arketip ? ARCHETYPE_ICONS[p.arketip] : null;
 
-  const ozet = lang === 'en' ? (p.ozetEn || p.ozet) : p.ozet;
+  const ozet = lang === 'en' ? (p.ozetDetayEn || p.ozetEn || p.ozet) : (p.ozetDetay || p.ozet);
   const gucluYonler = lang === 'en' ? (p.gucluYonlerEn || p.gucluYonler) : p.gucluYonler;
   const gelisimAlanlari = lang === 'en' ? (p.gelisimAlanlariEn || p.gelisimAlanlari) : p.gelisimAlanlari;
   const transferNotu = lang === 'en' ? (p.transferNotuEn || p.transferNotu) : p.transferNotu;
