@@ -106,6 +106,13 @@
       "renk1": "#F5A623",
       "renk2": "#000000",
       "digerDil": true
+    },
+    "partizan": {
+      "ad": "Partizan",
+      "marka": "#000000",
+      "vurgu": "#E4E1DC",
+      "renk1": "var(--bone)",
+      "renk2": "#000000"
     }
   },
   "oyuncular": [
@@ -2537,6 +2544,131 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=nIB1fp-3vyw"
+    },
+    {
+      "slug": "nikola-tanaskovic",
+      "ad": "Nikola Tanasković",
+      "resmiAd": "Nikola Tanasković",
+      "takimSlug": "partizan",
+      "pozisyon": "PF",
+      "boy": "2.04 m",
+      "yas": "28",
+      "milliyet": "Sırbistan",
+      "el": "Sol",
+      "elEn": "Left",
+      "milliyetNotu": null,
+      "geldigiKulup": "Budućnost VOLI",
+      "geldigiLig": "ABA Ligi (Karadağ)",
+      "transferNotu": "Partizan'ın altyapısından yetişip 2015'te ilk profesyonel sözleşmesini imzaladıktan sonra kulüpten ayrılmıştı; yedi yıl sonra, Budućnost'ta kaptanlık yaptığı ve beş kupa kazandığı üç sezonun ardından çocukluk kulübüne geri dönüyor.",
+      "transferNotuEn": "A product of Partizan's own academy who signed his first professional contract there in 2015 before leaving the club, he returns to his boyhood team seven years later, after three seasons captaining Budućnost to five trophies.",
+      "ozet": "Yüksek parmak hassasiyeti ve alçak post oyunlarıyla Partizan'ın uzun rotasyonunda iyi bir tamamlayıcı parça olmaya aday tecrübeli dört numara.",
+      "ozetEn": "A soft-touch, low-post scorer who looks like a strong complementary piece for Partizan's big-man rotation.",
+      "ozetDetay": "Yüksek parmak hassasiyeti ve alçak post oyunlarıyla Partizan'ın uzun rotasyonunda iyi bir tamamlayıcı parça olacak gibi görünüyor. Parkede ne lazımsa onu yapan takım oyuncusu kimliği ve yüksek fundamentalıyla koç Joan Peñarroya için ön alanda kritik bir joker olabilir.",
+      "ozetDetayEn": "A soft-touch, low-post scorer who looks like a strong complementary piece for Partizan's big-man rotation. With a do-whatever's-needed team-first identity and sound fundamentals, he could become a critical frontcourt piece for coach Joan Peñarroya.",
+      "featuredStats": {
+        "yarisma": "EuroCup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "11.9",
+            "PPG"
+          ],
+          [
+            "5.2",
+            "RPG"
+          ],
+          [
+            "0.3",
+            "BPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "ABA Ligi",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "10.4",
+              "PPG"
+            ],
+            [
+              "4.8",
+              "RPG"
+            ],
+            [
+              "1.7",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Yüksek basketbol IQ'su"
+        },
+        {
+          "t": "Alçak postta üretkenlik"
+        },
+        {
+          "t": "Açık alan koşuları"
+        },
+        {
+          "t": "Geniş hücum repertuarı"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "High basketball IQ"
+        },
+        {
+          "t": "Low-post scoring production"
+        },
+        {
+          "t": "Open-floor running"
+        },
+        {
+          "t": "Broad offensive repertoire"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Sınırlı caydırıcılık",
+          "v": "0.3 BPG (EuroCup)"
+        },
+        {
+          "t": "Atletizm eksikliği"
+        },
+        {
+          "t": "Dış şut hacmi",
+          "v": "7/15 3PT (EuroCup)"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Limited shot-blocking deterrence",
+          "v": "0.3 BPG (EuroCup)"
+        },
+        {
+          "t": "Lack of athleticism"
+        },
+        {
+          "t": "Low outside-shot volume",
+          "v": "7/15 3PT (EuroCup)"
+        }
+      ],
+      "arketip": "Post Scorer",
+      "mtnRating": "7.1",
+      "ratingNotu": "Geçtiğimiz sezon Budućnost formasıyla öne çıkan oyuncu, Karadağ ekibiyle geçirdiği üç sezonun en efektif dönemini geride bıraktı.",
+      "ratingNotuEn": "Coming off a standout campaign with Budućnost, he's leaving behind the most effective stretch of his three seasons with the Montenegrin club.",
+      "benzerOyuncular": [
+        {
+          "isim": "Deon Thompson",
+          "neden": "Alçak post ve orta mesafe oyunu",
+          "nedenEn": "Low-post play and midrange scoring"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=v8-lIZj9fw4"
     }
   ]
 }
