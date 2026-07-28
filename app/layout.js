@@ -1,4 +1,5 @@
 import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
 import { getAllPlayers } from '@/lib/players';
 import { LanguageProvider } from '@/lib/LanguageContext';
 import Topbar from '@/components/Topbar';
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
 
           <Footer />
         </LanguageProvider>
+        <Analytics />
       </body>
     </html>
   );
