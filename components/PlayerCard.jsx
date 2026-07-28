@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import PlayerPhoto from './PlayerPhoto';
+import RatingInfo from './RatingInfo';
 import { useLang } from '@/lib/LanguageContext';
 import { ratingColor } from '@/lib/ratingColor';
 
@@ -37,7 +38,7 @@ export default function PlayerCard({ player }) {
       <p className="card__quote">{ozet}</p>
 
       <div className="card__foot">
-        <span className="card__rlbl">MtN <span lang="en">Rating</span></span>
+        <span className="card__rlbl">MtN <span lang="en">Rating</span><RatingInfo /></span>
         <Rating value={player.mtnRating} />
       </div>
     </Link>

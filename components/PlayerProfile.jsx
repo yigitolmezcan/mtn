@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { Rating } from '@/components/PlayerCard';
+import RatingInfo from '@/components/RatingInfo';
 import { ARCHETYPE_ICONS } from '@/lib/archetypeIcons';
 import PositionCourt from '@/components/PositionCourt';
 import ShareButton from '@/components/ShareButton';
@@ -126,7 +127,10 @@ export default function PlayerProfile({ p }) {
         <div className="lbl">{t.assessment}</div>
         <div className="verdict-row">
           <p className="verdict">{ozet}</p>
-          <Rating value={p.mtnRating} size="lg" />
+          <span className="rating-holder">
+            <Rating value={p.mtnRating} size="lg" />
+            <RatingInfo />
+          </span>
         </div>
         {ratingNotu && <p className="rating-note">{ratingNotu}</p>}
       </section>
