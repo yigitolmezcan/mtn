@@ -2422,6 +2422,121 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=dwfVTeRWPFQ"
+    },
+    {
+      "slug": "olivier-nkamhoua",
+      "ad": "Olivier Nkamhoua",
+      "resmiAd": "Olivier Nkamhoua",
+      "takimSlug": "barcelona",
+      "pozisyon": "PF",
+      "boy": "2.03 m",
+      "yas": "26",
+      "milliyet": "Finlandiya / Kamerun",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Varese",
+      "geldigiLig": "Serie A (İtalya)",
+      "transferNotu": "Almanya'da Chemnitz ve İtalya'da Varese'de oynadıktan sonra 2 yıllık sözleşmeyle Katalan devine geliyor; Petteri Koponen'den sonra Barça basketbol tarihindeki ikinci Finli oyuncu olacak. Bu kadar büyük bir sıçramayı nasıl yöneteceği kariyerinde önemli bir kilometre taşı olacak.",
+      "transferNotuEn": "After spells with Chemnitz in Germany and Varese in Italy, he's joining the Catalan giant on a two-year deal — becoming only the second Finnish player in Barça basketball history after Petteri Koponen. How he handles a jump this big will be a defining milestone in his career.",
+      "ozet": "Yüksek atletizmini oyununa iyi entegre eden, 2.03'lük boyuna rağmen etkileyici bir top hakimiyetine sahip skorer bir güç forveti.",
+      "ozetEn": "A scoring power forward who blends elite athleticism into his game and shows impressive ball-handling for someone standing 2.03m.",
+      "ozetDetay": "Yüksek atletizmini oyununa iyi entegre eden, 2.03'lük boyuna rağmen etkileyici bir top hakimiyetine sahip skorer bir güç forveti. Bu yaz kadrosu baştan aşağı yenilenen Barça'da kendine yüksek dakikalar bulmak için gerekli potansiyele sahip. Son takımı Varese'de tam bir başrol oyuncusuyken, bu sezon çok daha kısıtlı süre ve rolle aynı farkı yaratması gerekecek.",
+      "ozetDetayEn": "A scoring power forward who blends elite athleticism into his game and shows impressive ball-handling for someone standing 2.03m. He has the tools to earn real minutes on a Barça roster that's been rebuilt from top to bottom this summer. Having been the focal point at Varese last season, he'll now need to make the same impact with a far more limited role and workload.",
+      "featuredStats": {
+        "yarisma": "Serie A",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "16.0",
+            "PPG"
+          ],
+          [
+            "5.5",
+            "RPG"
+          ],
+          [
+            "0.9",
+            "BPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Elit seviye atletizm"
+        },
+        {
+          "t": "Üst düzey top hakimiyeti"
+        },
+        {
+          "t": "Alley-oop bitirişleri"
+        },
+        {
+          "t": "Açık sahada etkili koşular"
+        },
+        {
+          "t": "Milli takımda üst düzey rakiplere karşı kanıtlanmış üretim",
+          "v": "10.8 PPG, EuroBasket"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Elite-level athleticism"
+        },
+        {
+          "t": "Advanced ball-handling for his size"
+        },
+        {
+          "t": "Alley-oop finishing"
+        },
+        {
+          "t": "Effective transition running"
+        },
+        {
+          "t": "Proven production against top competition at the national team level",
+          "v": "10.8 PPG, EuroBasket"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Dış şut istikrarı"
+        },
+        {
+          "t": "Faul kontrolü"
+        },
+        {
+          "t": "Ribaund konsantrasyonu"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Outside shot consistency"
+        },
+        {
+          "t": "Foul discipline"
+        },
+        {
+          "t": "Rebounding focus"
+        }
+      ],
+      "arketip": "Athletic Forward",
+      "mtnRating": "7.3",
+      "ratingNotu": "Varese'de tam bir başrol oyuncusuydu; bu sezon çok daha kısıtlı süre ve rolle aynı farkı yaratması gerekecek.",
+      "ratingNotuEn": "He was the undisputed focal point at Varese; this season he'll need to make the same kind of impact with a far more limited role and minutes.",
+      "benzerOyuncular": [
+        {
+          "isim": "Derrick Williams",
+          "neden": "4 numaradan patlayıcı atletizm",
+          "nedenEn": "Explosive athleticism from the 4"
+        },
+        {
+          "isim": "Derrick Alston Jr.",
+          "neden": "Top hakimiyeti ve skor kabiliyeti",
+          "nedenEn": "Ball-handling and scoring ability"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=nIB1fp-3vyw"
     }
   ]
 }
