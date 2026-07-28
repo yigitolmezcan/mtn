@@ -2330,6 +2330,98 @@
       "ozetDetayEn": "Known for hitting at a high clip from beyond the arc, this NBA-tested sharpshooter is fresh off a season adjusting to Europe. The gravity he creates without the ball could open real breathing room around Fenerbahçe's ball-dominant playmakers. An early-season adjustment period should be expected, but his role growing as trust builds wouldn't be a surprise.",
       "el": "Sağ",
       "elEn": "Right"
+    },
+    {
+      "slug": "trent-frazier",
+      "ad": "Trent Frazier",
+      "resmiAd": "Trent Frazier",
+      "takimSlug": "virtus-bologna",
+      "pozisyon": "PG / SG",
+      "boy": "1.88 m",
+      "yas": "27",
+      "milliyet": "ABD",
+      "el": "Sol",
+      "elEn": "Left",
+      "milliyetNotu": null,
+      "geldigiKulup": "Zenit St. Petersburg",
+      "geldigiLig": "VTB Ligi (Rusya)",
+      "transferNotu": "FMP Belgrad'daki ABA Ligi çıkışının ardından dört sezon boyunca Avrupa kupalarından uzak kalarak Zenit'te oynadı; şimdi kariyerinde ilk kez EuroLeague'de forma giyecek.",
+      "transferNotuEn": "After his ABA League breakout at FMP Belgrade, he spent four seasons away from European cup competition at Zenit; he'll now play in the EuroLeague for the first time in his career.",
+      "ozet": "İstikrarlı üçlük atan, iyi delici ve düşük top kaybı oranıyla dikkat çeken solak bir scoring point guard.",
+      "ozetEn": "A steady three-point shooter and strong downhill driver who takes care of the ball well as a left-handed scoring point guard.",
+      "ozetDetay": "İstikrarlı üçlük atan, iyi delici ve düşük top kaybı oranıyla dikkat çeken solak bir scoring point guard. VTB Ligi'nde uzun süre taşıdığı yüksek kullanım oranı, İtalya'nın rekabetçi ortamına hızlı adapte olabileceğinin bir işareti. Sağ eliyle bitirişteki sınırları ve fiziksel guardlara karşı direnci, EuroLeague'deki ilk sezonunun gerçek turnusolü olacak.",
+      "ozetDetayEn": "A steady three-point shooter and strong downhill driver who takes care of the ball well as a left-handed scoring point guard. The high usage rate he carried for years in the VTB League is a sign he could adapt quickly to Italy's competitive environment. His limitations finishing with his right hand and his resistance against physical guards will be the real litmus test of his first EuroLeague season.",
+      "featuredStats": {
+        "yarisma": "VTB Ligi",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "13.8",
+            "PPG"
+          ],
+          [
+            "5.8",
+            "APG"
+          ],
+          [
+            "2.3",
+            "RPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Yayın gerisinden güvenilir isabet oranı",
+          "v": "%36.7 3PT"
+        },
+        {
+          "t": "Potaya penetrelerde hızlı ve keskin karar alma yeteneği"
+        },
+        {
+          "t": "Topu domine etmesine rağmen düşük top kaybı oranı"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Reliable accuracy from beyond the arc",
+          "v": "36.7% 3PT"
+        },
+        {
+          "t": "Quick, sharp decision-making attacking the rim"
+        },
+        {
+          "t": "Low turnover rate despite a heavy ball-handling load"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Sağ eliyle bitirişte zorlanma"
+        },
+        {
+          "t": "Fiziksel guardlara karşı zorlanma potansiyeli"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Struggles finishing with his right hand"
+        },
+        {
+          "t": "Potential struggles against physical guards"
+        }
+      ],
+      "arketip": "Scoring Point Guard",
+      "mtnRating": "8.2",
+      "ratingNotu": "Carsen Edwards'ın ayrılığıyla yeniden yapılanan Virtus'un saha içi lideri olmasını bekliyorum; Zenit'te de kaptanlık yapmış olması bu beklentiyi destekliyor.",
+      "ratingNotuEn": "I expect him to become the on-court leader of a Virtus side reshaped by Carsen Edwards's departure; having captained Zenit only reinforces that expectation.",
+      "benzerOyuncular": [
+        {
+          "isim": "TJ Shorts",
+          "neden": "Soluna doğru güçlü patlama yeteneği",
+          "nedenEn": "Explosive burst going to his left"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=dwfVTeRWPFQ"
     }
   ]
 }
