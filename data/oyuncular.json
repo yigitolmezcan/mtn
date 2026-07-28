@@ -216,13 +216,23 @@
       "ratingNotu": "EuroLeague'e hazır, güvenilir bir rotasyon kanadı. Büyük yıldız olmasa da doğru rolde birçok takım için değer yaratabilecek bir profil.",
       "ratingNotuEn": "A reliable rotation wing ready for EuroLeague. Not a star, but a profile that can create value for many teams in the right role.",
       "benzerOyuncular": [
-        "Xabi López-Arostegui",
-        "Alberto Abalde"
+        {
+          "isim": "Alberto Abalde",
+          "neden": "Spot-up şut başarısı",
+          "nedenEn": "Spot-up shooting success"
+        },
+        {
+          "isim": "Xabi López-Arostegui",
+          "neden": "Basketbol IQ'su",
+          "nedenEn": "His basketball IQ"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=6GRwmowlBJ0",
       "arketip": "Scoring Wing",
       "ozetDetay": "Topsuz hareketlilikle skor üretebilen, şut verimliliği yüksek, EuroLeague seviyesini test edecek tecrübeli İspanyol kanat. Atletizm ve birebir savunmadaki sınırları, EuroLeague temposunda rotasyonda beklenenden geriye düşmesine yol açabilir. Efes'in derin kanat rotasyonunda net bir rol bulamazsa, katkısı sınırlı dakikalarla kalabilir.",
-      "ozetDetayEn": "Entering his prime, a high-efficiency off-ball scorer and experienced Spanish wing set to test himself at EuroLeague level. His limited athleticism and struggles in one-on-one defense could push him further down the rotation than expected at EuroLeague pace. Without a clearly defined role in Efes's deep wing rotation, his impact risks staying confined to limited minutes."
+      "ozetDetayEn": "Entering his prime, a high-efficiency off-ball scorer and experienced Spanish wing set to test himself at EuroLeague level. His limited athleticism and struggles in one-on-one defense could push him further down the rotation than expected at EuroLeague pace. Without a clearly defined role in Efes's deep wing rotation, his impact risks staying confined to limited minutes.",
+      "el": "Sağ",
+      "elEn": "Right"
     },
     {
       "slug": "mady-sissoko",
@@ -325,13 +335,23 @@
       "ratingNotu": "Atletik kapasitesi yüksek, en üst seviyede kendini kanıtlamaya hazır bir pivot. Beşiktaş'ın EuroLeague'e dönüşü, bireysel yükselişi için uygun bir zemin sunuyor.",
       "ratingNotuEn": "A high-upside athletic center ready to prove himself at the highest level. Beşiktaş's return to EuroLeague offers fertile ground for his individual growth.",
       "benzerOyuncular": [
-        "Ebuka Izundu",
-        "Tonye Jekiri"
+        {
+          "isim": "Ebuka Izundu",
+          "neden": "Alley-oop'lardaki bitiricilik oranı",
+          "nedenEn": "Alley-oop finishing rate"
+        },
+        {
+          "isim": "Tonye Jekiri",
+          "neden": "Çember koruması",
+          "nedenEn": "Rim protection"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=Dc6QUdTkFZ8",
       "arketip": "Athletic Center",
       "ozetDetay": "Size'ı ve kulaç açıklığıyla çember koruması sağlayan, pick-and-roll'da dikey tehdit oluşturan gelişime açık atletik pivot. Çember çevresindeki fiziksel varlığı, Beşiktaş'ın ilk EuroLeague sezonunda savunma omurgasını hemen güçlendirebilir. Switch savunmasındaki gelişimi, rolünün rotasyon oyuncusundan gerçek bir başlangıç pivotuna dönüşüp dönüşmeyeceğini belirleyecek.",
-      "ozetDetayEn": "Joining from Serie A, an athletic, still-developing center who protects the rim with his size and wingspan and creates a vertical threat in pick-and-roll. His physical rim presence could immediately strengthen Beşiktaş's defensive spine in their first EuroLeague season back. How much he develops in switch defense will decide whether his role grows from rotation piece to genuine starting center."
+      "ozetDetayEn": "Joining from Serie A, an athletic, still-developing center who protects the rim with his size and wingspan and creates a vertical threat in pick-and-roll. His physical rim presence could immediately strengthen Beşiktaş's defensive spine in their first EuroLeague season back. How much he develops in switch defense will decide whether his role grows from rotation piece to genuine starting center.",
+      "el": "Sağ",
+      "elEn": "Right"
     },
     {
       "slug": "dj-stewart",
@@ -434,13 +454,23 @@
       "ratingNotu": "Baskonia'nın özgür ve tempolu oyununa çok uygun bir forvet profili. Şut istikrarını ve top yönlendirme becerisini geliştirdiği takdirde daha üst seviyeler için ideal.",
       "ratingNotuEn": "A forward profile very well suited to Baskonia's free-flowing, up-tempo style. If he develops his shooting consistency and ball-handling, he projects well for higher levels.",
       "benzerOyuncular": [
-        "Semi Ojeleye",
-        "Oshae Brissett"
+        {
+          "isim": "Semi Ojeleye",
+          "neden": "Size ve savunma gücü",
+          "nedenEn": "Size and defensive strength"
+        },
+        {
+          "isim": "Oshae Brissett",
+          "neden": "Atletizm ve rol benzerliği",
+          "nedenEn": "Athleticism and similar role"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=VW7Sr5QgO-8&t=189s",
       "arketip": "Athletic Forward",
       "ozetDetay": "Çok pozisyonlu savunma yapabilen, topsuz hareketliliğiyle alan paylaşımına katkı veren atletik modern kanat. Baskonia'nın hızlı tempolu sisteminde savunma çok yönlülüğü, hemen güvenilir bir rotasyon parçası olmasını sağlayabilir. Dış şutunu kabul edilebilir bir seviyede tutabilirse, Baskonia beşinin önemli silahlarından biri haline gelebilir.",
-      "ozetDetayEn": "Coming off a strong ABA season, a modern, athletic wing who defends multiple positions and contributes floor spacing through his off-ball movement. His defensive versatility should make him an immediately reliable rotation piece in Baskonia's fast-paced system. If he keeps his outside shot at an acceptable level, he could become one of Baskonia's key offensive weapons."
+      "ozetDetayEn": "Coming off a strong ABA season, a modern, athletic wing who defends multiple positions and contributes floor spacing through his off-ball movement. His defensive versatility should make him an immediately reliable rotation piece in Baskonia's fast-paced system. If he keeps his outside shot at an acceptable level, he could become one of Baskonia's key offensive weapons.",
+      "el": "Sol",
+      "elEn": "Left"
     },
     {
       "slug": "maozinha-pereira",
@@ -455,8 +485,8 @@
       "milliyetNotuEn": null,
       "geldigiKulup": "Manisa Basket",
       "geldigiLig": "Basketbol Süper Ligi (Türkiye)",
-      "transferNotu": "Manisa öncesinde Memphis Grizzlies ve NBA G League'de forma giydi.",
-      "transferNotuEn": "Played for the Memphis Grizzlies and in the NBA G League before joining Manisa.",
+      "transferNotu": "Manisa öncesinde Memphis Grizzlies ve NBA G League'de forma giydi. Manisa'da teknik direktörü Serhan Kavut tarafından zaman zaman pivot (5 numara) olarak da kullanıldı.",
+      "transferNotuEn": "Before Manisa, he played for the Memphis Grizzlies and in the NBA G League. At Manisa, head coach Serhan Kavut occasionally used him at center (the 5) as well.",
       "ozet": "Yüksek motoru, atletizmi ve ribaundlardaki devamlılığıyla ön alana enerji getiren, geçiş hücumlarında ve çember çevresi bitirişlerde etkili enerjik forvet.",
       "ozetEn": "Fresh off a breakout year in Turkey, a high-motor forward who brings energy up front with his athleticism and rebounding consistency, effective in transition and around the rim.",
       "featuredStats": {
@@ -530,13 +560,23 @@
       "ratingNotu": null,
       "ratingNotuEn": null,
       "benzerOyuncular": [
-        "Chima Moneke",
-        "Yves Pons"
+        {
+          "isim": "Chima Moneke",
+          "neden": "3.5 numara pozisyonu ve skor bulma şekli",
+          "nedenEn": "3.5 positional profile and scoring style"
+        },
+        {
+          "isim": "Jaylen Hoard",
+          "neden": "Dikine atletizm ve çembere atak",
+          "nedenEn": "Vertical athleticism and rim attacks"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=3KxQzWgXNto",
       "arketip": "Athletic Forward",
       "ozetDetay": "Yüksek motoru, atletizmi ve ribaundlardaki devamlılığıyla ön alana enerji getiren, geçiş hücumlarında ve çember çevresi bitirişlerde etkili enerjik forvet. Paris'in hızlı tempolu oyun sistemi, onun en güçlü yanını öne çıkaracak doğru zemin olabilir. Asıl soru, low post savunmasındaki fiziksel dezavantajını rotasyon içinde ne kadar iyi gizleyebileceği.",
-      "ozetDetayEn": "Fresh off a breakout year in Turkey, a high-motor forward who brings energy up front with his athleticism and rebounding consistency, effective in transition and around the rim. Paris's up-tempo system could be the right stage to showcase his biggest strength. The real question is how well he can mask his physical disadvantage defending the low post within the rotation."
+      "ozetDetayEn": "Fresh off a breakout year in Turkey, a high-motor forward who brings energy up front with his athleticism and rebounding consistency, effective in transition and around the rim. Paris's up-tempo system could be the right stage to showcase his biggest strength. The real question is how well he can mask his physical disadvantage defending the low post within the rotation.",
+      "el": "Sağ",
+      "elEn": "Right"
     },
     {
       "slug": "ignas-sargiunas",
@@ -643,13 +683,23 @@
       "ratingNotu": null,
       "ratingNotuEn": null,
       "benzerOyuncular": [
-        "Rokas Giedraitis",
-        "Marius Grigonis"
+        {
+          "isim": "Rokas Giedraitis",
+          "neden": "Serbest atış isabeti ve savunma baskısı",
+          "nedenEn": "Free-throw shooting and defensive pressure"
+        },
+        {
+          "isim": "Marius Grigonis",
+          "neden": "İkincil top yönlendirme",
+          "nedenEn": "Secondary ball-handling"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=UjgOWU1E-Go",
       "arketip": "Combo Guard",
       "ozetDetay": "Oyunun iki alanında da kendini gösterebilen, perde çıkışı şut yeteneği ve ikinci top yönlendirici rolüyle yarı saha hücumuna alan açan topsuz skorer. Fenerbahçe'nin kalabalık guard rotasyonunda yer bulması, kendi formu kadar antrenörün tercihlerine de bağlı olacak. BCL şampiyonluğunda gösterdiği soğukkanlılık, büyük maçlarda Saras'ın ona güven duymasını kolaylaştırabilir.",
-      "ozetDetayEn": "Arriving as a champion, an off-ball scorer who opens up half-court offense through his catch-and-shoot ability and secondary playmaking. Finding minutes in Fenerbahçe's crowded guard rotation will depend as much on the coach's choices as on his own form. The composure he showed winning the BCL title could make it easier to earn Šarūnas Jasikevičius's trust in big games."
+      "ozetDetayEn": "Arriving as a champion, an off-ball scorer who opens up half-court offense through his catch-and-shoot ability and secondary playmaking. Finding minutes in Fenerbahçe's crowded guard rotation will depend as much on the coach's choices as on his own form. The composure he showed winning the BCL title could make it easier to earn Šarūnas Jasikevičius's trust in big games.",
+      "el": "Sağ",
+      "elEn": "Right"
     },
     {
       "slug": "tyson-etienne",
@@ -752,13 +802,23 @@
       "ratingNotu": null,
       "ratingNotuEn": null,
       "benzerOyuncular": [
-        "Justin Robinson",
-        "Duane Washington"
+        {
+          "isim": "Duncan Robinson",
+          "neden": "Şut yaratma ve menzil",
+          "nedenEn": "Shot creation and range"
+        },
+        {
+          "isim": "Duane Washington Jr.",
+          "neden": "Perde kullanımı ve üçlük isabeti",
+          "nedenEn": "Screen usage and three-point accuracy"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=pVSAZ4FePn0",
       "arketip": "Combo Guard",
       "ozetDetay": "Derin şut menziline sahip, kendi şutunu yaratabilen ve yüksek hacimli skor üretimiyle izolasyon ve pick-and-roll tehdidi oluşturan dinamik combo guard. Avrupa'daki ilk sezonunda skor üretimiyle hızlı bir etki yaratabilir, özellikle Paris'in hızlı tempolu sisteminde. Savunmadaki boy dezavantajı, rotasyonda kendisine emanet edilecek eşleşmeleri sınırlayabilir.",
-      "ozetDetayEn": "Making his European debut, a dynamic combo guard with deep shooting range who can create his own shot, posing a high-volume scoring threat in isolation and pick-and-roll. In his first season in Europe, his scoring could make an immediate impact, especially within Paris's up-tempo system. His height disadvantage on defense, though, could limit which matchups he's trusted with in the rotation."
+      "ozetDetayEn": "Making his European debut, a dynamic combo guard with deep shooting range who can create his own shot, posing a high-volume scoring threat in isolation and pick-and-roll. In his first season in Europe, his scoring could make an immediate impact, especially within Paris's up-tempo system. His height disadvantage on defense, though, could limit which matchups he's trusted with in the rotation.",
+      "el": "Sağ",
+      "elEn": "Right"
     },
     {
       "slug": "both-gach",
@@ -863,13 +923,23 @@
       "ratingNotu": "2024-25 sezonunda Darüşşafaka formasıyla küme düştükten yalnızca iki sezon sonra, Avrupa basketbolunun zirvesinde forma giyecek. Bireysel gelişimi açısından çarpıcı bir sıçrama.",
       "ratingNotuEn": "Just two seasons after being relegated with Darüşşafaka in 2024-25, he'll be playing at the top of European basketball — a striking leap in his individual development.",
       "benzerOyuncular": [
-        "Isaia Cordinier",
-        "Jordan Nwora"
+        {
+          "isim": "Isaia Cordinier",
+          "neden": "Yüksek tempoya yatkınlık",
+          "nedenEn": "Suited to high tempo"
+        },
+        {
+          "isim": "Jordan Nwora",
+          "neden": "Hızlı yakalanan dış şut ritmi",
+          "nedenEn": "Quick-trigger outside shooting rhythm"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=SHw1XEp5khY",
       "arketip": "Scoring Wing",
       "ozetDetay": "Yüksek tempoda etkili olan, dış şut tehdidini potaya atak ve birebir skor üretimiyle birleştiren çok yönlü skorer kanat. ASVEL'in forvet hattında birden fazla role uyum sağlayabilecek çok yönlülüğü var. Karar alma ve pas çeşitliliğini geliştirmesi, onu sıradan bir skorerden takımın ikinci yaratıcı seçeneğine taşıyabilir.",
-      "ozetDetayEn": "Built for open-floor basketball, a versatile scoring wing who thrives at a high tempo, combining outside shooting with rim attacks and one-on-one scoring. He has the versatility to fit multiple roles along ASVEL's forward line. Developing his decision-making and passing variety could elevate him from a straightforward scorer into the team's secondary creator."
+      "ozetDetayEn": "Built for open-floor basketball, a versatile scoring wing who thrives at a high tempo, combining outside shooting with rim attacks and one-on-one scoring. He has the versatility to fit multiple roles along ASVEL's forward line. Developing his decision-making and passing variety could elevate him from a straightforward scorer into the team's secondary creator.",
+      "el": "Sağ",
+      "elEn": "Right"
     },
     {
       "slug": "marcus-bingham",
@@ -975,12 +1045,22 @@
       "ratingNotu": "Yaz döneminin en çok konuşulan hamlelerinden biri. Fenerbahçe taraftarlarının uzun zamandır diline pelesenk olan yıldız pivot olabilecek mi? Göreceğiz.",
       "ratingNotuEn": "One of the most talked-about moves of the summer. Will he become the star center Fenerbahçe fans have long been hoping for? We'll see.",
       "benzerOyuncular": [
-        "Mfiondu Kabengele",
-        "Chimezie Metu"
+        {
+          "isim": "Mfiondu Kabengele",
+          "neden": "Hem içerden hem dışardan istikrarlı üretim",
+          "nedenEn": "Consistent production both inside and outside"
+        },
+        {
+          "isim": "Chimezie Metu",
+          "neden": "Dış şut ve atletizm birleşimi",
+          "nedenEn": "Combination of outside shooting and athleticism"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=JCayZMNXx1s",
       "ozetDetay": "Atletik yapısı ve yüzü dönük hücum çeşitliliğiyle Fenerbahçe'nin pota altına farklı bir boyut katabilecek modern bir uzun. Atletizmi, Fenerbahçe'nin pota altına EuroLeague seviyesinde nadir görülen bir hareketlilik katabilir. Fiziksel güç oyunlarına karşı direnci, rolünün ne kadar büyüyeceğini belirleyecek asıl soru.",
-      "ozetDetayEn": "Making the leap from Russia, a modern big whose athleticism and face-up scoring versatility could add a different dimension to Fenerbahçe's frontcourt. His athleticism could bring a level of mobility to Fenerbahçe's frontcourt that's rare at EuroLeague level. How well he holds up against physical bigs is the real question that will decide how far his role grows."
+      "ozetDetayEn": "Making the leap from Russia, a modern big whose athleticism and face-up scoring versatility could add a different dimension to Fenerbahçe's frontcourt. His athleticism could bring a level of mobility to Fenerbahçe's frontcourt that's rare at EuroLeague level. How well he holds up against physical bigs is the real question that will decide how far his role grows.",
+      "el": "Sağ",
+      "elEn": "Right"
     },
     {
       "slug": "umoja-gibson",
@@ -1086,12 +1166,22 @@
       "ratingNotu": "EuroCup'ta hücum sorumluluğunu taşıyabileceğini kanıtlayan üretken bir oyun kurucu. Şut tehdidi ve pick-and-roll yaratıcılığı Barcelona rotasyonuna hazır katkı sunabilir; savunmada hedef olmaması ve karar kalitesini koruması rolünün büyüklüğünü belirleyecek.",
       "ratingNotuEn": "A productive point guard who proved in EuroCup he can carry offensive responsibility. His shooting threat and pick-and-roll creativity can offer ready-made value to Barcelona's rotation; avoiding becoming a defensive liability and maintaining his decision-making will determine the size of his role.",
       "benzerOyuncular": [
-        "Carsen Edwards",
-        "Yago dos Santos"
+        {
+          "isim": "Carsen Edwards",
+          "neden": "Hız ve patlayıcılık",
+          "nedenEn": "Speed and explosiveness"
+        },
+        {
+          "isim": "Yago dos Santos",
+          "neden": "Undersize oluşunu avantaja çevirmesi ve penetreleri",
+          "nedenEn": "Turning his lack of size into an advantage, and his drives to the rim"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=I2yVSxUdGyQ&t=956s",
       "ozetDetay": "Pick-and-roll'da skor ve pas üretebilen, dış şuta ve çizgiye gitmeye yatkın dinamik bir skorer oyun kurucu. Barcelona'nın rotasyonuna hazır bir hücum katkısı sunuyor; EuroCup'ta gösterdiği üretkenlik, güven kazandıkça rolünün büyümesini mümkün kılabilir. Fiziksel boyut dezavantajı, EuroLeague seviyesinde savunma hedefi haline gelme riskini taşıyor.",
-      "ozetDetayEn": "Bringing proven scoring instincts, a dynamic scoring point guard who can score and create in pick-and-roll, comfortable shooting from outside or getting to the line. He offers ready-made offensive value to Barcelona's rotation; the production he showed in EuroCup could translate into a growing role as trust builds. His physical size disadvantage, though, carries the risk of becoming a target on defense at EuroLeague level."
+      "ozetDetayEn": "Bringing proven scoring instincts, a dynamic scoring point guard who can score and create in pick-and-roll, comfortable shooting from outside or getting to the line. He offers ready-made offensive value to Barcelona's rotation; the production he showed in EuroCup could translate into a growing role as trust builds. His physical size disadvantage, though, carries the risk of becoming a target on defense at EuroLeague level.",
+      "el": "Sağ",
+      "elEn": "Right"
     },
     {
       "slug": "rj-cole",
@@ -1195,11 +1285,17 @@
       "ratingNotu": null,
       "ratingNotuEn": null,
       "benzerOyuncular": [
-        "Tyrese Rice"
+        {
+          "isim": "Tyrese Rice",
+          "neden": "Perde kullanımı ve soluna güçlü gitmesi",
+          "nedenEn": "Screen usage and a strong left-hand drive"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=5qgwMfb3U20&t=46s",
       "ozetDetay": "Pick-and-roll'lardaki yetkinliği ve dış şut tehdidiyle, koç Poeta'nın sisteminde önemli bir role oturma ihtimali yüksek. Yanında Darius Thompson, Nico Mannion ve Devon Hall gibi dirençli guardlarla oynayarak savunmadaki zaaflarını kapatabilmesi onun EuroLeague'deki ilk yılında iz bırakmasını sağlayabilir.",
-      "ozetDetayEn": "With his pick-and-roll proficiency and outside shooting threat, he looks likely to carve out a meaningful role in coach Poeta's system. Playing alongside resilient guards like Darius Thompson, Nico Mannion, and Devon Hall, and tightening up his defense in the process, could help him leave a mark in his first EuroLeague season."
+      "ozetDetayEn": "With his pick-and-roll proficiency and outside shooting threat, he looks likely to carve out a meaningful role in coach Poeta's system. Playing alongside resilient guards like Darius Thompson, Nico Mannion, and Devon Hall, and tightening up his defense in the process, could help him leave a mark in his first EuroLeague season.",
+      "el": "Sol",
+      "elEn": "Left"
     },
     {
       "slug": "austin-wiley",
@@ -1303,12 +1399,22 @@
       "ratingNotu": null,
       "ratingNotuEn": null,
       "benzerOyuncular": [
-        "Stephane Lasme",
-        "Bryant Dunston"
+        {
+          "isim": "Stephane Lasme",
+          "neden": "Blok özelliği",
+          "nedenEn": "Shot-blocking ability"
+        },
+        {
+          "isim": "Bryant Dunston",
+          "neden": "Perde kalitesi ve mücadelesi",
+          "nedenEn": "Screen-setting quality and physicality"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=7GQptzyp6dY",
       "ozetDetay": "Çember savunması ve ribaund sezgileriyle değer yaratan, birden fazla ligde istikrarını kanıtlamış güçlü bir pivot. Ribaund ve çember koruması konusundaki uzmanlığı tartışılmaz. Bu özelliklerinin yanında Bayern kısalarıyla kuracağı ilişki, dakikalarının savunma ağırlıklı bir role sıkışıp sıkışmayacağını belirleyecek.",
-      "ozetDetayEn": "Following a Turkish MVP season, a strong center who creates value through rim protection and rebounding instincts, having proven his consistency across multiple leagues. His expertise on the boards and protecting the rim is beyond question. Beyond these traits, the relationship he builds with Bayern's guards will determine whether his minutes end up confined to a defense-first role."
+      "ozetDetayEn": "Following a Turkish MVP season, a strong center who creates value through rim protection and rebounding instincts, having proven his consistency across multiple leagues. His expertise on the boards and protecting the rim is beyond question. Beyond these traits, the relationship he builds with Bayern's guards will determine whether his minutes end up confined to a defense-first role.",
+      "el": "Sağ",
+      "elEn": "Right"
     },
     {
       "slug": "khadeen-carrington",
@@ -1404,12 +1510,22 @@
       "ratingNotu": null,
       "ratingNotuEn": null,
       "benzerOyuncular": [
-        "Fabien Causeur",
-        "Rokas Jokubaitis"
+        {
+          "isim": "Fabien Causeur",
+          "neden": "İkinci top yönlendirici olması",
+          "nedenEn": "His role as a secondary ball-handler"
+        },
+        {
+          "isim": "Rokas Jokubaitis",
+          "neden": "Penetre ve orta mesafeden skor yeteneği",
+          "nedenEn": "Driving ability and midrange scoring"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=-ERm13QvO9Y&t=168s",
       "ozetDetay": "Pick-and-roll'da asist ve skor üretimini dengeleyen, solak yapısıyla ayrışan deneyimli bir guard. Pick-and-roll'daki çift yönlülüğü, Hapoel Tel Aviv'in hücum yükünü tek bir oyun kurucuya bırakmadan paylaştırabilir. Birebir savunmadaki gelişimi, rolünün skorer bir yedekten gerçek bir ilk beş oyuncusuna dönüşüp dönüşmeyeceğini belirleyecek.",
-      "ozetDetayEn": "Staying in Israel, an experienced guard who balances scoring and playmaking in pick-and-roll, standing out for his left-handed game. His two-way effectiveness in pick-and-roll could let Hapoel Tel Aviv spread the offensive load instead of leaning on a single ball-handler. How much he grows in one-on-one defense will determine whether his role expands from scoring reserve to genuine starting guard."
+      "ozetDetayEn": "Staying in Israel, an experienced guard who balances scoring and playmaking in pick-and-roll, standing out for his left-handed game. His two-way effectiveness in pick-and-roll could let Hapoel Tel Aviv spread the offensive load instead of leaning on a single ball-handler. How much he grows in one-on-one defense will determine whether his role expands from scoring reserve to genuine starting guard.",
+      "el": "Sol",
+      "elEn": "Left"
     },
     {
       "slug": "conor-morgan",
@@ -1505,12 +1621,22 @@
       "ratingNotu": null,
       "ratingNotuEn": null,
       "benzerOyuncular": [
-        "Zach LeDay",
-        "Dinos Mitoglou"
+        {
+          "isim": "Zach LeDay",
+          "neden": "Çok yönlü 4.5 numara profili",
+          "nedenEn": "Versatile 4.5 positional profile"
+        },
+        {
+          "isim": "Dinos Mitoglou",
+          "neden": "Dış şut ve kısa devrilme oyunu",
+          "nedenEn": "Outside shooting and short-roll game"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=re2tliczep8",
       "ozetDetay": "Dış şut kapasitesi ve savunma zekâsıyla değer üreten, 4 ve 5 numarada rol alabilen çok yönlü bir uzun. Beşiktaş'ın EuroLeague'e dönüşünde tecrübeli bir uzun olarak rotasyona istikrar katabilir. Atletizm ve ayak hızındaki sınırlar, hızlı geçiş oynayan rakiplere karşı savunmada zorlanmasına neden olabilir.",
-      "ozetDetayEn": "Entering his third season, a versatile big who can play both the 4 and 5, generating value through his outside shooting and defensive IQ. As an experienced big in Beşiktaş's EuroLeague return, he could bring real stability to the rotation. His limited athleticism and foot speed, though, could make him vulnerable defending fast-transition opponents."
+      "ozetDetayEn": "Entering his third season, a versatile big who can play both the 4 and 5, generating value through his outside shooting and defensive IQ. As an experienced big in Beşiktaş's EuroLeague return, he could bring real stability to the rotation. His limited athleticism and foot speed, though, could make him vulnerable defending fast-transition opponents.",
+      "el": "Sağ",
+      "elEn": "Right"
     },
     {
       "slug": "rasheed-bello",
@@ -1600,11 +1726,17 @@
       "ratingNotu": null,
       "ratingNotuEn": null,
       "benzerOyuncular": [
-        "Paris Lee"
+        {
+          "isim": "Paris Lee",
+          "neden": "Enerji ve patlayıcılık",
+          "nedenEn": "Energy and explosiveness"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=lYwfrZED3yI",
       "ozetDetay": "Yüksek enerjisiyle oynayan, skor üretimi güçlü, genç ve oldukça dinamik bir oyun kurucu guard profili. Rekabetin zirvesine göstereceği uyum, onun iyi bir kumar olup olmadığını belirleyecek.",
-      "ozetDetayEn": "A high-energy, young, and highly dynamic point guard profile with strong scoring output. How he adapts to the top level of competition will determine whether he turns out to be a good gamble."
+      "ozetDetayEn": "A high-energy, young, and highly dynamic point guard profile with strong scoring output. How he adapts to the top level of competition will determine whether he turns out to be a good gamble.",
+      "el": "Sol",
+      "elEn": "Left"
     },
     {
       "slug": "davion-mintz",
@@ -1698,12 +1830,22 @@
       "ratingNotu": null,
       "ratingNotuEn": null,
       "benzerOyuncular": [
-        "Jordan Loyd",
-        "Armoni Brooks"
+        {
+          "isim": "Jordan Loyd",
+          "neden": "Etkili üçlük tehdidi",
+          "nedenEn": "Effective three-point threat"
+        },
+        {
+          "isim": "Armoni Brooks",
+          "neden": "Şut üzerinden opsiyon yaratması",
+          "nedenEn": "Creating options through his shot"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=CzAwAdPr27A&t=4s",
       "ozetDetay": "Kendi şutunu yaratabilen, mid-range'de verimli, şut ağırlıklı oynayan bir skorer guard. Top kaybı oranı ve şut yüzdesini kabul edilebilir bir seviyede tutarsa, hücumcu Dubai takımının önemli bir silahı olabilir.",
-      "ozetDetayEn": "A shoot-first scoring guard who can create his own shot and operates efficiently from mid-range. If he keeps his turnover rate and shooting percentage at an acceptable level, he could become a key offensive weapon for Dubai."
+      "ozetDetayEn": "A shoot-first scoring guard who can create his own shot and operates efficiently from mid-range. If he keeps his turnover rate and shooting percentage at an acceptable level, he could become a key offensive weapon for Dubai.",
+      "el": "Sağ",
+      "elEn": "Right"
     },
     {
       "slug": "marek-blazevic",
@@ -1780,12 +1922,22 @@
       "ratingNotu": null,
       "ratingNotuEn": null,
       "benzerOyuncular": [
-        "Ante Žižić",
-        "Donatas Motiejūnas"
+        {
+          "isim": "Ante Žižić",
+          "neden": "Çember etrafında etkinlik",
+          "nedenEn": "Effectiveness around the rim"
+        },
+        {
+          "isim": "Donatas Motiejūnas",
+          "neden": "Parmak hassasiyeti ve devrilme kabiliyeti",
+          "nedenEn": "Touch around the basket and roll-game ability"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=-tu9Cc7hLbU",
       "ozetDetay": "Low post'ta ve pick-and-roll devrilmelerinde usta, çember çevresinde elit seviyede bitiren bir hücumcu pivot. Geçtiğimiz sezon Tofaş formasıyla gösterdiği liderlik ve skor potansiyeli, Zalgirio Arena'nın beklentisini doğru oranda artıracak.",
-      "ozetDetayEn": "A scoring big who excels in the low post and on pick-and-roll rolls, finishing at an elite level around the rim. The leadership and scoring potential he showed wearing the Tofaş jersey last season should rightfully raise expectations at Žalgirio Arena."
+      "ozetDetayEn": "A scoring big who excels in the low post and on pick-and-roll rolls, finishing at an elite level around the rim. The leadership and scoring potential he showed wearing the Tofaş jersey last season should rightfully raise expectations at Žalgirio Arena.",
+      "el": "Sağ",
+      "elEn": "Right"
     },
     {
       "slug": "mo-gueye",
@@ -1866,12 +2018,22 @@
       "ratingNotu": null,
       "ratingNotuEn": null,
       "benzerOyuncular": [
-        "Mathias Lessort",
-        "Wenyen Gabriel"
+        {
+          "isim": "Mathias Lessort",
+          "neden": "Çılgın motor ve atletizm",
+          "nedenEn": "Relentless motor and athleticism"
+        },
+        {
+          "isim": "Wenyen Gabriel",
+          "neden": "Pota önünde adeta kalecilik yapan blok yeteneği",
+          "nedenEn": "Shot-blocking presence at the rim, almost goalkeeper-like"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=sW5h6FPTn8s",
       "ozetDetay": "NBA'den gelen, çember çevresi bitirişleri ve yüksek motoruyla açık sahada etkili, fiziksel oynayan bir uzun. Valencia'nın uygun sistemi bir yana, asıl belirleyici olan NBA'de bulamadığı süreklilik ve güveni Avrupa'da yakalayıp yakalayamayacağı.",
-      "ozetDetayEn": "An NBA-experienced big who plays a physical style, effective in the open floor through his finishing around the rim and high motor. Beyond fitting Valencia's system, the real question is whether he can finally find the consistent role and trust in Europe that eluded him in the NBA."
+      "ozetDetayEn": "An NBA-experienced big who plays a physical style, effective in the open floor through his finishing around the rim and high motor. Beyond fitting Valencia's system, the real question is whether he can finally find the consistent role and trust in Europe that eluded him in the NBA.",
+      "el": "Sağ",
+      "elEn": "Right"
     },
     {
       "slug": "tobias-jensen",
@@ -1965,12 +2127,22 @@
       "ratingNotu": null,
       "ratingNotuEn": null,
       "benzerOyuncular": [
-        "Rokas Jokubaitis",
-        "Nigel Williams-Goss"
+        {
+          "isim": "Rokas Jokubaitis",
+          "neden": "Saha içi liderliği",
+          "nedenEn": "On-court leadership"
+        },
+        {
+          "isim": "Nigel Williams-Goss",
+          "neden": "Pick-and-roll ve asist yeteneği",
+          "nedenEn": "Pick-and-roll feel and passing ability"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=ru1oOM22xz8",
       "ozetDetay": "Saha görüşü ve oyun kurma zekâsıyla öne çıkan, Alman altyapısının yetiştirdiği bir floor general. Bu denli genç bir oyun kurucudan EuroLeague seviyesinde hemen istikrar beklenmemeli; sabırla geliştirilirse önümüzdeki yılların gerçek bir çıkışı olabilir.",
-      "ozetDetayEn": "A floor general product of the German development system, standing out for his court vision and playmaking IQ. A playmaker this young shouldn't be expected to find instant stability at EuroLeague level; given patient development, he could become one of the real breakouts of the coming years."
+      "ozetDetayEn": "A floor general product of the German development system, standing out for his court vision and playmaking IQ. A playmaker this young shouldn't be expected to find instant stability at EuroLeague level; given patient development, he could become one of the real breakouts of the coming years.",
+      "el": "Sol",
+      "elEn": "Left"
     },
     {
       "slug": "jaylen-nowell",
@@ -2039,12 +2211,22 @@
       "ratingNotu": null,
       "ratingNotuEn": null,
       "benzerOyuncular": [
-        "Kevin Punter",
-        "Malcolm Delaney"
+        {
+          "isim": "Kevin Punter",
+          "neden": "Birebirde şut yaratma yeteneği",
+          "nedenEn": "Ability to create his own shot one-on-one"
+        },
+        {
+          "isim": "Malcolm Delaney",
+          "neden": "Hücum liderliği",
+          "nedenEn": "Offensive leadership"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=wjAnDCJttvU",
       "ozetDetay": "Kendi şutunu yaratabilen, yüksek yetenek setiyle kolay basket atabilen NBA tecrübeli bir skorer guard. Savunmadaki konsantrasyon kayıplarına rağmen, G Ligi'nde kanıtladığı üretkenlik Beşiktaş'ın adam değişme savunmalarına karşı önemli bir silahı olabilir.",
-      "ozetDetayEn": "Capable of creating his own shot, this NBA-experienced scoring guard shoots easily thanks to a high-level skill set. Defensive concentration lapses aside, the production he proved in the G League could make him a valuable weapon against switch-heavy defenses."
+      "ozetDetayEn": "Capable of creating his own shot, this NBA-experienced scoring guard shoots easily thanks to a high-level skill set. Defensive concentration lapses aside, the production he proved in the G League could make him a valuable weapon against switch-heavy defenses.",
+      "el": "Sağ",
+      "elEn": "Right"
     },
     {
       "slug": "johnny-juzang",
@@ -2132,12 +2314,22 @@
       "ratingNotu": null,
       "ratingNotuEn": null,
       "benzerOyuncular": [
-        "Jordan Nwora",
-        "Tarik Biberović"
+        {
+          "isim": "Jordan Nwora",
+          "neden": "NBA'den geliş şekli ve uyum süreci",
+          "nedenEn": "A similar path from the NBA and adjustment process"
+        },
+        {
+          "isim": "Tarik Biberović",
+          "neden": "Yay gerisine konumlanmış yüksek yüzdeli oyunu",
+          "nedenEn": "His high-percentage game built around spotting up beyond the arc"
+        }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=L89P8iy0m3I&t=31s",
       "ozetDetay": "Şut özelliğiyle öne çıkan ve üç sayı çizgisinin gerisinden yüksek isabet oranı yakalayan skorer bir kanat oyuncusu. Topsuz oyunda oluşturduğu tehdit, Fenerbahçe'nin top odaklı oyun kurucularının etrafında gerçek bir nefes alanı yaratabilir. Sezon başında sisteme alışma süreci beklenir, ama güven arttıkça rolünün büyümesi şaşırtıcı olmaz.",
-      "ozetDetayEn": "Known for hitting at a high clip from beyond the arc, this NBA-tested sharpshooter is fresh off a season adjusting to Europe. The gravity he creates without the ball could open real breathing room around Fenerbahçe's ball-dominant playmakers. An early-season adjustment period should be expected, but his role growing as trust builds wouldn't be a surprise."
+      "ozetDetayEn": "Known for hitting at a high clip from beyond the arc, this NBA-tested sharpshooter is fresh off a season adjusting to Europe. The gravity he creates without the ball could open real breathing room around Fenerbahçe's ball-dominant playmakers. An early-season adjustment period should be expected, but his role growing as trust builds wouldn't be a surprise.",
+      "el": "Sağ",
+      "elEn": "Right"
     }
   ]
 }

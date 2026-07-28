@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { Rating } from '@/components/PlayerCard';
 import RatingInfo from '@/components/RatingInfo';
+import ChipInfo from '@/components/ChipInfo';
 import { ARCHETYPE_ICONS } from '@/lib/archetypeIcons';
 import PositionCourt from '@/components/PositionCourt';
 import ShareButton from '@/components/ShareButton';
@@ -115,6 +116,10 @@ export default function PlayerProfile({ p }) {
               <dt>{t.nationality}</dt>
               <dd>{milliyet}</dd>
             </div>
+            <div className="vital">
+              <dt>{t.hand}</dt>
+              <dd>{lang === 'en' ? p.elEn : p.el}</dd>
+            </div>
           </dl>
 
           <PositionCourt pozisyon={p.pozisyon} renk={p.takimRenk} />
@@ -178,9 +183,10 @@ export default function PlayerProfile({ p }) {
       <section className="blk wrap">
         <div className="lbl">{t.comparables}</div>
         <div className="chips">
-          {p.benzerOyuncular.map((n) => (
-            <span className="chip" key={n}>
-              {n}
+          {p.benzerOyuncular.map((o) => (
+            <span className="chip" key={o.isim}>
+              {o.isim}
+              <ChipInfo text={lang === 'en' ? o.nedenEn : o.neden} />
             </span>
           ))}
         </div>
