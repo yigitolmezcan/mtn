@@ -1937,6 +1937,78 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=ru1oOM22xz8"
     },
     {
+      "slug": "jaylen-nowell",
+      "ad": "Jaylen Nowell",
+      "resmiAd": "Jaylen Clinton Andrew Nowell",
+      "takimSlug": "besiktas",
+      "pozisyon": "SG",
+      "boy": "1.93 m",
+      "yas": "27",
+      "milliyet": "ABD",
+      "milliyetNotu": null,
+      "milliyetNotuEn": null,
+      "geldigiKulup": "Gigantes de Carolina",
+      "geldigiLig": "BSN (Porto Riko)",
+      "transferNotu": null,
+      "transferNotuEn": null,
+      "ozet": "Kendi şutunu yaratabilen, yüksek yetenek setiyle kolay basket atabilen NBA tecrübeli bir skorer guard.",
+      "ozetEn": "Capable of creating his own shot, this NBA-experienced scoring guard shoots easily thanks to a high-level skill set.",
+      "featuredStats": {
+        "yarisma": "NBA G League",
+        "sezon": "2024-25",
+        "items": [
+          [
+            "24.0",
+            "PPG"
+          ],
+          [
+            "4.1",
+            "RPG"
+          ],
+          [
+            "5.6",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Birebirde adam geçme yeteneği"
+        },
+        {
+          "t": "Yüksek yetenek setiyle kolay atış çeşitliliği"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Ability to create his own shot"
+        },
+        {
+          "t": "Easy scoring variety through a high-level skill set"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Düşük savunma konsantrasyonu"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Low defensive awareness"
+        }
+      ],
+      "arketip": "Scoring Wing",
+      "mtnRating": "7.9",
+      "ratingNotu": null,
+      "ratingNotuEn": null,
+      "benzerOyuncular": [
+        "Kevin Punter",
+        "Malcolm Delaney"
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=wjAnDCJttvU"
+    },
+    {
       "slug": "johnny-juzang",
       "ad": "Johnny Juzang",
       "resmiAd": "Jonathan Anh Juzang",
@@ -1950,7 +2022,7 @@
       "geldigiLig": "VTB Ligi (Rusya)",
       "transferNotu": "NBA'de Utah Jazz ve Minnesota Timberwolves formaları giydikten sonra sezon ortasında Zenit'e geçti; Avrupa'ya uyum sürecini orada tamamlamış olması, doğrudan büyük kulüplere geçen BJ Boston ve Jordan Nwora gibi oyuncuların yaşadığı adaptasyon sorunlarını yaşamasını engelleyebilir.",
       "transferNotuEn": "After stints with the Utah Jazz and Minnesota Timberwolves, he moved to Zenit mid-season; having already completed his European adjustment year there may spare him the transition struggles players like BJ Boston and Jordan Nwora faced jumping straight into a top club.",
-      "ozet": "Üç sayı çizgisinin gerisinden yüksek isabet oranı yakalayan, NBA tecrübeli bir nişancı kanat.",
+      "ozet": "Şut özelliğiyle öne çıkan ve üç sayı çizgisinin gerisinden yüksek isabet oranı yakalayan skorer bir kanat oyuncusu.",
       "ozetEn": "Known for hitting at a high clip from beyond the arc, this NBA-tested sharpshooter is fresh off a season adjusting to Europe.",
       "featuredStats": {
         "yarisma": "VTB Ligi",
@@ -2026,78 +2098,6 @@
         "Tarik Biberović"
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=L89P8iy0m3I&t=31s"
-    },
-    {
-      "slug": "jaylen-nowell",
-      "ad": "Jaylen Nowell",
-      "resmiAd": "Jaylen Clinton Andrew Nowell",
-      "takimSlug": "besiktas",
-      "pozisyon": "SG",
-      "boy": "1.93 m",
-      "yas": "27",
-      "milliyet": "ABD",
-      "milliyetNotu": null,
-      "milliyetNotuEn": null,
-      "geldigiKulup": "Gigantes de Carolina",
-      "geldigiLig": "BSN (Porto Riko)",
-      "transferNotu": null,
-      "transferNotuEn": null,
-      "ozet": "Kendi şutunu yaratabilen, yüksek yetenek setiyle kolay basket atabilen NBA tecrübeli bir skorer guard.",
-      "ozetEn": "Capable of creating his own shot, this NBA-experienced scoring guard shoots easily thanks to a high-level skill set.",
-      "featuredStats": {
-        "yarisma": "NBA G League",
-        "sezon": "2024-25",
-        "items": [
-          [
-            "24.0",
-            "PPG"
-          ],
-          [
-            "4.1",
-            "RPG"
-          ],
-          [
-            "5.6",
-            "APG"
-          ]
-        ]
-      },
-      "digerIstatistikler": [],
-      "gucluYonler": [
-        {
-          "t": "Birebirde adam geçme yeteneği"
-        },
-        {
-          "t": "Yüksek yetenek setiyle kolay atış çeşitliliği"
-        }
-      ],
-      "gucluYonlerEn": [
-        {
-          "t": "Ability to create his own shot"
-        },
-        {
-          "t": "Easy scoring variety through a high-level skill set"
-        }
-      ],
-      "gelisimAlanlari": [
-        {
-          "t": "Düşük savunma konsantrasyonu"
-        }
-      ],
-      "gelisimAlanlariEn": [
-        {
-          "t": "Low defensive awareness"
-        }
-      ],
-      "arketip": "Scoring Wing",
-      "mtnRating": "7.9",
-      "ratingNotu": null,
-      "ratingNotuEn": null,
-      "benzerOyuncular": [
-        "Kevin Punter",
-        "Malcolm Delaney"
-      ],
-      "youtubeUrl": "https://www.youtube.com/watch?v=wjAnDCJttvU"
     }
   ]
 }
