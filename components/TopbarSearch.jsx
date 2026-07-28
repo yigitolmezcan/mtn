@@ -36,7 +36,7 @@ export default function TopbarSearch({ players }) {
 
   const results = query.trim()
     ? players
-        .filter((p) => norm(p.ad).includes(norm(query)))
+        .filter((p) => norm(p.ad).includes(norm(query)) || norm(p.takim).includes(norm(query)))
         .sort((a, b) => (parseFloat(b.mtnRating) || 0) - (parseFloat(a.mtnRating) || 0))
         .slice(0, 8)
     : [];
