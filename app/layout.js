@@ -17,6 +17,12 @@ export const metadata = {
     locale: 'tr_TR',
     siteName: 'Meet the Newcomers',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Meet the Newcomers",
+    description: "EuroLeague'in yeni transferlerini kısa ve net bir gözle anlatıyoruz.",
+    images: ['/opengraph-image'],
+  },
 };
 
 export default function RootLayout({ children }) {
