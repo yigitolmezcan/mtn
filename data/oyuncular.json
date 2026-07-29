@@ -3262,6 +3262,129 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=uQ2SxqsRpyU"
+    },
+    {
+      "slug": "jason-burnell",
+      "ad": "Jason Burnell",
+      "resmiAd": "Jason Scott Burnell",
+      "takimSlug": "olimpia-milano",
+      "lig": "euroleague",
+      "pozisyon": "PF / SF",
+      "boy": "2.01 m",
+      "yas": "28",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Brescia",
+      "geldigiLig": "Serie A (İtalya)",
+      "transferNotu": "Profesyonel kariyerinin tamamını İtalya'da geçiren Birleşik Amerikalı forvet, Avrupa'nın zirvesine eski koçu Peppe Poeta önderliğinde çıkıyor. Geçtiğimiz sezon Serie A'da yılın altıncı adamı seçilen Burnell'den Milano formasıyla da benzer bir katkı beklenmesi yerinde olur.",
+      "transferNotuEn": "Having spent his entire pro career in Italy, the American forward is stepping up to the top of European basketball under his former coach Peppe Poeta. Named Serie A's Sixth Man of the Year last season, Burnell should be expected to provide a similar kind of contribution in Milano colors.",
+      "ozet": "Fiziksel gücü yüksek, alçak post oyunları ve enerjik oyun stiliyle modern bir forvet oyuncusu.",
+      "ozetEn": "Physically strong with a low-post game and high-energy style, he's a modern forward.",
+      "ozetDetay": "Fiziksel gücü yüksek, alçak post oyunları ve enerjik oyun stiliyle modern bir forvet oyuncusu. Pas kalitesi ve yüksek basketbol IQ'suyla pozisyonlar arası tutkal görevi görebilen yüksek motorlu bir rol oyuncusu.",
+      "ozetDetayEn": "Physically strong with a low-post game and high-energy style, he's a modern forward. His passing quality and high basketball IQ make him a high-motor connector who can glue different lineups together.",
+      "featuredStats": {
+        "yarisma": "Serie A",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "13.5",
+            "PPG"
+          ],
+          [
+            "6.3",
+            "RPG"
+          ],
+          [
+            "2.8",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "FIBA Europe Cup",
+          "sezon": "2021-23",
+          "items": [
+            [
+              "11.4",
+              "PPG"
+            ],
+            [
+              "6.2",
+              "RPG"
+            ],
+            [
+              "3.4",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Alçak post üretimi"
+        },
+        {
+          "t": "Pozisyonuna kıyasla yüksek pas kalitesi",
+          "v": "2.8 APG"
+        },
+        {
+          "t": "Tempolu basketbola uygun oyun yapısı"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Low-post scoring"
+        },
+        {
+          "t": "High passing quality for his position",
+          "v": "2.8 APG"
+        },
+        {
+          "t": "Game suited to up-tempo basketball"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Hareketli dış şut"
+        },
+        {
+          "t": "Daha kısıtlı bir role adaptasyon"
+        },
+        {
+          "t": "Fizikli uzunlara karşı oynama"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Shooting off movement"
+        },
+        {
+          "t": "Adjusting to a more limited role"
+        },
+        {
+          "t": "Matching up against physical bigs"
+        }
+      ],
+      "arketip": "Athletic Forward",
+      "mtnRating": "7.5",
+      "ratingNotu": "Jason Burnell'in elit seviyede göze çarpan bir özelliği olmasa da, istatistiklere yansımayan katkıları ve savunmadaki güvenilirliğiyle Milano rotasyonuna kullanışlı bir derinlik katabilir.",
+      "ratingNotuEn": "Jason Burnell doesn't have any one elite standout trait, but his contributions that don't show up in the box score, along with his defensive reliability, could add useful depth to Milano's rotation.",
+      "benzerOyuncular": [
+        {
+          "isim": "Bonzie Colson",
+          "neden": "Ters eşleşme avcılığı ve ceza şutu",
+          "nedenEn": "Hunting mismatches and drawing fouls"
+        },
+        {
+          "isim": "DyShawn Pierre",
+          "neden": "Sırtı dönük oyunlarla sayı ve asist üretimi",
+          "nedenEn": "Scoring and playmaking with his back to the basket"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=O0tyGrsC7fU"
     }
   ]
 }
