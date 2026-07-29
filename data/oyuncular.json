@@ -2669,6 +2669,123 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=v8-lIZj9fw4"
+    },
+    {
+      "slug": "chris-duarte",
+      "ad": "Chris Duarte",
+      "resmiAd": "Christopher Theoret Duarte",
+      "takimSlug": "baskonia",
+      "pozisyon": "SF / SG",
+      "boy": "1.96 m",
+      "yas": "29",
+      "milliyet": "Dominik Cumhuriyeti",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": "Kanada vatandaşlığına da sahip.",
+      "milliyetNotuEn": "Also holds Canadian citizenship.",
+      "geldigiKulup": "Unicaja",
+      "geldigiLig": "Liga Endesa (İspanya)",
+      "transferNotu": "Geçtiğimiz sezonun ikinci yarısında koçu Ibon Navarro ile yaşadığı rol ve süre anlaşmazlığı, BCL Final Four'unda kadro dışı bırakılmasıyla derinleşti; taraflar sezon sonunda sözleşmeyi karşılıklı olarak feshetme kararı aldı.",
+      "transferNotuEn": "A growing dispute with coach Ibon Navarro over his role and playing time deepened when he was left out of the squad for the BCL Final Four; the two sides mutually agreed to terminate his contract at season's end.",
+      "ozet": "İçeriden ve dışarıdan skor üretebilen, hücumunu büyük ölçüde şut tehdidi üzerine kuran skorer bir kanat.",
+      "ozetEn": "Capable of scoring from both inside and outside, he builds his offense largely around the threat of his jump shot.",
+      "ozetDetay": "İçeriden ve dışarıdan skor üretebilen, hücumunu büyük ölçüde şut tehdidi üzerine kuran skorer bir kanat. NBA Draftı'nın 13. sırasında seçildiği dönem kadar parlak gözükmese de, EuroLeague seviyesinde kendini yeniden kanıtlaması gereken Duarte'nin önündeki en büyük engel, yine kendisi olacak.",
+      "ozetDetayEn": "Capable of scoring from both inside and outside, he builds his offense largely around the threat of his jump shot. He may not look as bright as the player selected 13th overall in the NBA Draft, but the biggest obstacle standing between Duarte and re-establishing himself at EuroLeague level will once again be himself.",
+      "featuredStats": {
+        "yarisma": "Basketball Champions League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "9.5",
+            "PPG"
+          ],
+          [
+            "3.0",
+            "RPG"
+          ],
+          [
+            "1.9",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "Liga Endesa",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "11.4",
+              "PPG"
+            ],
+            [
+              "1.9",
+              "RPG"
+            ],
+            [
+              "2.9",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Hareketli şut repertuarı"
+        },
+        {
+          "t": "Uzun kolları sayesinde çember çevresinde bitiricilik"
+        },
+        {
+          "t": "NBA seviyesinde önemli tecrübe",
+          "v": "177 maç"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Versatile shooting repertoire"
+        },
+        {
+          "t": "Finishing around the rim thanks to his long arms"
+        },
+        {
+          "t": "Significant NBA-level experience",
+          "v": "177 games"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Mental kontrol"
+        },
+        {
+          "t": "Şut seçimleri"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Mental composure"
+        },
+        {
+          "t": "Shot selection"
+        }
+      ],
+      "arketip": "Scoring Wing",
+      "mtnRating": "7.0",
+      "ratingNotu": "NBA Draftı'nın 13. sırasında seçildiği dönem kadar parlak gözükmese de, doğru rolde maçın kaderini kısa sürede değiştirebilecek skor potansiyelini hâlâ koruyor.",
+      "ratingNotuEn": "He may not look as bright as he did back when he was picked 13th overall, but in the right role he still retains the scoring potential to swing a game in a hurry.",
+      "benzerOyuncular": [
+        {
+          "isim": "Darrun Hilliard",
+          "neden": "Yetenek ve mentalite dengesi",
+          "nedenEn": "Balance between talent and mentality"
+        },
+        {
+          "isim": "Tyler Dorsey",
+          "neden": "Şut ritmi",
+          "nedenEn": "Shooting rhythm"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=V5EIcdNtwk0"
     }
   ]
 }
