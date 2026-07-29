@@ -33,7 +33,7 @@ export default function HomeView({ players, sezon }) {
           <span className="hero__a">Meet the</span>
           <span className="hero__b">Newcomers</span>
         </h1>
-        <p className="hero__p">{t.heroSubtitle}</p>
+        <p className="hero__p">{league === 'bsl' ? t.heroSubtitleBsl : t.heroSubtitle}</p>
         <div className="rail">
           <b>{t.playersScouted(leaguePlayers.length)}</b>
           <span>·</span>
