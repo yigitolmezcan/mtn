@@ -141,6 +141,13 @@
       "vurgu": "#D32F2F",
       "renk1": "#0F1B4C",
       "renk2": "#D32F2F"
+    },
+    "turk-telekom": {
+      "ad": "Türk Telekom",
+      "marka": "#0A1E42",
+      "vurgu": "#FFFFFF",
+      "renk1": "#0A1E42",
+      "renk2": "var(--bone)"
     }
   },
   "oyuncular": [
@@ -3385,6 +3392,132 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=O0tyGrsC7fU"
+    },
+    {
+      "slug": "jerrick-harding",
+      "ad": "Jerrick Harding",
+      "resmiAd": "Jerrick Deontre Harding",
+      "takimSlug": "turk-telekom",
+      "lig": "bsl",
+      "pozisyon": "SG",
+      "boy": "1.85 m",
+      "yas": "28",
+      "milliyet": "ABD / Polonya",
+      "el": "Sol",
+      "elEn": "Left",
+      "milliyetNotu": null,
+      "geldigiKulup": "Rytas Vilnius",
+      "geldigiLig": "LKL (Litvanya)",
+      "transferNotu": "Litvanya temsilcisi Rytas'ı tarihindeki ilk Basketbol Şampiyonlar Ligi şampiyonluğuna taşıyan Harding, şimdi kendisini BSL ve EuroCup seviyesinde test etme fırsatı bulacak. İspanya ACB ve Basketbol Şampiyonlar Ligi'ndeki sayı krallıklarının ardından Erdem Can yönetimindeki Türk Telekom'un hücumdaki en büyük kozu olabilir.",
+      "transferNotuEn": "Having led Lithuania's Rytas to their first-ever Basketball Champions League title, Harding will now get the chance to test himself at BSL and EuroCup level. After winning scoring titles in both Spain's ACB and the Basketball Champions League, he could become Erdem Can's biggest offensive weapon at Türk Telekom.",
+      "ozet": "Patlayıcı hızı ve etkili penetreleriyle öne çıkan, sayı yapmayı kolay gösteren skorer bir guard oyuncusu.",
+      "ozetEn": "Known for his explosive speed and effective drives, he makes scoring look easy as a scoring guard.",
+      "ozetDetay": "Patlayıcı hızı ve etkili penetreleriyle öne çıkan, sayı yapmayı kolay gösteren skorer bir guard oyuncusu. Üç seviyeden skor üretme konusunda mahir, oynadığı her ligde sayı krallıklarına oynayan savunulması zor bir 2 numara profili.",
+      "ozetDetayEn": "Known for his explosive speed and effective drives, he makes scoring look easy as a scoring guard. Skilled at scoring from all three levels, he's a tough-to-guard shooting guard profile who's chased scoring titles in every league he's played in.",
+      "featuredStats": {
+        "yarisma": "Basketball Champions League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "19.4",
+            "PPG"
+          ],
+          [
+            "2.4",
+            "RPG"
+          ],
+          [
+            "2.4",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "LKL",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "17.2",
+              "PPG"
+            ],
+            [
+              "2.1",
+              "RPG"
+            ],
+            [
+              "2.4",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Birebir skor üretimi"
+        },
+        {
+          "t": "Düşük top kaybı oranı"
+        },
+        {
+          "t": "Yüksek seviyelerde kanıtlanmış performans",
+          "v": "BCL sayı kralı"
+        },
+        {
+          "t": "Patlayıcı ilk adım"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "One-on-one scoring"
+        },
+        {
+          "t": "Low turnover rate"
+        },
+        {
+          "t": "Proven performance at a high level",
+          "v": "BCL scoring champion"
+        },
+        {
+          "t": "Explosive first step"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Savunmada fiziksel dezavantaj"
+        },
+        {
+          "t": "Değer üreten pasörlük",
+          "v": "2.4 APG"
+        },
+        {
+          "t": "Zaman zaman şut tercihleri"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Physical disadvantage on defense"
+        },
+        {
+          "t": "Value-added passing",
+          "v": "2.4 APG"
+        },
+        {
+          "t": "Occasional shot-selection lapses"
+        }
+      ],
+      "arketip": "Slasher",
+      "mtnRating": "8.4",
+      "ratingNotu": "Üç seviyeden skor üretme konusunda mahir, oynadığı her ligde sayı krallıklarına oynayan savunulması zor bir 2 numara profili.",
+      "ratingNotuEn": "A tough-to-guard shooting guard profile, skilled at scoring from all three levels, who's chased scoring titles in every league he's played in.",
+      "benzerOyuncular": [
+        {
+          "isim": "Marcquise Reed",
+          "neden": "Penetre ve orta mesafe üstüne kurulmuş hücum",
+          "nedenEn": "Offense built around drives and midrange scoring"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=ykt4sZCnL6Y"
     }
   ]
 }
