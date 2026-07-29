@@ -30,7 +30,7 @@ export default function Topbar({ players }) {
               onClick={() => setLeague('euroleague')}
               aria-label="EuroLeague"
             >
-              <img src="/leagues/euroleague-icon.jpg" alt="" onError={hideIfBroken} />
+              <img src="/leagues/euroleague-icon.png" alt="" onError={hideIfBroken} />
             </button>
             <button
               className={league === 'bsl' ? 'active' : ''}
