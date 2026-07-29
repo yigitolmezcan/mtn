@@ -127,6 +127,20 @@
       "vurgu": "#B71C1C",
       "renk1": "#4A4A4A",
       "renk2": "#B71C1C"
+    },
+    "erokspor": {
+      "ad": "Erokspor",
+      "marka": "#F2D100",
+      "vurgu": "#2E7D32",
+      "renk1": "#F2D100",
+      "renk2": "#2E7D32"
+    },
+    "bahcesehir-koleji": {
+      "ad": "Bahçeşehir Koleji",
+      "marka": "#0F1B4C",
+      "vurgu": "#D32F2F",
+      "renk1": "#0F1B4C",
+      "renk2": "#D32F2F"
     }
   },
   "oyuncular": [
@@ -3022,6 +3036,232 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=d9cjL1IA58U"
+    },
+    {
+      "slug": "kevin-yebo",
+      "ad": "Kevin Yebo",
+      "resmiAd": "Kevin Yebo",
+      "takimSlug": "erokspor",
+      "lig": "bsl",
+      "pozisyon": "PF / C",
+      "boy": "2.07 m",
+      "yas": "29",
+      "milliyet": "Almanya / Fildişi Sahili",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "La Laguna Tenerife",
+      "geldigiLig": "Liga ACB (İspanya)",
+      "transferNotu": "Basketbola 16 yaşında başlayan Yebo, EuroCup'ta yaklaşık 17.4 sayı ve 6.6 ribaund ortalamaları yakaladı, sezon sonunda Tenerife formasıyla kısa ACB deneyiminde de dakikalarına oranla yüksek skor katkısı verdi. Erokspor, kanıtlanmış hücum üretimi karşılığında klasik pivot görevlerini eksiksiz yerine getirmeyen ve savunmada doğru uzun partnerine ihtiyaç duyan sıra dışı bir 4.5 numarayı kadrosuna katıyor.",
+      "transferNotuEn": "Having started playing basketball at 16, Yebo averaged around 17.4 points and 6.6 rebounds in the EuroCup, and also delivered a high scoring rate relative to his minutes during a brief ACB stint with Tenerife at season's end. In exchange for proven scoring, Erokspor is taking on an unconventional 4.5 who doesn't fully check the boxes of a classic center and will need the right frontcourt partner on defense.",
+      "ozet": "2.07 boyunda ve topu yere güvenli şekilde vurabilen, hücum repertuarı geniş bir 4.5 numara.",
+      "ozetEn": "Standing 2.07m and comfortable putting the ball on the floor, he's a 4.5 with a wide-ranging scoring repertoire.",
+      "ozetDetay": "2.07 boyunda ve topu yere güvenli şekilde vurabilen, hücum repertuarı geniş bir 4.5 numara. Koç Ufuk Sarıca'nın oyunculara özgürlük veren sisteminde yeteneklerini sergileyebilmesi için ciddi bir şansı olacak.",
+      "ozetDetayEn": "Standing 2.07m and comfortable putting the ball on the floor, he's a 4.5 with a wide-ranging scoring repertoire. He'll have a real chance to show off his skill set in coach Ufuk Sarıca's freedom-giving system.",
+      "featuredStats": {
+        "yarisma": "EuroCup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "17.4",
+            "PPG"
+          ],
+          [
+            "6.6",
+            "RPG"
+          ],
+          [
+            "0.1",
+            "BPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "Bundesliga",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "15.9",
+              "PPG"
+            ],
+            [
+              "6.2",
+              "RPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Yüzü dönük hücumlar"
+        },
+        {
+          "t": "Faul alma becerisi",
+          "v": "7.5/maç, EuroCup"
+        },
+        {
+          "t": "Yüksek motorlu oyun"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Face-up scoring"
+        },
+        {
+          "t": "Ability to draw fouls",
+          "v": "7.5/game, EuroCup"
+        },
+        {
+          "t": "High-motor play"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Çember koruması",
+          "v": "0.1 BPG"
+        },
+        {
+          "t": "Dış şut istikrarı",
+          "v": "%30 EuroCup / %32.9 Bundesliga"
+        },
+        {
+          "t": "Top kaybı kontrolü",
+          "v": "3.0/maç, EuroCup"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Rim protection",
+          "v": "0.1 BPG"
+        },
+        {
+          "t": "Outside shot consistency",
+          "v": "30% EuroCup / 32.9% Bundesliga"
+        },
+        {
+          "t": "Turnover control",
+          "v": "3.0/game, EuroCup"
+        }
+      ],
+      "arketip": "Athletic Center",
+      "mtnRating": "8.2",
+      "ratingNotu": "Bayern Münih'te düşük kullanımlı EuroLeague rolünde karşılık veremeyen Yebo, Chemnitz'e döndükten sonra topu yeniden eline alarak kariyerinin en üretken sezonunu geçirdi. Onun değerini belirleyen temel konu yalnızca oynadığı dakika değil, bu dakikalarda hücumun ne ölçüde parçası olduğu.",
+      "ratingNotuEn": "Unable to make his mark in a low-usage EuroLeague role at Bayern Munich, Yebo returned to Chemnitz, took the ball back in his hands, and put together the most productive season of his career. What really determines his value isn't just his minutes, but how much of the offense runs through him during them.",
+      "benzerOyuncular": [
+        {
+          "isim": "Devin Booker",
+          "neden": "Hücum ağırlıklı bir 4.5",
+          "nedenEn": "An offense-first 4.5"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=PCWeizvm0xY"
+    },
+    {
+      "slug": "david-dileo",
+      "ad": "David DiLeo",
+      "resmiAd": "David DiLeo",
+      "takimSlug": "bahcesehir-koleji",
+      "lig": "bsl",
+      "pozisyon": "SF / PF",
+      "boy": "2.01 m",
+      "yas": "29",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Le Mans",
+      "geldigiLig": "Betclic ÉLITE (Fransa)",
+      "transferNotu": "İki başarılı Le Mans sezonunun ve %42.4 üçlükle tamamladığı BCL performansının ardından EuroCup favorilerinden birinin kadrosuna katılıyor. Bahçeşehir, DiLeo'dan ana skor yükünü taşımasını değil; daha yetenekli yaratıcıların etrafında savunmanın yardım düzenini bozmasını ve şut kalitesini korumasını bekleyecek.",
+      "transferNotuEn": "After two successful seasons at Le Mans and a BCL campaign capped by a 42.4% clip from three, he's joining the roster of one of the EuroCup favorites. Bahçeşehir won't ask DiLeo to carry the primary scoring load; instead, they'll want him to disrupt defensive help rotations around more gifted creators and keep his shooting efficiency intact.",
+      "ozet": "Yüksek hacimli dış şutunu istikrarlı yüzdelerle birleştiren bir keskin nişancı.",
+      "ozetEn": "Pairing high-volume outside shooting with steady percentages, he's a true sharpshooter.",
+      "ozetDetay": "Yüksek hacimli dış şutunu istikrarlı yüzdelerle birleştiren bir keskin nişancı. Perde çıkışları ve hızlı hücumlarda yarattığı üç sayı tehdidiyle Bahçeşehir Koleji'nin spacing'ine değerli katkılar sunabilir.",
+      "ozetDetayEn": "Pairing high-volume outside shooting with steady percentages, he's a true sharpshooter. The three-point threat he creates off screens and in early offense could add real value to Bahçeşehir Koleji's spacing.",
+      "featuredStats": {
+        "yarisma": "Basketball Champions League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "11.6",
+            "PPG"
+          ],
+          [
+            "2.9",
+            "RPG"
+          ],
+          [
+            "42.4",
+            "3PT%"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "Betclic ÉLITE",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "10.5",
+              "PPG"
+            ],
+            [
+              "3.4",
+              "RPG"
+            ],
+            [
+              "1.4",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Yüksek hacimli dış şut",
+          "v": "%38.0 3PT, Fransa Ligi"
+        },
+        {
+          "t": "Topsuz verimlilik"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "High-volume outside shooting",
+          "v": "38.0% 3PT, French League"
+        },
+        {
+          "t": "Off-ball efficiency"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Topla bireysel üretim"
+        },
+        {
+          "t": "Savunmada yavaş ayaklar"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Limited on-ball scoring creation"
+        },
+        {
+          "t": "Slow feet on defense"
+        }
+      ],
+      "arketip": "Sharpshooter",
+      "mtnRating": "7.6",
+      "ratingNotu": "Malachi Flynn, Aleksa Avramović ve Marcquise Reed gibi topu elinde isteyen kısaların yanında çok önemli bir dengeleyici olabilir. Net rolü sayesinde koç Djordjević'in elini rahatlatacaktır.",
+      "ratingNotuEn": "He could be a crucial stabilizer alongside ball-dominant guards like Malachi Flynn, Aleksa Avramović, and Marcquise Reed. His clearly defined role should make things easier for coach Djordjević.",
+      "benzerOyuncular": [
+        {
+          "isim": "Jarell Eddie",
+          "neden": "Şutuyla var olan kanat profili",
+          "nedenEn": "A wing who makes his living off his jump shot"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=uQ2SxqsRpyU"
     }
   ]
 }
