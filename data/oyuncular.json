@@ -113,6 +113,13 @@
       "vurgu": "#E4E1DC",
       "renk1": "var(--bone)",
       "renk2": "#000000"
+    },
+    "crvena-zvezda": {
+      "ad": "Kızılyıldız",
+      "marka": "#EE1C25",
+      "vurgu": "#EE1C25",
+      "renk1": "var(--bone)",
+      "renk2": "#EE1C25"
     }
   },
   "oyuncular": [
@@ -2786,6 +2793,101 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=V5EIcdNtwk0"
+    },
+    {
+      "slug": "patrick-baldwin-jr",
+      "ad": "Patrick Baldwin Jr.",
+      "resmiAd": "Patrick Baldwin Jr.",
+      "takimSlug": "crvena-zvezda",
+      "pozisyon": "PF / C",
+      "boy": "2.13 m",
+      "yas": "23",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Sacramento Kings",
+      "geldigiLig": "NBA (ABD)",
+      "transferNotu": "G Ligi'nde etkileyici istatistikler üreten Baldwin, kariyerinin ilk Avrupa deneyimine doğrudan EuroLeague seviyesinde başlayacak. Kızılyıldız bir yandan sıra dışı fiziksel ölçülere ve hücum yeteneğine yatırım yaparken, diğer yandan şut istikrarı ve savunma rolü henüz tam olarak oturmamış bir oyuncunun gelişim riskini üstleniyor; kadroda Nedović, Butler, Nwora, Ojeleye ve Moneke gibi NBA kökenli isimlerin bulunması uyum sürecini kolaylaştırabilir.",
+      "transferNotuEn": "Having produced impressive numbers in the G League, Baldwin will make his first European experience directly at EuroLeague level. Crvena Zvezda is betting on his unusual physical tools and scoring ability while also taking on the developmental risk of a player whose shooting consistency and defensive role haven't fully settled — though a roster already stocked with NBA-tested names like Nedović, Butler, Nwora, Ojeleye, and Moneke could ease his adjustment.",
+      "ozet": "2.13'lük boyu ve kadife bilekleriyle Kızılyıldız ön alanına esneklik getirecek NBA patentli genç yıldız adayı.",
+      "ozetEn": "Standing 2.13m with a soft shooting touch, this NBA-groomed prospect could bring real flexibility to Crvena Zvezda's frontcourt.",
+      "ozetDetay": "2.13'lük boyu ve kadife bilekleriyle Kızılyıldız ön alanına esneklik getirecek NBA patentli genç yıldız adayı. Büyük fiziğinin içine saklanmış guard yetenekleri, onu durdurması zor bir oyuncu yapıyor.",
+      "ozetDetayEn": "Standing 2.13m with a soft shooting touch, this NBA-groomed prospect could bring real flexibility to Crvena Zvezda's frontcourt. The guard skills hidden inside his big frame make him a tough matchup to contain.",
+      "featuredStats": {
+        "yarisma": "NBA G League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "20.8",
+            "PPG"
+          ],
+          [
+            "8.0",
+            "RPG"
+          ],
+          [
+            "3.1",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Savunması zor pick-and-pop tehdidi"
+        },
+        {
+          "t": "Savunma ribauntları"
+        },
+        {
+          "t": "2.13 boyunda perimetre becerisi"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Tough-to-guard pick-and-pop threat"
+        },
+        {
+          "t": "Defensive rebounding"
+        },
+        {
+          "t": "Perimeter skill at 2.13m"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Fiziksel temastan uzak durma yönelimi"
+        },
+        {
+          "t": "Tekrarlayan ayak bileği sorunları"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Tendency to avoid physical contact"
+        },
+        {
+          "t": "Recurring ankle issues"
+        }
+      ],
+      "arketip": "Stretch Big",
+      "mtnRating": "7.9",
+      "ratingNotu": "Lise döneminde elit bir NBA prospect'i olarak görülen Baldwin'in kariyer çizgisi, geçirdiği ciddi ayak bileği sakatlığıyla tamamen değişti. Henüz 23 yaşında olması nedeniyle gelişim ihtimali devam etse de dört NBA sezonunda kalıcı bir rotasyon rolü elde edemedi.",
+      "ratingNotuEn": "Once viewed as an elite NBA prospect in high school, Baldwin's career trajectory was completely altered by a serious ankle injury. At just 23, the upside is still there, but he never carved out a lasting rotation role across four NBA seasons.",
+      "benzerOyuncular": [
+        {
+          "isim": "Kyle Wiltjer",
+          "neden": "Yüksek şut noktası",
+          "nedenEn": "Elite shooting touch"
+        },
+        {
+          "isim": "Petr Cornelie",
+          "neden": "Rol ve fizik",
+          "nedenEn": "Role and physical profile"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=v0qEPmqSM4o&t=101s"
     }
   ]
 }
