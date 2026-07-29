@@ -2,9 +2,11 @@
 import { useState, useMemo } from 'react';
 import PlayerCard from '@/components/PlayerCard';
 import { useLang } from '@/lib/LanguageContext';
+import { useLeague } from '@/lib/LeagueContext';
 
 export default function HomeView({ players, sezon }) {
   const { lang, t } = useLang();
+  const { league } = useLeague();
   const [sortBy, setSortBy] = useState('guncelleme');
 
   const buildDate = new Date();
@@ -12,15 +14,17 @@ export default function HomeView({ players, sezon }) {
     ? buildDate.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })
     : buildDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
+  const leaguePlayers = useMemo(() => players.filter((p) => p.lig === league), [players, league]);
+
   const sortedPlayers = useMemo(() => {
     if (sortBy === 'takim') {
-      return [...players].sort((a, b) => a.takim.localeCompare(b.takim, 'tr'));
+      return [...leaguePlayers].sort((a, b) => a.takim.localeCompare(b.takim, 'tr'));
     }
     if (sortBy === 'puan') {
-      return [...players].sort((a, b) => (parseFloat(b.mtnRating) || 0) - (parseFloat(a.mtnRating) || 0));
+      return [...leaguePlayers].sort((a, b) => (parseFloat(b.mtnRating) || 0) - (parseFloat(a.mtnRating) || 0));
     }
-    return players; // güncelleme sırası — zaten doğru dizilmiş geliyor
-  }, [players, sortBy]);
+    return leaguePlayers; // güncelleme sırası — zaten doğru dizilmiş geliyor
+  }, [leaguePlayers, sortBy]);
 
   return (
     <main className="wrap">
@@ -31,7 +35,7 @@ export default function HomeView({ players, sezon }) {
         </h1>
         <p className="hero__p">{t.heroSubtitle}</p>
         <div className="rail">
-          <b>{t.playersScouted(players.length)}</b>
+          <b>{t.playersScouted(leaguePlayers.length)}</b>
           <span>·</span>
           <span>{t.lastUpdated}: {formatted}</span>
           <select className="sort-select" value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
@@ -40,6 +44,7 @@ export default function HomeView({ players, sezon }) {
             <option value="puan">{t.sortRating}</option>
           </select>
         </div>
+        {league === 'bsl' && <p className="note">{t.bslNotice}</p>}
       </section>
 
       <section className="grid">

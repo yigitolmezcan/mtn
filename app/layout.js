@@ -2,6 +2,7 @@ import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { getAllPlayers } from '@/lib/players';
 import { LanguageProvider } from '@/lib/LanguageContext';
+import { LeagueProvider } from '@/lib/LeagueContext';
 import Topbar from '@/components/Topbar';
 import Footer from '@/components/Footer';
 
@@ -43,11 +44,13 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <LanguageProvider>
-          <Topbar players={searchData} />
+          <LeagueProvider>
+            <Topbar players={searchData} />
 
-          {children}
+            {children}
 
-          <Footer />
+            <Footer />
+          </LeagueProvider>
         </LanguageProvider>
         <Analytics />
       </body>

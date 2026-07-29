@@ -48,10 +48,19 @@ a{color:inherit;text-decoration:none}
   border-bottom:1px solid var(--line-soft);
 }
 .topbar__inner{display:flex;align-items:center;justify-content:space-between;height:54px}
+.topbar__switches{display:flex;align-items:center}
 .lang-switch{display:flex;align-items:center;gap:6px;font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.1em}
 .lang-switch button{background:none;border:none;padding:2px 2px 4px;cursor:pointer;color:var(--muted-dim)}
 .lang-switch button.active{color:var(--court);border-bottom:1.5px solid var(--court)}
 .lang-switch__sep{color:var(--line)}
+.league-switch{display:flex;align-items:center;gap:6px;margin-right:10px}
+.league-switch button{
+  background:none;border:1px solid var(--line);border-radius:5px;
+  width:24px;height:24px;padding:3px;cursor:pointer;opacity:.5;
+  display:flex;align-items:center;justify-content:center;
+}
+.league-switch button img{width:100%;height:100%;object-fit:contain}
+.league-switch button.active{opacity:1;border-color:var(--court)}
 
 .tsearch{position:relative;display:flex;align-items:center}
 .tsearch__icon{background:none;border:none;padding:0;cursor:pointer;display:flex;align-items:center;color:var(--court)}
