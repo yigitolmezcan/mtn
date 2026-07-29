@@ -44,7 +44,6 @@ export default function HomeView({ players, sezon }) {
             <option value="puan">{t.sortRating}</option>
           </select>
         </div>
-        {league === 'bsl' && <p className="note">{t.bslNotice}</p>}
       </section>
 
       <section className="grid">
@@ -56,8 +55,8 @@ export default function HomeView({ players, sezon }) {
       <section className="explain">
         <div className="eyebrow">{t.assessment}</div>
         <h2 className="explain__h2">{t.ratingExplainH2}</h2>
-        <p className="explain__p">{t.ratingExplainP1}</p>
-        <p className="explain__p">{t.ratingExplainP2}</p>
+        <p className="explain__p">{league === 'bsl' ? t.ratingExplainP1Bsl : t.ratingExplainP1}</p>
+        <p className="explain__p">{league === 'bsl' ? t.ratingExplainP2Bsl : t.ratingExplainP2}</p>
       </section>
     </main>
   );

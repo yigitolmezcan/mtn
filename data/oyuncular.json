@@ -120,6 +120,13 @@
       "vurgu": "#EE1C25",
       "renk1": "var(--bone)",
       "renk2": "#EE1C25"
+    },
+    "aliaga-petkimspor": {
+      "ad": "Aliağa Petkimspor",
+      "marka": "#4A4A4A",
+      "vurgu": "#B71C1C",
+      "renk1": "#4A4A4A",
+      "renk2": "#B71C1C"
     }
   },
   "oyuncular": [
@@ -2913,6 +2920,108 @@
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=v0qEPmqSM4o&t=101s",
       "lig": "euroleague"
+    },
+    {
+      "slug": "max-abmas",
+      "ad": "Max Abmas",
+      "resmiAd": "Maxwell Abmas",
+      "takimSlug": "aliaga-petkimspor",
+      "lig": "bsl",
+      "pozisyon": "PG",
+      "boy": "1.80 m",
+      "yas": "25",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Salt Lake City Stars",
+      "geldigiLig": "NBA G League (ABD)",
+      "transferNotu": "NCAA kariyerini 3.131 sayıyla Division I tarihinin sekizinci sırasında tamamlayan Abmas, Oral Roberts'ı 15 numaralı seri başıyken Sweet 16'ya taşıyarak kolej basketbolunun unutulmaz küçük okul yıldızlarından birine dönüştü. Texas ve Salt Lake City dönemleri ise daha sınırlı kullanım oranında da verimli kalabildiğini gösterdi. Bu yaz Utah Jazz ile kamp sözleşmesi imzalayıp NBA Yaz Ligi'nde forma giymesi, üst düzey rekabette de kendini kanıtladığının bir işareti.",
+      "transferNotuEn": "Abmas finished his NCAA career with 3,131 points — eighth in Division I history — famously carrying 15-seed Oral Roberts to the Sweet 16 and becoming one of college basketball's most memorable small-school stars. His time at Texas and with Salt Lake City showed he could stay efficient even on a lower usage rate. Signing a training camp deal with the Utah Jazz and appearing in the NBA Summer League this summer is a sign he can hold his own against higher-level competition.",
+      "ozet": "NCAA tarihinin en özel skorerlerinden biri, elit üç sayı tehdidiyle yeteneklerini Aliağa'ya taşımaya geliyor.",
+      "ozetEn": "One of the most special scorers in NCAA history, he brings his elite three-point threat to Aliağa.",
+      "ozetDetay": "NCAA tarihinin en özel skorerlerinden biri, elit üç sayı tehdidiyle yeteneklerini Aliağa'ya taşımaya geliyor. Birleşik Amerikalı skorer, yüksek temposu ve hareketli oyunuyla Avrupa'daki ilk sezonunu Basketbol Süper Ligi'nde geçirmeye hazırlanıyor.",
+      "ozetDetayEn": "One of the most special scorers in NCAA history, he brings his elite three-point threat to Aliağa. The American scorer is preparing to spend his first season in Europe in the Basketbol Süper Ligi, built around his high tempo and constant movement.",
+      "featuredStats": {
+        "yarisma": "NBA G League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "17.0",
+            "PPG"
+          ],
+          [
+            "3.4",
+            "RPG"
+          ],
+          [
+            "4.2",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "NBA mesafesinden pull-up tehdidi"
+        },
+        {
+          "t": "Düşük top kaybı oranı"
+        },
+        {
+          "t": "Liderlik özelliği"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Pull-up threat from NBA range"
+        },
+        {
+          "t": "Low turnover rate"
+        },
+        {
+          "t": "Leadership quality"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Fiziksel dezavantaj"
+        },
+        {
+          "t": "Temaslı bitiricilik"
+        },
+        {
+          "t": "Şaibeli şut seçimleri"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Physical size disadvantage"
+        },
+        {
+          "t": "Finishing through contact"
+        },
+        {
+          "t": "Questionable shot selection"
+        }
+      ],
+      "arketip": "Scoring Point Guard",
+      "mtnRating": "8.0",
+      "ratingNotu": "Max Abmas'ın ABD dışındaki ilk takımında koç Orhun Ene'yle çalışacak olması, oyuncu açısından önemli bir şans. Tecrübeli koçun Abmas'ı Keandre Cook ve Khyri Thomas gibi fizikli oyuncularla beraber oynatıp savunma zaaflarını saklaması olası.",
+      "ratingNotuEn": "Working with coach Orhun Ene in his first team outside the US is a real opportunity for Abmas. The experienced coach could pair him with physical teammates like Keandre Cook and Khyri Thomas to help mask his defensive shortcomings.",
+      "benzerOyuncular": [
+        {
+          "isim": "Markus Howard",
+          "neden": "Şut hacmi",
+          "nedenEn": "Shooting volume"
+        },
+        {
+          "isim": "Jordan Crawford",
+          "neden": "Kısa boyu avantaja çevirmek",
+          "nedenEn": "Turning his lack of size into an advantage"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=d9cjL1IA58U"
     }
   ]
 }
