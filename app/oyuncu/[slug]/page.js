@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getPlayer, getAllSlugs } from '@/lib/players';
+import { getPlayer, getAllSlugs, getAllPlayers } from '@/lib/players';
 import PlayerProfile from '@/components/PlayerProfile';
 
 export function generateStaticParams() {
@@ -27,5 +27,10 @@ export default async function PlayerPage({ params }) {
   const p = getPlayer(slug);
   if (!p) notFound();
 
-  return <PlayerProfile p={p} />;
+  const allPlayers = getAllPlayers().map((pl) => ({
+    slug: pl.slug, ad: pl.ad, takim: pl.takim, takimSlug: pl.takimSlug,
+    takimRenk: pl.takimRenk, pozisyon: pl.pozisyon, mtnRating: pl.mtnRating, lig: pl.lig,
+  }));
+
+  return <PlayerProfile p={p} allPlayers={allPlayers} />;
 }

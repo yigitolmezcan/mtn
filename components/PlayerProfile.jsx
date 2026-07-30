@@ -60,9 +60,13 @@ function Ledger({ items, kind }) {
   );
 }
 
-export default function PlayerProfile({ p }) {
+export default function PlayerProfile({ p, allPlayers = [] }) {
   const { lang, t } = useLang();
   const ArketipIcon = p.arketip ? ARCHETYPE_ICONS[p.arketip] : null;
+
+  const teammates = allPlayers.filter(
+    (tm) => tm.takimSlug === p.takimSlug && tm.slug !== p.slug && tm.lig === p.lig
+  );
 
   const ozet = lang === 'en' ? (p.ozetDetayEn || p.ozetEn || p.ozet) : (p.ozetDetay || p.ozet);
   const gucluYonler = lang === 'en' ? (p.gucluYonlerEn || p.gucluYonler) : p.gucluYonler;
@@ -191,6 +195,19 @@ export default function PlayerProfile({ p }) {
           ))}
         </div>
       </section>
+
+      {teammates.length > 0 && (
+        <section className="blk wrap">
+          <div className="lbl">{t.otherSignings(p.takim)}</div>
+          <div className="chips">
+            {teammates.map((tm) => (
+              <Link key={tm.slug} href={`/oyuncu/${tm.slug}`} className="chip chip--link">
+                {tm.ad}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="blk wrap">
         <div className="lbl">{t.watch}</div>
