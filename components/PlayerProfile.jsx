@@ -1,8 +1,10 @@
 'use client';
+import { useState } from 'react';
 import Link from 'next/link';
 import { Rating } from '@/components/PlayerCard';
 import RatingInfo from '@/components/RatingInfo';
 import ChipInfo from '@/components/ChipInfo';
+import ProfileNav from '@/components/ProfileNav';
 import { ARCHETYPE_ICONS } from '@/lib/archetypeIcons';
 import PositionCourt from '@/components/PositionCourt';
 import ShareButton from '@/components/ShareButton';
@@ -63,6 +65,7 @@ function Ledger({ items, kind }) {
 export default function PlayerProfile({ p, allPlayers = [] }) {
   const { lang, t } = useLang();
   const ArketipIcon = p.arketip ? ARCHETYPE_ICONS[p.arketip] : null;
+  const [cinematic, setCinematic] = useState(false);
 
   const teammates = allPlayers.filter(
     (tm) => tm.takimSlug === p.takimSlug && tm.slug !== p.slug && tm.lig === p.lig
@@ -132,7 +135,9 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
         </div>
       </header>
 
-      <section className="blk wrap">
+      <ProfileNav onVideoClick={() => setCinematic(true)} />
+
+      <section className="blk wrap" id="section-ozet">
         <div className="lbl">{t.assessment}</div>
         <div className="verdict-row">
           <p className="verdict">{ozet}</p>
@@ -155,7 +160,7 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
         </section>
       )}
 
-      <section className="blk wrap">
+      <section className="blk wrap" id="section-transfer">
         <div className="lbl">{t.transfer}</div>
         <div className="transfer">
           <div className="node">
@@ -174,7 +179,7 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
         {transferNotu && <p className="note">{transferNotu}</p>}
       </section>
 
-      <section className="blk wrap">
+      <section className="blk wrap" id="section-istatistik">
         <div className="lbl">{t.stats}</div>
         <StatBlock comp={p.featuredStats} featured featuredLabel={t.featured} />
         {p.digerIstatistikler.map((c) => (
@@ -182,7 +187,7 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
         ))}
       </section>
 
-      <section className="blk wrap">
+      <section className="blk wrap" id="section-ozellikler">
         <div className="ledger">
           <div>
             <div className="lbl">{t.strengths}</div>
@@ -220,10 +225,10 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
         </section>
       )}
 
-      <section className="blk wrap">
+      <section className="blk wrap" id="section-video">
         <div className="lbl">{t.watch}</div>
         {p.youtubeUrl ? (
-          <div className="hl-embed">
+          <div className={`hl-embed${cinematic ? ' hl-embed--wide' : ''}`}>
             <iframe
               src={`https://www.youtube.com/embed/${getYoutubeId(p.youtubeUrl)}`}
               title={`${p.ad} highlights`}
