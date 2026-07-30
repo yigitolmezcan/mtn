@@ -3518,6 +3518,110 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=ykt4sZCnL6Y"
+    },
+    {
+      "slug": "daquan-jeffries",
+      "ad": "DaQuan Jeffries",
+      "resmiAd": "DaQuan Jeffries",
+      "takimSlug": "besiktas",
+      "lig": "euroleague",
+      "pozisyon": "SF",
+      "boy": "1.96 m",
+      "yas": "28",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Stockton Kings",
+      "geldigiLig": "NBA G League (ABD)",
+      "transferNotu": "DaQuan Jeffries, 2025-26 sezonunu geçirdiği Stockton Kings'te gösterdiği performansla 'All-NBA G League First Team'e seçildi; ayrıca Sacramento ile 10 günlük bir sözleşme kapsamında 3 NBA maçında forma giydi. Ancak oyuncuyu değerlendirirken, G Lig'deki istatistiklerinin ve rolünün, ligin kendine özgü rekabet seviyesi nedeniyle EuroLeague gerçekliğine birebir yansımayabileceğini unutmamak lazım.",
+      "transferNotuEn": "DaQuan Jeffries was named to the All-NBA G League First Team on the back of his performance with the Stockton Kings in 2025-26, and also appeared in three NBA games on a 10-day hardship contract with Sacramento. That said, it's worth remembering his G League numbers and role may not translate directly to EuroLeague reality, given the league's own distinct level of competition.",
+      "ozet": "Güçlü fiziğini atletizm ve gelişen ceza şutlarıyla birleştiren iki yönlü bir kanat.",
+      "ozetEn": "Combining a strong frame with athleticism and an improving free-throw touch, he's a two-way wing.",
+      "ozetDetay": "Güçlü fiziğini atletizm ve gelişen ceza şutlarıyla birleştiren iki yönlü bir kanat. Birleşik Amerikalı oyuncu, koç Dusan Alimpijevic'in baskılı savunma prensipleriyle örtüşen bir profil çiziyor. Ayrıca hem açık sahada hem de yarı sahada farklı şekillerde skor üretebilme potansiyeline sahip.",
+      "ozetDetayEn": "Combining a strong frame with athleticism and an improving free-throw touch, he's a two-way wing. The American player fits the mold of coach Dušan Alimpijević's pressure-defense principles. He also has the potential to produce points in different ways, both in transition and in the half court.",
+      "featuredStats": {
+        "yarisma": "NBA G League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "23.5",
+            "PPG"
+          ],
+          [
+            "5.9",
+            "RPG"
+          ],
+          [
+            "2.4",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Güçlü üst gövde"
+        },
+        {
+          "t": "Catch-and-shoot tehdidi",
+          "v": "%43.8 3PT, G Lig"
+        },
+        {
+          "t": "Topsuz verimlilik"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Strong upper body"
+        },
+        {
+          "t": "Catch-and-shoot threat",
+          "v": "43.8% 3PT, G League"
+        },
+        {
+          "t": "Off-ball efficiency"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Top hakimiyeti"
+        },
+        {
+          "t": "Birebir üretim"
+        },
+        {
+          "t": "Savunmada yana hareket kabiliyeti"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Ball-handling"
+        },
+        {
+          "t": "One-on-one scoring"
+        },
+        {
+          "t": "Lateral quickness on defense"
+        }
+      ],
+      "arketip": "3&D Wing",
+      "mtnRating": "7.9",
+      "ratingNotu": "Tüm kariyerini NBA ve G-League arasında geçiren Jeffries, Stockton Kings formasıyla 2025-2026 sezonunda en verimli dönemini yaşadı. Oyuncu profili ve özellikleri itibarıyla, yenilenen Beşiktaş kadrosundaki ana isimlerden biri olması yüksek ihtimal.",
+      "ratingNotuEn": "Having spent his entire career shuttling between the NBA and the G League, Jeffries had the most productive stretch of his career with the Stockton Kings in 2025-26. Given his profile and skill set, he stands a good chance of becoming one of the key names in Beşiktaş's revamped roster.",
+      "benzerOyuncular": [
+        {
+          "isim": "Kameron Taylor",
+          "neden": "Temastan kaçınmayan profil, açık alanda etkili",
+          "nedenEn": "Doesn't shy from contact, effective in the open floor"
+        },
+        {
+          "isim": "Romain Sato",
+          "neden": "Fiziksel 3&D profili",
+          "nedenEn": "A physical 3&D profile"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=SHUxK_-sGec"
     }
   ]
 }
