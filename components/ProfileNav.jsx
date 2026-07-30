@@ -13,7 +13,14 @@ export default function ProfileNav({ onVideoClick }) {
   const { t } = useLang();
 
   function go(id, isVideo) {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const el = document.getElementById(id);
+    if (el) {
+      const topbar = document.querySelector('.topbar');
+      const nav = document.querySelector('.pnav');
+      const offset = (topbar?.offsetHeight || 0) + (nav?.offsetHeight || 0) + 16;
+      const top = el.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
     if (isVideo) onVideoClick?.();
   }
 
