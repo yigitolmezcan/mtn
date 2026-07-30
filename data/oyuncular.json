@@ -148,6 +148,13 @@
       "vurgu": "#FFFFFF",
       "renk1": "#0A1E42",
       "renk2": "var(--bone)"
+    },
+    "tofas": {
+      "ad": "Tofaş",
+      "marka": "#0A2472",
+      "vurgu": "#0A2472",
+      "renk1": "var(--bone)",
+      "renk2": "#0A2472"
     }
   },
   "oyuncular": [
@@ -3622,6 +3629,131 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=SHUxK_-sGec"
+    },
+    {
+      "slug": "bryce-jones",
+      "ad": "Bryce Jones",
+      "resmiAd": "Bryce Tyler Jones Jr.",
+      "takimSlug": "tofas",
+      "lig": "bsl",
+      "pozisyon": "PG",
+      "boy": "1.83 m",
+      "yas": "31",
+      "milliyet": "ABD",
+      "el": "Sol",
+      "elEn": "Left",
+      "milliyetNotu": null,
+      "geldigiKulup": "Aris",
+      "geldigiLig": "GBL (Yunanistan)",
+      "transferNotu": "Avrupa kariyerine Karadağ'da başlayan Jones, basamakları teker teker çıkarak FMP, Limoges, Cluj, Igokea ve Aris formalarıyla EuroCup seviyesinde bir oyuncuya dönüştü.",
+      "transferNotuEn": "Having started his European career in Montenegro, Jones climbed the ladder step by step through FMP, Limoges, Cluj, Igokea, and Aris to become a genuine EuroCup-level player.",
+      "ozet": "Pick and roll üzerinden hücum yöneten, çembere gidişler ve faul alma becerisiyle öne çıkan lider özellikli oyun kurucu.",
+      "ozetEn": "Running the offense through pick-and-roll, he's a leadership-driven point guard known for his drives and ability to draw fouls.",
+      "ozetDetay": "Pick and roll üzerinden hücum yöneten, çembere gidişler ve faul alma becerisiyle öne çıkan lider özellikli oyun kurucu. Eski koçu Massimo Cancellieri ile yeniden buluşan Jones, baştan aşağı yenilenen Tofaş kadrosunun parkedeki karar vericisi olacak.",
+      "ozetDetayEn": "Running the offense through pick-and-roll, he's a leadership-driven point guard known for his drives and ability to draw fouls. Reuniting with his former coach Massimo Cancellieri, Jones will be the on-court decision-maker for a completely rebuilt Tofaş roster.",
+      "featuredStats": {
+        "yarisma": "EuroCup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "17.6",
+            "PPG"
+          ],
+          [
+            "3.4",
+            "RPG"
+          ],
+          [
+            "5.1",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "GBL",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "15.0",
+              "PPG"
+            ],
+            [
+              "2.9",
+              "RPG"
+            ],
+            [
+              "5.0",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Birçok takımda liderlik tecrübesi"
+        },
+        {
+          "t": "İkili oyunlardaki ustalık"
+        },
+        {
+          "t": "Serbest atış çizgisine gitme yeteneği"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Leadership experience across multiple teams"
+        },
+        {
+          "t": "Pick-and-roll mastery"
+        },
+        {
+          "t": "Ability to get to the free-throw line"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Savunmada hedeflenebilen küçük fizik"
+        },
+        {
+          "t": "Dış şut istikrarsızlığı",
+          "v": "%29 3PT, EuroCup kariyeri"
+        },
+        {
+          "t": "Yüksek top kaybı yönelimi",
+          "v": "3.1 top kaybı/maç, EuroCup"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Small frame that can be targeted on defense"
+        },
+        {
+          "t": "Inconsistent outside shooting",
+          "v": "29% 3PT, EuroCup career"
+        },
+        {
+          "t": "High turnover tendency",
+          "v": "3.1 TOV/game, EuroCup"
+        }
+      ],
+      "arketip": "Floor General",
+      "mtnRating": "8.1",
+      "ratingNotu": "Jones'un Tofaş'a uyumunu yükselten en önemli detay, Massimo Cancellieri ile daha önce çalışmış olması. İkili 2022-23 sezonunda Limoges'da birlikteydi ve Jones o takımın temel hücum yönlendiricilerinden biriydi.",
+      "ratingNotuEn": "The biggest factor boosting Jones's fit at Tofaş is that he's already worked with Massimo Cancellieri before. The two were together at Limoges in 2022-23, where Jones was one of the team's primary offensive orchestrators.",
+      "benzerOyuncular": [
+        {
+          "isim": "Chris Jones",
+          "neden": "Saha içi liderliği ve ikili oyunlar",
+          "nedenEn": "On-court leadership and pick-and-roll play"
+        },
+        {
+          "isim": "Will Cummings",
+          "neden": "Potaya gidiş sıklığı",
+          "nedenEn": "Frequency of drives to the rim"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=yi77dIbsBu8"
     }
   ]
 }
