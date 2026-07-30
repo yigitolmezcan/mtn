@@ -144,6 +144,17 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
         {ratingNotu && <p className="rating-note">{ratingNotu}</p>}
       </section>
 
+      {p.anahtarSoru && (
+        <section className="blk wrap">
+          <div className="keyq">
+            <div className="keyq__label">{t.keyQuestion}</div>
+            <p className="keyq__text">
+              {lang === 'tr' ? p.anahtarSoru : p.anahtarSoruEn}
+            </p>
+          </div>
+        </section>
+      )}
+
       <section className="blk wrap">
         <div className="lbl">{t.transfer}</div>
         <div className="transfer">

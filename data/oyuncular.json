@@ -282,7 +282,9 @@
       "ozetDetayEn": "Entering his prime, a high-efficiency off-ball scorer and experienced Spanish wing set to test himself at EuroLeague level. His limited athleticism and struggles in one-on-one defense could push him further down the rotation than expected at EuroLeague pace. Without a clearly defined role in Efes's deep wing rotation, his impact risks staying confined to limited minutes.",
       "el": "Sağ",
       "elEn": "Right",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Zaragoza'da yüksek top kullanımıyla ürettiği skoru, Efes'te daha az dokunuşla sürdürebilecek mi?",
+      "anahtarSoruEn": "Can he sustain the scoring he produced on high usage at Zaragoza with far fewer touches at Efes?"
     },
     {
       "slug": "mady-sissoko",
@@ -402,7 +404,9 @@
       "ozetDetayEn": "Joining from Serie A, an athletic, still-developing center who protects the rim with his size and wingspan and creates a vertical threat in pick-and-roll. His physical rim presence could immediately strengthen Beşiktaş's defensive spine in their first EuroLeague season back. How much he develops in switch defense will decide whether his role grows from rotation piece to genuine starting center.",
       "el": "Sağ",
       "elEn": "Right",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Fiziksel üstünlüğünü, faul ve savunma konsantrasyonu problemi yaşamadan EuroLeague seviyesine taşıyabilecek mi?",
+      "anahtarSoruEn": "Can he carry his physical dominance to EuroLeague level without foul trouble or defensive lapses?"
     },
     {
       "slug": "dj-stewart",
@@ -522,7 +526,9 @@
       "ozetDetayEn": "Coming off a strong ABA season, a modern, athletic wing who defends multiple positions and contributes floor spacing through his off-ball movement. His defensive versatility should make him an immediately reliable rotation piece in Baskonia's fast-paced system. If he keeps his outside shot at an acceptable level, he could become one of Baskonia's key offensive weapons.",
       "el": "Sol",
       "elEn": "Left",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Top kullanımının ve bireysel skor sorumluluğunun azalacağı EuroLeague seviyesinde aynı verimliliği koruyabilecek mi?",
+      "anahtarSoruEn": "Can he maintain the same efficiency at EuroLeague level with less usage and individual scoring responsibility?"
     },
     {
       "slug": "maozinha-pereira",
@@ -629,7 +635,9 @@
       "ozetDetayEn": "Fresh off a breakout year in Turkey, a high-motor forward who brings energy up front with his athleticism and rebounding consistency, effective in transition and around the rim. Paris's up-tempo system could be the right stage to showcase his biggest strength. The real question is how well he can mask his physical disadvantage defending the low post within the rotation.",
       "el": "Sağ",
       "elEn": "Right",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Dış şutu savunmalar tarafından ciddiye alınmadığında, atletizmi EuroLeague yarı saha hücumunda sahada kalmasına yetecek mi?",
+      "anahtarSoruEn": "Once defenses stop respecting his outside shot, will his athleticism alone keep him on the floor in EuroLeague half-court sets?"
     },
     {
       "slug": "ignas-sargiunas",
@@ -753,7 +761,9 @@
       "ozetDetayEn": "Arriving as a champion, an off-ball scorer who opens up half-court offense through his catch-and-shoot ability and secondary playmaking. Finding minutes in Fenerbahçe's crowded guard rotation will depend as much on the coach's choices as on his own form. The composure he showed winning the BCL title could make it easier to earn Šarūnas Jasikevičius's trust in big games.",
       "el": "Sağ",
       "elEn": "Right",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Şutu girmediği gecelerde savunma ve ikinci top yönlendirme katkısıyla rotasyonda kalabilecek mi?",
+      "anahtarSoruEn": "On nights his shot isn't falling, can his defense and secondary playmaking keep him in the rotation?"
     },
     {
       "slug": "tyson-etienne",
@@ -873,7 +883,9 @@
       "ozetDetayEn": "Making his European debut, a dynamic combo guard with deep shooting range who can create his own shot, posing a high-volume scoring threat in isolation and pick-and-roll. In his first season in Europe, his scoring could make an immediate impact, especially within Paris's up-tempo system. His height disadvantage on defense, though, could limit which matchups he's trusted with in the rotation.",
       "el": "Sağ",
       "elEn": "Right",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "G League'de özgürce kullandığı zor şutları, Avrupa'nın daha dar alanlarında doğru seçimlere dönüştürebilecek mi?",
+      "anahtarSoruEn": "Can the tough shots he took freely in the G League become smarter choices in Europe's tighter spaces?"
     },
     {
       "slug": "both-gach",
@@ -995,7 +1007,9 @@
       "ozetDetayEn": "Built for open-floor basketball, a versatile scoring wing who thrives at a high tempo, combining outside shooting with rim attacks and one-on-one scoring. He has the versatility to fit multiple roles along ASVEL's forward line. Developing his decision-making and passing variety could elevate him from a straightforward scorer into the team's secondary creator.",
       "el": "Sağ",
       "elEn": "Right",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Kendi skorunu ararken hücumun akışını bozmadan doğru son kararı verebilecek mi?",
+      "anahtarSoruEn": "Can he make the right final read while hunting his own shot, without breaking the offense's flow?"
     },
     {
       "slug": "marcus-bingham",
@@ -1117,7 +1131,9 @@
       "ozetDetayEn": "Making the leap from Russia, a modern big whose athleticism and face-up scoring versatility could add a different dimension to Fenerbahçe's frontcourt. His athleticism could bring a level of mobility to Fenerbahçe's frontcourt that's rare at EuroLeague level. How well he holds up against physical bigs is the real question that will decide how far his role grows.",
       "el": "Sağ",
       "elEn": "Right",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "İnce fiziği, temas seviyesi yükseldiğinde hem pota altını savunmasına hem de bitirişlerini korumasına izin verecek mi?",
+      "anahtarSoruEn": "Will his slender frame hold up defending the paint and finishing through contact once physicality rises?"
     },
     {
       "slug": "umoja-gibson",
@@ -1239,7 +1255,9 @@
       "ozetDetayEn": "Bringing proven scoring instincts, a dynamic scoring point guard who can score and create in pick-and-roll, comfortable shooting from outside or getting to the line. He offers ready-made offensive value to Barcelona's rotation; the production he showed in EuroCup could translate into a growing role as trust builds. His physical size disadvantage, though, carries the risk of becoming a target on defense at EuroLeague level.",
       "el": "Sağ",
       "elEn": "Right",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Savunmada hedefe dönüşmeden Barcelona hücumlarını yönetebilecek mi?",
+      "anahtarSoruEn": "Can he run Barcelona's offense without becoming a target on defense?"
     },
     {
       "slug": "rj-cole",
@@ -1354,7 +1372,9 @@
       "ozetDetayEn": "With his pick-and-roll proficiency and outside shooting threat, he looks likely to carve out a meaningful role in coach Poeta's system. Playing alongside resilient guards like Darius Thompson, Nico Mannion, and Devon Hall, and tightening up his defense in the process, could help him leave a mark in his first EuroLeague season.",
       "el": "Sol",
       "elEn": "Left",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Pick-and-roll zekâsı ve tempo kontrolü, elit patlayıcılık eksikliğini en üst seviyede telafi edebilecek mi?",
+      "anahtarSoruEn": "Can his pick-and-roll IQ and pace control make up for a lack of elite explosiveness at the top level?"
     },
     {
       "slug": "austin-wiley",
@@ -1474,7 +1494,9 @@
       "ozetDetayEn": "Following a Turkish MVP season, a strong center who creates value through rim protection and rebounding instincts, having proven his consistency across multiple leagues. His expertise on the boards and protecting the rim is beyond question. Beyond these traits, the relationship he builds with Bayern's guards will determine whether his minutes end up confined to a defense-first role.",
       "el": "Sağ",
       "elEn": "Right",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Switch yaparken savunmanın zayıf halkasına dönüşmeden pota altındaki üstünlüğünü koruyabilecek mi?",
+      "anahtarSoruEn": "Can he protect his rim advantage in switches without becoming the defense's weak link?"
     },
     {
       "slug": "khadeen-carrington",
@@ -1586,7 +1608,9 @@
       "ozetDetayEn": "Staying in Israel, an experienced guard who balances scoring and playmaking in pick-and-roll, standing out for his left-handed game. His two-way effectiveness in pick-and-roll could let Hapoel Tel Aviv spread the offensive load instead of leaning on a single ball-handler. How much he grows in one-on-one defense will determine whether his role expands from scoring reserve to genuine starting guard.",
       "el": "Sol",
       "elEn": "Left",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Carrington'ın agresifliği hücumu çözen bir silah mı olacak, yoksa top akışını kesen bir alışkanlığa mı dönüşecek?",
+      "anahtarSoruEn": "Will Carrington's aggression become a weapon that unlocks the offense, or a habit that disrupts ball movement?"
     },
     {
       "slug": "conor-morgan",
@@ -1698,7 +1722,9 @@
       "ozetDetayEn": "Entering his third season, a versatile big who can play both the 4 and 5, generating value through his outside shooting and defensive IQ. As an experienced big in Beşiktaş's EuroLeague return, he could bring real stability to the rotation. His limited athleticism and foot speed, though, could make him vulnerable defending fast-transition opponents.",
       "el": "Sağ",
       "elEn": "Right",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Şutu girmediği gecelerde savunma ve ribaund katkısı onu sahada tutmaya yetecek mi?",
+      "anahtarSoruEn": "On nights his shot isn't falling, will his defense and rebounding be enough to keep him on the floor?"
     },
     {
       "slug": "rasheed-bello",
@@ -1799,7 +1825,9 @@
       "ozetDetayEn": "A high-energy, young, and highly dynamic point guard profile with strong scoring output. How he adapts to the top level of competition will determine whether he turns out to be a good gamble.",
       "el": "Sol",
       "elEn": "Left",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Hızını yarı saha kontrolüne çevirebilecek mi, yoksa oyunu sürekli tek viteste mi oynayacak?",
+      "anahtarSoruEn": "Can he turn his speed into half-court control, or will he keep playing in a single gear?"
     },
     {
       "slug": "davion-mintz",
@@ -1909,7 +1937,9 @@
       "ozetDetayEn": "A shoot-first scoring guard who can create his own shot and operates efficiently from mid-range. If he keeps his turnover rate and shooting percentage at an acceptable level, he could become a key offensive weapon for Dubai.",
       "el": "Sağ",
       "elEn": "Right",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Skor üretirken topu fazla tutmadan, yanında başka yaratıcılar varken de aynı etkiyi verebilecek mi?",
+      "anahtarSoruEn": "Can he keep the same scoring impact without over-dribbling once he's surrounded by other creators?"
     },
     {
       "slug": "marek-blazevic",
@@ -2002,7 +2032,9 @@
       "ozetDetayEn": "A scoring big who excels in the low post and on pick-and-roll rolls, finishing at an elite level around the rim. The leadership and scoring potential he showed wearing the Tofaş jersey last season should rightfully raise expectations at Žalgirio Arena.",
       "el": "Sağ",
       "elEn": "Right",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Posttaki üretimi, pick-and-roll savunmasında verdiği alanı telafi edecek kadar değerli olacak mı?",
+      "anahtarSoruEn": "Is his production in the post valuable enough to offset the space he gives up defending pick-and-roll?"
     },
     {
       "slug": "mo-gueye",
@@ -2099,7 +2131,9 @@
       "ozetDetayEn": "An NBA-experienced big who plays a physical style, effective in the open floor through his finishing around the rim and high motor. Beyond fitting Valencia's system, the real question is whether he can finally find the consistent role and trust in Europe that eluded him in the NBA.",
       "el": "Sağ",
       "elEn": "Right",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Pozisyonsuzluğunu bir avantaja çevirip hem 4'leri hem 5'leri savunabilecek mi, yoksa iki pozisyon arasında mı kalacak?",
+      "anahtarSoruEn": "Can he turn his lack of a true position into an advantage by guarding both 4s and 5s, or will he fall between two stools?"
     },
     {
       "slug": "tobias-jensen",
@@ -2209,7 +2243,9 @@
       "ozetDetayEn": "A floor general product of the German development system, standing out for his court vision and playmaking IQ. A playmaker this young shouldn't be expected to find instant stability at EuroLeague level; given patient development, he could become one of the real breakouts of the coming years.",
       "el": "Sol",
       "elEn": "Left",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Fiziksel temas arttığında karar hızını ve top kontrolünü aynı seviyede koruyabilecek mi?",
+      "anahtarSoruEn": "Can he keep the same decision-making speed and ball security once physical contact increases?"
     },
     {
       "slug": "jaylen-nowell",
@@ -2294,7 +2330,9 @@
       "ozetDetayEn": "Capable of creating his own shot, this NBA-experienced scoring guard shoots easily thanks to a high-level skill set. Defensive concentration lapses aside, the production he proved in the G League could make him a valuable weapon against switch-heavy defenses.",
       "el": "Sağ",
       "elEn": "Right",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "NBA'de verimsizleşen şut tercihlerini, Avrupa'da daha disiplinli bir skor paketine çevirebilecek mi?",
+      "anahtarSoruEn": "Can he turn shot selection that grew inefficient in the NBA into a more disciplined scoring package in Europe?"
     },
     {
       "slug": "johnny-juzang",
@@ -2398,7 +2436,9 @@
       "ozetDetayEn": "Known for hitting at a high clip from beyond the arc, this NBA-tested sharpshooter is fresh off a season adjusting to Europe. The gravity he creates without the ball could open real breathing room around Fenerbahçe's ball-dominant playmakers. An early-season adjustment period should be expected, but his role growing as trust builds wouldn't be a surprise.",
       "el": "Sağ",
       "elEn": "Right",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Top elinde değilken skorunu koruyup savunmada hedef olmadan sahada kalabilecek mi?",
+      "anahtarSoruEn": "Can he keep scoring off the ball and stay off defense's radar without needing it in his hands?"
     },
     {
       "slug": "trent-frazier",
@@ -2491,7 +2531,9 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=dwfVTeRWPFQ",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "VTB Ligi'ndeki konfordan uzaklaştıktan sonra alışkanlıklarını daha yüksek bir rekabet seviyesine adapte edebilecek mi?",
+      "anahtarSoruEn": "Once he's away from the comfort of the VTB League, can he adapt his habits to a higher level of competition?"
     },
     {
       "slug": "olivier-nkamhoua",
@@ -2607,7 +2649,9 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=nIB1fp-3vyw",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Top kullanımı düştüğünde enerjisini ribaund, savunma ve topsuz oyuna aynı ölçüde taşıyabilecek mi?",
+      "anahtarSoruEn": "When his usage drops, can he bring the same energy to rebounding, defense, and off-ball play?"
     },
     {
       "slug": "nikola-tanaskovic",
@@ -2733,7 +2777,9 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=v8-lIZj9fw4",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Posttaki hücum değeri, çember koruma ve atletizm eksikliğini telafi edecek kadar büyük olacak mı?",
+      "anahtarSoruEn": "Will his post scoring value be big enough to offset his lack of rim protection and athleticism?"
     },
     {
       "slug": "chris-duarte",
@@ -2851,7 +2897,9 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=V5EIcdNtwk0",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "Duarte, yeteneğinin önündeki en büyük engel olan kendi kararlarını kontrol edebilecek mi?",
+      "anahtarSoruEn": "Can Duarte control the very thing standing between him and his talent — his own decision-making?"
     },
     {
       "slug": "patrick-baldwin-jr",
@@ -2947,7 +2995,9 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=v0qEPmqSM4o&t=101s",
-      "lig": "euroleague"
+      "lig": "euroleague",
+      "anahtarSoru": "2.13'lük şut yeteneği gerçek bir maç içi avantaja mı dönüşecek, yoksa hâlâ yalnızca potansiyel olarak mı kalacak?",
+      "anahtarSoruEn": "Will his shooting touch at 2.13m become a real in-game advantage, or does it remain just potential?"
     },
     {
       "slug": "max-abmas",
@@ -3398,7 +3448,9 @@
           "nedenEn": "Scoring and playmaking with his back to the basket"
         }
       ],
-      "youtubeUrl": "https://www.youtube.com/watch?v=O0tyGrsC7fU"
+      "youtubeUrl": "https://www.youtube.com/watch?v=O0tyGrsC7fU",
+      "anahtarSoru": "Brescia'da kurduğu fiziksel üstünlüğü, daha az top ve daha dar alanla Milano rotasyonuna taşıyabilecek mi?",
+      "anahtarSoruEn": "Can he bring the physical dominance he built at Brescia into Milano's rotation with less usage and less space?"
     },
     {
       "slug": "jerrick-harding",
@@ -3628,7 +3680,9 @@
           "nedenEn": "A physical 3&D profile"
         }
       ],
-      "youtubeUrl": "https://www.youtube.com/watch?v=SHUxK_-sGec"
+      "youtubeUrl": "https://www.youtube.com/watch?v=SHUxK_-sGec",
+      "anahtarSoru": "G League'deki şut sıçraması, EuroLeague'de daha düşük kullanım ve daha kısa şut pencerelerinde sürdürülebilir mi?",
+      "anahtarSoruEn": "Can the shooting jump he had in the G League hold up on lower usage and tighter shot windows in the EuroLeague?"
     },
     {
       "slug": "bryce-jones",
