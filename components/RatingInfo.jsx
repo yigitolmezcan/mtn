@@ -1,11 +1,22 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Info } from 'lucide-react';
 import { useLang } from '@/lib/LanguageContext';
 
 export default function RatingInfo() {
   const [open, setOpen] = useState(false);
   const { lang } = useLang();
+
+  useEffect(() => {
+    if (!open) return;
+    function handleOutside(e) {
+      if (!e.target.closest('.rinfo')) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleOutside);
+    return () => document.removeEventListener('mousedown', handleOutside);
+  }, [open]);
   const text = lang === 'tr'
     ? 'Formüllerden ziyade sezgiye dayanan, 10 üzerinden editoryal bir skor.'
     : 'An editorial score out of 10, built on judgment rather than formulas.';

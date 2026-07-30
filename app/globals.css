@@ -62,8 +62,8 @@ a{color:inherit;text-decoration:none}
   border-radius:50%;
 }
 .league-switch button img{width:100%;height:100%;object-fit:contain}
-.league-switch button{border-bottom:1.5px solid transparent}
-.league-switch button.active{opacity:1;border-bottom:1.5px solid var(--court)}
+.league-switch button{border:1.5px solid transparent}
+.league-switch button.active{opacity:1;border:1.5px solid var(--court)}
 
 .tsearch{position:relative;display:flex;align-items:center}
 .tsearch__icon{background:none;border:none;padding:0;cursor:pointer;display:flex;align-items:center;color:var(--court)}
