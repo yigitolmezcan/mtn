@@ -618,8 +618,8 @@
         }
       ],
       "mtnRating": "7.5",
-      "ratingNotu": null,
-      "ratingNotuEn": null,
+      "ratingNotu": "İstisnai seviye atletizmi, adının haftanın smaçları içeriğine bol bol konuk olmasını sağlayacaktır.",
+      "ratingNotuEn": "His exceptional athleticism should make him a regular guest on weekly dunk-of-the-week reels.",
       "benzerOyuncular": [
         {
           "isim": "Chima Moneke",
@@ -634,8 +634,8 @@
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=3KxQzWgXNto",
       "arketip": "Athletic Forward",
-      "ozetDetay": "Yüksek motoru, atletizmi ve ribaundlardaki devamlılığıyla ön alana enerji getiren, geçiş hücumlarında ve çember çevresi bitirişlerde etkili enerjik forvet. Paris'in hızlı tempolu oyun sistemi, onun en güçlü yanını öne çıkaracak doğru zemin olabilir. Asıl soru, low post savunmasındaki fiziksel dezavantajını rotasyon içinde ne kadar iyi gizleyebileceği.",
-      "ozetDetayEn": "Fresh off a breakout year in Turkey, a high-motor forward who brings energy up front with his athleticism and rebounding consistency, effective in transition and around the rim. Paris's up-tempo system could be the right stage to showcase his biggest strength. The real question is how well he can mask his physical disadvantage defending the low post within the rotation.",
+      "ozetDetay": "Yüksek motoru, atletizmi ve ribaundlardaki devamlılığıyla ön alana enerji getiren, geçiş hücumlarında ve çember çevresi bitirişlerde etkili enerjik forvet. Paris'in hızlı tempolu oyun sistemi, onun en güçlü yanını öne çıkaracak doğru zemin olabilir.",
+      "ozetDetayEn": "Fresh off a breakout year in Turkey, a high-motor forward who brings energy up front with his athleticism and rebounding consistency, effective in transition and around the rim. Paris's up-tempo system could be the right stage to showcase his biggest strength.",
       "el": "Sağ",
       "elEn": "Right",
       "lig": "euroleague",
@@ -1352,7 +1352,7 @@
       ],
       "gelisimAlanlariEn": [
         {
-          "t": "First test at EuroLeague level"
+          "t": "Defensive concentration"
         },
         {
           "t": "Height disadvantage on defense",
@@ -1975,7 +1975,26 @@
           ]
         ]
       },
-      "digerIstatistikler": [],
+      "digerIstatistikler": [
+        {
+          "yarisma": "Basketbol Süper Ligi",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "14.9",
+              "PPG"
+            ],
+            [
+              "6.8",
+              "RPG"
+            ],
+            [
+              "1.7",
+              "APG"
+            ]
+          ]
+        }
+      ],
       "gucluYonler": [
         {
           "t": "Low post'ta usta bitiricilik"
@@ -2016,8 +2035,8 @@
       ],
       "arketip": "Post Scorer",
       "mtnRating": "7.7",
-      "ratingNotu": null,
-      "ratingNotuEn": null,
+      "ratingNotu": "Litvanyalı efsane Jonas Valanciunas'tan kalan sürelerde vereceği performans, dakikalarının belirlenmesinde direkt katkı sağlayacak.",
+      "ratingNotuEn": "How he performs in the minutes left over from Lithuanian legend Jonas Valančiūnas will directly shape how much playing time he earns.",
       "benzerOyuncular": [
         {
           "isim": "Ante Žižić",
@@ -2885,8 +2904,8 @@
       ],
       "arketip": "Scoring Wing",
       "mtnRating": "7.0",
-      "ratingNotu": "NBA Draftı'nın 13. sırasında seçildiği dönem kadar parlak gözükmese de, doğru rolde maçın kaderini kısa sürede değiştirebilecek skor potansiyelini hâlâ koruyor.",
-      "ratingNotuEn": "He may not look as bright as he did back when he was picked 13th overall, but in the right role he still retains the scoring potential to swing a game in a hurry.",
+      "ratingNotu": "Hakkında bazı soru işaretleri bulunsa da, maçın kaderini bir anda değiştirebilecek yeteneğe sahip.",
+      "ratingNotuEn": "There are some question marks around him, but he has the talent to change a game's fate in an instant.",
       "benzerOyuncular": [
         {
           "isim": "Darrun Hilliard",
@@ -3369,26 +3388,7 @@
           ]
         ]
       },
-      "digerIstatistikler": [
-        {
-          "yarisma": "FIBA Europe Cup",
-          "sezon": "2021-23",
-          "items": [
-            [
-              "11.4",
-              "PPG"
-            ],
-            [
-              "6.2",
-              "RPG"
-            ],
-            [
-              "3.4",
-              "APG"
-            ]
-          ]
-        }
-      ],
+      "digerIstatistikler": [],
       "gucluYonler": [
         {
           "t": "Alçak post üretimi"

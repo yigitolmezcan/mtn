@@ -10,18 +10,19 @@ import PositionCourt from '@/components/PositionCourt';
 import ShareButton from '@/components/ShareButton';
 import { useLang } from '@/lib/LanguageContext';
 import { countryEn } from '@/lib/i18n';
+import { translateLeague } from '@/lib/leagueTranslate';
 
 function localizeNationality(milliyet, lang) {
   if (lang !== 'en') return milliyet;
   return milliyet.split(' / ').map((c) => countryEn[c] || c).join(' / ');
 }
 
-function StatBlock({ comp, featured, featuredLabel }) {
+function StatBlock({ comp, featured, featuredLabel, lang }) {
   return (
     <div className={`comp${featured ? '' : ' comp--minor'}`}>
       <div className="comp__head">
         <span lang="en">
-          {comp.yarisma} · {comp.sezon}
+          {lang === 'en' ? translateLeague(comp.yarisma) : comp.yarisma} · {comp.sezon}
         </span>
         {featured && <span className="tag">{featuredLabel}</span>}
       </div>
@@ -165,7 +166,7 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
         <div className="transfer">
           <div className="node">
             <div className="node__club">{p.geldigiKulup}</div>
-            <div className="node__league">{p.geldigiLig}</div>
+            <div className="node__league">{lang === 'en' ? translateLeague(p.geldigiLig) : p.geldigiLig}</div>
           </div>
           <div className="link">
             <span className="link__stem" />
@@ -181,9 +182,9 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
 
       <section className="blk wrap" id="section-istatistik">
         <div className="lbl">{t.stats}</div>
-        <StatBlock comp={p.featuredStats} featured featuredLabel={t.featured} />
+        <StatBlock comp={p.featuredStats} featured featuredLabel={t.featured} lang={lang} />
         {p.digerIstatistikler.map((c) => (
-          <StatBlock key={c.yarisma} comp={c} />
+          <StatBlock key={c.yarisma} comp={c} lang={lang} />
         ))}
       </section>
 
