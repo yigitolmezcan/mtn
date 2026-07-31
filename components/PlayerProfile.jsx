@@ -92,7 +92,7 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
         <div className="wrap head__inner">
           <div className="crest">
             <div>
-              <div className="crest__name" lang={p.digerDil ? 'en' : 'tr'}>{p.takim}</div>
+              <div className="crest__name" lang={p.digerDil ? 'en' : 'tr'}>{lang === 'en' ? p.takimEn : p.takim}</div>
               <div className="crest__meta">EuroLeague · 2026-27</div>
             </div>
           </div>
@@ -172,7 +172,7 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
             <span className="link__arrow">↓</span>
           </div>
           <div className="node node--to">
-            <div className="node__club">{p.takim}</div>
+            <div className="node__club">{lang === 'en' ? p.takimEn : p.takim}</div>
             <div className="node__league">{t.euroleagueEurope}</div>
           </div>
         </div>
@@ -214,7 +214,7 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
 
       {teammates.length > 0 && (
         <section className="blk wrap">
-          <div className="lbl">{t.otherSignings(p.takim)}</div>
+          <div className="lbl">{t.otherSignings(lang === 'en' ? p.takimEn : p.takim)}</div>
           <div className="chips">
             {teammates.map((tm) => (
               <Link key={tm.slug} href={`/oyuncu/${tm.slug}`} className="chip chip--link">

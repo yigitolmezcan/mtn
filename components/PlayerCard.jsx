@@ -30,7 +30,7 @@ export default function PlayerCard({ player }) {
       <div className="card__id">
         <PlayerPhoto slug={player.slug} renk={player.takimRenk} name={player.ad} />
         <div className="card__idtext">
-          <span className="card__cname" lang={player.digerDil ? 'en' : 'tr'}>{player.takim}</span>
+          <span className="card__cname" lang={player.digerDil ? 'en' : 'tr'}>{lang === 'en' ? player.takimEn : player.takim}</span>
           <h2 className="card__name">{player.ad}</h2>
           <span className="card__pos" lang="en">{player.pozisyon}</span>
         </div>

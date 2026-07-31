@@ -62,6 +62,7 @@
     },
     "bayern-munich": {
       "ad": "Bayern Münih",
+      "adEn": "Bayern Munich",
       "marka": "#DC052D",
       "vurgu": "#DC052D",
       "renk1": "#DC052D",
@@ -112,10 +113,12 @@
       "marka": "#000000",
       "vurgu": "#E4E1DC",
       "renk1": "var(--bone)",
-      "renk2": "#000000"
+      "renk2": "#000000",
+      "digerDil": true
     },
     "crvena-zvezda": {
       "ad": "Kızılyıldız",
+      "adEn": "Crvena Zvezda",
       "marka": "#EE1C25",
       "vurgu": "#EE1C25",
       "renk1": "var(--bone)",
@@ -1392,7 +1395,7 @@
       "transferNotu": "2023-24 sezonunda Tofaş forması altında Türkiye Ligi MVP'si seçildi.",
       "transferNotuEn": "Named Turkish League MVP with Tofaş in the 2023-24 season.",
       "ozet": "Çember savunması ve ribaund sezgileriyle değer yaratan, birden fazla ligde istikrarını kanıtlamış güçlü bir pivot.",
-      "ozetEn": "Following a Turkish MVP season, a strong center who creates value through rim protection and rebounding instincts, having proven his consistency across multiple leagues.",
+      "ozetEn": "Known as a strong center who creates value through rim protection and rebounding instincts, he has proven his consistency across multiple leagues.",
       "featuredStats": {
         "yarisma": "EuroCup",
         "sezon": "2025-26",
@@ -1491,7 +1494,7 @@
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=7GQptzyp6dY",
       "ozetDetay": "Çember savunması ve ribaund sezgileriyle değer yaratan, birden fazla ligde istikrarını kanıtlamış güçlü bir pivot. Ribaund ve çember koruması konusundaki uzmanlığı tartışılmaz. Bu özelliklerinin yanında Bayern kısalarıyla kuracağı ilişki, dakikalarının savunma ağırlıklı bir role sıkışıp sıkışmayacağını belirleyecek.",
-      "ozetDetayEn": "Following a Turkish MVP season, a strong center who creates value through rim protection and rebounding instincts, having proven his consistency across multiple leagues. His expertise on the boards and protecting the rim is beyond question. Beyond these traits, the relationship he builds with Bayern's guards will determine whether his minutes end up confined to a defense-first role.",
+      "ozetDetayEn": "Known as a strong center who creates value through rim protection and rebounding instincts, he has proven his consistency across multiple leagues. His expertise on the boards and protecting the rim is beyond question. Beyond these traits, the relationship he builds with Bayern's guards will determine whether his minutes end up confined to a defense-first role.",
       "el": "Sağ",
       "elEn": "Right",
       "lig": "euroleague",

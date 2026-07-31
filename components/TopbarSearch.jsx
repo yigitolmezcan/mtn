@@ -6,7 +6,7 @@ import { useLang } from '@/lib/LanguageContext';
 const norm = (s) => s.toLocaleLowerCase('tr-TR');
 
 export default function TopbarSearch({ players }) {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
   const inputRef = useRef(null);
@@ -74,7 +74,7 @@ export default function TopbarSearch({ players }) {
                   <Link href={`/oyuncu/${p.slug}`} onClick={() => { setOpen(false); setQuery(''); }}>
                     <span className="tsearch__info">
                       <span className="tsearch__name">{p.ad}</span>
-                      <span className="tsearch__meta">{p.takim} · {p.pozisyon}</span>
+                      <span className="tsearch__meta">{lang === 'en' ? p.takimEn : p.takim} · {p.pozisyon}</span>
                     </span>
                     <span className="tsearch__rating">{p.mtnRating ?? '—'}</span>
                   </Link>
