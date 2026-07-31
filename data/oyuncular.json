@@ -3811,6 +3811,131 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=yi77dIbsBu8"
+    },
+    {
+      "slug": "kyle-allman-jr",
+      "ad": "Kyle Allman Jr.",
+      "resmiAd": "Kyle Allman Jr.",
+      "takimSlug": "partizan",
+      "lig": "euroleague",
+      "pozisyon": "PG",
+      "boy": "1.91 m",
+      "yas": "29",
+      "milliyet": "ABD / Karadağ",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Türk Telekom",
+      "geldigiLig": "Basketbol Süper Ligi (Türkiye)",
+      "transferNotu": "2025-26 EuroCup sezonunda gösterdiği performansla All-EuroCup Birinci Takım'a seçilmeyi başardı.",
+      "transferNotuEn": "His performance in the 2025-26 EuroCup season earned him a spot on the All-EuroCup First Team.",
+      "ozet": "Patlayıcı ilk adımını tempo değişimleri, temas alma becerisi ve bireysel skor üretimiyle birleştiren skorer bir guard.",
+      "ozetEn": "Combining an explosive first step with change-of-pace moves, contact finishing, and self-created scoring, he's a scoring guard.",
+      "ozetDetay": "Patlayıcı ilk adımını tempo değişimleri, temas alma becerisi ve bireysel skor üretimiyle birleştiren skorer bir guard.",
+      "ozetDetayEn": "Combining an explosive first step with change-of-pace moves, contact finishing, and self-created scoring, he's a scoring guard.",
+      "anahtarSoru": "EuroCup'ta yüksek kullanım ve faul çizgisiyle kurduğu skor tabanını, Partizan'ın kalabalık guard rotasyonunda daha az topla ve daha dar şut pencerelerinde koruyabilecek mi?",
+      "anahtarSoruEn": "Can he preserve the scoring base he built in the EuroCup through high usage and trips to the line, with less of the ball and tighter shot windows in Partizan's crowded guard rotation?",
+      "featuredStats": {
+        "yarisma": "EuroCup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "14.3",
+            "PPG"
+          ],
+          [
+            "2.4",
+            "RPG"
+          ],
+          [
+            "3.6",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "Basketbol Süper Ligi",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "12.0",
+              "PPG"
+            ],
+            [
+              "2.3",
+              "RPG"
+            ],
+            [
+              "3.3",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Çembere ataklar ve temaslı bitiricilik"
+        },
+        {
+          "t": "Pick-and-roll skorerliği"
+        },
+        {
+          "t": "Clutch anlarda öne çıkma"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Rim attacks and finishing through contact"
+        },
+        {
+          "t": "Pick-and-roll scoring"
+        },
+        {
+          "t": "Stepping up in clutch moments"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Topsuz savunma konsantrasyonu"
+        },
+        {
+          "t": "İstikrarsız dış atış performansı"
+        },
+        {
+          "t": "Serbest atış istikrarı",
+          "v": "%68.1 FT, BSL"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Off-ball defensive focus"
+        },
+        {
+          "t": "Inconsistent outside shooting"
+        },
+        {
+          "t": "Free-throw consistency",
+          "v": "68.1% FT, BSL"
+        }
+      ],
+      "arketip": "Slasher",
+      "mtnRating": "7.8",
+      "ratingNotu": "Hareketli yapısı ve skora yatkınlığıyla öne çıkan Allman, yeni takımı Partizan'a bench'ten önemli katkılar getirebilir.",
+      "ratingNotuEn": "Standing out for his mobility and scoring instincts, Allman could provide meaningful contributions off the bench for his new team, Partizan.",
+      "benzerOyuncular": [
+        {
+          "isim": "Wade Baldwin IV",
+          "neden": "Fiziksellik ve orta mesafe oyunu",
+          "nedenEn": "Physicality and midrange scoring"
+        },
+        {
+          "isim": "Théo Maledon",
+          "neden": "Pick-and-roll temposu ve çembere atak hacmi",
+          "nedenEn": "Pick-and-roll pace and volume of rim attacks"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=T07iemx8EAM"
     }
   ]
 }
