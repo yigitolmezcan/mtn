@@ -3936,6 +3936,139 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=T07iemx8EAM"
+    },
+    {
+      "slug": "alize-johnson",
+      "ad": "Alize Johnson",
+      "resmiAd": "Alize Johnson",
+      "takimSlug": "paris-basketball",
+      "lig": "euroleague",
+      "pozisyon": "PF / C",
+      "boy": "2.03 m",
+      "yas": "30",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Shenzhen Aviators",
+      "geldigiLig": "CBA (Çin)",
+      "transferNotu": "2018 NBA draftında 50. sıradan seçilen Johnson, geçtiğimiz sezonu önce G-Lig ekiplerinden Iowa Wolves'ta, sonra Çin temsilcisi Shenzhen Aviators'ta geçirdi.",
+      "transferNotuEn": "Selected 50th overall in the 2018 NBA Draft, Johnson spent last season first with G League side Iowa Wolves, then with Chinese club Shenzhen Aviators.",
+      "ozet": "Elit ribaund sezgisi, top hakimiyeti ve yüksek oyun motoruyla öne çıkan atletik bir forvet.",
+      "ozetEn": "Elite rebounding instincts, ball-handling, and a high motor define this athletic forward.",
+      "ozetDetay": "Elit ribaund sezgisi, top hakimiyeti ve yüksek oyun motoruyla öne çıkan atletik bir forvet. Johnson, güvenilir olmayan dış şutu ve sınırlı çember korumasına rağmen Paris'e ribaund sonrası hücum başlatma, temaslı bitiricilik ve kısa devrilme paslarıyla tempo değiştirebilecek çok yönlü bir ön alan parçası olma opsiyonu getiriyor.",
+      "ozetDetayEn": "An athletic forward defined by elite rebounding instincts, ball-handling, and a high motor. Despite an unreliable outside shot and limited rim protection, Johnson offers Paris a versatile frontcourt piece who can change tempo through rebound-and-go outlets, finishing through contact, and short outlet passes.",
+      "anahtarSoru": "Johnson, 4 numarada yeterince alan açmadan ve 5 numarada çemberi korumadan EuroLeague'de sürdürülebilir bir rol bulabilecek mi?",
+      "anahtarSoruEn": "Can Johnson find a sustainable EuroLeague role without spacing the floor at the 4 or protecting the rim at the 5?",
+      "featuredStats": {
+        "yarisma": "G Lig",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "19.0",
+            "PPG"
+          ],
+          [
+            "11.3",
+            "RPG"
+          ],
+          [
+            "4.8",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "CBA (Çin)",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "12.4",
+              "PPG"
+            ],
+            [
+              "7.6",
+              "RPG"
+            ],
+            [
+              "2.5",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Elit ribaund sezgisi",
+          "v": "11.3 RPG, G Lig"
+        },
+        {
+          "t": "Yüksek pas kalitesi",
+          "v": "4.8 APG, G Lig"
+        },
+        {
+          "t": "Temaslı bitiriş yüzdesi",
+          "v": "%63 ikilik, CBA"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Elite rebounding instincts",
+          "v": "11.3 RPG, G League"
+        },
+        {
+          "t": "High passing quality",
+          "v": "4.8 APG, G League"
+        },
+        {
+          "t": "Finishing through contact",
+          "v": "63% 2PT, CBA"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "İstikrarsız dış şut isabet oranı"
+        },
+        {
+          "t": "Çember koruma",
+          "v": "0.1 blok"
+        },
+        {
+          "t": "Avrupa basketboluna adaptasyon",
+          "v": "30 yaşına kadar Avrupa'da oynamadı"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Inconsistent outside shooting"
+        },
+        {
+          "t": "Rim protection",
+          "v": "0.1 BPG"
+        },
+        {
+          "t": "Adapting to European basketball",
+          "v": "Hadn't played in Europe until age 30"
+        }
+      ],
+      "arketip": "Athletic Forward",
+      "mtnRating": "7.6",
+      "ratingNotu": "Paris'in tempolu yapısında özellikle ikinci beşte 4.5 numara olarak kullanılması, Johnson'ın ribaundu aldıktan sonra topu kendisinin taşımasına ve klasik bir enerji uzundan daha fazla hücum değeri üretmesine imkân sağlayabilir.",
+      "ratingNotuEn": "Used specifically as a small-ball 4.5 in Paris's uptempo second unit, Johnson could carry the ball himself off rebounds and generate more offensive value than a typical energy big.",
+      "benzerOyuncular": [
+        {
+          "isim": "Chima Moneke",
+          "neden": "Fiziksel ve açık alana dayanan oyun tarzı",
+          "nedenEn": "Physical, open-floor style of play"
+        },
+        {
+          "isim": "John Brown III",
+          "neden": "Ribaund takibi ve oyun motoru",
+          "nedenEn": "Rebound pursuit and motor"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=f7F73bhvKLQ"
     }
   ]
 }
