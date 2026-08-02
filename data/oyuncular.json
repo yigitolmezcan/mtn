@@ -4131,7 +4131,8 @@
       ],
       "gucluYonler": [
         {
-          "t": "Elit seviyede çember koruma"
+          "t": "Elit seviyede çember koruma",
+          "v": "1.6 BPG, EuroCup lideri"
         },
         {
           "t": "Çember çevresi bitiricilik",
@@ -4143,7 +4144,8 @@
       ],
       "gucluYonlerEn": [
         {
-          "t": "Elite-level rim protection"
+          "t": "Elite-level rim protection",
+          "v": "1.6 BPG, EuroCup leader"
         },
         {
           "t": "Finishing around the rim",
