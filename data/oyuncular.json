@@ -4067,6 +4067,126 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=f7F73bhvKLQ"
+    },
+    {
+      "slug": "kaodirichi-akobundu-ehiogu",
+      "ad": "Kaodirichi Akobundu-Ehiogu",
+      "resmiAd": "Kaodirichi Nkemjika Akobundu-Ehiogu",
+      "takimSlug": "zalgiris",
+      "lig": "euroleague",
+      "pozisyon": "C",
+      "boy": "2.08 m",
+      "yas": "26",
+      "milliyet": "Nijerya",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Manresa",
+      "geldigiLig": "İspanya ACB",
+      "transferNotu": "Manresa'dan ayrıldıktan sonra Cedevita Olimpija ile anlaşmıştı; Žalgiris'in EuroLeague çıkış maddesini kullanarak bonservis ödediği bildirildi. 2026 Dallas Mavericks Yaz Ligi kadrosunda 48 inçlik maksimum dikey sıçraması ve lob bitirişleriyle dikkat çekti.",
+      "transferNotuEn": "After leaving Manresa, he had agreed with Cedevita Olimpija; Žalgiris reportedly paid a buyout using his EuroLeague exit clause. He drew attention with the 2026 Dallas Mavericks Summer League roster through a 48-inch max vertical leap and lob finishes.",
+      "ozet": "İnsanüstü sıçrama gücü, uzun kolları ve çember çevresindeki caydırıcılığıyla oyunu tamamen dikine oynayan bir savunma pivotu.",
+      "ozetEn": "Superhuman leaping ability, long arms, and rim-area deterrence make him an entirely vertical defensive center.",
+      "ozetDetay": "İnsanüstü sıçrama gücü, uzun kolları ve çember çevresindeki caydırıcılığıyla oyunu tamamen dikine oynayan bir savunma pivotu. Akobundu-Ehiogu hücumda alley-oop bitirişleri ve hücum ribaundlarıyla sınırlı fakat verimli bir tehdit sunarken, savunmada hareketliliği sayesinde agresif bir çember koruyucu rolü üstleniyor. Buna karşın pozisyon alma, oyun okuma ve fiziksel temas konusundaki eksikleri EuroLeague'de göz ardı edilemeyecek seviyede.",
+      "ozetDetayEn": "Superhuman leaping ability, long arms, and rim-area deterrence make him an entirely vertical defensive center. Akobundu-Ehiogu offers a limited but efficient offensive threat through alley-oop finishes and offensive rebounds, while his mobility lets him play an aggressive rim-protector role on defense. That said, his gaps in positioning, court reading, and physical contact are significant enough that EuroLeague opponents won't overlook them.",
+      "anahtarSoru": "EuroLeague hücumları onu çemberden uzaklaştırıp art arda karar vermeye zorladığında, elit atletizmi savunma okuma eksiklerini örtebilecek mi?",
+      "anahtarSoruEn": "When EuroLeague offenses pull him away from the rim and force consecutive decisions, can his elite athleticism cover for his defensive-reading gaps?",
+      "featuredStats": {
+        "yarisma": "EuroCup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "4.6",
+            "PPG"
+          ],
+          [
+            "2.4",
+            "RPG"
+          ],
+          [
+            "1.7",
+            "BPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "İspanya ACB",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "4.8",
+              "PPG"
+            ],
+            [
+              "2.4",
+              "RPG"
+            ],
+            [
+              "1.6",
+              "BPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Elit seviyede çember koruma"
+        },
+        {
+          "t": "Çember çevresi bitiricilik",
+          "v": "%82.8 2'lik, EuroCup"
+        },
+        {
+          "t": "Dikey tehdit"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Elite-level rim protection"
+        },
+        {
+          "t": "Finishing around the rim",
+          "v": "82.8% 2PT, EuroCup"
+        },
+        {
+          "t": "Vertical threat"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Fiziksel dezavantaj"
+        },
+        {
+          "t": "Basketbol IQ"
+        },
+        {
+          "t": "Takım savunması"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Physical disadvantage"
+        },
+        {
+          "t": "Basketball IQ"
+        },
+        {
+          "t": "Team defense"
+        }
+      ],
+      "arketip": "Rim Protector",
+      "mtnRating": "6.7",
+      "ratingNotu": "Žalgiris'te 10-12 dakikalık bir özel görev pivotu olması en gerçekçi senaryo. Doğru eşleşmede çemberi kapatıp maçın savunma tonunu değiştirebilir; ancak fiziksel pivotlara veya karmaşık hücumlara karşı sahada kalma süresi hızla daralabilir.",
+      "ratingNotuEn": "The most realistic scenario is a 10-12 minute specialist role at Žalgiris. In the right matchup, he can seal the rim and shift a game's defensive tone; against physical bigs or complex offenses, though, his minutes can shrink quickly.",
+      "benzerOyuncular": [
+        {
+          "isim": "Kai Jones",
+          "neden": "Fizik yapısı ve atletizm seviyesi",
+          "nedenEn": "Physical profile and level of athleticism"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=GcaFj7ASnEU"
     }
   ]
 }
