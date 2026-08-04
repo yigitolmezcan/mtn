@@ -202,6 +202,7 @@ a{color:inherit;text-decoration:none}
 .follow-btn:hover{border-color:var(--court);color:var(--bone)}
 
 /* ---------- profile page ---------- */
+.profile{padding-bottom:190px}
 .profile-nav{display:flex;align-items:center;justify-content:space-between}
 .backlink{
   display:inline-block;padding:22px 0 4px;font-size:10px;color:var(--muted-dim);

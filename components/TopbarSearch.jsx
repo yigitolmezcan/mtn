@@ -2,6 +2,7 @@
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { useLang } from '@/lib/LanguageContext';
+import { playerHref } from '@/lib/playerHref';
 
 const norm = (s) => s.toLocaleLowerCase('tr-TR');
 
@@ -71,7 +72,7 @@ export default function TopbarSearch({ players }) {
               {results.length === 0 && <li className="tsearch__empty">{t.noResults}</li>}
               {results.map((p) => (
                 <li key={p.slug}>
-                  <Link href={`/oyuncu/${p.slug}`} onClick={() => { setOpen(false); setQuery(''); }}>
+                  <Link href={playerHref(p.slug, lang)} onClick={() => { setOpen(false); setQuery(''); }}>
                     <span className="tsearch__info">
                       <span className="tsearch__name">{p.ad}</span>
                       <span className="tsearch__meta">{lang === 'en' ? p.takimEn : p.takim} · {p.pozisyon}</span>

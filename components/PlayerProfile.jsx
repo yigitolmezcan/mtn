@@ -11,6 +11,7 @@ import ShareButton from '@/components/ShareButton';
 import { useLang } from '@/lib/LanguageContext';
 import { countryEn } from '@/lib/i18n';
 import { translateLeague } from '@/lib/leagueTranslate';
+import { playerHref } from '@/lib/playerHref';
 
 function localizeNationality(milliyet, lang) {
   if (lang !== 'en') return milliyet;
@@ -86,7 +87,7 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
         <Link href="/" className="backlink">
           ← {t.allTransfers}
         </Link>
-        <ShareButton url={`https://meetnewcomers.com/oyuncu/${p.slug}`} />
+        <ShareButton url={`https://meetnewcomers.com${playerHref(p.slug, lang)}`} />
       </div>
 
       <header className="head">
@@ -218,7 +219,7 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
           <div className="lbl">{t.otherSignings(lang === 'en' ? p.takimEn : p.takim)}</div>
           <div className="chips">
             {teammates.map((tm) => (
-              <Link key={tm.slug} href={`/oyuncu/${tm.slug}`} className="chip chip--link">
+              <Link key={tm.slug} href={playerHref(tm.slug, lang)} className="chip chip--link">
                 {tm.ad}
               </Link>
             ))}

@@ -10,7 +10,7 @@ const SECTIONS = [
 ];
 
 export default function ProfileNav({ onVideoClick }) {
-  const { t } = useLang();
+  const { t, lang } = useLang();
 
   function go(id, isVideo) {
     const el = document.getElementById(id);
@@ -28,7 +28,7 @@ export default function ProfileNav({ onVideoClick }) {
     <nav className="pnav">
       {SECTIONS.map((s) => (
         <button key={s.id} className="pnav__item" onClick={() => go(s.id, s.key === 'navVideo')}>
-          {t[s.key]}
+          <span lang={lang}>{t[s.key]}</span>
         </button>
       ))}
     </nav>

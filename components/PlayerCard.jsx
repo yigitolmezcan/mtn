@@ -4,6 +4,7 @@ import PlayerPhoto from './PlayerPhoto';
 import RatingInfo from './RatingInfo';
 import { useLang } from '@/lib/LanguageContext';
 import { ratingColor } from '@/lib/ratingColor';
+import { playerHref } from '@/lib/playerHref';
 
 export function Rating({ value, size = 'sm' }) {
   const color = value ? ratingColor(value) : undefined;
@@ -23,7 +24,7 @@ export default function PlayerCard({ player }) {
 
   return (
     <Link
-      href={`/oyuncu/${player.slug}`}
+      href={playerHref(player.slug, lang)}
       className="card"
       style={{ '--team': player.takimRenk, '--serit1': player.renk1, '--serit2': player.renk2 }}
     >
