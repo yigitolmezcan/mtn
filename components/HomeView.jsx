@@ -29,10 +29,13 @@ export default function HomeView({ players, sezon }) {
   return (
     <main className="wrap">
       <section className="hero">
-        <h1 className="hero__h1">
-          <span className="hero__a">Meet the</span>
-          <span className="hero__b">Newcomers</span>
-        </h1>
+        <div className="hero__lockup">
+          <h1 className="hero__h1">
+            <span className="hero__a">Meet the</span>
+            <span className="hero__b">Newcomers</span>
+          </h1>
+          <img src="/logo-final.png" alt="" className="hero__logo" />
+        </div>
         <p className="hero__p">{league === 'bsl' ? t.heroSubtitleBsl : t.heroSubtitle}</p>
         <div className="rail">
           <b>{t.playersScouted(leaguePlayers.length)}</b>
