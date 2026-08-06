@@ -4329,6 +4329,135 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=vmV-4YOKmV8"
+    },
+    {
+      "slug": "damion-baugh",
+      "ad": "Damion Baugh",
+      "resmiAd": "Damion De'Von Baugh",
+      "takimSlug": "baskonia",
+      "lig": "euroleague",
+      "pozisyon": "PG",
+      "boy": "1.93 m",
+      "yas": "26",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Al Ahly Ly",
+      "geldigiLig": "Basketball Africa League (BAL)",
+      "transferNotu": "Baskonia, Baugh ile iki yıllık ve üçüncü sezon opsiyonlu sözleşme imzaladı. 2026'da Al Ahly Ly formasıyla Basketball Africa League tarihinin ilk triple-double'ını yapan Baugh, aynı turnuvada bir maçta verdiği 18 asistle BAL rekorunu da kırdı. Ayrıca 2025-26 sezonunda NBA G League Next Up Game'e seçildi.",
+      "transferNotuEn": "Baskonia signed Baugh to a two-year deal with a third-year option. Wearing the Al Ahly Ly jersey in 2026, Baugh recorded the first triple-double in Basketball Africa League history and also broke the BAL's single-game assist record with 18 dimes. He was also selected to the 2025-26 NBA G League Next Up Game.",
+      "ozet": "Güçlü fiziği, patlayıcı ilk adımı ve yaratıcı pas görüşüyle etkili olan fiziksel bir oyun kurucu.",
+      "ozetEn": "Strong frame, explosive first step, and creative passing vision define an effective, physical point guard.",
+      "ozetDetay": "Güçlü fiziği, patlayıcı ilk adımı ve yaratıcı pas görüşüyle etkili olan fiziksel bir oyun kurucu. Baugh, perdeleri kullanarak savunmanın ikinci hattına inebilen, geçiş hücumunu yönetebilen ve topa yaptığı baskıyla oyunun iki tarafını etkileyebilen bir guard; ancak istikrarsız dış şutu yerleşik hücumdaki alanını ciddi biçimde daraltabilir.",
+      "ozetDetayEn": "Strong frame, explosive first step, and creative passing vision define an effective, physical point guard. Baugh is a guard who can use screens to break into the second line of defense, run transition offense, and affect both ends of the floor with his on-ball pressure; his inconsistent outside shot, though, can seriously shrink his space in the half-court.",
+      "anahtarSoru": "EuroLeague savunmaları perdelerin altından geçip boyalı alanı kapattığında, pas üretimini aynı seviyede sürdürebilecek mi?",
+      "anahtarSoruEn": "When EuroLeague defenses go under screens and clog the paint, can he sustain his playmaking output at the same level?",
+      "featuredStats": {
+        "yarisma": "NBA G League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "22.4",
+            "PPG"
+          ],
+          [
+            "5.9",
+            "RPG"
+          ],
+          [
+            "7.9",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "Basketball Africa League",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "14.0",
+              "PPG"
+            ],
+            [
+              "4.2",
+              "RPG"
+            ],
+            [
+              "10.0",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Üst düzey pas görüşü ve oyun kuruculuk",
+          "v": "16 maçta 10+ asist, G Lig"
+        },
+        {
+          "t": "Pick-and-roll yönetimi"
+        },
+        {
+          "t": "Çembere baskı ve fiziksel penetreler"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "High-level passing vision and playmaking",
+          "v": "10+ assists in 16 games, G League"
+        },
+        {
+          "t": "Pick-and-roll management"
+        },
+        {
+          "t": "Rim pressure and physical drives"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Dış şut istikrarı",
+          "v": "%29.3, G Lig / %21.9, BAL"
+        },
+        {
+          "t": "Yüksek top kaybı",
+          "v": "4.1, G Lig / 3.2, BAL"
+        },
+        {
+          "t": "Top dışındaki sınırlı değer"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Outside shooting consistency",
+          "v": "29.3%, G League / 21.9%, BAL"
+        },
+        {
+          "t": "High turnover rate",
+          "v": "4.1 TOV, G League / 3.2 TOV, BAL"
+        },
+        {
+          "t": "Limited off-ball value"
+        }
+      ],
+      "arketip": "Floor General",
+      "mtnRating": "8.0",
+      "ratingNotu": "Baskonia'da yüksek skor yükü taşımaktan çok hücumu düzenleyen, takım arkadaşlarını besleyen ve savunmanın tonunu belirleyen ana bağlantı oyuncusuna dönüşebilir. Şutu savunmaları cezalandıracak seviyeye çıkarsa EuroLeague'in en dikkat çekici yeni oyun kurucularından biri olabilir; çıkmazsa maç sonlarındaki kullanım alanı sınırlanabilir.",
+      "ratingNotuEn": "Rather than carrying a heavy scoring load at Baskonia, he could turn into the primary connector who organizes the offense, feeds teammates, and sets the defensive tone. If his shot reaches a level that punishes defenses, he could become one of EuroLeague's most eye-catching new playmakers; if not, his late-game usage could stay limited.",
+      "benzerOyuncular": [
+        {
+          "isim": "Codi Miller-McIntyre",
+          "neden": "Fiziksel oyun kuruculuk ve çok yönlü üretim",
+          "nedenEn": "Physical playmaking and well-rounded production"
+        },
+        {
+          "isim": "Trent Forrest",
+          "neden": "Savunma, çembere baskı ve şut sorunu",
+          "nedenEn": "Defense, rim pressure, and shooting struggles"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=PY68cybfSB4"
     }
   ]
 }
