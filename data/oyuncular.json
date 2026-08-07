@@ -165,6 +165,13 @@
       "vurgu": "#009FE3",
       "renk1": "#7A1E2B",
       "renk2": "#009FE3"
+    },
+    "galatasaray": {
+      "ad": "Galatasaray",
+      "marka": "#A90432",
+      "vurgu": "#FDB912",
+      "renk1": "#FDB912",
+      "renk2": "#A90432"
     }
   },
   "oyuncular": [
@@ -4458,6 +4465,116 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=PY68cybfSB4"
+    },
+    {
+      "slug": "oumar-ballo",
+      "ad": "Oumar Ballo",
+      "resmiAd": "Oumar Ballo",
+      "takimSlug": "galatasaray",
+      "lig": "bsl",
+      "pozisyon": "C",
+      "boy": "2.13 m",
+      "yas": "24",
+      "milliyet": "Mali",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Pallacanestro Cantù",
+      "geldigiLig": "İtalya Serie A",
+      "transferNotu": "Ballo, Avrupa'daki ilk profesyonel sezonunda Cantù ile Serie A'nın en iyi ribaundcularından biri oldu; 28 maçta 8.4 ribaund ortalaması yakaladı ve bunların 3.3'ünü hücum potasında aldı. Sezonun ardından RSSB Tigers'a katılarak 2026 Basketball Africa League şampiyonluğu yaşadı; yarı finalde Al Ahly'ye karşı yalnızca 20 dakikada 20 sayı ve 17 ribaund üretti.",
+      "transferNotuEn": "In his first professional season in Europe, Ballo became one of Serie A's best rebounders with Cantù, averaging 8.4 rebounds over 28 games, 3.3 of them on the offensive glass. After the season, he joined RSSB Tigers and won the 2026 Basketball Africa League title, producing 20 points and 17 rebounds in just 20 minutes against Al Ahly in the semifinal.",
+      "ozet": "Güçlü gövdesini elit ribaund sezgisi, yumuşak pota altı dokunuşu ve fiziksel post oyunuyla birleştiren klasik bir boyalı alan pivotu.",
+      "ozetEn": "Strong build, elite rebounding instincts, a soft touch around the rim, and physical post play define a classic paint center.",
+      "ozetDetay": "Güçlü gövdesini elit ribaund sezgisi, yumuşak pota altı dokunuşu ve fiziksel post oyunuyla birleştiren klasik bir boyalı alan pivotu. Alçak post pozisyonlarında ve pick-and-roll sonrası çember çevresinde yüksek verim üretirken, hücum ribaunduyla da sürekli ikinci şans yaratıyor; ancak oyunu neredeyse tamamen pota çevresine sıkışıyor.",
+      "ozetDetayEn": "Strong build, elite rebounding instincts, a soft touch around the rim, and physical post play define a classic paint center. He produces high efficiency from low-post positions and around the rim after pick-and-rolls, constantly creating second-chance opportunities through offensive rebounding; his game, though, is confined almost entirely to the area around the basket.",
+      "anahtarSoru": "Pick-and-roll savunmasında hedef alındığında nasıl reaksiyon gösterecek?",
+      "anahtarSoruEn": "How will he react when targeted in pick-and-roll defense?",
+      "featuredStats": {
+        "yarisma": "İtalya Serie A",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "11.3",
+            "PPG"
+          ],
+          [
+            "8.4",
+            "RPG"
+          ],
+          [
+            "1.1",
+            "BPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Elit ribaund üretimi",
+          "v": "8.4 RPG, 3.3 ORPG, Serie A"
+        },
+        {
+          "t": "Fiziksel post oyunu"
+        },
+        {
+          "t": "Çember savunması",
+          "v": "1.1 BPG, Serie A"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Elite rebounding production",
+          "v": "8.4 RPG, 3.3 ORPG, Serie A"
+        },
+        {
+          "t": "Physical post play"
+        },
+        {
+          "t": "Rim defense",
+          "v": "1.1 BPG, Serie A"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Yatay hız"
+        },
+        {
+          "t": "Switch savunması"
+        },
+        {
+          "t": "Serbest atışlar",
+          "v": "%54.8, İtalya"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Lateral quickness"
+        },
+        {
+          "t": "Switch defense"
+        },
+        {
+          "t": "Free throws",
+          "v": "54.8%, Italy"
+        }
+      ],
+      "arketip": "Post Scorer",
+      "mtnRating": "8.0",
+      "ratingNotu": "Galatasaray'ın yeni uzun rotasyonundaki tek \"gerçek pivot\" tanımına sahip olması, onun anlamlı süreler alacak olma ihtimalini artırıyor. BSL'de özellikle fiziksel olarak zayıf pivotlara karşı posttan ve hücum ribaundundan gerçek bir eşleşme problemine dönüşebilir.",
+      "ratingNotuEn": "Being the only player in Galatasaray's new big-man rotation who fits the definition of a true center raises the likelihood he sees meaningful minutes. Against physically weaker centers in particular, he could become a genuine matchup problem through post play and offensive rebounding in the BSL.",
+      "benzerOyuncular": [
+        {
+          "isim": "Sasha Kaun",
+          "neden": "Fiziksellik ve çember koruma",
+          "nedenEn": "Physicality and rim protection"
+        },
+        {
+          "isim": "Ante Žižić",
+          "neden": "Alçak post ve potaya yakın atışlar",
+          "nedenEn": "Low-post play and close-range finishing"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=lwysp8VZBiU"
     }
   ]
 }
