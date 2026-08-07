@@ -4,14 +4,7 @@ import Link from 'next/link';
 import { useLang } from '@/lib/LanguageContext';
 
 const MENU = [
-  {
-    key: 'onesToWatch', labelKey: 'onesToWatch', href: '/ones-to-watch',
-    children: [
-      { key: 'guards', labelKey: 'owGuards', anchor: '#guards' },
-      { key: 'forwards', labelKey: 'owForwards', anchor: '#forwards' },
-      { key: 'bigs', labelKey: 'owBigs', anchor: '#bigs' },
-    ],
-  },
+  { key: 'onesToWatch', labelKey: 'onesToWatch', href: '/ones-to-watch' },
 ];
 
 export default function MainMenu() {
