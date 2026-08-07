@@ -36,10 +36,16 @@ function findPlayerPhoto(slug) {
   return null;
 }
 
+const NAME_SUFFIXES = ['JR', 'JR.', 'SR', 'SR.', 'II', 'III', 'IV'];
+
 function splitPlayerName(name) {
   const words = name.trim().toUpperCase().split(/\s+/);
   if (words.length === 1) return [words[0], ''];
-  return [words.slice(0, -1).join(' '), words.at(-1) ?? ''];
+  // "Jr./Sr./II/III" gibi ekler kendi satırına düşmesin, soyadıyla aynı satırda kalsın.
+  const splitAt = words.length >= 3 && NAME_SUFFIXES.includes(words.at(-1))
+    ? words.length - 2
+    : words.length - 1;
+  return [words.slice(0, splitAt).join(' '), words.slice(splitAt).join(' ')];
 }
 
 // Nimbus Sans Bold büyük harflerde ortalama karakter genişliği ~ fontSize * 0.64.
