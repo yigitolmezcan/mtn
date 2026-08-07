@@ -8,22 +8,30 @@ export default function HeroSpotlight({ latestEuroleague, latestBsl, children })
   const { lang } = useLang();
   const [step, setStep] = useState(0);
   const slides = [null, latestEuroleague, latestBsl].filter((s, i) => i === 0 || s);
-  const current = slides[step];
 
   return (
     <div className="hero__row">
       <div className="hero__stage">
-        {!current ? (
-          children
-        ) : (
-          <Link href={playerHref(current.slug, lang)} className="hero__ogimg-link">
-            <img
-              src={`/oyuncu/${current.slug}/opengraph-image`}
-              alt={current.ad}
-              className="hero__ogimg"
-            />
-          </Link>
-        )}
+        <div
+          className="hero__track"
+          style={{ width: `${slides.length * 100}%`, transform: `translateX(-${(100 / slides.length) * step}%)` }}
+        >
+          {slides.map((slide, i) => (
+            <div className="hero__slide" key={slide ? slide.slug : 'default'} style={{ width: `${100 / slides.length}%` }}>
+              {!slide ? (
+                <div className="hero__slide-default">{children}</div>
+              ) : (
+                <Link href={playerHref(slide.slug, lang)} className="hero__ogimg-link">
+                  <img
+                    src={`/oyuncu/${slide.slug}/opengraph-image`}
+                    alt={slide.ad}
+                    className="hero__ogimg"
+                  />
+                </Link>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
       <button
         className="hero__bigarrow"
