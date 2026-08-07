@@ -31,6 +31,18 @@ export default function HomeView({ players, sezon }) {
     (!arkFilter || p.arketip === arkFilter)
   ), [leaguePlayers, posFilter, arkFilter]);
 
+  const availablePositions = useMemo(() => {
+    const base = arkFilter ? leaguePlayers.filter(p => p.arketip === arkFilter) : leaguePlayers;
+    const set = new Set();
+    base.forEach(p => p.pozisyon.split(' / ').forEach(pos => set.add(pos.trim())));
+    return set;
+  }, [leaguePlayers, arkFilter]);
+
+  const availableArchetypes = useMemo(() => {
+    const base = posFilter ? leaguePlayers.filter(p => p.pozisyon.split(' / ').map(s => s.trim()).includes(posFilter)) : leaguePlayers;
+    return new Set(base.map(p => p.arketip));
+  }, [leaguePlayers, posFilter]);
+
   const sortedPlayers = useMemo(() => {
     if (sortBy === 'takim') {
       return [...filteredPlayers].sort((a, b) => a.takim.localeCompare(b.takim, 'tr'));
@@ -70,23 +82,27 @@ export default function HomeView({ players, sezon }) {
             <div className="filter-group">
               <div className="filter-group__label">{t.filterPosition}</div>
               <div className="filter-chips">
-                {POSITIONS.map(pos => (
+                {POSITIONS.filter(pos => availablePositions.has(pos)).map(pos => (
                   <button key={pos} className={`filter-chip${posFilter === pos ? ' active' : ''}`}
                     onClick={() => setPosFilter(posFilter === pos ? null : pos)}>{pos}</button>
                 ))}
               </div>
             </div>
-            {Object.entries(ARCHETYPES).map(([group, list]) => (
-              <div className="filter-group" key={group}>
-                <div className="filter-group__label">{group}</div>
-                <div className="filter-chips">
-                  {list.map(ark => (
-                    <button key={ark} className={`filter-chip${arkFilter === ark ? ' active' : ''}`}
-                      onClick={() => setArkFilter(arkFilter === ark ? null : ark)}>{ark}</button>
-                  ))}
+            {Object.entries(ARCHETYPES).map(([group, list]) => {
+              const visible = list.filter(ark => availableArchetypes.has(ark));
+              if (visible.length === 0) return null;
+              return (
+                <div className="filter-group" key={group}>
+                  <div className="filter-group__label">{group}</div>
+                  <div className="filter-chips">
+                    {visible.map(ark => (
+                      <button key={ark} className={`filter-chip${arkFilter === ark ? ' active' : ''}`}
+                        onClick={() => setArkFilter(arkFilter === ark ? null : ark)}>{ark}</button>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
             {(posFilter || arkFilter) && (
               <button className="filter-clear" onClick={() => { setPosFilter(null); setArkFilter(null); }}>
                 {t.filterClear}

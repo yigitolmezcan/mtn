@@ -26,8 +26,10 @@ export default function Topbar({ players }) {
   return (
     <header className="topbar">
       <div className="wrap topbar__inner">
-        <MainMenu />
-        <TopbarSearch players={players} />
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <MainMenu />
+          <TopbarSearch players={players} />
+        </div>
         {latest && (
           <Link href={playerHref(latest.slug, lang)} className="latest-signal">
             <span className="latest-signal__label">{t.latestSignal}</span>

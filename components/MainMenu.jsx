@@ -32,6 +32,7 @@ export default function MainMenu() {
       </button>
       {open && (
         <div className="mainmenu__panel">
+          <div className="mainmenu__section">İÇERİK</div>
           {MENU.map((item) => (
             <div key={item.key} className="mainmenu__item">
               <div className="mainmenu__row">
