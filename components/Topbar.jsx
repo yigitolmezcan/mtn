@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
 import TopbarSearch from './TopbarSearch';
+import MainMenu from './MainMenu';
 import { useLang } from '@/lib/LanguageContext';
 import { useLeague } from '@/lib/LeagueContext';
 import { playerHref } from '@/lib/playerHref';
@@ -25,6 +26,7 @@ export default function Topbar({ players }) {
   return (
     <header className="topbar">
       <div className="wrap topbar__inner">
+        <MainMenu />
         <TopbarSearch players={players} />
         {latest && (
           <Link href={playerHref(latest.slug, lang)} className="latest-signal">
