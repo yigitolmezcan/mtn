@@ -1,6 +1,7 @@
 import { ImageResponse } from 'next/og';
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
+import sharp from 'sharp';
 import { getPlayer } from '@/lib/players';
 
 export const size = { width: 1200, height: 630 };
@@ -27,11 +28,19 @@ function fileToDataUri(absPath, mime) {
   return `data:${mime};base64,${buf.toString('base64')}`;
 }
 
-function findPlayerPhoto(slug) {
-  const exts = [['png', 'image/png'], ['jpg', 'image/jpeg'], ['webp', 'image/webp']];
+// Satori (next/og'un render motoru) AVIF'i çözemeyip çöküyor, bu yüzden
+// AVIF kaynaklar request anında sharp ile PNG'ye çevrilip öyle veriliyor.
+async function findPlayerPhoto(slug) {
+  const exts = [['png', 'image/png'], ['jpg', 'image/jpeg'], ['webp', 'image/webp'], ['avif', 'image/avif']];
   for (const [ext, mime] of exts) {
     const p = join(process.cwd(), 'public', 'players', `${slug}.${ext}`);
-    if (existsSync(p)) return fileToDataUri(p, mime);
+    if (existsSync(p)) {
+      if (ext === 'avif') {
+        const pngBuf = await sharp(p).png().toBuffer();
+        return `data:image/png;base64,${pngBuf.toString('base64')}`;
+      }
+      return fileToDataUri(p, mime);
+    }
   }
   return null;
 }
@@ -90,7 +99,7 @@ export default async function Image({ params }) {
 
   const photoUri = p.ogFoto
     ? fileToDataUri(join(process.cwd(), 'public', p.ogFoto), 'image/png')
-    : findPlayerPhoto(slug);
+    : await findPlayerPhoto(slug);
 
   // og-pack'teki varsayılan crop (scale:1.38, y:28), paketin referans fotoğrafı olan
   // uzun kaynak görsel (kyle-source.webp) için kalibre edilmiş. Projenin gerçek oyuncu

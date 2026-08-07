@@ -1,10 +1,11 @@
 'use client';
 import { useState, useMemo } from 'react';
 import PlayerCard from '@/components/PlayerCard';
+import HeroSpotlight from '@/components/HeroSpotlight';
 import { useLang } from '@/lib/LanguageContext';
 import { useLeague } from '@/lib/LeagueContext';
 
-export default function HomeView({ players, sezon }) {
+export default function HomeView({ players, sezon, latestEuroleague, latestBsl }) {
   const { lang, t } = useLang();
   const { league } = useLeague();
   const [sortBy, setSortBy] = useState('guncelleme');
@@ -56,13 +57,15 @@ export default function HomeView({ players, sezon }) {
   return (
     <main className="wrap">
       <section className="hero">
-        <h1 className="hero__h1">
-          <span className="hero__a hero__lockup">
-            Meet the <img src="/logo-final.png" alt="" className="hero__logo" />
-          </span>
-          <span className="hero__b">Newcomers</span>
-        </h1>
-        <p className="hero__p">{league === 'bsl' ? t.heroSubtitleBsl : t.heroSubtitle}</p>
+        <HeroSpotlight latestEuroleague={latestEuroleague} latestBsl={latestBsl}>
+          <h1 className="hero__h1">
+            <span className="hero__a hero__lockup">
+              Meet the <img src="/logo-final.png" alt="" className="hero__logo" />
+            </span>
+            <span className="hero__b">Newcomers</span>
+          </h1>
+          <p className="hero__p">{league === 'bsl' ? t.heroSubtitleBsl : t.heroSubtitle}</p>
+        </HeroSpotlight>
         <div className="rail">
           <b>{t.playersScouted(leaguePlayers.length)}</b>
           <span>·</span>
