@@ -29,6 +29,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   const searchData = getAllPlayers().map((p) => ({
     slug: p.slug, ad: p.ad, takim: p.takim, takimEn: p.takimEn, pozisyon: p.pozisyon, mtnRating: p.mtnRating,
+    lig: p.lig,
   }));
 
   return (

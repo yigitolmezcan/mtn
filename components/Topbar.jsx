@@ -1,16 +1,19 @@
 'use client';
 import { useEffect } from 'react';
+import Link from 'next/link';
 import TopbarSearch from './TopbarSearch';
 import { useLang } from '@/lib/LanguageContext';
 import { useLeague } from '@/lib/LeagueContext';
+import { playerHref } from '@/lib/playerHref';
 
 function hideIfBroken(e) {
   e.target.style.display = 'none';
 }
 
 export default function Topbar({ players }) {
-  const { lang, toggle } = useLang();
+  const { lang, t, toggle } = useLang();
   const { league, setLeague } = useLeague();
+  const latest = players.filter((p) => p.lig === league)[0];
 
   // SSR'de resim daha React hydrate olmadan 404 dönebilir; onError o anda kaçırılır.
   useEffect(() => {
@@ -23,6 +26,13 @@ export default function Topbar({ players }) {
     <header className="topbar">
       <div className="wrap topbar__inner">
         <TopbarSearch players={players} />
+        {latest && (
+          <Link href={playerHref(latest.slug, lang)} className="latest-signal">
+            <span className="latest-signal__label">{t.latestSignal}</span>
+            <span className="latest-signal__name">{latest.ad}</span>
+            <span className="latest-signal__arrow">→</span>
+          </Link>
+        )}
         <div className="topbar__switches">
           <div className="league-switch">
             <button

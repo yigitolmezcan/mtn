@@ -8,6 +8,16 @@ export default function HomeView({ players, sezon }) {
   const { lang, t } = useLang();
   const { league } = useLeague();
   const [sortBy, setSortBy] = useState('guncelleme');
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  const [posFilter, setPosFilter] = useState(null);
+  const [arkFilter, setArkFilter] = useState(null);
+
+  const POSITIONS = ['PG', 'SG', 'SF', 'PF', 'C'];
+  const ARCHETYPES = {
+    Guards: ['Floor General', 'Combo Guard', 'Scoring Point Guard', 'Slasher', 'Sharpshooter'],
+    Wings: ['3&D Wing', 'Scoring Wing', 'Point Forward', 'Athletic Forward'],
+    Bigs: ['Stretch Big', 'Athletic Center', 'Rim Protector', 'Post Scorer'],
+  };
 
   const buildDate = new Date();
   const formatted = lang === 'tr'
@@ -16,15 +26,20 @@ export default function HomeView({ players, sezon }) {
 
   const leaguePlayers = useMemo(() => players.filter((p) => p.lig === league), [players, league]);
 
+  const filteredPlayers = useMemo(() => leaguePlayers.filter(p =>
+    (!posFilter || p.pozisyon.split(' / ').includes(posFilter)) &&
+    (!arkFilter || p.arketip === arkFilter)
+  ), [leaguePlayers, posFilter, arkFilter]);
+
   const sortedPlayers = useMemo(() => {
     if (sortBy === 'takim') {
-      return [...leaguePlayers].sort((a, b) => a.takim.localeCompare(b.takim, 'tr'));
+      return [...filteredPlayers].sort((a, b) => a.takim.localeCompare(b.takim, 'tr'));
     }
     if (sortBy === 'puan') {
-      return [...leaguePlayers].sort((a, b) => (parseFloat(b.mtnRating) || 0) - (parseFloat(a.mtnRating) || 0));
+      return [...filteredPlayers].sort((a, b) => (parseFloat(b.mtnRating) || 0) - (parseFloat(a.mtnRating) || 0));
     }
-    return leaguePlayers; // güncelleme sırası — zaten doğru dizilmiş geliyor
-  }, [leaguePlayers, sortBy]);
+    return filteredPlayers; // güncelleme sırası — zaten doğru dizilmiş geliyor
+  }, [filteredPlayers, sortBy]);
 
   return (
     <main className="wrap">
@@ -45,7 +60,40 @@ export default function HomeView({ players, sezon }) {
             <option value="takim">{t.sortTeam}</option>
             <option value="puan">{t.sortRating}</option>
           </select>
+          <button className="filter-toggle" onClick={() => setFiltersOpen(v => !v)}>
+            {t.filterLabel}{(posFilter || arkFilter) && <span className="filter-dot" />}
+          </button>
         </div>
+
+        {filtersOpen && (
+          <div className="filter-panel">
+            <div className="filter-group">
+              <div className="filter-group__label">{t.filterPosition}</div>
+              <div className="filter-chips">
+                {POSITIONS.map(pos => (
+                  <button key={pos} className={`filter-chip${posFilter === pos ? ' active' : ''}`}
+                    onClick={() => setPosFilter(posFilter === pos ? null : pos)}>{pos}</button>
+                ))}
+              </div>
+            </div>
+            {Object.entries(ARCHETYPES).map(([group, list]) => (
+              <div className="filter-group" key={group}>
+                <div className="filter-group__label">{group}</div>
+                <div className="filter-chips">
+                  {list.map(ark => (
+                    <button key={ark} className={`filter-chip${arkFilter === ark ? ' active' : ''}`}
+                      onClick={() => setArkFilter(arkFilter === ark ? null : ark)}>{ark}</button>
+                  ))}
+                </div>
+              </div>
+            ))}
+            {(posFilter || arkFilter) && (
+              <button className="filter-clear" onClick={() => { setPosFilter(null); setArkFilter(null); }}>
+                {t.filterClear}
+              </button>
+            )}
+          </div>
+        )}
       </section>
 
       <section className="grid">
