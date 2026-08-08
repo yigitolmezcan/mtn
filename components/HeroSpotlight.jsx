@@ -55,10 +55,10 @@ export default function HeroSpotlight({ players, children }) {
     function measure() {
       const stageWidth = stageRef.current?.getBoundingClientRect().width || 0;
       const currentType = slides[step0]?.type;
-      if (currentType === 'title') {
+      if (currentType === 'title' || currentType === 'twitter') {
         const activeEl = slideRefs.current[step0];
         const contentHeight = activeEl ? activeEl.scrollHeight : 200;
-        setStageHeight(Math.max(contentHeight, 180));
+        setStageHeight(Math.max(contentHeight, 100));
       } else {
         const h = Math.max(180, Math.min(520, stageWidth * (630 / 1200)));
         setStageHeight(h);
@@ -112,14 +112,17 @@ export default function HeroSpotlight({ players, children }) {
                 <div className="hero__slide-default">{children}</div>
               )}
               {slide.type === 'twitter' && (
-                <a href="https://x.com/meetnewcomers" target="_blank" rel="noopener noreferrer" className="hero__ogimg-link">
-                  <span className="hero__ogimg-frame">
-                    <img
-                      src={lang === 'en' ? '/og/mtn-x-launch-en.png' : '/og/mtn-x-launch-tr.png'}
-                      alt="@meetnewcomers"
-                      className="hero__ogimg"
-                    />
-                  </span>
+                <a href="https://x.com/meetnewcomers" target="_blank" rel="noopener noreferrer" className="hero__xcard">
+                  <img src="/logo-final.png" alt="" className="hero__xcard-logo" />
+                  <div className="hero__xcard-text">
+                    <div className="hero__xcard-title">
+                      {lang === 'en' ? 'A newcomer to X' : "Meet the Newcomers artık X'te"}
+                    </div>
+                    <div className="hero__xcard-handle">@meetnewcomers</div>
+                  </div>
+                  <svg className="hero__xcard-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-6.9L4.5 22H1.4l8.2-9.3L1 2h7.1l4.9 6.3L18.9 2zm-1.2 18h1.9L7.4 4H5.3l12.4 16z"/>
+                  </svg>
                 </a>
               )}
               {slide.type === 'otw' && (
