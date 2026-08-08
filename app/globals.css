@@ -167,15 +167,16 @@ a{color:inherit;text-decoration:none}
 .hero__ogimg{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;border-radius:10px}
 .hero__xcard{
   display:flex;align-items:center;gap:16px;
-  width:100%;padding:0 28px;
-  text-decoration:none;
+  width:100%;padding:24px 28px;
+  background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  text-decoration:none;transition:border-color .2s;
 }
-.hero__xcard:hover .hero__xcard-icon{color:var(--court)}
+.hero__xcard:hover{border-color:var(--court)}
 .hero__xcard-logo{width:36px;height:36px;flex-shrink:0}
 .hero__xcard-text{flex:1;display:flex;flex-direction:column;gap:3px}
 .hero__xcard-title{font-family:var(--display);font-weight:700;font-size:17px;color:var(--bone)}
 .hero__xcard-handle{font-size:12px;color:var(--court)}
-.hero__xcard-icon{color:var(--muted-dim);flex-shrink:0;transition:color .2s}
+.hero__xcard-icon{color:var(--muted-dim);flex-shrink:0}
 .hero__gobtn{
   /* Sağ üst köşe lig logosunu kapatıyordu; sağ alt köşede boş alan var — ama
      stage seviyesindeki sayfa göstergesiyle (.hero__dots) çakışmasın diye
