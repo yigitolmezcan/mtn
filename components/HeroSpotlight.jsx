@@ -158,8 +158,15 @@ export default function HeroSpotlight({ players, children }) {
         {/* oklar artık kutunun içinde, görselin üzerinde bir overlay — kutu genişliği
             paylaşılmıyor, tüm alan görsele ayrılıyor. */}
         <div className="hero__arrows">
-          <button className="hero__bigarrow" onClick={() => go(-1)} aria-label="prev">←</button>
-          <button className="hero__bigarrow" onClick={() => go(1)} aria-label="next">→</button>
+          {step0 !== 0 && (
+            <button className="hero__bigarrow" onClick={() => go(-1)} aria-label="prev">←</button>
+          )}
+          <button
+            className="hero__bigarrow"
+            onClick={() => go(1)}
+            aria-label="next"
+            style={step0 === 0 ? { marginLeft: 'auto' } : undefined}
+          >→</button>
         </div>
       </div>
     </div>
