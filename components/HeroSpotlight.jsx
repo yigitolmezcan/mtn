@@ -74,7 +74,10 @@ export default function HeroSpotlight({ players, children }) {
                       alt={slide.player.ad}
                       className="hero__ogimg"
                     />
-                    <span className="hero__gobtn">{t.goToProfile} →</span>
+                    <span className="hero__gobtn">
+                      <span className="hero__gobtn-text">{t.goToProfile}</span>
+                      <span aria-hidden="true">→</span>
+                    </span>
                   </span>
                 </Link>
               )}

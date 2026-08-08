@@ -143,19 +143,24 @@ a{color:inherit;text-decoration:none}
 
 .hero__row{display:flex;align-items:center;gap:20px}
 .hero__stage{
-  flex:1;min-width:0;height:clamp(260px,30vw,320px);
+  flex:1;min-width:0;
+  /* Kutu boyutu artık OG görsellerinin gerçek oranına (1200:630) kilitli —
+     genişlik ne olursa olsun görsel tam genişliği kullanır, yanlarda boşluk kalmaz.
+     min-height, mobilde başlık metninin sığması için güvenlik payı. */
+  aspect-ratio:1200/630;min-height:300px;max-height:520px;
   overflow:hidden;position:relative;
 }
 .hero__track{display:flex;height:100%;transition:transform .45s cubic-bezier(.65,0,.35,1)}
 .hero__slide{flex-shrink:0;height:100%;overflow:hidden}
 .hero__slide-default{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center}
-.hero__ogimg-link{display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;padding:14px}
+.hero__ogimg-link{display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;padding:6px}
 /* frame, img'in gerçek (kırpılmamış, oranı korunmuş) render boyutuna shrink-wrap eder —
    böylece "profile git" butonu görselin gerçek kenarına oturur, boşlukta kalmaz. */
 .hero__ogimg-frame{position:relative;display:inline-flex;max-width:100%;max-height:100%}
 .hero__ogimg{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;border-radius:10px}
 .hero__gobtn{
   position:absolute;right:8px;top:8px;z-index:2;
+  display:flex;align-items:center;gap:4px;
   background:rgba(10,10,11,.72);backdrop-filter:blur(4px);
   border:1px solid var(--line);border-radius:5px;
   padding:6px 12px;font-size:10.5px;font-weight:600;letter-spacing:.03em;
@@ -181,6 +186,13 @@ a{color:inherit;text-decoration:none}
 @media(max-width:860px){
   .hero__bigarrow{width:32px;height:32px;font-size:14px}
   .hero__arrows{gap:6px}
+  /* başlık slaytındaki metin sağ-alttaki sayfa göstergesine (.hero__dots) kadar
+     uzanıp üstüne biniyordu — metne sağdan pay ayırıyoruz. */
+  .hero__slide-default{padding-right:52px}
+  /* mobilde metin yerine tek bir ok ikonu; "Profile Git" yazısı OG görselinin
+     üstünü fazla kaplıyordu. */
+  .hero__gobtn{padding:6px;border-radius:50%}
+  .hero__gobtn-text{display:none}
 }
 
 .rail{
