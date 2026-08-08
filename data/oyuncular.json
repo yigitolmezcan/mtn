@@ -4575,6 +4575,110 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=lwysp8VZBiU"
+    },
+    {
+      "slug": "garrison-mathews",
+      "ad": "Garrison Mathews",
+      "resmiAd": "Garrison Mathews",
+      "takimSlug": "olimpia-milano",
+      "lig": "euroleague",
+      "pozisyon": "SG / SF",
+      "boy": "1.96 m",
+      "yas": "29",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Indiana Pacers",
+      "geldigiLig": "NBA (ABD)",
+      "transferNotu": "NBA'de Washington Wizards, Houston Rockets, Atlanta Hawks ve Indiana Pacers formalarıyla 329 normal sezon maçına çıktı. Draft edilmemiş bir oyuncunun yedi sezon boyunca NBA rotasyonunda kalabilmesinin temel nedeni de yıllar içinde geliştirdiği tek ama son derece değerli elit beceri oldu: üç sayı şutu. Milano'da Armoni Brooks'un yerini alıyor, Moses Wright, Leandro Bolmaro, Devon Hall, Marko Guduric ve Alec Peters gibi NBA kökenli isimlerle dolu bir kadroya katılıyor.",
+      "transferNotuEn": "He appeared in 329 regular-season NBA games across the Washington Wizards, Houston Rockets, Atlanta Hawks, and Indiana Pacers. The reason an undrafted player managed to stay in an NBA rotation for seven seasons comes down to one elite skill he sharpened over the years: his three-point shot. At Milano he's replacing Armoni Brooks, joining a roster already stocked with NBA-tested names like Moses Wright, Leandro Bolmaro, Devon Hall, Marko Guduric, and Alec Peters.",
+      "ozet": "Topu elinde tutmadan hücuma değer katan, elit seviyede bir üç sayı uzmanı.",
+      "ozetEn": "Adding offensive value without needing the ball in his hands, he's an elite three-point specialist.",
+      "ozetDetay": "Topu elinde tutmadan hücuma değer katan, elit seviyede bir üç sayı uzmanı. Perde çıkışlarında ve topsuz hareket halinde çok hızlı şuta kalkabilen; savunmacısının bir anlık gecikmesini cezalandıracak kadar kısa bir hazırlık süresine sahip bir keskin nişancı. Şut tehdidi rakibin ona sürekli yakın kalmasını gerektirirken, sert yaklaşmaları da düz çizgide potaya giderek değerlendirebiliyor. Buna karşın top yönlendirme ve bireysel skor yaratma kapasitesi sınırlı; hücumdaki değerinin büyük bölümü üç sayı tehdidinden geliyor.",
+      "ozetDetayEn": "Adding offensive value without needing the ball in his hands, he's an elite three-point specialist. A sharpshooter who can fire off screens and off-ball movement in an instant, with a release quick enough to punish even a split-second lapse from his defender. His shooting threat forces defenders to stay glued to him, and he can also punish hard closeouts by driving straight to the rim. On the other hand, his ball-handling and ability to create his own shot are limited; most of his offensive value comes from the three-point threat itself.",
+      "anahtarSoru": "Elit NBA şutunu EuroLeague'e taşırken savunmada rakiplerin sürekli hedeflediği oyuncuya dönüşmeden sahada kalabilecek mi?",
+      "anahtarSoruEn": "As he brings his elite NBA shot to the EuroLeague, can he stay on the floor without becoming the player opponents constantly hunt on defense?",
+      "featuredStats": {
+        "yarisma": "NBA",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "5.2",
+            "PPG"
+          ],
+          [
+            "1.1",
+            "RPG"
+          ],
+          [
+            "37.0",
+            "3PT%"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Hareketli üçlük tehdidi"
+        },
+        {
+          "t": "Topsuz hareket"
+        },
+        {
+          "t": "Düşük kullanımla yüksek etki yaratma"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Movement shooting threat"
+        },
+        {
+          "t": "Off-ball movement"
+        },
+        {
+          "t": "High impact on low usage"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Sınırlı hücum yaratıcılığı"
+        },
+        {
+          "t": "Savunmada perde takibinde zorlanma"
+        },
+        {
+          "t": "Savunmada yatay hız"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Limited offensive creation"
+        },
+        {
+          "t": "Struggles navigating screens on defense"
+        },
+        {
+          "t": "Lateral quickness on defense"
+        }
+      ],
+      "arketip": "Sharpshooter",
+      "mtnRating": "8.2",
+      "ratingNotu": "2024-25 sezonunda kullandığı saha içi atışların yaklaşık %85'inin üçlük olması, Mathews'ın rolünü tek başına özetliyor. Milano'da yaratıcı oyuncuların çevresinde bu kadar net bir uzmanlığa sahip olması bence ciddi değer yaratabilir; şutu EuroLeague'e sorunsuz taşınırsa ligin en rahatsız edici tamamlayıcı parçalarından biri olabilir.",
+      "ratingNotuEn": "The fact that roughly 85% of his shot attempts in 2024-25 were threes sums up Mathews's role on its own. Having this clear a specialty around Milano's creators could genuinely add real value; if his shot translates smoothly to the EuroLeague, he could become one of the league's most uncomfortable complementary pieces.",
+      "benzerOyuncular": [
+        {
+          "isim": "Kyle Kuric",
+          "neden": "Perde kullanımı ve topsuz oyun",
+          "nedenEn": "Screen usage and off-ball movement"
+        },
+        {
+          "isim": "Jaycee Carroll",
+          "neden": "Hücumdaki sprint temposu ve catch and shoot yeteneği",
+          "nedenEn": "Sprint tempo in offense and catch-and-shoot ability"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=p15mwgf2pW8"
     }
   ]
 }
