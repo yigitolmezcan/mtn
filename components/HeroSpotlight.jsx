@@ -6,6 +6,14 @@ import { useLang } from '@/lib/LanguageContext';
 import { useLeague } from '@/lib/LeagueContext';
 import { playerHref } from '@/lib/playerHref';
 
+function XLogo({ className }) {
+  return (
+    <svg className={className} width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-label="X">
+      <path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-6.9L4.5 22H1.4l8.2-9.3L1 2h7.1l4.9 6.3L18.9 2zm-1.2 18h1.9L7.4 4H5.3l12.4 16z"/>
+    </svg>
+  );
+}
+
 function GoBtn({ text }) {
   return (
     <span className="hero__gobtn">
@@ -116,13 +124,12 @@ export default function HeroSpotlight({ players, children }) {
                   <img src="/logo-final.png" alt="" className="hero__xcard-logo" />
                   <div className="hero__xcard-text">
                     <div className="hero__xcard-title">
-                      {lang === 'en' ? 'A newcomer to X' : "Meet the Newcomers artık X'te"}
+                      {lang === 'en'
+                        ? <>A newcomer to <XLogo className="hero__xcard-inline-x" /></>
+                        : <>Meet the Newcomers artık <XLogo className="hero__xcard-inline-x" />'te</>}
                     </div>
                     <div className="hero__xcard-handle">@meetnewcomers</div>
                   </div>
-                  <svg className="hero__xcard-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-6.9L4.5 22H1.4l8.2-9.3L1 2h7.1l4.9 6.3L18.9 2zm-1.2 18h1.9L7.4 4H5.3l12.4 16z"/>
-                  </svg>
                 </a>
               )}
               {slide.type === 'otw' && (
