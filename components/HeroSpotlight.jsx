@@ -118,10 +118,12 @@ export default function HeroSpotlight({ players, children }) {
             <span key={slide.key} className={`hero__dot${i === step0 ? ' active' : ''}`} />
           ))}
         </div>
-      </div>
-      <div className="hero__arrows">
-        <button className="hero__bigarrow" onClick={() => go(-1)} aria-label="prev">←</button>
-        <button className="hero__bigarrow" onClick={() => go(1)} aria-label="next">→</button>
+        {/* oklar artık kutunun içinde, görselin üzerinde bir overlay — kutu genişliği
+            paylaşılmıyor, tüm alan görsele ayrılıyor. */}
+        <div className="hero__arrows">
+          <button className="hero__bigarrow" onClick={() => go(-1)} aria-label="prev">←</button>
+          <button className="hero__bigarrow" onClick={() => go(1)} aria-label="next">→</button>
+        </div>
       </div>
     </div>
   );

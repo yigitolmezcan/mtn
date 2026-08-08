@@ -144,9 +144,9 @@ a{color:inherit;text-decoration:none}
 .hero__b{font-variation-settings:'wdth' 100,'wght' 300;color:var(--paper)}
 .hero__p{margin-top:22px;max-width:38ch;color:var(--muted);font-size:17px;line-height:1.6}
 
-.hero__row{display:flex;align-items:center;gap:20px}
+.hero__row{display:flex;align-items:center}
 .hero__stage{
-  flex:1;min-width:0;
+  flex:1;min-width:0;width:100%;
   /* Yükseklik artık HeroSpotlight.jsx içinde JS ile ölçülüp piksel olarak
      inline set ediliyor (OG oranı 1200:630) — iOS Safari, flex öğesi
      içindeki CSS aspect-ratio'yu masaüstünden farklı/hatalı hesaplayıp kutuyu
@@ -157,7 +157,9 @@ a{color:inherit;text-decoration:none}
 }
 .hero__track{display:flex;height:100%;transition:transform .45s cubic-bezier(.65,0,.35,1)}
 .hero__slide{flex-shrink:0;height:100%;overflow:hidden}
-.hero__slide-default{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center}
+/* oklar artık görselin üzerine bindirilmiş overlay; başlık metninin sol/sağ
+   ucu onlarla çakışmasın diye iki taraftan da pay bırakıyoruz. */
+.hero__slide-default{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;padding:0 80px}
 .hero__ogimg-link{display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;padding:6px}
 /* frame, img'in gerçek (kırpılmamış, oranı korunmuş) render boyutuna shrink-wrap eder —
    böylece "profile git" butonu görselin gerçek kenarına oturur, boşlukta kalmaz. */
@@ -181,22 +183,30 @@ a{color:inherit;text-decoration:none}
 }
 .hero__dot{width:6px;height:6px;border-radius:1.5px;background:rgba(255,255,255,.28)}
 .hero__dot.active{background:var(--court)}
-.hero__arrows{flex-shrink:0;display:flex;gap:8px}
+/* Oklar artık kutu genişliğini paylaşmıyor — görselin üzerine bindirilmiş bir
+   overlay. Kutu, tüm genişliği görsele ayırabiliyor; oklar gerekirse görselin
+   kenarına biner, bu bilinçli bir tercih (küçük görsel yerine büyük görsel + üstte ok). */
+.hero__arrows{
+  position:absolute;inset:0;z-index:3;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 10px;pointer-events:none;
+}
 .hero__bigarrow{
-  flex-shrink:0;
+  pointer-events:auto;flex-shrink:0;
   width:44px;height:44px;border-radius:50%;
-  background:var(--surface);border:2px solid var(--court);
+  background:rgba(10,10,11,.6);backdrop-filter:blur(4px);
+  border:2px solid var(--court);
   color:var(--court);font-size:18px;cursor:pointer;
   display:flex;align-items:center;justify-content:center;
   transition:background .2s,color .2s;
 }
 .hero__bigarrow:hover{background:var(--court);color:var(--ink)}
 @media(max-width:860px){
-  .hero__bigarrow{width:32px;height:32px;font-size:14px}
-  .hero__arrows{gap:6px}
+  .hero__bigarrow{width:38px;height:38px;font-size:16px}
+  .hero__arrows{padding:0 6px}
   /* başlık slaytındaki metin sağ-alttaki sayfa göstergesine (.hero__dots) kadar
      uzanıp üstüne biniyordu — metne sağdan pay ayırıyoruz. */
-  .hero__slide-default{padding-right:52px}
+  .hero__slide-default{padding:0 46px}
   /* mobilde metin yerine tek bir büyüteç ikonu; ok kullanmıyoruz çünkü hemen
      yanındaki gezinme oklarıyla karışıyordu. */
   .hero__gobtn{padding:6px;border-radius:50%;bottom:30px}
