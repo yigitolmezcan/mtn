@@ -1,9 +1,19 @@
 'use client';
 import { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
+import { Search } from 'lucide-react';
 import { useLang } from '@/lib/LanguageContext';
 import { useLeague } from '@/lib/LeagueContext';
 import { playerHref } from '@/lib/playerHref';
+
+function GoBtn({ text }) {
+  return (
+    <span className="hero__gobtn">
+      <span className="hero__gobtn-text">{text}</span>
+      <Search size={12} strokeWidth={2} aria-hidden="true" />
+    </span>
+  );
+}
 
 export default function HeroSpotlight({ players, children }) {
   const { lang, t } = useLang();
@@ -63,6 +73,7 @@ export default function HeroSpotlight({ players, children }) {
                 <Link href="/ones-to-watch" className="hero__ogimg-link">
                   <span className="hero__ogimg-frame">
                     <img src="/og/og-ones-to-watch.png" alt="Ones to Watch" className="hero__ogimg" />
+                    <GoBtn text={t.onesToWatch} />
                   </span>
                 </Link>
               )}
@@ -74,10 +85,7 @@ export default function HeroSpotlight({ players, children }) {
                       alt={slide.player.ad}
                       className="hero__ogimg"
                     />
-                    <span className="hero__gobtn">
-                      <span className="hero__gobtn-text">{t.goToProfile}</span>
-                      <span aria-hidden="true">→</span>
-                    </span>
+                    <GoBtn text={t.goToProfile} />
                   </span>
                 </Link>
               )}

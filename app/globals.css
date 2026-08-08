@@ -129,14 +129,17 @@ a{color:inherit;text-decoration:none}
   pointer-events:none;
 }
 .hero>*{position:relative}
-.hero__lockup{display:inline-flex;align-items:baseline;gap:6px}
+.hero__h1{font-family:var(--display);font-size:clamp(42px,12vw,78px);line-height:.98;letter-spacing:-.035em}
+.hero__h1 span{display:block}
+/* .hero__h1 span{display:block} yukarıda daha spesifik olduğu için tek .hero__lockup
+   kuralını ezip flex'i devre dışı bırakıyordu (logo satır kaydırılıyordu) —
+   iki class'ı birleştirip özgüllüğü artırıyoruz. */
+.hero__a.hero__lockup{display:inline-flex;align-items:baseline;gap:6px}
 .hero__logo{
   width:0.72em;
   height:auto;
   flex-shrink:0;
 }
-.hero__h1{font-family:var(--display);font-size:clamp(42px,12vw,78px);line-height:.98;letter-spacing:-.035em}
-.hero__h1 span{display:block}
 .hero__a{font-variation-settings:'wdth' 100,'wght' 750}
 .hero__b{font-variation-settings:'wdth' 100,'wght' 300;color:var(--paper)}
 .hero__p{margin-top:22px;max-width:38ch;color:var(--muted);font-size:17px;line-height:1.6}
@@ -147,7 +150,7 @@ a{color:inherit;text-decoration:none}
   /* Kutu boyutu artık OG görsellerinin gerçek oranına (1200:630) kilitli —
      genişlik ne olursa olsun görsel tam genişliği kullanır, yanlarda boşluk kalmaz.
      min-height, mobilde başlık metninin sığması için güvenlik payı. */
-  aspect-ratio:1200/630;min-height:300px;max-height:520px;
+  aspect-ratio:1200/630;min-height:320px;max-height:520px;
   overflow:hidden;position:relative;
 }
 .hero__track{display:flex;height:100%;transition:transform .45s cubic-bezier(.65,0,.35,1)}
@@ -159,8 +162,11 @@ a{color:inherit;text-decoration:none}
 .hero__ogimg-frame{position:relative;display:inline-flex;max-width:100%;max-height:100%}
 .hero__ogimg{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;border-radius:10px}
 .hero__gobtn{
-  position:absolute;right:8px;top:8px;z-index:2;
-  display:flex;align-items:center;gap:4px;
+  /* Sağ üst köşe lig logosunu kapatıyordu; sağ alt köşede boş alan var — ama
+     stage seviyesindeki sayfa göstergesiyle (.hero__dots) çakışmasın diye
+     ondan biraz daha yukarıda duruyor. */
+  position:absolute;right:8px;bottom:34px;z-index:2;
+  display:flex;align-items:center;gap:5px;
   background:rgba(10,10,11,.72);backdrop-filter:blur(4px);
   border:1px solid var(--line);border-radius:5px;
   padding:6px 12px;font-size:10.5px;font-weight:600;letter-spacing:.03em;
@@ -189,9 +195,9 @@ a{color:inherit;text-decoration:none}
   /* başlık slaytındaki metin sağ-alttaki sayfa göstergesine (.hero__dots) kadar
      uzanıp üstüne biniyordu — metne sağdan pay ayırıyoruz. */
   .hero__slide-default{padding-right:52px}
-  /* mobilde metin yerine tek bir ok ikonu; "Profile Git" yazısı OG görselinin
-     üstünü fazla kaplıyordu. */
-  .hero__gobtn{padding:6px;border-radius:50%}
+  /* mobilde metin yerine tek bir büyüteç ikonu; ok kullanmıyoruz çünkü hemen
+     yanındaki gezinme oklarıyla karışıyordu. */
+  .hero__gobtn{padding:6px;border-radius:50%;bottom:30px}
   .hero__gobtn-text{display:none}
 }
 
