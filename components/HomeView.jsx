@@ -5,7 +5,7 @@ import HeroSpotlight from '@/components/HeroSpotlight';
 import { useLang } from '@/lib/LanguageContext';
 import { useLeague } from '@/lib/LeagueContext';
 
-export default function HomeView({ players, sezon, latestEuroleague, latestBsl }) {
+export default function HomeView({ players, sezon }) {
   const { lang, t } = useLang();
   const { league } = useLeague();
   const [sortBy, setSortBy] = useState('guncelleme');
@@ -57,7 +57,7 @@ export default function HomeView({ players, sezon, latestEuroleague, latestBsl }
   return (
     <main className="wrap">
       <section className="hero">
-        <HeroSpotlight latestEuroleague={latestEuroleague} latestBsl={latestBsl}>
+        <HeroSpotlight players={players}>
           <h1 className="hero__h1">
             <span className="hero__a hero__lockup">
               Meet the <img src="/logo-final.png" alt="" className="hero__logo" />

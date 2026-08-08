@@ -9,7 +9,10 @@ export default function Footer() {
     <footer className="wrap sitefoot">
       <p className="sitefoot__disclaimer">{t.disclaimer}</p>
       <div className="sitefoot__row">
-        <a href="https://x.com/meetnewcomers" target="_blank" rel="noopener noreferrer">Meet the Newcomers</a>
+        <a href="https://x.com/meetnewcomers" target="_blank" rel="noopener noreferrer" className="follow-btn follow-btn--plain">
+          <X size={12} strokeWidth={2} />
+          <span>Meet the Newcomers</span>
+        </a>
         <a href="https://x.com/yolmezcan" target="_blank" rel="noopener noreferrer" className="follow-btn">
           <X size={12} strokeWidth={2} />
           <span>@yolmezcan</span>
