@@ -1,5 +1,5 @@
 'use client';
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { Search } from 'lucide-react';
 import { useLang } from '@/lib/LanguageContext';
@@ -19,6 +19,27 @@ export default function HeroSpotlight({ players, children }) {
   const { lang, t } = useLang();
   const { league } = useLeague();
   const [step, setStep] = useState(0);
+  const stageRef = useRef(null);
+  const [stageHeight, setStageHeight] = useState(null);
+
+  // iOS Safari, flex öğesi içindeki CSS aspect-ratio'yu masaüstü tarayıcılardan
+  // farklı hesaplıyor ve kutu devasa büyüyüp içerik üstten/alttan kesiliyordu.
+  // Bunun yerine gerçek render genişliğini ölçüp yüksekliği JS ile piksel
+  // cinsinden sabitliyoruz — tüm tarayıcılarda garanti aynı sonucu verir.
+  useEffect(() => {
+    const el = stageRef.current;
+    if (!el) return;
+    function measure() {
+      const width = el.getBoundingClientRect().width;
+      if (!width) return;
+      const h = Math.max(320, Math.min(520, width * (630 / 1200)));
+      setStageHeight(h);
+    }
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
 
   const latestPlayers = useMemo(
     () => players.filter((p) => p.lig === league).slice(0, 2),
@@ -48,7 +69,7 @@ export default function HeroSpotlight({ players, children }) {
 
   return (
     <div className="hero__row">
-      <div className="hero__stage">
+      <div className="hero__stage" ref={stageRef} style={stageHeight ? { height: stageHeight } : undefined}>
         <div
           className="hero__track"
           style={{ width: `${slides.length * 100}%`, transform: `translateX(-${(100 / slides.length) * step0}%)` }}
