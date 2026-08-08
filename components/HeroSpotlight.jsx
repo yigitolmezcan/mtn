@@ -20,26 +20,8 @@ export default function HeroSpotlight({ players, children }) {
   const { league } = useLeague();
   const [step, setStep] = useState(0);
   const stageRef = useRef(null);
+  const slideRefs = useRef([]);
   const [stageHeight, setStageHeight] = useState(null);
-
-  // iOS Safari, flex öğesi içindeki CSS aspect-ratio'yu masaüstü tarayıcılardan
-  // farklı hesaplıyor ve kutu devasa büyüyüp içerik üstten/alttan kesiliyordu.
-  // Bunun yerine gerçek render genişliğini ölçüp yüksekliği JS ile piksel
-  // cinsinden sabitliyoruz — tüm tarayıcılarda garanti aynı sonucu verir.
-  useEffect(() => {
-    const el = stageRef.current;
-    if (!el) return;
-    function measure() {
-      const width = el.getBoundingClientRect().width;
-      if (!width) return;
-      const h = Math.max(320, Math.min(520, width * (630 / 1200)));
-      setStageHeight(h);
-    }
-    measure();
-    const ro = new ResizeObserver(measure);
-    ro.observe(el);
-    return () => ro.disconnect();
-  }, []);
 
   const latestPlayers = useMemo(
     () => players.filter((p) => p.lig === league).slice(0, 2),
@@ -63,19 +45,69 @@ export default function HeroSpotlight({ players, children }) {
 
   const step0 = step % slides.length;
 
+  // iOS Safari, flex öğesi içindeki CSS aspect-ratio'yu masaüstü tarayıcılardan
+  // farklı hesaplıyor ve kutu devasa büyüyüp içerik üstten/alttan kesiliyordu.
+  // Bunun yerine gerçek render genişliğini ölçüp yüksekliği JS ile piksel
+  // cinsinden sabitliyoruz — tüm tarayıcılarda garanti aynı sonucu verir.
+  // Başlık slaytı OG oranına değil kendi içeriğine göre yükseklik alır —
+  // aksi halde görsel slaytlar için düşürülen min-height, başlık metnini keser.
+  useEffect(() => {
+    function measure() {
+      const stageWidth = stageRef.current?.getBoundingClientRect().width || 0;
+      const currentType = slides[step0]?.type;
+      if (currentType === 'title') {
+        const activeEl = slideRefs.current[step0];
+        const contentHeight = activeEl ? activeEl.scrollHeight : 200;
+        setStageHeight(Math.max(contentHeight, 180));
+      } else {
+        const h = Math.max(180, Math.min(520, stageWidth * (630 / 1200)));
+        setStageHeight(h);
+      }
+    }
+    measure();
+    const ro = new ResizeObserver(measure);
+    if (stageRef.current) ro.observe(stageRef.current);
+    return () => ro.disconnect();
+  }, [step0, slides]);
+
   function go(dir) {
     setStep((s) => (s + dir + slides.length) % slides.length);
   }
 
+  const touchStartX = useRef(null);
+
+  function handleTouchStart(e) {
+    touchStartX.current = e.touches[0].clientX;
+  }
+  function handleTouchEnd(e) {
+    if (touchStartX.current === null) return;
+    const delta = e.changedTouches[0].clientX - touchStartX.current;
+    if (Math.abs(delta) > 40) {
+      go(delta < 0 ? 1 : -1);
+    }
+    touchStartX.current = null;
+  }
+
   return (
     <div className="hero__row">
-      <div className="hero__stage" ref={stageRef} style={stageHeight ? { height: stageHeight } : undefined}>
+      <div
+        className="hero__stage"
+        ref={stageRef}
+        style={stageHeight ? { height: stageHeight } : undefined}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         <div
           className="hero__track"
           style={{ width: `${slides.length * 100}%`, transform: `translateX(-${(100 / slides.length) * step0}%)` }}
         >
-          {slides.map((slide) => (
-            <div className="hero__slide" key={slide.key} style={{ width: `${100 / slides.length}%` }}>
+          {slides.map((slide, i) => (
+            <div
+              className="hero__slide"
+              key={slide.key}
+              ref={(el) => (slideRefs.current[i] = el)}
+              style={{ width: `${100 / slides.length}%` }}
+            >
               {slide.type === 'title' && (
                 <div className="hero__slide-default">{children}</div>
               )}
@@ -115,7 +147,12 @@ export default function HeroSpotlight({ players, children }) {
         </div>
         <div className="hero__dots">
           {slides.map((slide, i) => (
-            <span key={slide.key} className={`hero__dot${i === step0 ? ' active' : ''}`} />
+            <button
+              key={slide.key}
+              className={`hero__dot${i === step0 ? ' active' : ''}`}
+              onClick={() => setStep(i)}
+              aria-label={`slide ${i + 1}`}
+            />
           ))}
         </div>
         {/* oklar artık kutunun içinde, görselin üzerinde bir overlay — kutu genişliği
