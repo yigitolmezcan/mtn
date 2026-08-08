@@ -11,7 +11,7 @@ function hideIfBroken(e) {
   e.target.style.display = 'none';
 }
 
-export default function Topbar({ players }) {
+export default function Topbar({ players, teams }) {
   const { lang, t, toggle } = useLang();
   const { league, setLeague } = useLeague();
   const latest = players.filter((p) => p.lig === league)[0];
@@ -27,7 +27,7 @@ export default function Topbar({ players }) {
     <header className="topbar">
       <div className="wrap topbar__inner">
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <MainMenu />
+          <MainMenu teams={teams} />
           <TopbarSearch players={players} />
         </div>
         {latest && (

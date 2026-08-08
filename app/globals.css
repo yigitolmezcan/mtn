@@ -75,7 +75,7 @@ a{color:inherit;text-decoration:none}
 }
 .mainmenu__section{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted-dim);padding:6px 10px 10px}
 .mainmenu__row{display:flex;align-items:center;justify-content:space-between}
-.mainmenu__link{flex:1;padding:8px 10px;font-size:13px;color:var(--bone);text-decoration:none;border-radius:5px}
+.mainmenu__link{flex:1;padding:8px 10px;font-size:13px;color:var(--bone);text-decoration:none;border-radius:5px;background:none;border:none;font-family:inherit;text-align:left;cursor:pointer}
 .mainmenu__link:hover{background:var(--surface-2)}
 .mainmenu__chevron{background:none;border:none;color:var(--muted-dim);cursor:pointer;padding:8px;transition:transform .2s}
 .mainmenu__chevron.open{transform:rotate(180deg)}

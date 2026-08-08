@@ -27,10 +27,19 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const searchData = getAllPlayers().map((p) => ({
+  const allPlayers = getAllPlayers();
+  const searchData = allPlayers.map((p) => ({
     slug: p.slug, ad: p.ad, takim: p.takim, takimEn: p.takimEn, pozisyon: p.pozisyon, mtnRating: p.mtnRating,
     lig: p.lig,
   }));
+
+  const teamsMap = new Map();
+  allPlayers.forEach((p) => {
+    if (!teamsMap.has(p.takimSlug)) {
+      teamsMap.set(p.takimSlug, { slug: p.takimSlug, ad: p.takim, adEn: p.takimEn, lig: p.lig });
+    }
+  });
+  const teams = [...teamsMap.values()];
 
   return (
     <html lang="tr">
@@ -45,7 +54,7 @@ export default function RootLayout({ children }) {
       <body>
         <LanguageProvider>
           <LeagueProvider>
-            <Topbar players={searchData} />
+            <Topbar players={searchData} teams={teams} />
 
             {children}
 
