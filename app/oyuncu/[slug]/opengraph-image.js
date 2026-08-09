@@ -7,21 +7,24 @@ import { getPlayer } from '@/lib/players';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
-const SPEC = {
-  colors: {
-    background: '#08090B',
-    orange: '#E6772E',
-    offWhite: '#F5F2EB',
-    muted: '#A3A8AF',
-    footer: '#777D86',
-    pill: '#101318',
-    pillBorder: '#2A2F36',
-  },
-  portrait: { x: 52, y: 82, width: 436, height: 436 },
-  brandLogo: { x: 536, y: 26, width: 54, height: 54 },
-  leagueBadge: { x: 1094, y: 24, width: 68, height: 68 },
-  nameMaxRight: 1088,
+const C = {
+  ink: '#0A0A0B',
+  surface2: '#17171A',
+  bone: '#ECEAE7',
+  paper: '#C3C2C0',
+  mutedDim: '#5D5D66',
+  lineSoft: '#1B1B20',
+  court: '#E0742F',
 };
+
+// data/oyuncular.json'daki bazı renk2 değerleri CSS custom property olarak
+// tanımlı ("var(--bone)") — satori gerçek bir CSS cascade'i çalıştırmadığı
+// için bunları render'dan önce gerçek hex karşılığına çeviriyoruz.
+function resolveColor(val, fallback) {
+  if (!val) return fallback;
+  if (val === 'var(--bone)') return C.bone;
+  return val;
+}
 
 function fileToDataUri(absPath, mime) {
   const buf = readFileSync(absPath);
@@ -45,30 +48,8 @@ async function findPlayerPhoto(slug) {
   return null;
 }
 
-const NAME_SUFFIXES = ['JR', 'JR.', 'SR', 'SR.', 'II', 'III', 'IV'];
-
-function splitPlayerName(name) {
-  const words = name.trim().toUpperCase().split(/\s+/);
-  if (words.length === 1) return [words[0], ''];
-  // "Jr./Sr./II/III" gibi ekler kendi satırına düşmesin, soyadıyla aynı satırda kalsın.
-  const splitAt = words.length >= 3 && NAME_SUFFIXES.includes(words.at(-1))
-    ? words.length - 2
-    : words.length - 1;
-  return [words.slice(0, splitAt).join(' '), words.slice(splitAt).join(' ')];
-}
-
-// Nimbus Sans Bold büyük harflerde ortalama karakter genişliği ~ fontSize * 0.64.
-// Satori'de önceden metin ölçme imkanı yok, bu yüzden isim satırın (left..maxRight)
-// aralığına sığması için gereken font boyutunu bu oranla tahmin ediyoruz.
-// layout-spec.json'daki nameSize eşik tablosu kısa/orta isimlerde uyuyordu ama
-// "AKOBUNDU-EHIOGU" gibi uzun tireli soyadlarında maxRight'ı (1088) aşıyordu —
-// o yüzden sabit eşikler yerine gerçek genişliğe göre hesaplayan bu versiyona geçildi.
-const CHAR_WIDTH_RATIO = 0.64;
-function nameSize(line, preferred, left, maxRight) {
-  if (!line) return preferred;
-  const available = maxRight - left;
-  const fitSize = Math.floor(available / (line.length * CHAR_WIDTH_RATIO));
-  return Math.max(28, Math.min(preferred, fitSize));
+function initialsOf(name) {
+  return name.trim().split(/\s+/).map((w) => w[0]).join('').slice(0, 2).toUpperCase();
 }
 
 const abs = (style) => ({ position: 'absolute', display: 'flex', ...style });
@@ -81,7 +62,7 @@ export default async function Image({ params }) {
 
   if (!p) {
     return new ImageResponse(
-      <div style={{ fontSize: 60, color: '#ECEAE7', background: '#0A0A0B', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ fontSize: 60, color: C.bone, background: C.ink, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         Meet the Newcomers
       </div>,
       size
@@ -91,8 +72,6 @@ export default async function Image({ params }) {
   const regularFont = readFileSync(join(packDir, 'fonts', 'NimbusSans-Regular.otf'));
   const boldFont = readFileSync(join(packDir, 'fonts', 'NimbusSans-Bold.otf'));
 
-  const backgroundUri = fileToDataUri(join(packDir, 'assets', 'background-1200x630.png'), 'image/png');
-  const brandLogoUri = fileToDataUri(join(packDir, 'assets', 'mtn-logo.png'), 'image/png');
   const euroleagueBadgeUri = fileToDataUri(join(packDir, 'assets', 'euroleague-badge.png'), 'image/png');
   const bslBadgeUri = fileToDataUri(join(process.cwd(), 'public', 'leagues', 'bsl-icon.png'), 'image/png');
   const isBsl = p.lig === 'bsl';
@@ -101,120 +80,100 @@ export default async function Image({ params }) {
     ? fileToDataUri(join(process.cwd(), 'public', p.ogFoto), 'image/png')
     : await findPlayerPhoto(slug);
 
-  // og-pack'teki varsayılan crop (scale:1.38, y:28), paketin referans fotoğrafı olan
-  // uzun kaynak görsel (kyle-source.webp) için kalibre edilmiş. Projenin gerçek oyuncu
-  // fotoğrafları (findPlayerPhoto) zaten omuz planında kare kare kırpılmış geliyor,
-  // bu yüzden onlar için doğal (1:1, kırpmasız) çerçeveleme kullanılıyor.
-  const crop = {
-    scale: p.ogCrop?.scale ?? 1,
-    x: p.ogCrop?.x ?? 0,
-    y: p.ogCrop?.y ?? 0,
-  };
-  const portraitImgWidth = SPEC.portrait.width * crop.scale;
-  const portraitImgLeft = (SPEC.portrait.width - portraitImgWidth) / 2 + crop.x;
+  const ring = p.takimRenk || C.court;
+  const stripe1 = resolveColor(p.renk1, ring);
+  const stripe2 = resolveColor(p.renk2, ring);
+  const ozet = p.ozet || '';
+  const rating = p.mtnRating ? Number(p.mtnRating).toFixed(1) : '—';
 
-  const [firstNameLine, secondNameLine] = splitPlayerName(p.ad);
-  const C = SPEC.colors;
+  const photoSize = 300;
+  const photoLeft = 100;
+  const photoTop = (size.height - photoSize) / 2;
+  const bodyLeft = photoLeft + photoSize + 70;
 
   return new ImageResponse(
     (
       <div
         style={{
           width: 1200, height: 630, position: 'relative', display: 'flex',
-          overflow: 'hidden', background: C.background, color: C.offWhite,
+          overflow: 'hidden', background: C.ink, color: C.bone,
           fontFamily: 'Nimbus Sans',
         }}
       >
-        <img src={backgroundUri} width="1200" height="630" style={abs({ inset: 0, width: 1200, height: 630 })} />
+        {/* çok soluk saha çizgisi deseni */}
+        <div style={abs({ left: 599, top: 0, width: 1, height: 630, background: C.lineSoft, opacity: 0.5 })} />
+        <div style={abs({
+          left: 460, top: 175, width: 280, height: 280, borderRadius: 999,
+          border: `1px solid ${C.lineSoft}`, opacity: 0.5,
+        })} />
+        <div style={abs({ left: 40, top: 165, width: 220, height: 300, border: `1px solid ${C.lineSoft}`, opacity: 0.5 })} />
+        <div style={abs({ left: 940, top: 165, width: 220, height: 300, border: `1px solid ${C.lineSoft}`, opacity: 0.5 })} />
 
-        {/* portrait: outline ring + white border ring + circular photo */}
+        {/* sol kenar: dikey iki tonlu kulüp şeridi */}
+        <div style={abs({ left: 0, top: 0, width: 16, height: 630, background: stripe1 })} />
+        <div style={abs({ left: 16, top: 0, width: 10, height: 630, background: stripe2 })} />
+
+        {/* fotoğraf + halo + halka */}
         <div style={abs({
-          left: SPEC.portrait.x - 16, top: SPEC.portrait.y - 16,
-          width: SPEC.portrait.width + 32, height: SPEC.portrait.height + 32,
-          borderRadius: 999, background: C.orange,
+          left: photoLeft - 46, top: photoTop - 46, width: photoSize + 92, height: photoSize + 92,
+          borderRadius: 999, background: ring, opacity: 0.08,
         })} />
         <div style={abs({
-          left: SPEC.portrait.x - 9, top: SPEC.portrait.y - 9,
-          width: SPEC.portrait.width + 18, height: SPEC.portrait.height + 18,
-          borderRadius: 999, background: C.offWhite,
-        })} />
-        <div style={abs({
-          left: SPEC.portrait.x, top: SPEC.portrait.y,
-          width: SPEC.portrait.width, height: SPEC.portrait.height,
-          borderRadius: 999, overflow: 'hidden', background: C.orange,
-          alignItems: 'center', justifyContent: 'center',
+          left: photoLeft, top: photoTop, width: photoSize, height: photoSize,
+          borderRadius: 999, overflow: 'hidden', background: C.surface2,
+          border: `3px solid ${ring}`, alignItems: 'center', justifyContent: 'center',
         })}>
-          {photoUri && (
+          {photoUri ? (
             <img
               src={photoUri}
-              style={{
-                position: 'absolute', display: 'flex',
-                width: portraitImgWidth, height: portraitImgWidth, objectFit: 'cover',
-                left: portraitImgLeft, top: crop.y, filter: 'grayscale(100%)',
-              }}
+              style={{ position: 'absolute', display: 'flex', width: photoSize, height: photoSize, objectFit: 'cover' }}
             />
+          ) : (
+            <div style={{ display: 'flex', fontSize: 96, fontWeight: 700, color: ring }}>{initialsOf(p.ad)}</div>
           )}
         </div>
 
-        <img src={brandLogoUri} width={SPEC.brandLogo.width} height={SPEC.brandLogo.height}
-          style={abs({ left: SPEC.brandLogo.x, top: SPEC.brandLogo.y, width: SPEC.brandLogo.width, height: SPEC.brandLogo.height })} />
-        <div style={abs({ left: 604, top: 30, fontSize: 22, fontWeight: 700, lineHeight: 1 })}>MEET THE NEWCOMERS</div>
-        <div style={abs({ left: 605, top: 57, fontSize: 12, color: '#8E949D', lineHeight: 1 })}>EUROLEAGUE &amp; BSL PLAYER SCOUTING</div>
-
+        {/* lig rozeti */}
         {isBsl ? (
           <div style={abs({
-            left: SPEC.leagueBadge.x, top: SPEC.leagueBadge.y,
-            width: SPEC.leagueBadge.width, height: SPEC.leagueBadge.height,
-            borderRadius: 16, background: C.pill, border: `1px solid ${C.pillBorder}`,
+            left: 1094, top: 24, width: 68, height: 68, borderRadius: 16,
+            background: C.surface2, border: `1px solid ${C.lineSoft}`,
             alignItems: 'center', justifyContent: 'center',
           })}>
             <img src={bslBadgeUri} width={46} height={46} style={{ display: 'flex' }} />
           </div>
         ) : (
-          <img src={euroleagueBadgeUri} width={SPEC.leagueBadge.width} height={SPEC.leagueBadge.height}
-            style={abs({ left: SPEC.leagueBadge.x, top: SPEC.leagueBadge.y, width: SPEC.leagueBadge.width, height: SPEC.leagueBadge.height })} />
+          <img src={euroleagueBadgeUri} width={68} height={68} style={abs({ left: 1094, top: 24, width: 68, height: 68 })} />
         )}
 
-        <div style={abs({
-          left: 536, top: 128, minWidth: 98, height: 36, padding: '0 22px',
-          borderRadius: 18, background: C.pill, border: `2px solid ${C.pillBorder}`,
-          alignItems: 'center', justifyContent: 'center', fontSize: 16, fontWeight: 700,
-        })}>
-          {p.pozisyon.toUpperCase()}
+        {/* isim / bilgi bloğu */}
+        <div style={abs({ left: bodyLeft, top: 110, right: 60, fontSize: 56, fontWeight: 700, color: C.bone, lineHeight: 1.05 })}>
+          {p.ad}
+        </div>
+        <div style={abs({ left: bodyLeft, top: 190, fontSize: 26, color: C.mutedDim })}>
+          {p.pozisyon} · {p.takim}
         </div>
         <div style={abs({
-          left: 646, top: 128, minWidth: 150, height: 36, padding: '0 24px',
-          borderRadius: 18, background: C.pill, border: `2px solid ${C.pillBorder}`,
-          alignItems: 'center', justifyContent: 'center', fontSize: 16, fontWeight: 700,
+          left: bodyLeft, top: 245, width: 660, fontSize: 22, fontStyle: 'italic',
+          color: C.paper, lineHeight: 1.4,
         })}>
-          {(p.arketip ?? '').toUpperCase()}
+          {ozet}
         </div>
 
-        <div style={abs({ left: 536, top: 183, fontSize: 21, fontWeight: 700, color: C.orange })}>
-          {p.takim.toUpperCase()}
+        <div style={abs({
+          left: bodyLeft, top: 400, width: 150, height: 78, borderRadius: 12,
+          background: C.court, alignItems: 'center', justifyContent: 'center',
+        })}>
+          <div style={{ display: 'flex', fontSize: 38, fontWeight: 700, color: C.ink }}>{rating}</div>
         </div>
         <div style={abs({
-          left: 532, top: 220, fontSize: nameSize(firstNameLine, 68, 532, SPEC.nameMaxRight), fontWeight: 400,
-          lineHeight: 1, whiteSpace: 'nowrap',
+          left: bodyLeft, top: 486, fontSize: 13, fontWeight: 700, letterSpacing: 2,
+          color: C.mutedDim, textTransform: 'uppercase',
         })}>
-          {firstNameLine}
-        </div>
-        <div style={abs({
-          left: 528, top: 286, fontSize: nameSize(secondNameLine, 92, 528, SPEC.nameMaxRight), fontWeight: 700,
-          lineHeight: 1, whiteSpace: 'nowrap',
-        })}>
-          {secondNameLine}
+          MtN Rating
         </div>
 
-        <div style={abs({ left: 536, top: 373, width: 552, height: 4, background: C.orange })} />
-        <div style={abs({ left: 536, top: 395, width: 4, height: 155, background: C.orange })} />
-        <div style={abs({ left: 558, top: 405, fontSize: 18, fontWeight: 700, color: C.muted })}>MTN RATING</div>
-        <div style={abs({ left: 550, top: 432, fontSize: 110, fontWeight: 700, color: C.orange, lineHeight: 1 })}>
-          {p.mtnRating ? Number(p.mtnRating).toFixed(1) : '—'}
-        </div>
-        <div style={abs({ left: 760, top: 484, fontSize: 32, fontWeight: 400 })}>/ 10</div>
-
-        <div style={abs({ left: 536, top: 590, fontSize: 13, color: C.footer })}>MEETNEWCOMERS.COM</div>
+        <div style={abs({ left: 1000, top: 594, fontSize: 13, color: C.mutedDim })}>meetnewcomers.com</div>
       </div>
     ),
     {

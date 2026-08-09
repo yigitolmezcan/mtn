@@ -1,25 +1,17 @@
 'use client';
 import { useState, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { Search } from 'lucide-react';
 import { useLang } from '@/lib/LanguageContext';
 import { useLeague } from '@/lib/LeagueContext';
-import { playerHref } from '@/lib/playerHref';
+import HeroPlayerCard from './HeroPlayerCard';
+
+const OTW_PICKS = ['umoja-gibson', 'marcus-bingham', 'both-gach'];
 
 function XLogo({ className }) {
   return (
     <svg className={className} width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-label="X">
       <path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-6.9L4.5 22H1.4l8.2-9.3L1 2h7.1l4.9 6.3L18.9 2zm-1.2 18h1.9L7.4 4H5.3l12.4 16z"/>
     </svg>
-  );
-}
-
-function GoBtn({ text }) {
-  return (
-    <span className="hero__gobtn">
-      <span className="hero__gobtn-text">{text}</span>
-      <Search size={12} strokeWidth={2} aria-hidden="true" />
-    </span>
   );
 }
 
@@ -63,12 +55,12 @@ export default function HeroSpotlight({ players, children }) {
     function measure() {
       const stageWidth = stageRef.current?.getBoundingClientRect().width || 0;
       const currentType = slides[step0]?.type;
-      if (currentType === 'title' || currentType === 'twitter') {
+      if (currentType === 'title' || currentType === 'twitter' || currentType === 'otw') {
         const activeEl = slideRefs.current[step0];
         const contentHeight = activeEl ? activeEl.scrollHeight : 200;
         setStageHeight(Math.max(contentHeight, 100));
       } else {
-        const h = Math.max(180, Math.min(520, stageWidth * (630 / 1200)));
+        const h = Math.max(180, Math.min(340, stageWidth * (630 / 1200)));
         setStageHeight(h);
       }
     }
@@ -133,24 +125,36 @@ export default function HeroSpotlight({ players, children }) {
                 </a>
               )}
               {slide.type === 'otw' && (
-                <Link href="/ones-to-watch" className="hero__ogimg-link">
-                  <span className="hero__ogimg-frame">
-                    <img src="/og/og-ones-to-watch.png" alt="Ones to Watch" className="hero__ogimg" />
-                    <GoBtn text={t.onesToWatch} />
-                  </span>
+                <Link href="/ones-to-watch" className="otw-trio">
+                  <div className="otw-trio__header">
+                    <span className="otw-trio__title">{t.onesToWatch}</span>
+                    <img src="/leagues/euroleague-icon.png" alt="" className="otw-trio__leaguebadge" />
+                  </div>
+                  <div className="otw-trio__grid">
+                    {OTW_PICKS.map((slug) => {
+                      const p = players.find((pl) => pl.slug === slug);
+                      if (!p) return null;
+                      return (
+                        <div className="otw-trio__player" key={slug} style={{ '--ring': p.takimRenk }}>
+                          <span className="otw-trio__photo">
+                            <img
+                              src={`/players/${slug}.png`}
+                              alt=""
+                              onError={(e) => { e.currentTarget.src = `/players/${slug}.jpg`; }}
+                            />
+                          </span>
+                          <div className="otw-trio__pname">{p.ad}</div>
+                          <div className="otw-trio__pmeta">{p.pozisyon} · {p.takim}</div>
+                          <div className="otw-trio__psub">{lang === 'en' ? p.ozetEn : p.ozet}</div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <span className="otw-trio__gobtn">{t.onesToWatch} →</span>
                 </Link>
               )}
               {slide.type === 'player' && (
-                <Link href={playerHref(slide.player.slug, lang)} className="hero__ogimg-link">
-                  <span className="hero__ogimg-frame">
-                    <img
-                      src={`/oyuncu/${slide.player.slug}/opengraph-image`}
-                      alt={slide.player.ad}
-                      className="hero__ogimg"
-                    />
-                    <GoBtn text={t.goToProfile} />
-                  </span>
-                </Link>
+                <HeroPlayerCard player={slide.player} lang={lang} />
               )}
             </div>
           ))}

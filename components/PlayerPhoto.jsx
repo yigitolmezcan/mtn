@@ -1,7 +1,7 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
 
-export default function PlayerPhoto({ slug, renk, name, size = 56 }) {
+export default function PlayerPhoto({ slug, renk, name, size = 56, fallback = null }) {
   const [ext, setExt] = useState('png');
   const [failed, setFailed] = useState(false);
   const imgRef = useRef(null);
@@ -23,7 +23,7 @@ export default function PlayerPhoto({ slug, renk, name, size = 56 }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ext]);
 
-  if (failed) return null;
+  if (failed) return fallback;
 
   return (
     <span className="pphoto" style={{ '--ring': renk, width: size, height: size }}>
