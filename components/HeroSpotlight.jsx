@@ -128,7 +128,7 @@ export default function HeroSpotlight({ players, children }) {
                       );
                     })}
                   </div>
-                  <span className="otw-trio__gobtn">{t.viewFullList} →</span>
+                  <span className="otw-trio__gobtn"><span className="otw-trio__gobtn-label">{t.viewFullList}</span> →</span>
                 </Link>
               )}
               {slide.type === 'player' && (

@@ -27,7 +27,7 @@ export default function HeroPlayerCard({ player, lang }) {
         <span className="num">{player.mtnRating ?? '—'}</span>
         <span className="lbl">MtN Rating</span>
       </div>
-      <span className="hcard__gobtn">{t.goToProfile} →</span>
+      <span className="hcard__gobtn"><span className="hcard__gobtn-label">{t.goToProfile}</span> →</span>
     </Link>
   );
 }
