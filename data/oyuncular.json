@@ -8,6 +8,14 @@
       "renk1": "#0B2C6B",
       "renk2": "var(--bone)"
     },
+    "maccabi-tel-aviv": {
+      "ad": "Maccabi Tel Aviv",
+      "marka": "#2371B5",
+      "vurgu": "#FFF100",
+      "renk1": "#FFF100",
+      "renk2": "#2371B5",
+      "digerDil": true
+    },
     "besiktas": {
       "ad": "Beşiktaş",
       "marka": "#000000",
@@ -4679,6 +4687,61 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=p15mwgf2pW8"
+    },
+    {
+      "slug": "keaton-wallace",
+      "ad": "Keaton Wallace",
+      "resmiAd": "Keaton Wallace",
+      "takimSlug": "maccabi-tel-aviv",
+      "lig": "euroleague",
+      "pozisyon": "PG / SG",
+      "boy": "1.91 m",
+      "yas": "27",
+      "milliyet": "ABD",
+      "el": "Sol",
+      "elEn": "Left",
+      "milliyetNotu": null,
+      "geldigiKulup": "Atlanta Hawks",
+      "geldigiLig": "NBA",
+      "transferNotu": "Atlanta Hawks formasıyla 84 NBA maçına çıkan Wallace, Maccabi Tel Aviv'e iki yıllık sözleşmeyle katılıyor.",
+      "transferNotuEn": "Having appeared in 84 NBA games with the Atlanta Hawks, Wallace is joining Maccabi Tel Aviv on a two-year contract.",
+      "ozet": "Çabuk ayakları, yıpratıcı top baskısı ve ikili oyunlardaki sakinliğiyle etkili olan iki yönlü bir guard.",
+      "ozetEn": "Quick feet, relentless ball pressure, and poise in ball-screen situations define an effective two-way guard.",
+      "ozetDetay": "Çabuk ayakları, yıpratıcı top baskısı ve ikili oyunlardaki sakinliğiyle etkili olan iki yönlü bir guard. Wallace, rakip oyun kurucuyu tam sahada rahatsız edebilen, perdeler karşısında mücadeleyi bırakmayan ve hücumda topu fazla tutmadan doğru pası arayan bir profil; ancak çembere gitmekte zorlanması ve kendi skorunu üretirken yaşadığı zorluklar, ana yaratıcı rolündeki tavanını düşürebilir.",
+      "ozetDetayEn": "Quick feet, relentless ball pressure, and poise in ball-screen situations define an effective two-way guard. Wallace can bother opposing playmakers full-court, never stops competing against screens, and looks for the right pass on offense without holding the ball too long; his difficulty getting to the rim and struggles creating his own shot, though, can cap his ceiling as a primary creator.",
+      "anahtarSoru": "Wallace, NBA'deki sınırlı hücum rolünden EuroLeague'de çok daha fazla topla oynayacağı bir role geçerken, kendi şutunu yaratma sorumluluğunu taşıyabilecek mi?",
+      "anahtarSoruEn": "As Wallace moves from a limited offensive role in the NBA to a EuroLeague role with far more of the ball, can he handle the responsibility of creating his own shot?",
+      "featuredStats": { "yarisma": "NBA", "sezon": "2025-26", "items": [["3.5","PPG"],["1.1","RPG"],["1.8","APG"]] },
+      "digerIstatistikler": [
+        { "yarisma": "NBA G League (College Park Skyhawks)", "sezon": "2024-25", "items": [["16.1","PPG"],["4.8","RPG"],["5.2","APG"]] }
+      ],
+      "gucluYonler": [
+        { "t": "Savunmada topa baskı" },
+        { "t": "İkinci kararları doğru verme" },
+        { "t": "Rol esnekliği" }
+      ],
+      "gucluYonlerEn": [
+        { "t": "On-ball defensive pressure" },
+        { "t": "Sound secondary decision-making" },
+        { "t": "Positional and role flexibility" }
+      ],
+      "gelisimAlanlari": [
+        { "t": "Potaya gidişler" },
+        { "t": "Kendi şutunu hazırlama" }
+      ],
+      "gelisimAlanlariEn": [
+        { "t": "Getting to the rim" },
+        { "t": "Creating his own shot" }
+      ],
+      "arketip": "Combo Guard",
+      "mtnRating": "8.1",
+      "ratingNotu": "Maccabi'de Lonnie Walker'ın bireysel skorunu karşılamaktan çok savunmanın tonunu belirleyen, hücumu düzenleyen ve ana yaratıcının karar yükünü paylaşan denge oyuncusuna dönüşebilir. Üçlüğü NBA'deki seviyesini korur ve ikili oyunlarda potaya daha sık gidebilirse EuroLeague'in güvenilir ilk beş guardlarından biri olabilir; çember tehdidi sınırlı kalırsa hücumdaki rolü ikinci guard seviyesinde kalabilir.",
+      "ratingNotuEn": "Rather than replacing Lonnie Walker's individual scoring at Maccabi, he could turn into a balancing player who sets the defensive tone, organizes the offense, and shares the decision-making load with the primary creator. If his three-point shot holds its NBA level and he gets to the rim more often in ball-screen actions, he could become one of EuroLeague's reliable starting guards; if his rim threat stays limited, his offensive role could stay at a second-guard level.",
+      "benzerOyuncular": [
+        {"isim":"Pierria Henry","neden":"Aktif eller, savunma ve pas öncelikli profil","nedenEn":"Active hands, defense, and pass-first profile"},
+        {"isim":"Jerian Grant","neden":"Topu domine etmeden oyuna katkı","nedenEn":"Contributing to the game without dominating the ball"}
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=e0_D6Ug3OJQ"
     }
   ]
 }
