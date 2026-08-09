@@ -46,7 +46,11 @@ export default function HeroSpotlight({ players, children }) {
     function measure() {
       const stageWidth = stageRef.current?.getBoundingClientRect().width || 0;
       const currentType = slides[step0]?.type;
-      if (currentType === 'title' || currentType === 'otw') {
+      // Mobilde .hcard yatay değil dikey/stacked düzene geçiyor (bkz. globals.css
+      // @media(max-width:640px) .hcard kuralları) — bu durumda sabit en-boy oranı
+      // formülü içeriği (halka + rating satırı) üstten/alttan kırpıyordu, bu yüzden
+      // dar ekranlarda da gerçek içerik yüksekliği ölçülüyor.
+      if (currentType === 'title' || currentType === 'otw' || stageWidth <= 640) {
         const activeEl = slideRefs.current[step0];
         const contentHeight = activeEl ? activeEl.scrollHeight : 200;
         setStageHeight(Math.max(contentHeight, 100));

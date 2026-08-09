@@ -634,7 +634,7 @@ a{color:inherit;text-decoration:none}
 
 @media(max-width:640px){
   .hcard__gobtn,.otw-trio__gobtn{
-    top:auto;bottom:14px;right:14px;
+    right:14px;
     padding:6px 10px;
   }
   .hcard__gobtn-label,.otw-trio__gobtn-label{display:none}
@@ -642,4 +642,27 @@ a{color:inherit;text-decoration:none}
 
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
+}
+
+@media(max-width:640px){
+  .hcard{
+    flex-direction:column;align-items:center;text-align:center;
+    padding:20px 18px;gap:12px;
+  }
+  .hcard__main{
+    flex-direction:column;align-items:center;text-align:center;
+    gap:10px;width:100%;
+  }
+  .hcard__photowrap{
+    aspect-ratio:unset;align-self:center;
+    width:84px;height:84px;
+  }
+  .hcard__photowrap .pphoto{width:100%!important;height:100%!important}
+  .hcard__body{
+    align-items:center;text-align:center;max-width:100%;
+  }
+  .hcard__name{font-size:20px}
+  .hcard__ozet{font-size:12px}
+  .hcard__rating{flex-direction:row;gap:8px}
+  .hcard__rating .num{font-size:18px;padding:6px 14px}
 }
