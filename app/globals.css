@@ -621,8 +621,7 @@ a{color:inherit;text-decoration:none}
 .otw-trio__pname{font-family:var(--display);font-weight:700;font-size:clamp(13px,1.6vw,16px);color:#ECEAE7}
 .otw-trio__pmeta{font-size:11px;color:#5D5D66}
 .otw-trio__psub{
-  font-size:11px;color:#C3C2C0;font-style:italic;line-height:1.35;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  font-size:11px;color:#C3C2C0;line-height:1.35;
 }
 
 .hcard__gobtn,.otw-trio__gobtn{

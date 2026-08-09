@@ -7,14 +7,6 @@ import HeroPlayerCard from './HeroPlayerCard';
 
 const OTW_PICKS = ['umoja-gibson', 'marcus-bingham', 'both-gach'];
 
-function XLogo({ className }) {
-  return (
-    <svg className={className} width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-label="X">
-      <path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-6.9L4.5 22H1.4l8.2-9.3L1 2h7.1l4.9 6.3L18.9 2zm-1.2 18h1.9L7.4 4H5.3l12.4 16z"/>
-    </svg>
-  );
-}
-
 export default function HeroSpotlight({ players, children }) {
   const { lang, t } = useLang();
   const { league } = useLeague();
@@ -31,7 +23,6 @@ export default function HeroSpotlight({ players, children }) {
   const slides = useMemo(() => {
     const list = [
       { key: 'title', type: 'title' },
-      { key: 'twitter', type: 'twitter' },
     ];
     // Ones to Watch içeriği EuroLeague'e özel — BSL modunda gösterilmiyor.
     if (league === 'euroleague') list.push({ key: 'otw', type: 'otw' });
@@ -55,7 +46,7 @@ export default function HeroSpotlight({ players, children }) {
     function measure() {
       const stageWidth = stageRef.current?.getBoundingClientRect().width || 0;
       const currentType = slides[step0]?.type;
-      if (currentType === 'title' || currentType === 'twitter' || currentType === 'otw') {
+      if (currentType === 'title' || currentType === 'otw') {
         const activeEl = slideRefs.current[step0];
         const contentHeight = activeEl ? activeEl.scrollHeight : 200;
         setStageHeight(Math.max(contentHeight, 100));
@@ -111,19 +102,6 @@ export default function HeroSpotlight({ players, children }) {
               {slide.type === 'title' && (
                 <div className="hero__slide-default">{children}</div>
               )}
-              {slide.type === 'twitter' && (
-                <a href="https://x.com/meetnewcomers" target="_blank" rel="noopener noreferrer" className="hero__xcard">
-                  <img src="/logo-final.png" alt="" className="hero__xcard-logo" />
-                  <div className="hero__xcard-text">
-                    <div className="hero__xcard-title">
-                      {lang === 'en'
-                        ? <>A newcomer to <XLogo className="hero__xcard-inline-x" /></>
-                        : <>Meet the Newcomers artık <XLogo className="hero__xcard-inline-x" />'te</>}
-                    </div>
-                    <div className="hero__xcard-handle">@meetnewcomers</div>
-                  </div>
-                </a>
-              )}
               {slide.type === 'otw' && (
                 <Link href="/ones-to-watch" className="otw-trio">
                   <div className="otw-trio__header">
@@ -145,12 +123,12 @@ export default function HeroSpotlight({ players, children }) {
                           </span>
                           <div className="otw-trio__pname">{p.ad}</div>
                           <div className="otw-trio__pmeta">{p.pozisyon} · {p.takim}</div>
-                          <div className="otw-trio__psub">{lang === 'en' ? p.ozetEn : p.ozet}</div>
+                          <div className="otw-trio__psub">{p.arketip}</div>
                         </div>
                       );
                     })}
                   </div>
-                  <span className="otw-trio__gobtn">{t.onesToWatch} →</span>
+                  <span className="otw-trio__gobtn">{t.viewFullList} →</span>
                 </Link>
               )}
               {slide.type === 'player' && (

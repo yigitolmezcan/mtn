@@ -13,7 +13,7 @@ function Group({ id, title, items, lang, t }) {
           <Link key={player.slug} href={playerHref(player.slug, lang)} className="ow__card" style={{ '--ring': player.takimRenk }}>
             <span className="ow__card-stripe" style={{ background: player.renk1 }} />
             <span className="ow__card-stripe ow__card-stripe--2" style={{ background: player.renk2 }} />
-            <span className="ow__card-badge">{t.onesToWatch}</span>
+            <span className="ow__card-badge">{player.pozisyon}</span>
             <span className="ow__card-photowrap">
               <PlayerPhoto slug={player.slug} renk={player.takimRenk} name={player.ad} size={116}
                 fallback={<span className="hcard__fallback">{player.ad.split(' ').map((w) => w[0]).join('').slice(0, 2)}</span>} />
