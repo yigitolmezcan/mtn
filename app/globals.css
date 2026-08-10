@@ -666,3 +666,11 @@ a{color:inherit;text-decoration:none}
   .hcard__rating{flex-direction:row;gap:8px}
   .hcard__rating .num{font-size:18px;padding:6px 14px}
 }
+
+@media(max-width:640px){
+  .otw-trio__player{gap:4px}
+  .otw-trio__pmeta,.otw-trio__psub{display:none}
+  .otw-trio__photo{width:60px;height:60px}
+  .otw-trio__pname{font-size:11px}
+  .otw-trio__title{font-size:17px}
+}

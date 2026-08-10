@@ -44,33 +44,16 @@ export default function HeroSpotlight({ players, children }) {
   // aksi halde görsel slaytlar için düşürülen min-height, başlık metnini keser.
   useEffect(() => {
     function measure() {
-      const stageWidth = stageRef.current?.getBoundingClientRect().width || 0;
-      const isMobile = stageWidth < 640;
-
-      if (isMobile) {
-        // Mobil davranış — hiç değişmedi, olduğu gibi bırakıldı
-        const currentType = slides[step0]?.type;
-        if (currentType === 'title' || currentType === 'otw') {
-          const activeEl = slideRefs.current[step0];
-          const contentHeight = activeEl ? activeEl.scrollHeight : 200;
-          setStageHeight(Math.max(contentHeight, 180));
-        } else {
-          const h = Math.max(180, Math.min(340, stageWidth * (630 / 1200)));
-          setStageHeight(h);
-        }
-      } else {
-        // Masaüstü — artık HER slayt, başlık slaytının o anki yüksekliğini kullanıyor
-        const titleIndex = slides.findIndex((s) => s.type === 'title');
-        const titleEl = slideRefs.current[titleIndex];
-        const titleHeight = titleEl ? titleEl.scrollHeight : 300;
-        setStageHeight(Math.max(titleHeight, 180));
-      }
+      const titleIndex = slides.findIndex((s) => s.type === 'title');
+      const titleEl = slideRefs.current[titleIndex];
+      const titleHeight = titleEl ? titleEl.scrollHeight : 300;
+      setStageHeight(Math.max(titleHeight, 180));
     }
     measure();
     const ro = new ResizeObserver(measure);
     if (stageRef.current) ro.observe(stageRef.current);
     return () => ro.disconnect();
-  }, [step0, slides]);
+  }, [slides, lang, league]);
 
   function go(dir) {
     setStep((s) => (s + dir + slides.length) % slides.length);
