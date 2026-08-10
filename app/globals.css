@@ -602,16 +602,28 @@ a{color:inherit;text-decoration:none}
 }
 
 .otw-trio{
-  position:relative;height:100%;width:100%;box-sizing:border-box;
+  position:relative;overflow:hidden;height:100%;width:100%;box-sizing:border-box;
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   gap:20px;
   background:#111113;border:1px solid #25252B;border-radius:14px;
   padding:clamp(20px,3vw,32px);text-decoration:none;
 }
-.otw-trio__header{display:flex;align-items:center;gap:10px}
-.otw-trio__title{font-family:var(--display);font-weight:700;font-size:clamp(22px,3vw,30px);color:#E0742F}
-.otw-trio__leaguebadge{width:26px;height:26px;object-fit:contain;flex-shrink:0}
-.otw-trio__grid{display:flex;gap:clamp(20px,4vw,48px);justify-content:center;flex-wrap:wrap}
+.otw-trio::before{
+  content:"";position:absolute;inset:0;
+  background-image:linear-gradient(#1B1B20 1px,transparent 1px),linear-gradient(90deg,#1B1B20 1px,transparent 1px);
+  background-size:22px 22px;opacity:.5;pointer-events:none;
+}
+.otw-trio__header{position:relative;z-index:1;display:flex;align-items:center;gap:12px}
+.otw-trio__title{
+  font-family:var(--display);font-weight:700;
+  font-size:clamp(20px,2.6vw,28px);
+  color:#E0742F;letter-spacing:-0.01em;
+}
+.otw-trio__leaguebadge{
+  width:34px;height:34px;object-fit:contain;flex-shrink:0;
+  padding:6px;background:#17171A;border:1px solid #25252B;border-radius:50%;
+}
+.otw-trio__grid{position:relative;z-index:1;display:flex;gap:clamp(20px,4vw,48px);justify-content:center;flex-wrap:wrap}
 .otw-trio__player{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;max-width:180px}
 .otw-trio__photo{
   position:relative;width:clamp(70px,9vw,110px);height:clamp(70px,9vw,110px);
