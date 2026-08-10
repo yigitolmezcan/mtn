@@ -45,18 +45,25 @@ export default function HeroSpotlight({ players, children }) {
   useEffect(() => {
     function measure() {
       const stageWidth = stageRef.current?.getBoundingClientRect().width || 0;
-      const currentType = slides[step0]?.type;
-      // Mobilde .hcard yatay değil dikey/stacked düzene geçiyor (bkz. globals.css
-      // @media(max-width:640px) .hcard kuralları) — bu durumda sabit en-boy oranı
-      // formülü içeriği (halka + rating satırı) üstten/alttan kırpıyordu, bu yüzden
-      // dar ekranlarda da gerçek içerik yüksekliği ölçülüyor.
-      if (currentType === 'title' || currentType === 'otw' || stageWidth <= 640) {
-        const activeEl = slideRefs.current[step0];
-        const contentHeight = activeEl ? activeEl.scrollHeight : 200;
-        setStageHeight(Math.max(contentHeight, 100));
+      const isMobile = stageWidth < 640;
+
+      if (isMobile) {
+        // Mobil davranış — hiç değişmedi, olduğu gibi bırakıldı
+        const currentType = slides[step0]?.type;
+        if (currentType === 'title' || currentType === 'otw') {
+          const activeEl = slideRefs.current[step0];
+          const contentHeight = activeEl ? activeEl.scrollHeight : 200;
+          setStageHeight(Math.max(contentHeight, 180));
+        } else {
+          const h = Math.max(180, Math.min(340, stageWidth * (630 / 1200)));
+          setStageHeight(h);
+        }
       } else {
-        const h = Math.max(180, Math.min(340, stageWidth * (630 / 1200)));
-        setStageHeight(h);
+        // Masaüstü — artık HER slayt, başlık slaytının o anki yüksekliğini kullanıyor
+        const titleIndex = slides.findIndex((s) => s.type === 'title');
+        const titleEl = slideRefs.current[titleIndex];
+        const titleHeight = titleEl ? titleEl.scrollHeight : 300;
+        setStageHeight(Math.max(titleHeight, 180));
       }
     }
     measure();
