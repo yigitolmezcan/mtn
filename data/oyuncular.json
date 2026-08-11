@@ -4457,7 +4457,7 @@
         }
       ],
       "arketip": "Floor General",
-      "mtnRating": "8.0",
+      "mtnRating": "7.9",
       "ratingNotu": "Baskonia'da yüksek skor yükü taşımaktan çok hücumu düzenleyen, takım arkadaşlarını besleyen ve savunmanın tonunu belirleyen ana bağlantı oyuncusuna dönüşebilir. Şutu savunmaları cezalandıracak seviyeye çıkarsa EuroLeague'in en dikkat çekici yeni oyun kurucularından biri olabilir; çıkmazsa maç sonlarındaki kullanım alanı sınırlanabilir.",
       "ratingNotuEn": "Rather than carrying a heavy scoring load at Baskonia, he could turn into the primary connector who organizes the offense, feeds teammates, and sets the defensive tone. If his shot reaches a level that punishes defenses, he could become one of EuroLeague's most eye-catching new playmakers; if not, his late-game usage could stay limited.",
       "benzerOyuncular": [
@@ -4742,6 +4742,64 @@
         {"isim":"Jerian Grant","neden":"Topu domine etmeden oyuna katkı","nedenEn":"Contributing to the game without dominating the ball"}
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=e0_D6Ug3OJQ"
+    },
+    {
+      "slug": "daron-russell",
+      "ad": "Daron Russell",
+      "adProfil": "Daron \"Fatts\" Russell",
+      "resmiAd": "Daron Fatts Russell",
+      "takimSlug": "anadolu-efes",
+      "lig": "euroleague",
+      "pozisyon": "PG",
+      "boy": "1.80 m",
+      "yas": "28",
+      "milliyet": "ABD / Romanya",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "U-BT Cluj-Napoca",
+      "geldigiLig": "ABA Ligi (Adriyatik)",
+      "transferNotu": "2025-26 sezonunu EuroCup'ın sayı kralı, All-EuroCup İkinci Beş oyuncusu ve Romanya Ligi Finalleri MVP'si olarak tamamlayan Russell, Anadolu Efes ile ilk EuroLeague deneyimine hazırlanıyor. Daha önce Galatasaray, Manisa ve Karşıyaka formalarını giyen 28 yaşındaki oyun kurucu, Türkiye'deki dördüncü takımına katılıyor.",
+      "transferNotuEn": "Having finished the 2025-26 season as the EuroCup's top scorer, an All-EuroCup Second Team selection, and MVP of the Romanian League Finals, Russell is preparing for his first EuroLeague experience with Anadolu Efes. The 28-year-old point guard, who previously wore the jerseys of Galatasaray, Manisa, and Karşıyaka, is joining his fourth club in Turkey.",
+      "ozet": "Patlayıcı ilk adımı, derin şut menzili ve ikili oyun yaratıcılığıyla yüksek tempoda skor üreten bir oyun kurucu.",
+      "ozetEn": "Combining an explosive first step, deep shooting range, and pick-and-roll creativity, he's a high-tempo scoring point guard.",
+      "ozetDetay": "Patlayıcı ilk adımı, derin şut menzili ve ikili oyun yaratıcılığıyla yüksek tempoda skor üreten bir oyun kurucu. Alçak ağırlık merkezi ve seri yön değişimleriyle perdeden çıktıktan sonra savunmanın ilk hattını geçebilen, geri çekilen uzunların üzerinden şut kullanabilen ve yardımı üzerine çektiğinde takım arkadaşlarını besleyebilen bir skorer; ancak 1.80'lik boyu, zaman zaman zorladığı şutlar ve topa duyduğu ihtiyaç EuroLeague'deki rolünü sınırlayabilir.",
+      "ozetDetayEn": "Combining an explosive first step, deep shooting range, and pick-and-roll creativity, he's a high-tempo scoring point guard. With a low center of gravity and quick change-of-direction moves, he can beat the first line of defense off a screen, shoot over retreating bigs, and find teammates once he draws help — but his 1.80m height, occasional forced shots, and need for the ball could limit his role at EuroLeague level.",
+      "anahtarSoru": "Topu daha az kullanırken aynı hücum etkisini üretebilir mi?",
+      "anahtarSoruEn": "Can he produce the same offensive impact with less usage?",
+      "featuredStats": { "yarisma": "EuroCup", "sezon": "2025-26", "items": [["19.7","PPG"],["3.8","RPG"],["6.2","APG"]] },
+      "digerIstatistikler": [
+        { "yarisma": "ABA Ligi", "sezon": "2025-26", "items": [["16.0","PPG"],["6.3","APG"],["42.7","3PT%"]] }
+      ],
+      "gucluYonler": [
+        { "t": "Patlayıcı ilk adım" },
+        { "t": "Perde kullanarak şut yaratma" },
+        { "t": "Doğal skorerlik" }
+      ],
+      "gucluYonlerEn": [
+        { "t": "Explosive first step" },
+        { "t": "Creating shots off ball screens" },
+        { "t": "Natural scoring instincts" }
+      ],
+      "gelisimAlanlari": [
+        { "t": "Fiziksel sınırlar" },
+        { "t": "Topsuz üretim" },
+        { "t": "Şut seçimleri" }
+      ],
+      "gelisimAlanlariEn": [
+        { "t": "Physical limitations" },
+        { "t": "Off-ball production" },
+        { "t": "Shot selection" }
+      ],
+      "arketip": "Scoring Point Guard",
+      "mtnRating": "7.9",
+      "ratingNotu": "Efes'te EuroCup'taki sınırsız top kullanımını bulamayacak; Mike James'in dinlendiği dakikalarda tempoyu ve bireysel üretimi taşıyan ikinci beş guardı daha gerçekçi bir rol. Şut seçimini sadeleştirip topsuz dakikalara uyum sağlarsa maçın yönünü değiştiren bir hamle oyuncusuna dönüşebilir; hücum ritmini yalnızca yüksek kullanımla bulabilirse kalabalık guard rotasyonunda kaybolabilir.",
+      "ratingNotuEn": "He won't find the unlimited usage he had in the EuroCup at Efes; a more realistic role is as the second-unit guard who carries tempo and individual scoring during Mike James's rest minutes. If he simplifies his shot selection and adapts to lower-usage stretches, he could become a genuine game-changer off the bench; if he can only find his offensive rhythm through heavy usage, he risks getting lost in a crowded guard rotation.",
+      "benzerOyuncular": [
+        {"isim":"Jared Harper","neden":"İlk adım hızı ve ikili oyun üzerinden skor üretimi","nedenEn":"First-step speed and pick-and-roll scoring"},
+        {"isim":"Sylvain Francisco","neden":"Yüksek şut menzili","nedenEn":"Deep shooting range"}
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=O7ZTeDSlvRQ"
     }
   ]
 }

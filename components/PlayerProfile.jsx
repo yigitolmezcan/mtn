@@ -101,7 +101,7 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
 
           <div className="head__top">
             <div className="head__idcol">
-              <h1 className="head__h1">{p.ad}</h1>
+              <h1 className="head__h1">{p.adProfil || p.ad}</h1>
               {p.arketip && (
                 <span className="tag tag--soft">
                   {ArketipIcon && <ArketipIcon size={14} strokeWidth={2} color="currentColor" />}
