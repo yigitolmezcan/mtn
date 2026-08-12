@@ -4744,62 +4744,61 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=e0_D6Ug3OJQ"
     },
     {
-      "slug": "daron-russell",
-      "ad": "Daron Russell",
-      "adProfil": "Daron \"Fatts\" Russell",
-      "resmiAd": "Daron Fatts Russell",
-      "takimSlug": "anadolu-efes",
+      "slug": "marjon-beauchamp",
+      "ad": "MarJon Beauchamp",
+      "resmiAd": "MarJon Beauchamp",
+      "takimSlug": "bayern-munich",
       "lig": "euroleague",
-      "pozisyon": "PG",
-      "boy": "1.80 m",
-      "yas": "28",
-      "milliyet": "ABD / Romanya",
+      "pozisyon": "SF",
+      "boy": "2.01 m",
+      "yas": "25",
+      "milliyet": "ABD",
       "el": "Sağ",
       "elEn": "Right",
       "milliyetNotu": null,
-      "geldigiKulup": "U-BT Cluj-Napoca",
-      "geldigiLig": "ABA Ligi (Adriyatik)",
-      "transferNotu": "2025-26 sezonunu EuroCup'ın sayı kralı, All-EuroCup İkinci Beş oyuncusu ve Romanya Ligi Finalleri MVP'si olarak tamamlayan Russell, Anadolu Efes ile ilk EuroLeague deneyimine hazırlanıyor. Daha önce Galatasaray, Manisa ve Karşıyaka formalarını giyen 28 yaşındaki oyun kurucu, Türkiye'deki dördüncü takımına katılıyor.",
-      "transferNotuEn": "Having finished the 2025-26 season as the EuroCup's top scorer, an All-EuroCup Second Team selection, and MVP of the Romanian League Finals, Russell is preparing for his first EuroLeague experience with Anadolu Efes. The 28-year-old point guard, who previously wore the jerseys of Galatasaray, Manisa, and Karşıyaka, is joining his fourth club in Turkey.",
-      "ozet": "Patlayıcı ilk adımı, derin şut menzili ve ikili oyun yaratıcılığıyla yüksek tempoda skor üreten bir oyun kurucu.",
-      "ozetEn": "Combining an explosive first step, deep shooting range, and pick-and-roll creativity, he's a high-tempo scoring point guard.",
-      "ozetDetay": "Patlayıcı ilk adımı, derin şut menzili ve ikili oyun yaratıcılığıyla yüksek tempoda skor üreten bir oyun kurucu. Alçak ağırlık merkezi ve seri yön değişimleriyle perdeden çıktıktan sonra savunmanın ilk hattını geçebilen, geri çekilen uzunların üzerinden şut kullanabilen ve yardımı üzerine çektiğinde takım arkadaşlarını besleyebilen bir skorer; ancak 1.80'lik boyu, zaman zaman zorladığı şutlar ve topa duyduğu ihtiyaç EuroLeague'deki rolünü sınırlayabilir.",
-      "ozetDetayEn": "Combining an explosive first step, deep shooting range, and pick-and-roll creativity, he's a high-tempo scoring point guard. With a low center of gravity and quick change-of-direction moves, he can beat the first line of defense off a screen, shoot over retreating bigs, and find teammates once he draws help — but his 1.80m height, occasional forced shots, and need for the ball could limit his role at EuroLeague level.",
-      "anahtarSoru": "Topu daha az kullanırken aynı hücum etkisini üretebilir mi?",
-      "anahtarSoruEn": "Can he produce the same offensive impact with less usage?",
-      "featuredStats": { "yarisma": "EuroCup", "sezon": "2025-26", "items": [["19.7","PPG"],["3.8","RPG"],["6.2","APG"]] },
+      "geldigiKulup": "Philadelphia 76ers / Delaware Blue Coats",
+      "geldigiLig": "NBA (ABD)",
+      "transferNotu": "2022 NBA Draftı'nın 24. sırasından seçilen ve playofflar dahil 155 NBA maçında forma giyen Beauchamp, kariyerinin ilk Avrupa deneyimi için Bayern Münih'e katılıyor.",
+      "transferNotuEn": "Selected 24th overall in the 2022 NBA Draft and having appeared in 155 NBA games including playoffs, Beauchamp is joining Bayern Munich for his first professional experience in Europe.",
+      "ozet": "Patlayıcı atletizmi, uzun kolları ve açık sahadaki bitiriciliğiyle oyunun iki yönünü etkileyebilen bir kanat.",
+      "ozetEn": "Combining explosive athleticism, long arms, and finishing in the open floor, he's a wing who can impact winning at both ends.",
+      "ozetDetay": "Patlayıcı atletizmi, uzun kolları ve açık sahadaki bitiriciliğiyle oyunun iki yönünü etkileyebilen bir kanat. Beauchamp; geçiş hücumunda koşan, topsuz katlarla savunma arkasına sarkan, yakın mesafe savunmalarını ilk adımıyla geçen ve fiziksel özellikleri sayesinde farklı kanat tiplerine eşleşebilen bir oyuncu. G League'de top elindeki skor ve pas üretimini büyütse de NBA'de kalıcı bir rotasyon rolü bulamaması, yerleşik hücumdaki dış şutunun ve karar kalitesinin atletik avantajları kadar güvenilir olmadığını gösteriyor.",
+      "ozetDetayEn": "Combining explosive athleticism, long arms, and finishing in the open floor, he's a wing who can impact winning at both ends. Beauchamp runs the floor in transition, cuts behind the defense off the ball, beats close-out defenders with his first step, and can guard multiple wing types thanks to his physical tools. While he's grown his on-ball scoring and passing in the G League, his inability to lock down a lasting NBA rotation role shows that his half-court jump shot and decision-making aren't yet as reliable as his athletic gifts.",
+      "anahtarSoru": "Dış şutu, atletizmini sahada tutmaya yetecek mi?",
+      "anahtarSoruEn": "Will his outside shot be reliable enough to keep his athleticism on the floor?",
+      "featuredStats": { "yarisma": "NBA G League", "sezon": "2025-26", "items": [["25.2","PPG"],["5.7","RPG"],["4.3","APG"]] },
       "digerIstatistikler": [
-        { "yarisma": "ABA Ligi", "sezon": "2025-26", "items": [["16.0","PPG"],["6.3","APG"],["42.7","3PT%"]] }
+        { "yarisma": "NBA", "sezon": "2025-26", "items": [["6.8","PPG"],["2.3","RPG"],["1.1","APG"]] }
       ],
       "gucluYonler": [
-        { "t": "Patlayıcı ilk adım" },
-        { "t": "Perde kullanarak şut yaratma" },
-        { "t": "Doğal skorerlik" }
+        { "t": "Açık saha ve topsuz hareketlilik" },
+        { "t": "Savunma araçları" },
+        { "t": "Skor çeşitliliği" }
       ],
       "gucluYonlerEn": [
-        { "t": "Explosive first step" },
-        { "t": "Creating shots off ball screens" },
-        { "t": "Natural scoring instincts" }
+        { "t": "Open-floor and off-ball movement" },
+        { "t": "Defensive tools" },
+        { "t": "Scoring versatility" }
       ],
       "gelisimAlanlari": [
-        { "t": "Fiziksel sınırlar" },
-        { "t": "Topsuz üretim" },
-        { "t": "Şut seçimleri" }
+        { "t": "Şut istikrarı" },
+        { "t": "Top kontrolü ve karar kalitesi" },
+        { "t": "Temas ve serbest atış üretimi" }
       ],
       "gelisimAlanlariEn": [
-        { "t": "Physical limitations" },
-        { "t": "Off-ball production" },
-        { "t": "Shot selection" }
+        { "t": "Shooting consistency" },
+        { "t": "Ball control and decision quality" },
+        { "t": "Drawing contact and free-throw production" }
       ],
-      "arketip": "Scoring Point Guard",
-      "mtnRating": "7.9",
-      "ratingNotu": "Efes'te EuroCup'taki sınırsız top kullanımını bulamayacak; Mike James'in dinlendiği dakikalarda tempoyu ve bireysel üretimi taşıyan ikinci beş guardı daha gerçekçi bir rol. Şut seçimini sadeleştirip topsuz dakikalara uyum sağlarsa maçın yönünü değiştiren bir hamle oyuncusuna dönüşebilir; hücum ritmini yalnızca yüksek kullanımla bulabilirse kalabalık guard rotasyonunda kaybolabilir.",
-      "ratingNotuEn": "He won't find the unlimited usage he had in the EuroCup at Efes; a more realistic role is as the second-unit guard who carries tempo and individual scoring during Mike James's rest minutes. If he simplifies his shot selection and adapts to lower-usage stretches, he could become a genuine game-changer off the bench; if he can only find his offensive rhythm through heavy usage, he risks getting lost in a crowded guard rotation.",
+      "arketip": "Athletic Forward",
+      "mtnRating": "8.5",
+      "ratingNotu": "Bayern'de G League'deki yüksek kullanımlı ana skorer rolünden çok, savunma – geçiş – kat üçgeninde çalışan tamamlayıcı bir kanada dönüşmesi daha gerçekçi. Dış şutunu savunmaların saygı duyacağı seviyede tutarsa takımın en değerli atletizm kaynaklarından biri olabilir; tutamazsa yarı saha hücumunda kullanım alanı ve maç sonu dakikaları hızla daralabilir.",
+      "ratingNotuEn": "At Bayern, a more realistic outlook is becoming a complementary wing working the defense–transition–cut triangle, rather than the high-usage lead scorer he was in the G League. If he keeps his outside shot at a level defenses have to respect, he could be one of the team's most valuable athletic weapons; if not, his half-court usage and crunch-time minutes could shrink quickly.",
       "benzerOyuncular": [
-        {"isim":"Jared Harper","neden":"İlk adım hızı ve ikili oyun üzerinden skor üretimi","nedenEn":"First-step speed and pick-and-roll scoring"},
-        {"isim":"Sylvain Francisco","neden":"Yüksek şut menzili","nedenEn":"Deep shooting range"}
+        {"isim":"Alpha Diallo","neden":"Uzun kolları, geçiş hücumundaki etkinliği ve topsuz katları","nedenEn":"Long arms, transition effectiveness, and off-ball cuts"},
+        {"isim":"Jordan Nwora","neden":"Atletizm ve skor çeşitliliği","nedenEn":"Athleticism and scoring versatility"}
       ],
-      "youtubeUrl": "https://www.youtube.com/watch?v=O7ZTeDSlvRQ"
+      "youtubeUrl": "https://www.youtube.com/watch?v=FgKpnuArulc"
     }
   ]
 }
