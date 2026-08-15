@@ -30,6 +30,11 @@ Aynı şey `ratingNotu` için de geçerli.
 
 Rating gerekçesi transferi "iyi/kötü" olarak etiketlemez, oyuncuyu tarif eder.
 
+Rating değerleri yalnızca 0.5'in katları olabilir (6.5, 7.0, 7.5, 8.0, 8.5, 9.0
+gibi). Onluk basamak (8.1, 8.2, 7.7 gibi) kullanılmaz — bu, sahte bir hassasiyet
+hissi yaratıyordu. Yarım puan, editoryal bir karar gibi durur, hesaplanmış bir
+sayı gibi değil.
+
 ---
 
 ## 2. Uydurma yok
@@ -110,6 +115,9 @@ Güncel atamalar için data/oyuncular.json dosyasına bak.
 | `geldigiLig` | Lig (Bölge) | `Liga Endesa (İspanya)` |
 | `mtnRating` | tek ondalık, metin | `"7.5"` |
 | `slug` | küçük harf, tire, Türkçe karakter yok | `tyson-etienne` |
+| `el` / `elEn` | Sağ/Sol veya Right/Left | `Sağ` |
+| `lig` | `euroleague` veya `bsl` | `euroleague` |
+| `anahtarSoru` / `anahtarSoruEn` | tek soru cümlesi, EuroLeague'de standart, BSL'de henüz uygulanmıyor | — |
 
 İstatistik kısaltmaları İngilizce: **PPG, RPG, APG, BPG, SPG, FG, 3PT, FT**
 
@@ -188,6 +196,9 @@ rol · hücum tarzı · fiziksel profil · kendi şutunu yaratma · savunma rol�
 
 **Her oyuncu için 1 ila 2 benzer oyuncu yazılır. 3 veya daha fazla yazılmaz. Karşılaştırma çok net ve güçlüyse tek isim yeterlidir.** Sayı doldurmak için isim ekleme.
 
+Veri yapısı: `benzerOyuncular` düz isim dizisi değil, her eleman
+`{isim, neden, nedenEn}` objesidir. Gerekçesiz isim eklenmez.
+
 Örnek hata: Tyson Etienne için TJ Shorts ve Markquis Nowell yazmak.
 İkisi de 1.80 altı, değerleri oyun kurmaktan gelen oyunculardır.
 Etienne yüksek volümlü skorer ve kendi şutunu kuran bir guard —
@@ -199,7 +210,7 @@ doğru benzetmeler Kevin Punter ve Jordan Loyd.
 
 **Kart bir vitrindir, scouting raporu değil.** Kartta yalnızca:
 
-takım + logo · oyuncu adı · pozisyon (kısaltma) · tek cümlelik özet · MtN Rating
+takım rengi şeridi · dairesel oyuncu fotoğrafı (varsa) · oyuncu adı · pozisyon (kısaltma) · tek cümlelik özet · MtN Rating
 
 İstatistikler, destekleyici veriler, güçlü/zayıf maddeleri, arketip → **profil sayfasında.**
 
@@ -213,7 +224,7 @@ takım + logo · oyuncu adı · pozisyon (kısaltma) · tek cümlelik özet · M
 **Değiştirme.** Tasarım dili yerleşti; yeni özellik eklerken mevcut sınıfları kullan.
 
 - Arka plan: soğuk siyaha yakın `#0A0A0B`
-- Turuncu `#E0742F` yalnızca üç yerde: rating sayısı, `+` işaretleri, öne çıkan etiketi
+- Turuncu `#E0742F` kıt tutulur — vurgu veya "seçili/aktif" durumunu göstermek için kullanılır (rating sayısı, `+` işaretleri, öne çıkan etiketi, aktif dil/lig seçici, filtre chip'i, Anahtar Soru kutusu gibi). Yeni bir öğede "bu gerçekten vurgu mu taşıyor" diye sorulur, dekoratif kullanılmaz.
 - Takım rengi: kartın sol şeridi, kulüp adı, transfer bloğunun varış kulübü
 - Monospace font yok
 - Serif yalnızca rating sayısında
@@ -234,12 +245,19 @@ Kulüp kimliği yalnızca takım rengi (şerit, kulüp adı) ile taşınır. Ger
 ## 12. Teknik yapı
 
 ```
-data/oyuncular.json       ← TÜM içerik burada
-lib/players.js            ← veriyi okur, kulüp bilgisini ekler
-components/PlayerCard.jsx ← ana sayfa kartı
-app/page.js               ← ana sayfa
-app/oyuncu/[slug]/page.js ← oyuncu profili
-app/globals.css           ← tasarım sistemi
+data/oyuncular.json           ← TÜM oyuncu içeriği burada
+data/onesToWatch.js           ← "Ones to Watch" editoryal seçkisi
+lib/players.js                ← veriyi okur, kulüp bilgisini ekler
+lib/i18n.js                   ← TR/EN arayüz metinleri
+lib/archetypeDefs.js          ← 13 arketipin tanımları
+components/PlayerCard.jsx     ← ana sayfa kartı
+components/PlayerProfile.jsx  ← oyuncu profili
+components/HeroSpotlight.jsx  ← ana sayfa üstü carousel
+components/MainMenu.jsx       ← sol üst hamburger menü
+app/oyuncu/[slug]/opengraph-image.js ← paylaşım görseli (kilitli şablon)
+app/globals.css               ← tasarım sistemi
+
+(Bu liste kapsayıcı değil, projenin ana giriş noktalarıdır.)
 ```
 
 **Oyuncu eklemek = yalnızca `data/oyuncular.json`'a bir blok eklemek.**
@@ -292,8 +310,11 @@ Arayüz `vurgu` kullanır. Örnek: Paris Basketball → marka `#1A1A1A`, vurgu `
 - [ ] Özet 95-110 karakter, tek cümle, kalıp tekrarı yok?
 - [ ] Maddeler isim öbeği mi, 3-6 kelime mi, noktasız mı?
 - [ ] Destekleyici veri en fazla 2 madde mi?
-- [ ] `arketip` 12'lik kapalı listeden mi seçilmiş, tek tane mi?
+- [ ] `arketip` 13'lük kapalı listeden mi seçilmiş, tek tane mi?
 - [ ] Benzer oyuncular arketip eşleşmesi mi, 1-2 tane mi?
 - [ ] `mtnRating` kullanıcıdan mı geldi? (Claude asla doldurmaz)
 - [ ] `slug` benzersiz, Türkçe karaktersiz mi?
 - [ ] Kulüp `takimlar` bölümünde tanımlı mı, logosu var mı?
+- [ ] `el`/`elEn` dolduruldu mu?
+- [ ] `lig` alanı (`euroleague` veya `bsl`) doğru mu?
+- [ ] Benzer oyuncuların her birinde `neden`/`nedenEn` gerekçesi var mı (sadece isim değil)?
