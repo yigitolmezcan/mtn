@@ -8,6 +8,21 @@
       "renk1": "#0B2C6B",
       "renk2": "var(--bone)"
     },
+    "real-madrid": {
+      "ad": "Real Madrid",
+      "marka": "#5B2A86",
+      "vurgu": "#5B2A86",
+      "renk1": "#5B2A86",
+      "renk2": "var(--bone)",
+      "digerDil": true
+    },
+    "bursaspor": {
+      "ad": "Bursaspor",
+      "marka": "#0F5132",
+      "vurgu": "#0F5132",
+      "renk1": "#0F5132",
+      "renk2": "var(--bone)"
+    },
     "maccabi-tel-aviv": {
       "ad": "Maccabi Tel Aviv",
       "marka": "#2371B5",
@@ -4724,6 +4739,169 @@
         {"isim":"Sylvain Francisco","neden":"Yüksek şut menzili","nedenEn":"Deep shooting range"}
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=O7ZTeDSlvRQ"
+    },
+    {
+      "slug": "max-shulga",
+      "ad": "Max Shulga",
+      "resmiAd": "Max Shulga",
+      "takimSlug": "real-madrid",
+      "lig": "euroleague",
+      "pozisyon": "PG / SG",
+      "boy": "1.93 m",
+      "yas": "24",
+      "milliyet": "Ukrayna",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Boston Celtics",
+      "geldigiLig": "NBA (ABD)",
+      "transferNotu": "Real Madrid, Shulga ile 2027-28 sezonunun sonuna kadar iki yıllık sözleşme imzaladı. İspanya'daki altyapı geçmişi nedeniyle yerli yetişmiş oyuncu statüsünden de yararlanabilmesi transferin kadro kurulumundaki değerini artırıyor.",
+      "transferNotuEn": "Real Madrid signed Shulga to a two-year contract running through the end of the 2027-28 season. His ability to also count as a domestically trained player, thanks to his youth years in Spain, adds extra roster-construction value to the move.",
+      "ozet": "Şut tehdidini oyun görüşü ve doğru kararlarla birleştiren, topu domine etmeden hücuma yön verebilen çok yönlü bir combo guard.",
+      "ozetEn": "Combining a shooting threat with court vision and sound decision-making, he's a versatile combo guard who can direct the offense without dominating the ball.",
+      "ozetDetay": "Şut tehdidini oyun görüşü ve doğru kararlarla birleştiren, topu domine etmeden hücuma yön verebilen çok yönlü bir combo guard. Shulga'nın en değerli tarafı oyunun farklı bölümlerine aynı anda dokunabilmesi. Topsuz kaldığında güvenilir bir şutör, top elindeyken ise perde üzerinden pas açısını okuyabilen ve hücumu organize edebilen bir ikinci yaratıcı. Patlayıcılıktan çok tempo, açı ve karar kalitesiyle avantaj yaratıyor. Savunmayı ilk adımıyla sürekli kıran bir guard değil; bu nedenle EuroLeague seviyesinde top elindeki üretiminin belirli bir noktada sınırlanması mümkün. Buna karşılık catch-and-shoot tehdidi ve ekstra pas kalitesi, yaratıcı oyuncuların yanında değerini korumasını kolaylaştırıyor.",
+      "ozetDetayEn": "Combining a shooting threat with court vision and sound decision-making, he's a versatile combo guard who can direct the offense without dominating the ball. Shulga's biggest strength is touching different parts of the game at once. He's a reliable shooter off the ball, and a secondary creator who can read passing angles off screens and organize the offense with it in his hands. He creates his advantage more through pace, angles, and decision quality than pure explosiveness. He's not a guard who consistently breaks defenses down with his first step, so his on-ball production could be capped at a certain point at EuroLeague level. In exchange, his catch-and-shoot threat and extra passing quality make it easier for him to hold his value alongside creative teammates.",
+      "anahtarSoru": "EuroLeague seviyesinde top elindeyken ne kadar avantaj yaratabilecek?",
+      "anahtarSoruEn": "How much of an advantage can he create with the ball in his hands at EuroLeague level?",
+      "featuredStats": { "yarisma": "NBA G League", "sezon": "2025-26", "items": [["15.7","PPG"],["4.4","RPG"],["6.7","APG"]] },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        { "t": "Dış şut tehdidi", "v": "%37.2 3PT, G Ligi" },
+        { "t": "Gelişmiş saha görüşü" },
+        { "t": "Yüksek basketbol IQ'su" }
+      ],
+      "gucluYonlerEn": [
+        { "t": "Outside shooting threat", "v": "37.2% 3PT, G League" },
+        { "t": "Advanced court vision" },
+        { "t": "High basketball IQ" }
+      ],
+      "gelisimAlanlari": [
+        { "t": "İlk adım ve patlayıcılık" },
+        { "t": "Çembere gidişler" },
+        { "t": "Bire bir savunma" }
+      ],
+      "gelisimAlanlariEn": [
+        { "t": "First step and explosiveness" },
+        { "t": "Drives to the rim" },
+        { "t": "One-on-one defense" }
+      ],
+      "arketip": "Combo Guard",
+      "mtnRating": "7.5",
+      "ratingNotu": "Belirgin bir fiziksel üstünlüğü yok ancak şut, pas ve oyun aklı birleşimi onu farklı rollere uyum sağlayabilen güvenli bir rotasyon parçasına dönüştürüyor.",
+      "ratingNotuEn": "He doesn't have a clear physical advantage, but his combination of shooting, passing, and basketball IQ makes him a safe rotation piece who can adapt to different roles.",
+      "benzerOyuncular": [{"isim":"Tamir Blatt","neden":"Şut temelli oyun kuruculuk","nedenEn":"Shot-based playmaking"}],
+      "youtubeUrl": "https://www.youtube.com/watch?v=2VxRCUAvEqs"
+    },
+    {
+      "slug": "ethan-thompson",
+      "ad": "Ethan Thompson",
+      "resmiAd": "Ethan Thompson",
+      "takimSlug": "partizan",
+      "lig": "euroleague",
+      "pozisyon": "SG",
+      "boy": "1.93 m",
+      "yas": "27",
+      "milliyet": "Porto Riko",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Indiana Pacers",
+      "geldigiLig": "NBA (ABD)",
+      "transferNotu": "Partizan için yüksek tabanlı bir guard hamlesi. Kendi skorunu yaratabilmesi değerli ancak topu sürekli elinde istememesi, yaratıcı guardlarla birlikte kullanılmasını da kolaylaştırıyor.",
+      "transferNotuEn": "A high-floor guard move for Partizan. His ability to create his own offense is valuable, but not needing the ball constantly also makes him easier to use alongside creative guards.",
+      "ozet": "Güçlü gövdesini bireysel skor üretimiyle birleştiren, top elinde yaratabildiği kadar ikinci yönlendirici olarak da katkı verebilen fiziksel bir combo guard.",
+      "ozetEn": "Combining a strong frame with individual scoring, he's a physical combo guard who can create with the ball as well as contribute as a secondary playmaker.",
+      "ozetDetay": "Güçlü gövdesini bireysel skor üretimiyle birleştiren, top elinde yaratabildiği kadar ikinci yönlendirici olarak da katkı verebilen fiziksel bir combo guard. Thompson'ın profili G League ile NBA arasında iki farklı rolü kaldırabildiğini göstermesiyle değer kazanıyor. G League'de yüksek hacimli bir skorer ve yaratıcı olarak oynarken Indiana'da daha az topla, tamamlayıcı guard rolüne geçti. G League'de hücum repertuvarı çok daha görünür: Noblesville'de sekiz maçlık bölümde 26.9 sayı, 6.9 ribaund ve 5.8 asist, %47.8 saha içi ve %52.8 üçlük üretti. Örneklem küçük olsa da bir önceki sezonda 31 maçta 18.4 sayı ve %39.0 üçlük üretmiş olması dış şut tehdidinin yalnızca kısa süreli bir patlama olmadığını destekliyor. Çok hızlı bir ilk adıma sahip değil; savunmacıyı daha çok ritim, gövde kullanımı ve şut tehdidiyle çözüyor.",
+      "ozetDetayEn": "Combining a strong frame with individual scoring, he's a physical combo guard who can create with the ball as well as contribute as a secondary playmaker. Thompson's profile gains value from showing he can carry two different roles between the G League and the NBA. He played as a high-volume scorer and creator in the G League, while shifting to a lower-usage, complementary guard role in Indiana. His offensive repertoire is far more visible in the G League: in an eight-game stretch with Noblesville, he produced 26.9 points, 6.9 rebounds, and 5.8 assists on 47.8% shooting and 52.8% from three. Small sample aside, averaging 18.4 points and shooting 39.0% from three across 31 games the previous season supports that his outside shooting threat isn't just a short-term hot streak. He doesn't have a particularly quick first step; he beats defenders more through rhythm, body control, and shooting gravity.",
+      "anahtarSoru": "EuroLeague'de dış şutunu ne kadar istikrarlı hale getirebilecek?",
+      "anahtarSoruEn": "How consistent can he make his outside shot in the EuroLeague?",
+      "featuredStats": { "yarisma": "NBA G League", "sezon": "2025-26", "items": [["26.9","PPG"],["6.9","RPG"],["5.8","APG"]] },
+      "digerIstatistikler": [
+        { "yarisma": "NBA", "sezon": "2025-26", "items": [["7.0","PPG"],["2.2","RPG"],["1.8","APG"]] }
+      ],
+      "gucluYonler": [
+        { "t": "Bireysel skor üretimi" },
+        { "t": "Fiziksel oyun" },
+        { "t": "İkincil top yönlendirme" }
+      ],
+      "gucluYonlerEn": [
+        { "t": "Individual scoring" },
+        { "t": "Physical style of play" },
+        { "t": "Secondary ball-handling" }
+      ],
+      "gelisimAlanlari": [
+        { "t": "İlk adım hızı" },
+        { "t": "Üç sayılık şut istikrarı" },
+        { "t": "Çabuk guard savunması" }
+      ],
+      "gelisimAlanlariEn": [
+        { "t": "First-step speed" },
+        { "t": "Three-point shot consistency" },
+        { "t": "Defending quick guards" }
+      ],
+      "arketip": "Scoring Wing",
+      "mtnRating": "8.0",
+      "ratingNotu": "Avrupa'ya yalnızca skor getirmiyor; farklı kullanım oranlarında oynayabilmesi Partizan'ın eline daha esnek bir guard veriyor.",
+      "ratingNotuEn": "He's not just bringing scoring to Europe; his ability to play at different usage levels gives Partizan a more flexible guard.",
+      "benzerOyuncular": [{"isim":"Sterling Brown","neden":"Fiziksel combo guard profili","nedenEn":"Physical combo guard profile"}],
+      "youtubeUrl": "https://www.youtube.com/watch?v=KDypj9hqFPQ"
+    },
+    {
+      "slug": "nate-watson",
+      "ad": "Nate Watson",
+      "resmiAd": "Junathaen D. Watson Jr.",
+      "takimSlug": "bursaspor",
+      "lig": "bsl",
+      "pozisyon": "C",
+      "boy": "2.08 m",
+      "yas": "27",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Panionios",
+      "geldigiLig": "GBL (Yunanistan)",
+      "transferNotu": "Bursaspor, uzun rotasyonuna EuroCup seviyesini bilen, rolü belirgin ve pota çevresinde yüksek yüzdeli üretim verebilen bir pivot ekliyor. Watson'ın top talep etmeden perde-devrilme, hücum ribaundu ve yakın mesafe bitirişleriyle skor üretebilmesi hücum açısından güvenli bir taban oluşturuyor.",
+      "transferNotuEn": "Bursaspor is adding a center with EuroCup-level experience, a clearly defined role, and high-percentage production around the rim to its frontcourt rotation. Watson's ability to score through pick-and-roll rolls, offensive rebounds, and close-range finishes without needing the ball creates a safe offensive floor.",
+      "ozet": "Güçlü gövdesini pota çevresindeki yumuşak bitiriciliğiyle birleştiren, perde sonrası devrilmelerde ve alçak postta yüksek yüzdeyle üreten klasik bir pivot.",
+      "ozetEn": "Combining a strong frame with soft touch finishing around the rim, he's a classic center who produces at a high percentage on pick-and-roll rolls and in the low post.",
+      "ozetDetay": "Güçlü gövdesini pota çevresindeki yumuşak bitiriciliğiyle birleştiren, perde sonrası devrilmelerde ve alçak postta yüksek yüzdeyle üreten klasik bir pivot. Watson'ın hücumu neredeyse tamamen boyalı alanın içinde şekilleniyor. 117 kiloluk gövdesiyle derin pozisyon alabiliyor, temastan kolay etkilenmiyor ve iki ayağı boyalı alandayken güvenilir bir bitirici. Pick-and-roll'de sağlam perde sonrası çembere iyi devriliyor; geniş hedef alanı ve bitiriş dokunuşu guard'ların işini kolaylaştırıyor. Karditsa'daki 2024-25 döneminde 14.9 sayı ve 7.1 ribaundu %67.4 ikilikle üretmesi bu profilin en verimli örneğiydi. Savunmada fiziksel teması kaldırabilen ve çember çevresinde hacim sağlayan bir uzun. Buna karşın ayak hızının sınırlı olması savunma planını daraltıyor; guard karşısında kalması gereken eşleşmeler ve yüksek savunma onun için uygun değil. Hücumda da şut tehdidi bulunmadığı için beş numara spacing'i yaratmıyor.",
+      "ozetDetayEn": "Combining a strong frame with soft touch finishing around the rim, he's a classic center who produces at a high percentage on pick-and-roll rolls and in the low post. Watson's offense is shaped almost entirely inside the paint. At 117 kilograms, he can establish deep post position, isn't easily affected by contact, and is a reliable finisher with both feet in the paint. He rolls well to the rim after solid pick-and-roll screens; his large target area and finishing touch make life easier for guards. His 2024-25 stint at Karditsa — 14.9 points and 7.1 rebounds on 67.4% two-point shooting — was the most productive example of this profile. He's a big who can absorb physical contact on defense and provide rim-area volume. However, his limited foot speed narrows what he can be asked to do defensively; switches onto guards and high-hedge coverages aren't a fit for him. Without an outside shot threat on offense, he also doesn't create true five-out spacing.",
+      "anahtarSoru": "Pick-and-roll savunmasında hareketliliği ne kadar hedef alınacak?",
+      "anahtarSoruEn": "How much will his mobility be targeted in pick-and-roll defense?",
+      "featuredStats": { "yarisma": "EuroCup", "sezon": "2025-26", "items": [["9.3","PPG"],["4.9","RPG"],["0.5","BPG"]] },
+      "digerIstatistikler": [
+        { "yarisma": "GBL", "sezon": "2025-26", "items": [["12.0","PPG"],["5.0","RPG"],["0.9","BPG"]] }
+      ],
+      "gucluYonler": [
+        { "t": "Pota çevresi bitiriciliği" },
+        { "t": "Fiziksel post oyunu" },
+        { "t": "Perde ve devrilme" }
+      ],
+      "gucluYonlerEn": [
+        { "t": "Finishing around the rim" },
+        { "t": "Physical post play" },
+        { "t": "Screening and rolling" }
+      ],
+      "gelisimAlanlari": [
+        { "t": "Yatay hız" },
+        { "t": "Bireysel skor üretimi" },
+        { "t": "Serbest atış", "v": "%63.3" }
+      ],
+      "gelisimAlanlariEn": [
+        { "t": "Lateral quickness" },
+        { "t": "Self-created scoring" },
+        { "t": "Free-throw shooting", "v": "63.3%" }
+      ],
+      "arketip": "Post Scorer",
+      "mtnRating": "7.5",
+      "ratingNotu": "Boyalı alanda ne vereceği oldukça belli; Watson'ın değeri, Bursaspor'un onun fiziksel oyununu ne kadar doğru çevreleyebileceğine bağlı.",
+      "ratingNotuEn": "What he'll provide in the paint is fairly predictable; Watson's value depends on how well Bursaspor can build the right system around his physical style of play.",
+      "benzerOyuncular": [
+        {"isim":"Ante Žižić","neden":"Pota çevresi oyunu","nedenEn":"Rim-area play"},
+        {"isim":"Zach Auguste","neden":"Fizikselllik & roll oyunu","nedenEn":"Physicality & roll game"}
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=l0oGXUCgUG0"
     }
   ]
 }
