@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useLang } from '@/lib/LanguageContext';
 import { useLeague } from '@/lib/LeagueContext';
 import HeroPlayerCard from './HeroPlayerCard';
+import PlayerPhoto from './PlayerPhoto';
 import { curatedLists } from '@/data/curatedLists';
 
 const OTW_PICKS = ['umoja-gibson', 'marcus-bingham', 'both-gach'];
@@ -19,14 +20,12 @@ function TrioSlide({ href, title, playerSlugs, players, gobtnLabel }) {
         {playerSlugs.map((slug) => {
           const p = players.find((pl) => pl.slug === slug);
           if (!p) return null;
+          const initials = p.ad.split(' ').map((w) => w[0]).join('').slice(0, 2);
           return (
             <div className="otw-trio__player" key={slug} style={{ '--ring': p.takimRenk }}>
               <span className="otw-trio__photo">
-                <img
-                  src={`/players/${slug}.png`}
-                  alt=""
-                  onError={(e) => { e.currentTarget.src = `/players/${slug}.jpg`; }}
-                />
+                <PlayerPhoto slug={slug} renk={p.takimRenk} name={p.ad} size={110}
+                  fallback={<span className="hcard__fallback">{initials}</span>} />
               </span>
               <div className="otw-trio__pname">{p.ad}</div>
               <div className="otw-trio__pmeta">{p.pozisyon} · {p.takim}</div>
