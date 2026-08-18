@@ -6,6 +6,16 @@ export async function generateStaticParams() {
   return Object.keys(curatedLists).map((slug) => ({ slug }));
 }
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const list = curatedLists[slug];
+  if (!list) return {};
+  return {
+    title: list.title,
+    description: list.intro,
+  };
+}
+
 export default async function Page({ params }) {
   const { slug } = await params;
   const list = curatedLists[slug];

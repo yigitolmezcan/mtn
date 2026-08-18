@@ -7,6 +7,16 @@ export async function generateStaticParams() {
   return Object.keys(archetypeDefs).map((name) => ({ slug: archetypeSlug(name) }));
 }
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const name = archetypeFromSlug(slug, archetypeDefs);
+  if (!name) return {};
+  return {
+    title: name,
+    description: archetypeDefs[name].tr,
+  };
+}
+
 export default async function Page({ params }) {
   const { slug } = await params;
   const name = archetypeFromSlug(slug, archetypeDefs);

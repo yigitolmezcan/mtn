@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getPlayer, getAllSlugs, getAllPlayers } from '@/lib/players';
+import { buildPlayerMetadata } from '@/lib/playerMetadata';
 import PlayerProfile from '@/components/PlayerProfile';
 
 export function generateStaticParams() {
@@ -8,18 +9,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const p = getPlayer(slug);
-  if (!p) return {};
-
-  return {
-    title: `${p.ad} — ${p.takim}`,
-    description: p.ozet,
-    openGraph: {
-      title: `${p.ad} — ${p.takim}`,
-      description: p.ozet,
-      type: 'profile',
-    },
-  };
+  return buildPlayerMetadata(slug, 'tr');
 }
 
 export default async function PlayerPage({ params }) {
@@ -32,5 +22,17 @@ export default async function PlayerPage({ params }) {
     takimRenk: pl.takimRenk, pozisyon: pl.pozisyon, mtnRating: pl.mtnRating, lig: pl.lig,
   }));
 
-  return <PlayerProfile p={p} allPlayers={allPlayers} />;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: p.ad,
+        jobTitle: 'Basketball Player',
+        memberOf: { '@type': 'SportsTeam', name: p.takim },
+        nationality: p.milliyet,
+      }) }} />
+      <PlayerProfile p={p} allPlayers={allPlayers} />
+    </>
+  );
 }
