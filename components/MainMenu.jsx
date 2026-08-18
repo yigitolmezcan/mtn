@@ -8,6 +8,8 @@ const MENU = [
   { key: 'onesToWatch', labelKey: 'onesToWatch', href: '/ones-to-watch' },
   { key: 'teams', labelKey: 'menuTeams', href: '/takimlar', teams: true },
   { key: 'archetypes', labelKey: 'menuArchetypes', href: '/arketipler' },
+  { key: 'bestShooters', label: 'Best Shooters', href: '/liste/best-shooters' },
+  { key: 'mostAthletic', label: 'Most Athletic', href: '/liste/most-athletic' },
 ];
 
 export default function MainMenu({ teams = [] }) {
@@ -56,11 +58,11 @@ export default function MainMenu({ teams = [] }) {
                     className="mainmenu__link"
                     onClick={() => setExpanded(expanded === item.key ? null : item.key)}
                   >
-                    {t[item.labelKey]}
+                    {item.label || t[item.labelKey]}
                   </button>
                 ) : (
                   <Link href={item.href} className="mainmenu__link" onClick={() => setOpen(false)}>
-                    {t[item.labelKey]}
+                    {item.label || t[item.labelKey]}
                   </Link>
                 )}
                 {(item.children || item.teams) && (
