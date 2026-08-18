@@ -68,6 +68,8 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
   const { lang, t } = useLang();
   const ArketipIcon = p.arketip ? ARCHETYPE_ICONS[p.arketip] : null;
   const [cinematic, setCinematic] = useState(false);
+  const [playing, setPlaying] = useState(false);
+  const videoId = p.youtubeUrl ? getYoutubeId(p.youtubeUrl) : null;
 
   const teammates = allPlayers.filter(
     (tm) => tm.takimSlug === p.takimSlug && tm.slug !== p.slug && tm.lig === p.lig
@@ -231,13 +233,20 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
         <div className="lbl">{t.watch}</div>
         {p.youtubeUrl ? (
           <div className={`hl-embed${cinematic ? ' hl-embed--wide' : ''}`}>
-            <iframe
-              src={`https://www.youtube.com/embed/${getYoutubeId(p.youtubeUrl)}`}
-              title={`${p.ad} highlights`}
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            {!playing ? (
+              <button className="hl-facade" onClick={() => setPlaying(true)}>
+                <img src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`} alt="" />
+                <span className="hl-facade__play">▶</span>
+              </button>
+            ) : (
+              <iframe
+                src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                title={`${p.ad} highlights`}
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            )}
           </div>
         ) : (
           <button className="hl" disabled>
