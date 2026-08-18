@@ -31,14 +31,15 @@ function fileToDataUri(absPath, mime) {
   return `data:${mime};base64,${buf.toString('base64')}`;
 }
 
-// Satori (next/og'un render motoru) AVIF'i çözemeyip çöküyor, bu yüzden
-// AVIF kaynaklar request anında sharp ile PNG'ye çevrilip öyle veriliyor.
+// Satori (next/og'un render motoru) AVIF ve WebP'yi çözemeyip sessizce
+// çöküyor ("u2 is not iterable" gibi anlamsız bir hatayla), bu yüzden bu
+// formattaki kaynaklar request anında sharp ile PNG'ye çevrilip öyle veriliyor.
 async function findPlayerPhoto(slug) {
   const exts = [['png', 'image/png'], ['jpg', 'image/jpeg'], ['webp', 'image/webp'], ['avif', 'image/avif']];
   for (const [ext, mime] of exts) {
     const p = join(process.cwd(), 'public', 'players', `${slug}.${ext}`);
     if (existsSync(p)) {
-      if (ext === 'avif') {
+      if (ext === 'avif' || ext === 'webp') {
         const pngBuf = await sharp(p).png().toBuffer();
         return `data:image/png;base64,${pngBuf.toString('base64')}`;
       }
@@ -83,7 +84,6 @@ export default async function Image({ params }) {
   const ring = p.takimRenk || C.court;
   const stripe1 = resolveColor(p.renk1, ring);
   const stripe2 = resolveColor(p.renk2, ring);
-  const ozet = p.ozet || '';
   const rating = p.mtnRating ? Number(p.mtnRating).toFixed(1) : '—';
 
   const photoSize = 300;
@@ -153,13 +153,6 @@ export default async function Image({ params }) {
         <div style={abs({ left: bodyLeft, top: 190, fontSize: 26, color: C.mutedDim })}>
           {p.pozisyon} · {p.takim}
         </div>
-        <div style={abs({
-          left: bodyLeft, top: 245, width: 660, fontSize: 22, fontStyle: 'italic',
-          color: C.paper, lineHeight: 1.4,
-        })}>
-          {ozet}
-        </div>
-
         <div style={abs({
           left: bodyLeft, top: 400, width: 150, height: 78, borderRadius: 12,
           background: C.court, alignItems: 'center', justifyContent: 'center',

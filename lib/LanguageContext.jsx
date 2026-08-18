@@ -9,7 +9,11 @@ export function LanguageProvider({ children }) {
 
   useEffect(() => {
     const saved = localStorage.getItem('mtn-lang');
-    if (saved === 'en' || saved === 'tr') setLang(saved);
+    if (saved === 'en' || saved === 'tr') {
+      setLang(saved);
+    } else if (typeof navigator !== 'undefined' && !navigator.language?.toLowerCase().startsWith('tr')) {
+      setLang('en');
+    }
   }, []);
 
   useEffect(() => {

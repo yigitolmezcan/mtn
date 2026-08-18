@@ -10,6 +10,7 @@ const MENU = [
   { key: 'archetypes', labelKey: 'menuArchetypes', href: '/arketipler' },
   { key: 'bestShooters', label: 'Best Shooters', href: '/liste/best-shooters' },
   { key: 'mostAthletic', label: 'Most Athletic', href: '/liste/most-athletic' },
+  { key: 'rakamlarla', label: 'Rakamlarla', href: '/rakamlarla' },
 ];
 
 export default function MainMenu({ teams = [] }) {

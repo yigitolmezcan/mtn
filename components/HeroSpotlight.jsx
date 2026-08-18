@@ -4,8 +4,41 @@ import Link from 'next/link';
 import { useLang } from '@/lib/LanguageContext';
 import { useLeague } from '@/lib/LeagueContext';
 import HeroPlayerCard from './HeroPlayerCard';
+import { curatedLists } from '@/data/curatedLists';
 
 const OTW_PICKS = ['umoja-gibson', 'marcus-bingham', 'both-gach'];
+
+function TrioSlide({ href, title, playerSlugs, players, gobtnLabel }) {
+  return (
+    <Link href={href} className="otw-trio">
+      <div className="otw-trio__header">
+        <span className="otw-trio__title">{title}</span>
+        <img src="/leagues/euroleague-icon.png" alt="" className="otw-trio__leaguebadge" />
+      </div>
+      <div className="otw-trio__grid">
+        {playerSlugs.map((slug) => {
+          const p = players.find((pl) => pl.slug === slug);
+          if (!p) return null;
+          return (
+            <div className="otw-trio__player" key={slug} style={{ '--ring': p.takimRenk }}>
+              <span className="otw-trio__photo">
+                <img
+                  src={`/players/${slug}.png`}
+                  alt=""
+                  onError={(e) => { e.currentTarget.src = `/players/${slug}.jpg`; }}
+                />
+              </span>
+              <div className="otw-trio__pname">{p.ad}</div>
+              <div className="otw-trio__pmeta">{p.pozisyon} · {p.takim}</div>
+              <div className="otw-trio__psub">{p.arketip}</div>
+            </div>
+          );
+        })}
+      </div>
+      <span className="otw-trio__gobtn"><span className="otw-trio__gobtn-label">{gobtnLabel}</span> →</span>
+    </Link>
+  );
+}
 
 export default function HeroSpotlight({ players, children }) {
   const { lang, t } = useLang();
@@ -24,8 +57,13 @@ export default function HeroSpotlight({ players, children }) {
     const list = [
       { key: 'title', type: 'title' },
     ];
-    // Ones to Watch içeriği EuroLeague'e özel — BSL modunda gösterilmiyor.
-    if (league === 'euroleague') list.push({ key: 'otw', type: 'otw' });
+    // Ones to Watch ve curated list'ler EuroLeague'e özel — BSL modunda gösterilmiyor.
+    if (league === 'euroleague') {
+      list.push({ key: 'otw', type: 'otw' });
+      Object.entries(curatedLists).forEach(([slug, curated]) => {
+        list.push({ key: `curated-${slug}`, type: 'curated', listSlug: slug, curated });
+      });
+    }
     latestPlayers.forEach((p) => list.push({ key: p.slug, type: 'player', player: p }));
     return list;
   }, [latestPlayers, league]);
@@ -97,33 +135,22 @@ export default function HeroSpotlight({ players, children }) {
                 <div className="hero__slide-default">{children}</div>
               )}
               {slide.type === 'otw' && (
-                <Link href="/ones-to-watch" className="otw-trio">
-                  <div className="otw-trio__header">
-                    <span className="otw-trio__title">{t.onesToWatch}</span>
-                    <img src="/leagues/euroleague-icon.png" alt="" className="otw-trio__leaguebadge" />
-                  </div>
-                  <div className="otw-trio__grid">
-                    {OTW_PICKS.map((slug) => {
-                      const p = players.find((pl) => pl.slug === slug);
-                      if (!p) return null;
-                      return (
-                        <div className="otw-trio__player" key={slug} style={{ '--ring': p.takimRenk }}>
-                          <span className="otw-trio__photo">
-                            <img
-                              src={`/players/${slug}.png`}
-                              alt=""
-                              onError={(e) => { e.currentTarget.src = `/players/${slug}.jpg`; }}
-                            />
-                          </span>
-                          <div className="otw-trio__pname">{p.ad}</div>
-                          <div className="otw-trio__pmeta">{p.pozisyon} · {p.takim}</div>
-                          <div className="otw-trio__psub">{p.arketip}</div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                  <span className="otw-trio__gobtn"><span className="otw-trio__gobtn-label">{t.viewFullList}</span> →</span>
-                </Link>
+                <TrioSlide
+                  href="/ones-to-watch"
+                  title={t.onesToWatch}
+                  playerSlugs={OTW_PICKS}
+                  players={players}
+                  gobtnLabel={t.viewFullList}
+                />
+              )}
+              {slide.type === 'curated' && (
+                <TrioSlide
+                  href={`/liste/${slide.listSlug}`}
+                  title={slide.curated.title}
+                  playerSlugs={slide.curated.players}
+                  players={players}
+                  gobtnLabel={t.viewFullList}
+                />
               )}
               {slide.type === 'player' && (
                 <HeroPlayerCard player={slide.player} lang={lang} />
