@@ -25,7 +25,10 @@ export default function HomeView({ players, sezon }) {
     ? buildDate.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })
     : buildDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
-  const leaguePlayers = useMemo(() => players.filter((p) => p.lig === league), [players, league]);
+  const leaguePlayers = useMemo(
+    () => players.filter((p) => p.lig === league && p.raporTuru !== 'radar'),
+    [players, league]
+  );
 
   const filteredPlayers = useMemo(() => leaguePlayers.filter(p =>
     (!posFilter || p.pozisyon.split(' / ').includes(posFilter)) &&

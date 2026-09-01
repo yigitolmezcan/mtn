@@ -48,7 +48,7 @@ export default function HeroSpotlight({ players, children }) {
   const [stageHeight, setStageHeight] = useState(null);
 
   const latestPlayers = useMemo(
-    () => players.filter((p) => p.lig === league).slice(0, 2),
+    () => players.filter((p) => p.lig === league && p.raporTuru !== 'radar').slice(0, 2),
     [players, league]
   );
 
