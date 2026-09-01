@@ -70,6 +70,11 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
   const [cinematic, setCinematic] = useState(false);
   const [playing, setPlaying] = useState(false);
   const videoId = p.youtubeUrl ? getYoutubeId(p.youtubeUrl) : null;
+  const isRadar = p.raporTuru === 'radar';
+  const potentialMap = { 'Yüksek': t.potHigh, 'Orta': t.potMid, 'Uzak': t.potFar };
+  const potentialText = potentialMap[p.euroleaguePotansiyeli] || p.euroleaguePotansiyeli;
+  const nedenRadarda = lang === 'en' ? (p.nedenRadardaEn || p.nedenRadarda) : p.nedenRadarda;
+  const neOlmasiLazim = lang === 'en' ? (p.neOlmasiLazimEn || p.neOlmasiLazim) : p.neOlmasiLazim;
 
   const teammates = allPlayers.filter(
     (tm) => tm.takimSlug === p.takimSlug && tm.slug !== p.slug && tm.lig === p.lig
@@ -139,57 +144,86 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
         </div>
       </header>
 
-      <ProfileNav onVideoClick={() => setCinematic(true)} />
+      <ProfileNav onVideoClick={() => setCinematic(true)} isRadar={isRadar} />
 
       <section className="blk wrap" id="section-ozet">
         <div className="lbl">{t.assessment}</div>
         <div className="verdict-row">
           <p className="verdict">{ozet}</p>
-          <span className="rating-holder">
-            <Rating value={p.mtnRating} size="lg" />
-            <RatingInfo />
-          </span>
+          {isRadar ? (
+            <div className="potential">
+              <span className="potential__label">{t.potentialLabel}</span>
+              <span className="potential__pill">{potentialText}</span>
+            </div>
+          ) : (
+            <span className="rating-holder">
+              <Rating value={p.mtnRating} size="lg" />
+              <RatingInfo />
+            </span>
+          )}
         </div>
         {ratingNotu && <p className="rating-note">{ratingNotu}</p>}
       </section>
 
-      {p.anahtarSoru && (
+      {isRadar && nedenRadarda && (
         <section className="blk wrap">
-          <div className="keyq">
-            <div className="keyq__label">{t.keyQuestion}</div>
-            <p className="keyq__text">
-              {lang === 'tr' ? p.anahtarSoru : p.anahtarSoruEn}
-            </p>
-          </div>
+          <div className="lbl">{t.nedenRadarda}</div>
+          <p className="verdict">{nedenRadarda}</p>
         </section>
       )}
 
-      <section className="blk wrap" id="section-transfer">
-        <div className="lbl">{t.transfer}</div>
-        <div className="transfer">
-          <div className="node">
-            <div className="node__club">{p.geldigiKulup}</div>
-            <div className="node__league">{lang === 'en' ? translateLeague(p.geldigiLig) : p.geldigiLig}</div>
-          </div>
-          <div className="link">
-            <span className="link__stem" />
-            <span className="link__arrow">↓</span>
-          </div>
-          <div className="node node--to">
-            <div className="node__club">{lang === 'en' ? p.takimEn : p.takim}</div>
-            <div className="node__league">{t.euroleagueEurope}</div>
-          </div>
-        </div>
-        {transferNotu && <p className="note">{transferNotu}</p>}
-      </section>
+      {isRadar ? (
+        neOlmasiLazim && (
+          <section className="blk wrap">
+            <div className="keyq">
+              <div className="keyq__label">{t.neOlmasiLazim}</div>
+              <p className="keyq__text">{neOlmasiLazim}</p>
+            </div>
+          </section>
+        )
+      ) : (
+        p.anahtarSoru && (
+          <section className="blk wrap">
+            <div className="keyq">
+              <div className="keyq__label">{t.keyQuestion}</div>
+              <p className="keyq__text">
+                {lang === 'tr' ? p.anahtarSoru : p.anahtarSoruEn}
+              </p>
+            </div>
+          </section>
+        )
+      )}
 
-      <section className="blk wrap" id="section-istatistik">
-        <div className="lbl">{t.stats}</div>
-        <StatBlock comp={p.featuredStats} featured featuredLabel={t.featured} lang={lang} />
-        {p.digerIstatistikler.map((c) => (
-          <StatBlock key={c.yarisma} comp={c} lang={lang} />
-        ))}
-      </section>
+      {!isRadar && (
+        <section className="blk wrap" id="section-transfer">
+          <div className="lbl">{t.transfer}</div>
+          <div className="transfer">
+            <div className="node">
+              <div className="node__club">{p.geldigiKulup}</div>
+              <div className="node__league">{lang === 'en' ? translateLeague(p.geldigiLig) : p.geldigiLig}</div>
+            </div>
+            <div className="link">
+              <span className="link__stem" />
+              <span className="link__arrow">↓</span>
+            </div>
+            <div className="node node--to">
+              <div className="node__club">{lang === 'en' ? p.takimEn : p.takim}</div>
+              <div className="node__league">{t.euroleagueEurope}</div>
+            </div>
+          </div>
+          {transferNotu && <p className="note">{transferNotu}</p>}
+        </section>
+      )}
+
+      {!isRadar && (
+        <section className="blk wrap" id="section-istatistik">
+          <div className="lbl">{t.stats}</div>
+          <StatBlock comp={p.featuredStats} featured featuredLabel={t.featured} lang={lang} />
+          {p.digerIstatistikler.map((c) => (
+            <StatBlock key={c.yarisma} comp={c} lang={lang} />
+          ))}
+        </section>
+      )}
 
       <section className="blk wrap" id="section-ozellikler">
         <div className="ledger">

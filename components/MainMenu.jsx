@@ -11,6 +11,7 @@ const MENU = [
   { key: 'bestShooters', label: 'Best Shooters', href: '/liste/best-shooters' },
   { key: 'mostAthletic', label: 'Most Athletic', href: '/liste/most-athletic' },
   { key: 'rakamlarla', label: 'Rakamlarla', href: '/rakamlarla' },
+  { key: 'radar', labelKey: 'radar', href: '/radar' },
 ];
 
 export default function MainMenu({ teams = [] }) {

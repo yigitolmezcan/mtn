@@ -19,8 +19,11 @@ export function Rating({ value, size = 'sm' }) {
 }
 
 export default function PlayerCard({ player }) {
-  const { lang } = useLang();
+  const { lang, t } = useLang();
   const ozet = lang === 'en' ? (player.ozetEn || player.ozet) : player.ozet;
+  const isRadar = player.raporTuru === 'radar';
+  const potentialMap = { 'Yüksek': t.potHigh, 'Orta': t.potMid, 'Uzak': t.potFar };
+  const potentialText = potentialMap[player.euroleaguePotansiyeli] || player.euroleaguePotansiyeli;
 
   return (
     <Link
@@ -39,8 +42,17 @@ export default function PlayerCard({ player }) {
       <p className="card__quote">{ozet}</p>
 
       <div className="card__foot">
-        <span className="card__rlbl">MtN <span lang="en">Rating</span><RatingInfo /></span>
-        <Rating value={player.mtnRating} />
+        {isRadar ? (
+          <>
+            <span className="card__rlbl">{t.potentialLabel}</span>
+            <span className="potential__pill">{potentialText}</span>
+          </>
+        ) : (
+          <>
+            <span className="card__rlbl">MtN <span lang="en">Rating</span><RatingInfo /></span>
+            <Rating value={player.mtnRating} />
+          </>
+        )}
       </div>
     </Link>
   );

@@ -37,7 +37,27 @@ sayı gibi değil.
 
 ---
 
-## 2. Uydurma yok
+## 2. Rapor Türleri
+
+Sitede iki tür rapor var, her oyuncu kaydında `raporTuru` alanıyla ayrılır:
+
+- `newcomer` — bir lige yeni gelen oyuncu. Bugüne kadarki standart yapı.
+  MtN Rating, istatistikler ve transfer bloğu bu türe özeldir.
+
+- `radar` — henüz üst seviyede olmayan, ya hiç oynamamış ya da oynayıp
+  tutunamamış oyuncu. Daha kompakt bir yapı kullanır:
+  * MtN Rating YOK → yerine `euroleaguePotansiyeli` ("Yüksek"/"Orta"/"Uzak")
+  * İstatistik bloğu YOK (haftalık takip sürdürülebilir değil)
+  * Transfer bloğu YOK (bir yere transfer olmadılar)
+  * `nedenRadarda`/`nedenRadardaEn` — bu türün can damarı, neden takip
+    ettiğimizi anlatan paragraf
+  * `neOlmasiLazim`/`neOlmasiLazimEn` — sıçraması için neyin değişmesi
+    gerektiği, tek cümle (Anahtar Soru kutusunun yerini alır)
+  Özet, güçlü/zayıf yönler, benzer oyuncular ve video aynen kalır.
+
+---
+
+## 3. Uydurma yok
 
 - Doğrulanmamış hiçbir istatistik, boy, yaş veya transfer bilgisi yazma.
 - Kaynak bulamadıysan alanı boş bırak ve kullanıcıya bunu **açıkça söyle**.
@@ -46,7 +66,7 @@ sayı gibi değil.
 
 ---
 
-## 3. Pozisyonlar
+## 4. Pozisyonlar
 
 Yalnızca şu kısaltmalar: **PG, SG, SF, PF, C**
 
@@ -58,7 +78,7 @@ Yalnızca şu kısaltmalar: **PG, SG, SF, PF, C**
 
 ---
 
-## 4. Arketipler
+## 5. Arketipler
 
 `arketip` **kapalı listedir.** Yalnızca aşağıdaki 13 değerden biri kullanılır.
 Liste dışına çıkma. Uyan bir karşılık bulamıyorsan yeni etiket uydurma —
@@ -95,7 +115,7 @@ Güncel atamalar için data/oyuncular.json dosyasına bak.
   oyuncu `Stretch Big` tanımına uyum sağlıyor.
 
 
-## 5. İsimler
+## 6. İsimler
 
 - Görünen isim = taraftarın aradığı ve tanıdığı isim → `DJ Stewart`
 - Resmî tam isim `resmiAd` alanında saklanır, sayfada görünmez → `D.J. Stewart Jr.`
@@ -105,7 +125,7 @@ Güncel atamalar için data/oyuncular.json dosyasına bak.
 
 ---
 
-## 6. Format tutarlılığı
+## 7. Format tutarlılığı
 
 | Alan | Format | Örnek |
 |---|---|---|
@@ -125,7 +145,7 @@ Güncel atamalar için data/oyuncular.json dosyasına bak.
 
 ---
 
-## 7. Scouting dili
+## 8. Scouting dili
 
 Türk basketbol scoutunun konuştuğu gibi yaz. Google Translate Türkçesi değil.
 
@@ -176,7 +196,7 @@ oyuncu başına en fazla 2 tane:
 
 ---
 
-## 8. Tek maç hikâyesi yok
+## 9. Tek maç hikâyesi yok
 
 Profil bir haber yazısı değil. "Son saniyede üç sayılık attı" gibi
 anlatılar girmez. Tekrarlanabilir özellikler yazılır:
@@ -188,7 +208,7 @@ tek maç anısı yazılamaz.
 
 ---
 
-## 9. Benzer oyuncular
+## 10. Benzer oyuncular
 
 Pozisyon eşleşmesi **yeterli değil.** Şunlara bakılır:
 
@@ -206,7 +226,7 @@ doğru benzetmeler Kevin Punter ve Jordan Loyd.
 
 ---
 
-## 10. Ana sayfa kartı vs profil sayfası
+## 11. Ana sayfa kartı vs profil sayfası
 
 **Kart bir vitrindir, scouting raporu değil.** Kartta yalnızca:
 
@@ -219,7 +239,7 @@ takım rengi şeridi · dairesel oyuncu fotoğrafı (varsa) · oyuncu adı · po
 
 ---
 
-## 11. Tasarım
+## 12. Tasarım
 
 **Değiştirme.** Tasarım dili yerleşti; yeni özellik eklerken mevcut sınıfları kullan.
 
@@ -242,7 +262,7 @@ Kulüp kimliği yalnızca takım rengi (şerit, kulüp adı) ile taşınır. Ger
 
 ---
 
-## 12. Teknik yapı
+## 13. Teknik yapı
 
 ```
 data/oyuncular.json           ← TÜM oyuncu içeriği burada
@@ -272,7 +292,7 @@ Arayüz `vurgu` kullanır. Örnek: Paris Basketball → marka `#1A1A1A`, vurgu `
 
 ---
 
-## 13. Çalışma şekli
+## 14. Çalışma şekli
 
 - **En küçük değişikliği yap.** İstenmeyen refactor yapma.
 - İlgisiz dosyalara dokunma.
@@ -284,7 +304,7 @@ Arayüz `vurgu` kullanır. Örnek: Paris Basketball → marka `#1A1A1A`, vurgu `
 
 ---
 
-## 14. İngilizce İçerik Kuralları
+## 15. İngilizce İçerik Kuralları
 
 - Her metin alanının (ozet, gucluYonler[].t, gelisimAlanlari[].t,
   transferNotu, milliyetNotu, ratingNotu) İngilizce karşılığı aynı
@@ -300,7 +320,7 @@ Arayüz `vurgu` kullanır. Örnek: Paris Basketball → marka `#1A1A1A`, vurgu `
 
 ---
 
-## 15. Yeni oyuncu eklerken kontrol listesi
+## 16. Yeni oyuncu eklerken kontrol listesi
 
 - [ ] Pozisyon PG/SG/SF/PF/C mi, role göre mi seçilmiş?
 - [ ] İsim taraftarın aradığı biçimde mi, `resmiAd` dolu mu?

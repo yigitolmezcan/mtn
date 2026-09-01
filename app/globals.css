@@ -327,6 +327,13 @@ a{color:inherit;text-decoration:none}
 .rating--lg .rating__d{font-size:15px}
 
 .rating-holder{display:inline-flex;align-items:flex-end}
+.potential{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.potential__label{font-size:10px;color:#6FA8FF;letter-spacing:.04em;text-transform:uppercase}
+.potential__pill{
+  background:rgba(111,168,255,.15);color:#6FA8FF;
+  font-family:var(--score);font-weight:700;font-size:22px;
+  padding:8px 22px;border-radius:999px;
+}
 .rinfo{position:relative;display:inline-flex;margin-left:4px}
 .rinfo__btn{background:none;border:none;padding:0;cursor:pointer;color:var(--muted-dim);display:flex}
 .rinfo__pop{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);width:200px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 10px;font-size:11px;color:var(--paper);margin-bottom:6px;z-index:20;text-align:center}
@@ -562,6 +569,7 @@ a{color:inherit;text-decoration:none}
 .ow__cmeta{font-size:11px;color:var(--muted-dim)}
 .ow__crating{font-family:var(--score);font-weight:700;color:var(--court);font-size:18px;margin-top:2px}
 .ow__crating span{font-size:11px;color:var(--muted-dim);font-weight:400}
+.ow__crating--potential{color:#6FA8FF}
 .ow__ctext{font-size:13px;color:var(--paper);font-style:italic;line-height:1.55;text-align:left;margin-top:6px}
 
 .hcard{

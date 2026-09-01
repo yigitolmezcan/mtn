@@ -29,7 +29,13 @@ export default function TeamPageView({ players, teamSlug }) {
             <div className="ow__cinfo">
               <div className="ow__cname">{p.ad}</div>
               <div className="ow__cmeta">{p.pozisyon} · {p.arketip}</div>
-              <div className="ow__crating">{p.mtnRating}<span>/10</span></div>
+              {p.raporTuru === 'radar' ? (
+                <div className="ow__crating ow__crating--potential">
+                  {{ 'Yüksek': t.potHigh, 'Orta': t.potMid, 'Uzak': t.potFar }[p.euroleaguePotansiyeli] || p.euroleaguePotansiyeli}
+                </div>
+              ) : (
+                <div className="ow__crating">{p.mtnRating}<span>/10</span></div>
+              )}
             </div>
           </Link>
         ))}

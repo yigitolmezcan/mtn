@@ -9,7 +9,7 @@ const SECTIONS = [
   { id: 'section-video', key: 'navVideo' },
 ];
 
-export default function ProfileNav({ onVideoClick }) {
+export default function ProfileNav({ onVideoClick, isRadar }) {
   const { t, lang } = useLang();
 
   function go(id, isVideo) {
@@ -24,9 +24,13 @@ export default function ProfileNav({ onVideoClick }) {
     if (isVideo) onVideoClick?.();
   }
 
+  const sections = isRadar
+    ? SECTIONS.filter((s) => s.key !== 'navTransfer' && s.key !== 'navIstatistik')
+    : SECTIONS;
+
   return (
     <nav className="pnav">
-      {SECTIONS.map((s) => (
+      {sections.map((s) => (
         <button key={s.id} className="pnav__item" onClick={() => go(s.id, s.key === 'navVideo')}>
           <span lang={lang}>{t[s.key]}</span>
         </button>
