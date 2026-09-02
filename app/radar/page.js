@@ -5,6 +5,7 @@ export const metadata = {
   title: 'Radar',
   description:
     "Avrupa'nın çeşitli liglerinden, bir üst seviyeye atlamaya aday oyuncuları takip ediyoruz.",
+  alternates: { canonical: '/radar' },
 };
 
 export default function Radar() {

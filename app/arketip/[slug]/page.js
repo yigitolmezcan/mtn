@@ -15,6 +15,7 @@ export async function generateMetadata({ params }) {
   return {
     title: arketip,
     description: archetypeDefs[arketip].tr,
+    alternates: { canonical: `/arketip/${slug}` },
   };
 }
 

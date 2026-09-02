@@ -1,11 +1,13 @@
 import './globals.css';
+import { SITE_URL } from '@/lib/site';
 import { Analytics } from '@vercel/analytics/react';
 import { LanguageProvider } from '@/lib/LanguageContext';
 import Topbar from '@/components/Topbar';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  metadataBase: new URL('https://meetnewcomers.com'),
+  metadataBase: new URL(SITE_URL),
+  alternates: { canonical: '/' },
   title: {
     default: "Meet the Newcomers — EuroLeague'in Yeni İsimleri",
     template: '%s — Meet the Newcomers',

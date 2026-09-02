@@ -5,6 +5,7 @@ export const metadata = {
   title: '26-27 Newcomer Class',
   description:
     'EuroLeague seviyesinde ilk kez test edilecek oyuncuların detaylı scouting raporları.',
+  alternates: { canonical: '/newcomer-class-26-27' },
 };
 
 export default function NewcomerClass() {

@@ -5,6 +5,7 @@ import { onesToWatch } from '@/data/onesToWatch';
 export const metadata = {
   title: 'Ones to Watch',
   description: "Avrupa'nın yeni isimleri arasından editör gözüyle dikkat çekenler.",
+  alternates: { canonical: '/ones-to-watch' },
 };
 
 const GROUPS = [

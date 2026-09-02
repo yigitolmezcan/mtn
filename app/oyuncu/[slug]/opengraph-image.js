@@ -15,6 +15,7 @@ const C = {
   mutedDim: '#5D5D66',
   lineSoft: '#1B1B20',
   court: '#E0742F',
+  radar: '#6FA8FF',
 };
 
 // data/oyuncular.json'daki bazı renk2 değerleri CSS custom property olarak
@@ -59,7 +60,7 @@ export default async function Image({ params }) {
   const { slug } = await params;
   const p = getPlayer(slug);
 
-  const packDir = join(process.cwd(), 'og-pack:');
+  const assetDir = join(process.cwd(), 'og-assets');
 
   if (!p) {
     return new ImageResponse(
@@ -70,10 +71,12 @@ export default async function Image({ params }) {
     );
   }
 
-  const regularFont = readFileSync(join(packDir, 'fonts', 'NimbusSans-Regular.otf'));
-  const boldFont = readFileSync(join(packDir, 'fonts', 'NimbusSans-Bold.otf'));
+  // Site tipografisiyle aynı: başlık/sayı Space Grotesk, küçük metin Inter.
+  const displayBold = readFileSync(join(assetDir, 'fonts', 'SpaceGrotesk-Bold.ttf'));
+  const sansRegular = readFileSync(join(assetDir, 'fonts', 'Inter-Regular.ttf'));
+  const sansSemi = readFileSync(join(assetDir, 'fonts', 'Inter-SemiBold.ttf'));
 
-  const euroleagueBadgeUri = fileToDataUri(join(packDir, 'assets', 'euroleague-badge.png'), 'image/png');
+  const euroleagueBadgeUri = fileToDataUri(join(assetDir, 'badges', 'euroleague-badge.png'), 'image/png');
   const bslBadgeUri = fileToDataUri(join(process.cwd(), 'public', 'leagues', 'bsl-icon.png'), 'image/png');
   const isBsl = p.lig === 'bsl';
 
@@ -84,7 +87,16 @@ export default async function Image({ params }) {
   const ring = p.takimRenk || C.court;
   const stripe1 = resolveColor(p.renk1, ring);
   const stripe2 = resolveColor(p.renk2, ring);
+  const isRadar = p.raporTuru === 'radar';
+  const POT_EN = { 'Yüksek': 'High', 'Orta': 'Medium', 'Düşük': 'Low' };
   const rating = p.mtnRating ? Number(p.mtnRating).toFixed(1) : '—';
+  // Radar oyuncularında rating yok; kutuda potansiyel yazıyor.
+  const kutuMetin = isRadar ? (p.euroleaguePotansiyeli || '—') : rating;
+  const kutuEtiket = isRadar ? 'EuroLeague Potential' : 'MtN Rating';
+  const kutuRenk = isRadar ? C.radar : C.court;
+  const kutuGenislik = isRadar ? 260 : 150;
+  const kutuYazi = isRadar ? 30 : 38;
+  const kutuGoster = isRadar ? (POT_EN[p.euroleaguePotansiyeli] || kutuMetin) : kutuMetin;
 
   const photoSize = 300;
   const photoLeft = 100;
@@ -97,7 +109,7 @@ export default async function Image({ params }) {
         style={{
           width: 1200, height: 630, position: 'relative', display: 'flex',
           overflow: 'hidden', background: C.ink, color: C.bone,
-          fontFamily: 'Nimbus Sans',
+          fontFamily: 'Inter',
         }}
       >
         {/* çok soluk saha çizgisi deseni */}
@@ -129,7 +141,7 @@ export default async function Image({ params }) {
               style={{ position: 'absolute', display: 'flex', width: photoSize, height: photoSize, objectFit: 'cover' }}
             />
           ) : (
-            <div style={{ display: 'flex', fontSize: 96, fontWeight: 700, color: ring }}>{initialsOf(p.ad)}</div>
+            <div style={{ display: 'flex', fontFamily: 'Space Grotesk', fontSize: 96, fontWeight: 700, color: ring }}>{initialsOf(p.ad)}</div>
           )}
         </div>
 
@@ -147,23 +159,23 @@ export default async function Image({ params }) {
         )}
 
         {/* isim / bilgi bloğu */}
-        <div style={abs({ left: bodyLeft, top: 110, right: 60, fontSize: 56, fontWeight: 700, color: C.bone, lineHeight: 1.05 })}>
+        <div style={abs({ left: bodyLeft, top: 110, right: 60, fontFamily: 'Space Grotesk', fontSize: 56, fontWeight: 700, color: C.bone, letterSpacing: -1.6, lineHeight: 1.05 })}>
           {p.ad}
         </div>
         <div style={abs({ left: bodyLeft, top: 190, fontSize: 26, color: C.mutedDim })}>
           {p.pozisyon} · {p.takim}
         </div>
         <div style={abs({
-          left: bodyLeft, top: 400, width: 150, height: 78, borderRadius: 12,
-          background: C.court, alignItems: 'center', justifyContent: 'center',
+          left: bodyLeft, top: 400, width: kutuGenislik, height: 78, borderRadius: 12,
+          background: kutuRenk, alignItems: 'center', justifyContent: 'center',
         })}>
-          <div style={{ display: 'flex', fontSize: 38, fontWeight: 700, color: C.ink }}>{rating}</div>
+          <div style={{ display: 'flex', fontFamily: 'Space Grotesk', fontSize: kutuYazi, fontWeight: 700, color: C.ink }}>{kutuGoster}</div>
         </div>
         <div style={abs({
           left: bodyLeft, top: 486, fontSize: 13, fontWeight: 700, letterSpacing: 2,
           color: C.mutedDim, textTransform: 'uppercase',
         })}>
-          MtN Rating
+          {kutuEtiket}
         </div>
 
         <div style={abs({ left: 1000, top: 594, fontSize: 13, color: C.mutedDim })}>meetnewcomers.com</div>
@@ -172,8 +184,9 @@ export default async function Image({ params }) {
     {
       ...size,
       fonts: [
-        { name: 'Nimbus Sans', data: regularFont, weight: 400, style: 'normal' },
-        { name: 'Nimbus Sans', data: boldFont, weight: 700, style: 'normal' },
+        { name: 'Inter', data: sansRegular, weight: 400, style: 'normal' },
+        { name: 'Inter', data: sansSemi, weight: 600, style: 'normal' },
+        { name: 'Space Grotesk', data: displayBold, weight: 700, style: 'normal' },
       ],
     }
   );
