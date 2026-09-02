@@ -4,12 +4,14 @@ import PlayerPhoto from './PlayerPhoto';
 import { useLang } from '@/lib/LanguageContext';
 import { playerHref } from '@/lib/playerHref';
 
+const POT_KEY = { Yüksek: 'potHigh', Orta: 'potMid', Düşük: 'potLow' };
+
 function initials(name) {
   return name.split(' ').filter(Boolean).slice(0, 2).map((w) => w[0]).join('');
 }
 
 export default function PCard({ player: p }) {
-  const { lang } = useLang();
+  const { lang, t } = useLang();
   const takim = lang === 'en' ? p.takimEn : p.takim;
 
   return (
@@ -28,10 +30,17 @@ export default function PCard({ player: p }) {
         <span lang={p.digerDil ? 'en' : 'tr'}>{takim}</span>
       </div>
       <div className="park" lang="en">{p.arketip}</div>
-      <div className="prate">
-        <b>{p.mtnRating || '—'}</b>
-        <span>MtN <span lang="en">Rating</span></span>
-      </div>
+      {p.raporTuru === 'radar' ? (
+        <div className="prate prate--radar">
+          <b>{t[POT_KEY[p.euroleaguePotansiyeli]] ?? p.euroleaguePotansiyeli ?? '—'}</b>
+          <span>{t.potentialLabel}</span>
+        </div>
+      ) : (
+        <div className="prate">
+          <b>{p.mtnRating || '—'}</b>
+          <span>MtN <span lang="en">Rating</span></span>
+        </div>
+      )}
     </Link>
   );
 }
