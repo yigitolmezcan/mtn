@@ -13,6 +13,11 @@ Türkçe bir EuroLeague scouting sitesi. Yeni transfer olan oyuncuları tanıtı
 
 **Hedef kitle:** Türk EuroLeague taraftarı, basketbol meraklısı, transfer takipçisi.
 
+**BSL ayrı bir lig modu DEĞİLDİR.** Oyuncu kayıtlarındaki `lig` alanı
+(`euroleague` / `bsl`) yalnızca bir etikettir; site tek bir havuz olarak
+çalışır. Lig seçici arayüzden kaldırıldı, oyuncular lige göre ayrı
+listelere bölünmez.
+
 **Hissiyat:** EuroLeague scouting departmanı / premium basketbol veritabanı.
 Lüks dergi değil, fintech sitesi değil, genel spor haber sitesi değil.
 
@@ -47,8 +52,12 @@ Sitede iki tür rapor var, her oyuncu kaydında `raporTuru` alanıyla ayrılır:
 - `radar` — henüz üst seviyede olmayan, ya hiç oynamamış ya da oynayıp
   tutunamamış oyuncu. Daha kompakt bir yapı kullanır:
   * MtN Rating YOK → yerine `euroleaguePotansiyeli` ("Yüksek"/"Orta"/"Uzak")
-  * İstatistik bloğu YOK (haftalık takip sürdürülebilir değil)
-  * Transfer bloğu YOK (bir yere transfer olmadılar)
+  * İstatistik bloğu VAR — ama haftalık güncellenmez; tek sezonluk sabit
+    kayıt olarak durur. `featuredStats` ve `digerIstatistikler` korunur.
+  * Transfer bloğu YOK — `transferNotu`/`transferNotuEn` veride kalabilir
+    ama Radar profilinde render EDİLMEZ
+  * Anahtar Soru kutusu YOK — `anahtarSoru`/`anahtarSoruEn` alanları
+    Radar kaydında hiç bulunmaz
   * `nedenRadarda`/`nedenRadardaEn` — bu türün can damarı, neden takip
     ettiğimizi anlatan paragraf
   * `neOlmasiLazim`/`neOlmasiLazimEn` — sıçraması için neyin değişmesi
@@ -136,10 +145,33 @@ Güncel atamalar için data/oyuncular.json dosyasına bak.
 | `mtnRating` | tek ondalık, metin | `"7.5"` |
 | `slug` | küçük harf, tire, Türkçe karakter yok | `tyson-etienne` |
 | `el` / `elEn` | Sağ/Sol veya Right/Left | `Sağ` |
-| `lig` | `euroleague` veya `bsl` | `euroleague` |
+| `lig` | `euroleague` veya `bsl` — yalnızca etiket, ayrı bir lig modu değil | `euroleague` |
+| `kariyerYolu` | `{kulup, yil}` dizisi, kulüp adları KISA form | `[{"kulup":"Wizards","yil":"2019-22"}]` |
 | `anahtarSoru` / `anahtarSoruEn` | tek soru cümlesi, EuroLeague'de standart, BSL'de henüz uygulanmıyor | — |
 
 İstatistik kısaltmaları İngilizce: **PPG, RPG, APG, BPG, SPG, FG, 3PT, FT**
+
+### `kariyerYolu`
+
+Oyuncunun kariyer duraklarını sırayla tutan dizi. Her eleman
+`{"kulup": "...", "yil": "..."}` biçimindedir. Boşsa `[]` bırakılır.
+
+```json
+"kariyerYolu": [
+  {"kulup":"Wizards","yil":"2019-22"},
+  {"kulup":"Knicks","yil":"2023-24"},
+  {"kulup":"Milano","yil":"2026-"}
+]
+```
+
+Kurallar:
+
+- **Kulüp adları kısa form yazılır.** `Washington Wizards` değil `Wizards`,
+  `Olimpia Milano` değil `Milano`, `Anadolu Efes` değil `Efes`.
+  Sebep tasarımsal: 12 duraklı bir kariyerde tam adlar sığmıyor.
+- **Son eleman her zaman mevcut kulüptür**, `yil` alanı açık uçlu
+  yazılır (`2026-`).
+- Sıralama eskiden yeniye.
 
 `ozet`/`ozetEn` kart için tek cümle olarak kalır. Profildeki Değerlendirme bölümü ayrı bir alan olan `ozetDetay`/`ozetDetayEn` kullanır (2-3 cümle, ilk cümlesi genelde `ozet` ile aynı başlar). Yeni oyuncu eklerken dört alanı da doldur.
 
@@ -259,6 +291,18 @@ Kart şeridi her kulüpte iki renkli (üst/alt split) olarak render edilir; renk
 Yeni kulüp eklerken rengi mevcut kulüplerle karşılaştır. Ton çok yakınsa (aynı "kırmızı-krem" ailesi gibi) resmi ton korunur ama `renk1`/`renk2` sırası tersine çevrilerek görsel ayrışma sağlanır.
 
 Kulüp kimliği yalnızca takım rengi (şerit, kulüp adı) ile taşınır. Gerçek kulüp logosu kullanılmıyor — kararlı bir tercih, tekrar gündeme getirilmesin.
+
+Koyu renkli kulüplerde (Beşiktaş, Partizan, Virtus Bologna gibi siyah veya
+çok koyu lacivert markalar) `renk1` neredeyse zemine karışıyor. Bu
+kulüplerde fotoğraf halkası ve kart şeridi için kulübün **ikinci** rengi
+(`renk2`) kullanılır. Kural görsel okunabilirlik içindir, marka tercihi
+değildir — kulüp adı metni yine kendi vurgu rengini kullanır.
+
+Yabancı kulüp adları Türkçe büyük harf kuralından muaftır. `text-transform:
+uppercase` uygulanan bir kulüp adı Türkçe locale'de `i` harfini `İ` yapıyor
+(`Virtus` → `VİRTUS`). Bunu önlemek için ilgili elemana `lang="en"` verilir;
+kaynağı `takimlar` içindeki `digerDil` bayrağıdır. Türk kulüpleri bayrak
+taşımaz, `lang="tr"` miras alır.
 
 ---
 
