@@ -1,5 +1,22 @@
 import './globals.css';
+import { Space_Grotesk, Inter } from 'next/font/google';
 import { SITE_URL } from '@/lib/site';
+
+// next/font fontları build sırasında self-host ediyor: Google Fonts'a
+// harici istek yok, render-blocking stylesheet yok.
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-display',
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-sans',
+  display: 'swap',
+});
 import { Analytics } from '@vercel/analytics/react';
 import { LanguageProvider } from '@/lib/LanguageContext';
 import Topbar from '@/components/Topbar';
@@ -28,15 +45,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="tr">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400..700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang="tr" className={`${spaceGrotesk.variable} ${inter.variable}`}>
       <body>
         <LanguageProvider>
           <Topbar />
