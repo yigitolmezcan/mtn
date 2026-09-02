@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meet the Newcomers — Tasarım Referansı</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --ink:#0A0A0B; --surface:#111113; --surface2:#17171A;
+  --bone:#ECEAE7; --paper:#C3C2C0; --muted:#8A8A92; --mutedd:#5D5D66;
+  --line:#25252B; --lines:#1B1B20; --court:#E0742F; --radar:#6FA8FF;
+  --team:#C8102E;
+  --display:'Space Grotesk',system-ui,sans-serif;
+  --sans:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow-x:clip}
+body{background:var(--ink);color:var(--bone);font-family:var(--sans);font-size:15px;line-height:1.5}
+body::before{content:"";position:fixed;inset:0;z-index:-1;
+  background-image:linear-gradient(var(--lines) 1px,transparent 1px),linear-gradient(90deg,var(--lines) 1px,transparent 1px);
+  background-size:36px 36px;opacity:.6}
+.wrap{width:100%;max-width:1000px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
+
+.ctrl{position:sticky;top:0;z-index:60;background:#000;border-bottom:1px solid var(--line);padding:11px 0}
+.ctrl .wrap{overflow-x:auto;scrollbar-width:none}
+.ctrl .wrap::-webkit-scrollbar{display:none}
+.ctrl .wrap{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.ctrl b{font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--mutedd);margin-right:5px}
+.cb{background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:11.5px;
+  padding:7px 14px;border-radius:6px;cursor:pointer;font-family:var(--sans)}
+.cb.on{border-color:var(--court);color:var(--court)}
+.v{display:none;padding-bottom:70px}.v.on{display:block}
+
+.topbar{border-bottom:1px solid var(--lines);position:sticky;top:53px;z-index:50;background:var(--ink)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:54px}
+.tbl{display:flex;align-items:center;gap:20px;min-width:0}
+.mark{font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:-.02em;
+  color:var(--bone);white-space:nowrap}
+.brg{display:flex;flex-direction:column;gap:4px;cursor:pointer;flex-shrink:0}
+.brg i{width:16px;height:1.5px;background:var(--muted)}
+.lng{font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--mutedd)}
+.lng b{color:var(--court)}
+.back{display:inline-flex;font-size:11px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--mutedd);padding:22px 0 0;cursor:pointer}
+
+/* ortak parçalar */
+.av{border-radius:50%;background:var(--surface2);border:3px solid var(--team);
+  display:flex;align-items:center;justify-content:center;font-family:var(--display);
+  font-weight:700;color:var(--team);position:relative;flex-shrink:0}
+.av::after{content:"";position:absolute;inset:-14px;border-radius:50%;
+  background:radial-gradient(circle,var(--team) 0%,transparent 70%);opacity:.14;z-index:-1}
+.club{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--court);font-weight:600}
+.pname{font-family:var(--display);font-weight:700;letter-spacing:-.035em;line-height:1.02}
+.ark{font-size:12.5px;color:var(--muted)}
+.rate .n{font-family:var(--display);font-weight:700;color:var(--court);line-height:1}
+.rate .l{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--mutedd)}
+.vt{display:flex;flex-direction:column;gap:2px}
+.vt dt{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--mutedd)}
+.vt dd{font-size:14px;font-variant-numeric:tabular-nums}
+.crt{width:100%;height:auto}
+.crt .ln{stroke:var(--line);fill:none;stroke-width:1.4}
+.crt .dot{fill:var(--line)}
+.crt .act{fill:var(--team)}
+
+.sec{margin-top:40px;min-width:0}
+.lb{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+  padding-bottom:11px;border-bottom:1px solid var(--lines);margin-bottom:17px;font-weight:600}
+.sec p{font-size:16px;line-height:1.72;color:var(--paper)}
+.keyq{background:rgba(224,116,47,.07);border-left:3px solid var(--court);border-radius:0 9px 9px 0;padding:19px 22px}
+.keyq .lb{border:0;padding:0;margin-bottom:8px;color:var(--court)}
+.keyq p{font-family:var(--display);font-weight:600;font-size:19.5px;line-height:1.45;color:var(--bone)}
+.led{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.led ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.led li{font-size:14.5px;color:var(--paper);display:flex;gap:10px;line-height:1.5}
+.led li::before{content:"+";color:var(--court);font-weight:700;flex-shrink:0}
+.led .neg li::before{content:"−";color:var(--mutedd)}
+.pathwrap{position:relative;max-width:100%}
+.path{display:flex;align-items:flex-start;width:100%;padding:6px 0 2px}
+.pnode{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;gap:7px;
+  text-align:center;padding:0 2px}
+.pdot{width:11px;height:11px;border-radius:50%;background:var(--line)}
+.pnode.cur .pdot{width:15px;height:15px;background:var(--court);box-shadow:0 0 0 4px rgba(224,116,47,.18)}
+.pclub{font-size:11.5px;color:var(--muted);line-height:1.28;word-break:break-word}
+.pnode.cur .pclub{color:var(--bone);font-weight:600}
+.pyear{font-size:9px;letter-spacing:.06em;color:var(--mutedd);white-space:nowrap}
+.pline{width:14px;flex:0 0 14px;height:1.5px;background:var(--line);margin-top:5px}
+.pline.cur{background:linear-gradient(90deg,var(--line),var(--court))}
+@media(max-width:700px){
+  /* dar ekranda yol dikeye döner */
+  .path{flex-direction:column;align-items:stretch;padding:2px 0}
+  .pnode{flex:none;flex-direction:row;align-items:center;gap:13px;
+    text-align:left;width:100%;padding:5px 0}
+  .pnode .pdot{flex-shrink:0}
+  .pclub{flex:1;font-size:14px;line-height:1.3}
+  .pnode.cur .pclub{font-size:14.5px}
+  .pyear{font-size:11px;color:var(--mutedd);flex-shrink:0}
+  .pline{width:1.5px;flex:none;height:14px;margin:0 0 0 4.75px;background:var(--line)}
+  .pline.cur{background:linear-gradient(180deg,var(--line),var(--court))}
+  .pnode.cur .pdot{box-shadow:0 0 0 3px rgba(224,116,47,.18)}
+}
+
+.stg{display:grid;grid-template-columns:repeat(auto-fit,minmax(88px,1fr));gap:11px}
+.st{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;text-align:center}
+.st b{display:block;font-family:var(--display);font-weight:700;font-size:23px;font-variant-numeric:tabular-nums}
+.st span{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--mutedd);margin-top:3px;display:block}
+.chips{display:flex;gap:9px;flex-wrap:wrap}
+.chip{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 15px;
+  font-size:12.5px;cursor:pointer}
+.chip:hover{border-color:var(--court)}
+.vid{aspect-ratio:16/9;background:var(--surface2);border:1px solid var(--line);border-radius:11px;
+  display:flex;align-items:center;justify-content:center;color:var(--mutedd);font-size:13px}
+.rad{--team:#0F1B4C}
+.rad .club{color:var(--radar)}
+.rad .keyq{background:rgba(111,168,255,.07);border-left-color:var(--radar)}
+.rad .keyq .lb{color:var(--radar)}
+.rad .led li::before{color:var(--radar)}
+.rad .crt .act{fill:var(--radar)}
+.rad .av{border-color:var(--radar);color:var(--radar)}
+.rad .av::after{background:radial-gradient(circle,var(--radar) 0%,transparent 70%)}
+.rad .bCard::before{background:var(--radar)}
+.rad .pnode.cur .pdot{background:var(--radar);box-shadow:0 0 0 4px rgba(111,168,255,.18)}
+.rad .pline.cur{background:linear-gradient(90deg,var(--line),var(--radar))}
+.rad .chip:hover{border-color:var(--radar)}
+.potwrap{width:100%;padding-top:15px;border-top:1px solid var(--lines);display:flex;
+  flex-direction:column;align-items:center;gap:9px}
+.potmain{display:flex;flex-direction:column;align-items:center;gap:9px;width:100%}
+.mCourt{display:none}
+.potlb{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--mutedd)}
+.potg{width:100%;max-width:180px;height:20px;display:block}
+.potv{font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--radar)}
+
+.note{background:rgba(224,116,47,.07);border-left:3px solid var(--court);padding:15px 19px;
+  margin:26px auto 0;border-radius:0 8px 8px 0;font-size:13px;color:var(--paper);line-height:1.6}
+
+/* ---------- A: SIKI KÜNYE ---------- */
+.aHead{display:flex;gap:26px;align-items:center;background:var(--surface);border:1px solid var(--line);
+  border-radius:15px;padding:24px 28px;margin-top:20px;position:relative;overflow:hidden}
+.aHead::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--team)}
+.aHead .av{width:104px;height:104px;font-size:27px}
+.aMid{flex:1;min-width:0}
+.aHead .pname{font-size:clamp(28px,4.4vw,40px);margin:5px 0 5px}
+.aVit{display:flex;gap:24px;margin-top:14px;padding-top:13px;border-top:1px solid var(--lines);flex-wrap:wrap}
+.aRight{display:flex;flex-direction:column;align-items:center;gap:14px;flex-shrink:0;padding-left:26px;
+  border-left:1px solid var(--lines)}
+.aRight .rate{text-align:center}
+.aRight .rate .n{font-size:44px}
+.aRight .crt{width:96px}
+
+/* ---------- B: KOLONLU ---------- */
+.bGrid{display:grid;grid-template-columns:264px 1fr;gap:44px;margin-top:24px;align-items:start}
+.bRail{position:sticky;top:78px;display:flex;flex-direction:column;gap:18px}
+.bCard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;
+  display:flex;flex-direction:column;align-items:center;gap:12px;position:relative;overflow:hidden}
+.bCard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--team)}
+.bCard .av{width:112px;height:112px;font-size:29px}
+.bCard .pname{font-size:22px;text-align:center}
+.bVit{display:grid;grid-template-columns:1fr 1fr;gap:13px 18px;width:100%;padding-top:14px;
+  border-top:1px solid var(--lines)}
+.bCourt{display:flex;justify-content:center;padding:4px 0}
+.bRate{display:flex;align-items:center;justify-content:center;gap:11px;width:100%;padding-top:14px;
+  border-top:1px solid var(--lines)}
+.bRate .n{font-size:36px}
+.bMain{min-width:0}
+.bMain h1{display:none}
+.bMain .sec:first-child{margin-top:0}
+
+/* ---------- C: ANLATI ---------- */
+.cTop{padding:34px 0 0}
+.cTop .club{font-size:12px}
+.cTop .pname{font-size:clamp(34px,6vw,58px);margin:8px 0 6px}
+.cSub{display:flex;align-items:center;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:13.5px}
+.cSub .dot{width:3px;height:3px;border-radius:50%;background:var(--line)}
+.cLede{font-size:19px;line-height:1.6;color:var(--bone);max-width:60ch;margin-top:26px;
+  font-family:var(--display);font-weight:400;letter-spacing:-.012em}
+.cStrip{display:flex;align-items:center;gap:30px;margin-top:30px;padding:20px 0;
+  border-top:1px solid var(--lines);border-bottom:1px solid var(--lines);flex-wrap:wrap}
+.cStrip .av{width:66px;height:66px;font-size:18px}
+.cStrip .crt{width:74px}
+.cRate{display:flex;align-items:baseline;gap:7px}
+.cRate .n{font-size:38px}
+.cRate span{font-size:12px;color:var(--mutedd)}
+.cVit{display:flex;gap:22px;flex-wrap:wrap;margin-left:auto}
+
+@media(max-width:820px){
+  .bGrid{grid-template-columns:1fr;gap:26px}
+  .bRail{position:static}
+  /* mobilde: rating / potansiyel ile saha diyagramı yan yana */
+  .bCourt{display:none}
+  .mCourt{display:block;width:92px;flex-shrink:0}
+  .potwrap,.bRate{flex-direction:row;align-items:center;gap:20px;justify-content:center}
+  .potmain{flex:1;max-width:230px}
+  .aHead{flex-direction:column;align-items:flex-start;gap:18px}
+  .aRight{flex-direction:row;padding-left:0;border-left:0;padding-top:16px;
+    border-top:1px solid var(--lines);width:100%;justify-content:space-between;align-items:center}
+  .led{grid-template-columns:1fr;gap:20px}
+  .cVit{margin-left:0}
+}
+
+
+/* ---- bölüm sayfaları ---- */
+a{color:inherit;text-decoration:none}
+h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
+/* durum seçici (sadece prototip için) */
+.ctrl{position:sticky;top:0;z-index:60;background:#000;border-bottom:1px solid var(--line);padding:11px 0}
+.bm{width:17px;height:17px;border-radius:50%;border:2.5px solid var(--court);position:relative;flex-shrink:0}
+.bm::after{content:"";position:absolute;width:2.5px;height:7px;background:var(--court);
+  border-radius:2px;right:-4px;bottom:-4px;transform:rotate(-45deg)}
+/* hero */
+.hero{padding:58px 0 44px;border-bottom:1px solid var(--lines)}
+.hlock{display:flex;align-items:center;gap:clamp(14px,2vw,22px)}
+.hlogo{height:clamp(52px,8vw,78px);width:auto;flex-shrink:0;display:block}
+.hero h1{font-size:clamp(33px,5.6vw,54px);line-height:1.02}
+.hero h1 .sf{display:block;font-weight:400;color:var(--muted)}
+.hero .lede{font-size:15.5px;color:var(--paper);max-width:50ch;margin-top:16px;line-height:1.6}
+.sblock{margin-top:30px;max-width:470px}
+.sbox{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);
+  border-radius:11px;padding:15px 19px;cursor:text}
+.sbox.act{border-color:var(--court)}
+.sbox .q{flex:1;font-size:14.5px;color:var(--mutedd)}
+.sbox .q.typed{color:var(--bone)}
+.sres{margin-top:9px;background:var(--surface);border:1px solid var(--line);border-radius:11px;
+  padding:7px;display:none}
+.sres.on{display:block}
+.sr{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:8px;cursor:pointer}
+.sr:hover{background:var(--surface2)}
+.srav{width:34px;height:34px;border-radius:50%;background:var(--surface2);border:2px solid var(--rg);
+  display:flex;align-items:center;justify-content:center;font-family:var(--display);
+  font-weight:700;font-size:11px;color:var(--rg);flex-shrink:0}
+.srt{flex:1;min-width:0}
+.srn{font-family:var(--display);font-weight:700;font-size:14px}
+.srs{font-size:11px;color:var(--mutedd);margin-top:1px}
+.srg{font-size:9px;letter-spacing:.09em;text-transform:uppercase;padding:3px 9px;border-radius:999px;
+  background:rgba(224,116,47,.12);color:var(--court)}
+.srg.r{background:rgba(111,168,255,.13);color:var(--radar)}
+.sempty{padding:20px 14px 16px}
+.sempty p{font-size:13.5px;color:var(--paper);line-height:1.55}
+.sempty p b{color:var(--bone)}
+.sempty .go{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.sempty .go span{font-size:11.5px;padding:8px 14px;border:1px solid var(--line);border-radius:8px;
+  color:var(--muted);cursor:pointer}
+.sempty .go span:hover{border-color:var(--court);color:var(--bone)}
+/* bantlar */
+.band{padding:44px 0;border-bottom:1px solid var(--lines)}
+.band .wrap{display:flex;align-items:center;gap:48px}
+.bl{flex:1;min-width:0}
+.bhead{display:flex;align-items:center;gap:13px;margin-bottom:11px}
+.bhead h2{font-size:clamp(24px,3.5vw,34px)}
+.bmark{flex-shrink:0;width:34px;height:34px;opacity:.85}
+.bmark path,.bmark circle,.bmark line,.bmark rect{stroke:var(--court);fill:none;stroke-width:1.4}
+.bmark.r path,.bmark.r circle{stroke:var(--radar)}
+.bld{font-size:14px;color:var(--paper);max-width:49ch;line-height:1.6;margin-bottom:14px}
+.bst{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--mutedd)}
+.bgo{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--court);margin-top:15px}
+.bgo.r{color:var(--radar)}
+.bv{flex-shrink:0}
+.stack{display:flex}
+.stack .f{width:84px;height:84px;border-radius:50%;background:var(--surface2);border:3px solid var(--rg);
+  margin-left:-20px;box-shadow:0 0 0 5px var(--ink);display:flex;align-items:center;justify-content:center;
+  font-family:var(--display);font-weight:700;font-size:20px;color:var(--rg);position:relative}
+.stack .f:first-child{margin-left:0}
+.stack .f::after{content:"";position:absolute;inset:-13px;border-radius:50%;
+  background:radial-gradient(circle,var(--rg) 0%,transparent 70%);opacity:.13;z-index:-1}
+.chead{padding:26px 0 22px;border-bottom:1px solid var(--lines)}
+.cback{display:inline-flex;font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--mutedd);cursor:pointer}
+.cback:hover{color:var(--bone)}
+.chead h2{font-size:clamp(24px,3.5vw,34px)}
+.cintro{font-size:14px;color:var(--paper);max-width:52ch;margin-top:9px;line-height:1.6}
+.ctools{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:22px;flex-wrap:wrap}
+.ccount{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--court)}
+.csort{background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:11px;
+  padding:8px 14px;border-radius:7px;cursor:pointer}
+.csort:hover{border-color:var(--court);color:var(--bone)}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(226px,1fr));gap:14px}
+.pcard{position:relative;overflow:hidden;background:var(--surface);border:1px solid var(--line);
+  border-radius:13px;padding:22px 17px 17px;display:flex;flex-direction:column;align-items:center;
+  text-align:center;gap:9px;cursor:pointer}
+.pcard:hover{border-color:var(--court)}
+.pstripe{position:absolute;left:0;top:0;bottom:0;width:4px;display:flex;flex-direction:column}
+.pstripe i{flex:1}
+.pav{width:88px;height:88px;border-radius:50%;background:var(--surface2);border:3px solid var(--rg);
+  display:flex;align-items:center;justify-content:center;font-family:var(--display);
+  font-weight:700;font-size:22px;color:var(--rg);position:relative}
+.pav::after{content:"";position:absolute;inset:-13px;border-radius:50%;
+  background:radial-gradient(circle,var(--rg) 0%,transparent 70%);opacity:.13;z-index:-1}
+.pmeta{font-size:11px;color:var(--mutedd)}
+.pozet{font-size:12.5px;color:var(--paper);line-height:1.45;margin-top:4px;flex:1}
+.prate{margin-top:auto;padding-top:12px;display:flex;flex-direction:column;align-items:center;gap:3px}
+.prate b{font-family:var(--display);font-weight:700;font-size:21px;color:var(--court);line-height:1}
+.prate span{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--mutedd)}
+.ogrp{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--court);
+  padding:28px 0 10px;margin-bottom:4px}
+.orow{position:relative;display:flex;gap:32px;padding:26px 28px;margin-bottom:11px;
+  background:var(--surface);border-radius:13px;align-items:flex-start;overflow:hidden}
+.orow::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--rg)}
+.orow::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(var(--lines) 1px,transparent 1px),linear-gradient(90deg,var(--lines) 1px,transparent 1px);
+  background-size:24px 24px;opacity:.35}
+.orow > *{position:relative;z-index:1}
+.ol{width:184px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;text-align:center;gap:13px}
+.oav{width:104px;height:104px;border-radius:50%;background:var(--surface2);border:3px solid var(--rg);
+  display:flex;align-items:center;justify-content:center;font-family:var(--display);
+  font-weight:700;font-size:26px;color:var(--rg);position:relative}
+.oav::after{content:"";position:absolute;inset:-15px;border-radius:50%;
+  background:radial-gradient(circle,var(--rg) 0%,transparent 70%);opacity:.14;z-index:-1}
+.onm{font-family:var(--display);font-weight:700;font-size:18px;line-height:1.15}
+.opa{font-size:12.5px;color:var(--paper);margin-top:5px}
+.oark{margin-top:11px;padding-top:11px;border-top:1px solid var(--lines);
+  display:flex;flex-direction:column;gap:4px}
+.oark span{font-size:12px;color:var(--muted);line-height:1.35}
+.oark span:first-child{color:var(--paper)}
+.ocl{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--court);font-weight:600;margin-top:6px}
+.orr{flex:1;min-width:0;padding-top:6px}
+.orr p{font-size:14.5px;line-height:1.65;color:var(--paper)}
+.ostats{display:flex;gap:26px;margin-top:16px;padding:14px 0;
+  border-top:1px solid var(--lines);border-bottom:1px solid var(--lines)}
+.ost{display:flex;flex-direction:column;gap:2px}
+.ost b{font-family:var(--display);font-weight:700;font-size:19px;font-variant-numeric:tabular-nums}
+.ost span{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--mutedd)}
+.ostl{margin-left:auto;align-self:center;font-size:9.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--mutedd)}
+.osw{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:15px}
+.osw ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+.osw li{font-size:12.5px;color:var(--muted);display:flex;gap:8px;line-height:1.4}
+.osw li::before{content:"+";color:var(--court);font-weight:700;flex-shrink:0}
+.osw .neg li::before{content:"−";color:var(--mutedd)}
+@media(max-width:700px){.osw{grid-template-columns:1fr;gap:12px}.ostats{gap:18px}}
+.obtn{display:inline-flex;align-items:center;gap:8px;background:rgba(224,116,47,.12);
+  border:1px solid rgba(224,116,47,.3);color:var(--court);font-size:11.5px;font-weight:600;
+  padding:9px 16px;border-radius:8px;cursor:pointer;font-family:var(--sans);margin-top:16px}
+.obtn:hover{background:var(--court);border-color:var(--court);color:var(--ink)}
+@media(max-width:700px){
+  .orow{flex-direction:column;gap:16px}
+  .ol{width:100%;flex-direction:row;text-align:left;align-items:center;gap:15px}
+  .oav{width:68px;height:68px;font-size:19px}
+  .orr{padding-top:0}
+}
+.orow.rad::before{background:var(--radar)}
+.opot{display:inline-block;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+  padding:5px 13px;border-radius:999px;background:rgba(111,168,255,.15);color:var(--radar);margin-top:9px}
+.opotbox{margin-top:16px;padding-top:15px;border-top:1px solid var(--lines)}
+.opotbox .lb{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mutedd)}
+.opotrow{display:flex;align-items:center;gap:15px;margin-top:12px}
+.opotgauge{width:200px;height:20px;flex-shrink:0;display:block}
+.opotval{font-size:12.5px;font-weight:700;color:var(--radar);letter-spacing:.09em;text-transform:uppercase}
+.orow.rad .osw li::before{color:var(--radar)}
+.orow.rad .obtn{background:rgba(111,168,255,.12);border-color:rgba(111,168,255,.3);color:var(--radar)}
+.orow.rad .obtn:hover{background:var(--radar);border-color:var(--radar);color:var(--ink)}
+footer{padding:28px 0 50px}
+footer p{font-size:10.5px;color:var(--mutedd);text-align:center}
+@media(max-width:760px){
+  .band .wrap{flex-direction:column;align-items:flex-start;gap:26px}
+  .bv{align-self:center}
+  .stack .f{width:68px;height:68px;font-size:16px}
+}
+/* ---- Takımlar / Arketipler ---- */
+.tlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:11px;margin-top:26px}
+.trow{display:flex;align-items:center;gap:13px;background:var(--surface);border:1px solid var(--line);
+  border-radius:11px;padding:14px 16px;cursor:pointer;position:relative;overflow:hidden}
+.trow:hover{border-color:var(--court)}
+.trow::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--tc)}
+.tnm{flex:1;font-family:var(--display);font-weight:700;font-size:15px;padding-left:6px}
+.tct{font-size:11px;color:var(--mutedd);font-variant-numeric:tabular-nums}
+.arkgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(238px,1fr));gap:13px;margin-bottom:4px}
+.acard{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;cursor:pointer}
+.acard:hover{border-color:var(--court)}
+.anm{font-family:var(--display);font-weight:700;font-size:16px;margin-bottom:7px}
+.adsc{font-size:12.5px;color:var(--muted);line-height:1.5}
+
+.s{display:none}.s.on{display:block}
+</style>
+</head>
+<body>
+<div class="ctrl"><div class="wrap">
+  <b>Ekran</b>
+  <button class="cb on" data-go="home">Ana sayfa</button>
+  <button class="cb" data-go="class">Newcomer Class</button>
+  <button class="cb" data-go="otw">Ones to Watch</button>
+  <button class="cb" data-go="radar">Radar</button>
+  <button class="cb" data-go="pnew">Oyuncu profili</button>
+  <button class="cb" data-go="prad">Radar profili</button>
+  <button class="cb" data-go="arks">Arketipler</button>
+</div></div><header class="topbar"><div class="wrap">
+  <div class="tbl">
+    <span class="brg"><i></i><i></i><i></i></span>
+    <span class="mark" data-go="home" style="cursor:pointer">Meet the Newcomers</span>
+  </div>
+  <span class="lng"><b>TR</b> / EN</span>
+</div></header><div class="s on" id="s-home"><section class="hero"><div class="wrap">
+  <div class="hlock">
+    <h1>Meet the<span class="sf">Newcomers</span></h1>
+    <img class="hlogo" alt="" src="data:image/png;base64,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VsfoADE8PDzOlbHnslZrradTaeKWNG39hZAHpfEnCVaKWMW/soBNBzTprM6yRien1q/fXtHTp0NHGyGkBFgRylHILFr0x1KdrxRESNB88+TWe/9kbUR1DK6zOsssBaySI1vXbIyCyTNAtBMUSGadECKVs5uRT7Vk53oZzJqISYbifcagV/1V2x87BtdZT4B1qQJWBu2N69bIdvQ8Bk8BQljiXiTzOYmKkEvf7tohgSISlZBbU58Z23jr7/4WzcudTpPOeoKsDRpYGbSmbno07Bu4jRC8GDKskEUv044uyricLE0gM0MRCSFkNeBo+luT2+5+o8Po9VddnWmBznqCLTvWs/jQp0rR8xVArmAdAcxMxCo1NhDYkHxKQICVahPhI5Nbbvsgst7Jv/o8YcfDddYT0NOtkvHE6kfbfVu+GcazhjXrJUKIeRRWBUQgSAQCRIJAgjWPgPWP2/HEa5rb7/2hmZJf/TfTH+h4uM56oi5XiFHWF644WlaqR7LCUgLXwLwdMl6nKL61sWGNpW7/6+dsndVZe9MiX6duprVK4n8JQOx4uM7aSwwvYU9z1+7IXNZZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZndVZnfWXr/8LdUC2zb2Vu4EAAAAASUVORK5CYII=">
+  </div>
+  <p class="lede">Avrupa basketboluna kimin geldiğini, ne getirdiğini ve kime benzediğini yazıyoruz.</p>
+
+  <div class="sblock">
+    <div class="sbox" id="sbox">
+      <span class="bm"></span>
+      <span class="q" id="sq">Oyuncu veya takım ara…</span>
+    </div>
+
+    <div class="sres" id="sres">
+      <div id="hits">
+        <div class="sr" style="--rg:#DC052D"><span class="srav">MB</span>
+          <span class="srt"><span class="srn">MarJon Beauchamp</span><span class="srs">Bayern Münih · SF</span></span></div>
+        <div class="sr" style="--rg:#0A2472"><span class="srav">MB</span>
+          <span class="srt"><span class="srn">Marcus Bingham Jr.</span><span class="srs">Fenerbahçe · C</span></span></div>
+        <div class="sr" style="--rg:#A90432"><span class="srav">CM</span>
+          <span class="srt"><span class="srn">Chimezie Metu</span><span class="srs">Galatasaray · PF / C</span></span></div>
+      </div>
+      <div id="miss" style="display:none" class="sempty">
+        <p><b>Nikola Mirotić</b> için bir rapor bulunamadı.</p>
+        <p style="color:var(--mutedd);font-size:12.5px;margin-top:6px">Bölümlere göz atabilirsin.</p>
+        <div class="go">
+          <span>26-27 Newcomer Class</span>
+          <span>Radar</span>
+          <span>Ones to Watch</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="bl">
+    <div class="bhead">
+      <svg class="bmark" viewBox="0 0 32 32">
+        <path d="M16 29.5 L13.4 21.6 L3.2 15.2 L3.2 12 L13.4 15.6 L14.1 8.2 L10.6 5.3 L10.6 3.2 L16 5.2 L21.4 3.2 L21.4 5.3 L17.9 8.2 L18.6 15.6 L28.8 12 L28.8 15.2 L18.6 21.6 Z" stroke-linejoin="round" stroke-width="1.3"/>
+      </svg>
+      <h2>26-27 Newcomer Class</h2>
+    </div>
+    <p class="bld">EuroLeague seviyesinde ilk kez test edilecek oyuncuların detaylı scouting raporları.</p>
+    <p class="bst">44 rapor</p>
+    <span class="bgo">Sınıfa gir →</span>
+  </div>
+  <div class="bv"><div class="stack">
+    <div class="f" style="--rg:#5B2A86">MS</div>
+    <div class="f" style="--rg:#6B6B72">ET</div>
+    <div class="f" style="--rg:#DC052D">MB</div>
+  </div></div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="bl">
+    <div class="bhead">
+      <svg class="bmark" viewBox="0 0 32 32">
+        <circle cx="14" cy="14" r="9.5"/>
+        <circle cx="14" cy="14" r="5" stroke-width="1.1"/>
+        <line x1="21" y1="21" x2="28" y2="28" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      <h2>Ones to Watch</h2>
+    </div>
+    <p class="bld">Avrupa'nın yeni isimleri arasından editör gözüyle dikkat çekenler.</p>
+    <p class="bst">9 oyuncu</p>
+    <span class="bgo">Seçkiye gir →</span>
+  </div>
+  <div class="bv"><div class="stack">
+    <div class="f" style="--rg:#A50044">UG</div>
+    <div class="f" style="--rg:#0A2472">MB</div>
+    <div class="f" style="--rg:#8A8A92">BG</div>
+  </div></div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="bl">
+    <div class="bhead">
+      <svg class="bmark r" viewBox="0 0 32 32">
+        <path d="M16 29 A13 13 0 0 1 16 3"/>
+        <path d="M16 25 A9 9 0 0 1 16 7"/>
+        <path d="M16 21 A5 5 0 0 1 16 11"/>
+        <circle cx="16" cy="16" r="1.8" fill="var(--radar)" stroke="none"/>
+      </svg>
+      <h2>Radar</h2>
+    </div>
+    <p class="bld">Avrupa'nın çeşitli liglerinden, bir üst seviyeye atlamaya aday oyuncuları takip ediyoruz.</p>
+    <p class="bst">18 isim</p>
+    <span class="bgo r">Radar'a gir →</span>
+  </div>
+  <div class="bv"><div class="stack">
+    <div class="f" style="--rg:#0F1B4C">MF</div>
+    <div class="f" style="--rg:#A90432">CM</div>
+    <div class="f" style="--rg:#C8102E">DM</div>
+  </div></div>
+</div></section>
+
+</div>
+
+<div class="s" id="s-class">
+<section class="chead"><div class="wrap">
+  <span class="cback">← Ana sayfa</span>
+  <div class="bhead" style="margin-top:20px">
+    <svg class="bmark" viewBox="0 0 32 32">
+      <path d="M16 29.5 L13.4 21.6 L3.2 15.2 L3.2 12 L13.4 15.6 L14.1 8.2 L10.6 5.3 L10.6 3.2 L16 5.2 L21.4 3.2 L21.4 5.3 L17.9 8.2 L18.6 15.6 L28.8 12 L28.8 15.2 L18.6 21.6 Z" stroke-linejoin="round" stroke-width="1.3"/>
+    </svg>
+    <h2>26-27 Newcomer Class</h2>
+  </div>
+  <p class="cintro">EuroLeague seviyesinde ilk kez test edilecek oyuncuların detaylı scouting raporları.</p>
+  <div class="ctools">
+    <span class="ccount">44 rapor</span>
+    <span class="csort">Güncelleme sırası ▾</span>
+  </div>
+</div></section>
+
+<section style="padding:26px 0 40px"><div class="wrap">
+  <div class="cgrid" id="cgrid"></div>
+</div></section>
+</div>
+
+<div class="s" id="s-otw">
+<section class="chead"><div class="wrap">
+  <span class="cback">← Ana sayfa</span>
+  <div class="bhead" style="margin-top:20px">
+    <svg class="bmark" viewBox="0 0 32 32">
+      <circle cx="14" cy="14" r="9.5"/>
+      <circle cx="14" cy="14" r="5" stroke-width="1.1"/>
+      <line x1="21" y1="21" x2="28" y2="28" stroke-width="2.4" stroke-linecap="round"/>
+    </svg>
+    <h2>Ones to Watch</h2>
+  </div>
+  <p class="cintro">Avrupa'nın yeni isimleri arasından editör gözüyle dikkat çekenler.</p>
+</div></section>
+
+<section style="padding:8px 0 40px"><div class="wrap">
+  <div id="otwlist"></div>
+</div></section>
+</div>
+
+<div class="s" id="s-radar">
+<section class="chead"><div class="wrap">
+  <span class="cback">← Ana sayfa</span>
+  <div class="bhead" style="margin-top:20px">
+    <svg class="bmark r" viewBox="0 0 32 32">
+      <path d="M16 29 A13 13 0 0 1 16 3"/>
+      <path d="M16 25 A9 9 0 0 1 16 7"/>
+      <path d="M16 21 A5 5 0 0 1 16 11"/>
+      <circle cx="16" cy="16" r="1.8" fill="var(--radar)" stroke="none"/>
+    </svg>
+    <h2>Radar</h2>
+  </div>
+  <p class="cintro">Avrupa'nın çeşitli liglerinden, bir üst seviyeye atlamaya aday oyuncuları takip ediyoruz.</p>
+  <div class="ctools"><span class="ccount" style="color:var(--radar)">18 isim</span></div>
+</div></section>
+
+<section style="padding:14px 0 40px"><div class="wrap">
+  <div id="radarlist"></div>
+</div></section>
+</div>
+
+<div class="s" id="s-pnew"><div class="wrap">
+  <span class="back">← 26-27 Newcomer Class</span>
+
+  <div class="bGrid">
+    <aside class="bRail">
+      <div class="bCard">
+        <span class="av">GM</span>
+        <div style="text-align:center">
+          <p class="club" lang="en">Olimpia Milano</p>
+          <h1 class="pname" style="margin:5px 0 4px">Garrison Mathews</h1>
+          <p class="ark">SG / SF · Sharpshooter</p>
+        </div>
+        <dl class="bVit">
+          <div class="vt"><dt>Boy</dt><dd>1.96 m</dd></div>
+          <div class="vt"><dt>Yaş</dt><dd>29</dd></div>
+          <div class="vt"><dt>Uyruk</dt><dd>ABD</dd></div>
+          <div class="vt"><dt>El</dt><dd>Sağ</dd></div>
+        </dl>
+        <div class="bRate rate">
+          <div class="potmain" style="flex-direction:row;align-items:baseline;gap:11px;justify-content:center">
+            <span class="n">8.0</span><span class="l">MtN<br>Rating</span>
+          </div>
+          <svg class="crt mCourt" viewBox="0 0 100 70">
+            <rect class="ln" x="30" y="0" width="40" height="24"/><circle class="ln" cx="50" cy="24" r="12"/>
+            <path class="ln" d="M 8 4 Q 50 74 92 4"/><line class="ln" x1="8" y1="4" x2="8" y2="66"/>
+            <line class="ln" x1="92" y1="4" x2="92" y2="66"/><line class="ln" x1="8" y1="66" x2="92" y2="66"/>
+            <circle class="dot" cx="50" cy="56" r="3"/><circle class="act" cx="84" cy="34" r="5"/>
+            <circle class="act" cx="16" cy="34" r="5"/><circle class="dot" cx="32" cy="12" r="3"/>
+            <circle class="dot" cx="50" cy="6" r="3"/>
+          </svg>
+        </div>
+      </div>
+      <div class="bCourt">
+        <svg class="crt" viewBox="0 0 100 70" style="max-width:158px">
+          <rect class="ln" x="30" y="0" width="40" height="24"/><circle class="ln" cx="50" cy="24" r="12"/>
+          <path class="ln" d="M 8 4 Q 50 74 92 4"/><line class="ln" x1="8" y1="4" x2="8" y2="66"/>
+          <line class="ln" x1="92" y1="4" x2="92" y2="66"/><line class="ln" x1="8" y1="66" x2="92" y2="66"/>
+          <circle class="dot" cx="50" cy="56" r="3"/><circle class="act" cx="84" cy="34" r="5"/>
+          <circle class="act" cx="16" cy="34" r="5"/><circle class="dot" cx="32" cy="12" r="3"/>
+          <circle class="dot" cx="50" cy="6" r="3"/>
+        </svg>
+      </div>
+    </aside>
+
+    <div class="bMain">
+      <section class="sec"><div class="lb">Değerlendirme</div>
+        <p>Topu elinde tutmadan hücuma değer katan, elit seviyede bir üç sayı uzmanı. Perde çıkışlarında ve topsuz hareket halinde çok hızlı şuta kalkabilen; savunmacısının bir anlık gecikmesini cezalandıracak kadar kısa bir hazırlık süresine sahip bir keskin nişancı. Buna karşın top yönlendirme ve bireysel skor yaratma kapasitesi sınırlı.</p></section>
+
+      <section class="sec keyq"><div class="lb">Anahtar Soru</div>
+        <p>Elit NBA şutunu EuroLeague'e taşırken savunmada rakiplerin sürekli hedeflediği oyuncuya dönüşmeden sahada kalabilecek mi?</p></section>
+
+      <section class="sec"><div class="lb">Kariyer Yolu</div>
+    <div class="pathwrap"><div class="path"></div></div>
+    </section>
+
+  <section class="sec"><div class="lb">Transfer Notu</div>
+        <p>NBA'de dört farklı takımla 329 normal sezon maçına çıktı. Draft edilmemiş bir oyuncunun yedi sezon boyunca NBA rotasyonunda kalabilmesinin temel nedeni, yıllar içinde geliştirdiği tek ama son derece değerli elit beceri oldu: üç sayı şutu.</p></section>
+
+      <section class="sec"><div class="lb">İstatistikler · NBA 2025-26</div>
+        <div class="stg"><div class="st"><b>5.2</b><span>PPG</span></div>
+        <div class="st"><b>1.1</b><span>RPG</span></div>
+        <div class="st"><b>37.0</b><span>3PT%</span></div></div></section>
+
+      <section class="sec"><div class="lb">Güçlü ve Zayıf Yönler</div>
+        <div class="led">
+          <ul><li>Hareketli üçlük tehdidi</li><li>Topsuz hareket</li><li>Düşük kullanımla yüksek etki</li></ul>
+          <ul class="neg"><li>Sınırlı hücum yaratıcılığı</li><li>Perde takibinde zorlanma</li><li>Savunmada yatay hız</li></ul>
+        </div></section>
+
+      <section class="sec"><div class="lb">Benzer Oyuncular</div>
+        <div class="chips"><span class="chip">Kyle Kuric</span><span class="chip">Jaycee Carroll</span></div></section>
+
+      <section class="sec"><div class="lb">İzle</div><div class="vid">▶ Highlights</div></section>
+    </div>
+  </div>
+
+  </div></div>
+
+<div class="s rad" id="s-prad"><div class="wrap">
+  <span class="back">← Radar</span>
+
+  <div class="bGrid">
+    <aside class="bRail">
+      <div class="bCard">
+        <span class="av">MF</span>
+        <div style="text-align:center">
+          <p class="club">Bahçeşehir Koleji</p>
+          <h1 class="pname" style="margin:5px 0 4px">Malachi Flynn</h1>
+          <p class="ark">PG · Scoring Point Guard</p>
+        </div>
+        <dl class="bVit">
+          <div class="vt"><dt>Boy</dt><dd>1.85 m</dd></div>
+          <div class="vt"><dt>Yaş</dt><dd>28</dd></div>
+          <div class="vt"><dt>Uyruk</dt><dd>ABD / Türkiye</dd></div>
+          <div class="vt"><dt>El</dt><dd>Sağ</dd></div>
+        </dl>
+        <div class="potwrap">
+          <div class="potmain">
+          <span class="potlb">EuroLeague Potansiyeli</span>
+          <svg class="potg" viewBox="0 0 200 20" preserveAspectRatio="none">
+            <defs><clipPath id="wgr"><polygon points="0,18 200,2 200,18"/></clipPath></defs>
+            <g clip-path="url(#wgr)">
+              <rect x="0" y="0" width="200" height="20" fill="#25252B"/>
+              <rect x="0" y="0" width="200" height="20" fill="#6FA8FF"/>
+              <rect x="66" y="0" width="1.5" height="20" fill="#0A0A0B"/>
+              <rect x="133" y="0" width="1.5" height="20" fill="#0A0A0B"/>
+            </g></svg>
+          <span class="potv">Yüksek</span>
+          </div>
+          <svg class="crt mCourt" viewBox="0 0 100 70">
+            <rect class="ln" x="30" y="0" width="40" height="24"/><circle class="ln" cx="50" cy="24" r="12"/>
+            <path class="ln" d="M 8 4 Q 50 74 92 4"/><line class="ln" x1="8" y1="4" x2="8" y2="66"/>
+            <line class="ln" x1="92" y1="4" x2="92" y2="66"/><line class="ln" x1="8" y1="66" x2="92" y2="66"/>
+            <circle class="act" cx="50" cy="56" r="5"/><circle class="dot" cx="84" cy="34" r="3"/>
+            <circle class="dot" cx="16" cy="34" r="3"/><circle class="dot" cx="32" cy="12" r="3"/>
+            <circle class="dot" cx="50" cy="6" r="3"/>
+          </svg>
+        </div>
+      </div>
+      <div class="bCourt">
+        <svg class="crt" viewBox="0 0 100 70" style="max-width:158px">
+          <rect class="ln" x="30" y="0" width="40" height="24"/><circle class="ln" cx="50" cy="24" r="12"/>
+          <path class="ln" d="M 8 4 Q 50 74 92 4"/><line class="ln" x1="8" y1="4" x2="8" y2="66"/>
+          <line class="ln" x1="92" y1="4" x2="92" y2="66"/><line class="ln" x1="8" y1="66" x2="92" y2="66"/>
+          <circle class="act" cx="50" cy="56" r="5"/><circle class="dot" cx="84" cy="34" r="3"/>
+          <circle class="dot" cx="16" cy="34" r="3"/><circle class="dot" cx="32" cy="12" r="3"/>
+          <circle class="dot" cx="50" cy="6" r="3"/>
+        </svg>
+      </div>
+    </aside>
+
+    <div class="bMain">
+      <section class="sec"><div class="lb">Değerlendirme</div>
+        <p>Perde kullanımı ve pull-up şutuyla kendi skorunu yaratabilen, oyun kurmayı da dengeleyen kompakt bir oyun kurucu. Topu elinde tutarak hücumu yönetiyor, ikili oyunlarda hem şut hem pas seçeneğini açık tutuyor. Boyu savunmada dezavantaj yaratsa da, hücumdaki karar hızı ve şut menzili bunu telafi ediyor.</p></section>
+
+      <section class="sec keyq"><div class="lb">Ne Olması Lazım?</div>
+        <p>Doğru teklifin gelmesi; eksik olan yetenek değil, fırsat.</p></section>
+
+      <section class="sec"><div class="lb">Kariyer Yolu</div>
+        <div class="pathwrap"><div class="path" data-path="flynn"></div></div></section>
+
+      <section class="sec"><div class="lb">Neden Radarda?</div>
+        <p>Bu listedeki en hazır isim. Avrupa'daki ilk sezonunda EuroCup'ta All-EuroCup Birinci Beş'e seçildi ve sezon içinde birden fazla EuroLeague kulübünün ilgisini çekti. Yine de Bahçeşehir'de kalmayı seçti. Türk pasaportuna sahip olması onu Türk kulüpleri için ayrıca değerli kılıyor; yabancı kontenjanını işgal etmeden EuroLeague seviyesinde oyun kurabilecek bir isim. Sorun yetenek değil, doğru fırsatın gelmesi.</p></section>
+
+      <section class="sec"><div class="lb">İstatistikler · EuroCup 2025-26</div>
+        <div class="stg"><div class="st"><b>17.8</b><span>PPG</span></div>
+        <div class="st"><b>3.9</b><span>RPG</span></div>
+        <div class="st"><b>3.9</b><span>APG</span></div></div></section>
+
+      <section class="sec"><div class="lb">Güçlü ve Zayıf Yönler</div>
+        <div class="led">
+          <ul><li>Kendi şutunu yaratma</li><li>Skor ve pas dengesi</li><li>Türk pasaportu avantajı</li></ul>
+          <ul class="neg"><li>Fiziksel dezavantaj</li><li>EuroLeague temposunda test edilmemiş</li><li>Savunmada hedef olma riski</li></ul>
+        </div></section>
+
+      <section class="sec"><div class="lb">Benzer Oyuncular</div>
+        <div class="chips"><span class="chip">Shane Larkin</span></div></section>
+
+      <section class="sec"><div class="lb">İzle</div><div class="vid">▶ Highlights</div></section>
+    </div>
+  </div>
+
+  </div></div>
+
+<div class="s" id="s-arks"><div class="wrap">
+  <span class="back" data-go="home">← Ana sayfa</span>
+  <div class="bhead" style="margin-top:20px"><h2>Arketipler</h2></div>
+  <p class="cintro">Oyuncuları tanımlarken kullandığımız 13 arketip ve her birinin ne anlama geldiği.</p>
+  <div id="arkgrid"></div>
+</div></div>
+
+<div class="s" id="s-ark"><div class="wrap">
+  <span class="back" data-go="arks">← Arketipler</span>
+  <div class="bhead" style="margin-top:20px"><h2>Sharpshooter</h2></div>
+  <p class="cintro">Kimliğini büyük ölçüde dış şuttan alan, yüksek hacimli ve isabetli bir nişancı.</p>
+  <div class="ctools"><span class="ccount">4 oyuncu</span></div>
+  <div class="cgrid" id="arkgrid2"></div>
+</div></div>
+<footer><div class="wrap">
+  <p>Bağımsız editoryal proje. meetnewcomers.com</p>
+</div></footer><script>
+var S={
+ idle:function(){document.getElementById('sq').textContent='Oyuncu veya takım ara…';
+   document.getElementById('sq').classList.remove('typed');
+   document.getElementById('sbox').classList.remove('act');
+   document.getElementById('sres').classList.remove('on');},
+ hit:function(){document.getElementById('sq').textContent='m b';
+   document.getElementById('sq').classList.add('typed');
+   document.getElementById('sbox').classList.add('act');
+   document.getElementById('sres').classList.add('on');
+   document.getElementById('hits').style.display='block';
+   document.getElementById('miss').style.display='none';},
+ miss:function(){document.getElementById('sq').textContent='mirotic';
+   document.getElementById('sq').classList.add('typed');
+   document.getElementById('sbox').classList.add('act');
+   document.getElementById('sres').classList.add('on');
+   document.getElementById('hits').style.display='none';
+   document.getElementById('miss').style.display='block';}
+};
+var CP=[
+ ["MB","MarJon Beauchamp","SF · Bayern Münih","Patlayıcı atletizmi ve açık sahadaki bitiriciliğiyle iki yönlü bir kanat.","8.5","#DC052D","#ECEAE7"],
+ ["MS","Max Shulga","PG / SG · Real Madrid","Şut tehdidini oyun görüşü ve doğru kararlarla birleştiren combo guard.","7.5","#5B2A86","#ECEAE7"],
+ ["ET","Ethan Thompson","SG · Partizan","Güçlü gövdesini bireysel skor üretimiyle birleştiren fiziksel bir guard.","8.0","#ECEAE7","#0A0A0B"],
+ ["DR","Daron Russell","PG · Anadolu Efes","Patlayıcı ilk adımı ve derin şut menziliyle yüksek tempoda skor üreten oyun kurucu.","7.5","#0B2C6B","#ECEAE7"],
+ ["GM","Garrison Mathews","SG / SF · Olimpia Milano","Topu elinde tutmadan hücuma değer katan elit bir üç sayı uzmanı.","8.0","#C8102E","#ECEAE7"],
+ ["KW","Keaton Wallace","PG / SG · Maccabi","Çabuk ayakları ve yıpratıcı top baskısıyla etkili iki yönlü bir guard.","8.0","#F2D42E","#0A0A0B"],
+ ["JJ","Johnny Juzang","SF / SG · Fenerbahçe","Şut özelliğiyle öne çıkan, yay gerisinden yüksek isabet yakalayan skorer kanat.","8.0","#0A2472","#F2D42E"],
+ ["TF","Trent Frazier","PG / SG · Virtus Bologna","İstikrarlı üçlük atan, iyi delici ve düşük top kaybı oranıyla dikkat çeken guard.","8.5","#000000","#ECEAE7"]
+];
+document.getElementById('cgrid').innerHTML=CP.map(function(p){
+  return '<div class="pcard" style="--rg:'+p[5]+'">'+
+   '<span class="pstripe"><i style="background:'+p[5]+'"></i><i style="background:'+p[6]+'"></i></span>'+
+   '<span class="pav">'+p[0]+'</span>'+
+   '<div class="pname">'+p[1]+'</div><div class="pmeta">'+p[2]+'</div>'+
+   '<div class="pozet">'+p[3]+'</div>'+
+   '<div class="prate"><b>'+p[4]+'</b><span>MtN Rating</span></div></div>';
+}).join('');
+
+var OTW=[
+ ["Guardlar",[
+  ["UG","Umoja Gibson","PG · Combo Guard","FC Barcelona","#A50044",1,
+   "Bu sezonki tüm sınıfta, sayı, asist ve top çalmada aynı anda ilk 10'a giren sadece iki EuroCup oyuncusundan biri olması onu listeye taşıyan asıl sebep. Barcelona'nın yeniden kurulan oyun kurma hattında bu üretkenliğin devam edip etmeyeceği, sınıfın en merak edilen sorularından biri.",
+   ["EuroCup 2025-26",[["14.2","PPG"],["3.1","RPG"],["4.6","APG"]]],
+   [["Hız ve patlayıcılık","Undersize oluşunu avantaja çevirme"],["Fiziksel boyut dezavantajı","Savunmada hedef olma riski"]]],
+  ["TF","Trent Frazier","PG / SG · Scoring Point Guard","Virtus Bologna","#ECEAE7",1,
+   "Sınıftaki en uzun ve en emek verilmiş yolculuğa sahip isim. Karadağ'dan başlayıp beş farklı kulüpte basamak basamak yükselerek bu seviyeye ulaşması, bu yaz aniden parlayan birçok isimden onu ayırıyor.",
+   ["VTB Ligi 2025-26",[["13.8","PPG"],["2.3","RPG"],["5.8","APG"]]],
+   [["Yayın gerisinden güvenilir isabet","Düşük top kaybı oranı"],["Sağ eliyle bitirişte zorlanma","Fiziksel guardlara karşı zorlanma"]]],
+  ["RC","RJ Cole","PG · Floor General","Olimpia Milano","#C8102E",1,
+   "Sınıfın çoğu isminden farklı olarak oyununu ikili oyunların tempo kontrolü üzerine kuruyor. Bu soğukkanlı yaklaşım, Milano'nun hücumuna diğer transferlerden farklı bir soluk getirebilir.",
+   ["EuroCup 2025-26",[["12.9","PPG"],["2.4","RPG"],["4.4","APG"]]],
+   [["Pick-and-roll zekâsı","Kritik anlarda soğukkanlılık"],["Savunmada boy dezavantajı","Elit patlayıcılık eksikliği"]]]]],
+ ["Forvetler",[
+  ["DS","DJ Stewart","SF / SG · Athletic Forward","Baskonia","#0A2A5E",1,
+   "Sınıfın en atletik savunmacılarından biri. Smaç ve blok anlamında bu yaz gelen oyuncuların çoğundan daha gösterişli bir fiziksel repertuara sahip, Baskonia'ya değerini büyük ölçüde savunma ucundan katacak.",
+   ["EuroCup 2025-26",[["15.1","PPG"],["4.8","RPG"],["1.3","SPG"]]],
+   [["Savunma çok yönlülüğü","Atletizm ve rol esnekliği"],["Dış şut istikrarı","Yüksek hacimde verim"]]],
+  ["BG","Both Gach","SG / SF · Scoring Wing","LDLC ASVEL","#8A8A92",1,
+   "Bu sınıfta tek bir role sıkışmayan az sayıda hücumcudan biri. Hem geçişte hem yarı sahada kendi şutunu yaratabilmesi, onu aynı yaş grubundaki birçok isme göre daha tamamlanmış bir profil yapıyor.",
+   ["Basketbol Süper Ligi 2025-26",[["16.4","PPG"],["4.2","RPG"],["2.1","APG"]]],
+   [["Yüksek tempoya yatkınlık","Hızlı yakalanan dış şut ritmi"],["Karar alma tutarlılığı","Pas çeşitliliği"]]],
+  ["MP","Maozinha Pereira","SF / PF · Athletic Forward","Paris Basketball","#1A1A1A",1,
+   "Sınıfın en yüksek enerjili isimlerinden biri, açık sahada ürettiği atletizm gözle görülür bir fark yaratıyor. Ama aynı zamanda en kırılganı olanlardan da biri.",
+   ["Basketbol Süper Ligi 2025-26",[["12.7","PPG"],["6.1","RPG"],["1.1","BPG"]]],
+   [["Dikine atletizm","Açık alanda etkinlik"],["Low post savunmasında dezavantaj","Dış şut tehdidi"]]]]],
+ ["Pivotlar",[
+  ["MB","Marcus Bingham Jr.","C · Athletic Center","Fenerbahçe","#0A2472",0,
+   "Bu yaz gelen pivotlar arasında en geniş hücum repertuarına sahip isim, hem içeriden hem dışarıdan skor üretebiliyor. Saras'ın disiplinli sistemine bu kadar çok yönlü bir oyuncunun nasıl oturacağı, sınıfın en merak edilen uyum sorularından biri.",
+   ["EuroCup 2025-26",[["13.6","PPG"],["7.2","RPG"],["1.9","BPG"]]],
+   [["Hem içerden hem dışardan üretim","Dış şut ve atletizm birleşimi"],["İnce fizik","Fiziksel güç oyunlarına direnç"]]],
+  ["AW","Austin Wiley","C · Rim Protector","Bayern Münih","#DC052D",0,
+   "Sınıftaki en gösterişsiz ama en istikrarlı isimlerden biri. Farklı liglerde art arda ribaund liderliği alması, bu yaz gelen birçok pivottan farklı olarak katkısının şansa değil sürekliliğe dayandığını gösteriyor.",
+   ["EuroCup 2025-26",[["10.4","PPG"],["9.5","RPG"],["1.5","BPG"]]],
+   [["Çember savunmasında elit etki","Birden fazla ligde ribaund liderliği"],["Parmak hassasiyeti sınırlı","Low post repertuarı dar"]]],
+  ["PB","Patrick Baldwin Jr.","PF / C · Stretch Big","Kızılyıldız","#EE1C25",0,
+   "2.13 boyunda bu kadar yumuşak bir şut yeteneği, sınıfın geri kalanında neredeyse hiç yok. Riski de en yüksek isimlerden biri ama tavanı, bu yaz gelen oyuncuların çoğundan daha yüksek.",
+   ["NBA G League 2025-26",[["20.8","PPG"],["8.0","RPG"],["3.1","APG"]]],
+   [["Savunması zor pick-and-pop","2.13 boyunda perimetre becerisi"],["Fiziksel temastan kaçınma","Tekrarlayan ayak bileği sorunları"]]]]]
+];
+document.getElementById('otwlist').innerHTML=OTW.map(function(g){
+  return '<div class="ogrp">'+g[0]+'</div>'+g[1].map(function(p){
+    var club = p[5] ? '<span lang="en">'+p[3]+'</span>' : p[3];
+    var st = p[7], sw = p[8];
+    return '<div class="orow" style="--rg:'+p[4]+'">'+
+      '<div class="ol"><span class="oav">'+p[0]+'</span>'+
+      '<div><div class="onm">'+p[1]+'</div>'+
+      '<div class="ocl">'+club+'</div>'+
+      '<div class="oark"><span>'+p[2].split(' · ')[0]+'</span><span>'+p[2].split(' · ')[1]+'</span></div></div></div>'+
+      '<div class="orr"><p>'+p[6]+'</p>'+
+      '<div class="ostats">'+st[1].map(function(x){
+        return '<span class="ost"><b>'+x[0]+'</b><span>'+x[1]+'</span></span>';
+      }).join('')+'<span class="ostl">'+st[0]+'</span></div>'+
+      '<div class="osw"><ul>'+sw[0].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+
+      '<ul class="neg">'+sw[1].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></div>'+
+      '<button class="obtn">Profile git →</button></div></div>';
+  }).join('');
+}).join('');
+
+var LVL={"Uzak":1,"Orta":2,"Yüksek":3};
+function gauge(lv){
+  var w=[0,67,134,200][lv];
+  return '<svg class="opotgauge" viewBox="0 0 200 20" preserveAspectRatio="none">'+
+    '<defs><clipPath id="wg"><polygon points="0,18 200,2 200,18"/></clipPath></defs>'+
+    '<g clip-path="url(#wg)">'+
+      '<rect x="0" y="0" width="200" height="20" fill="#25252B"/>'+
+      '<rect x="0" y="0" width="'+w+'" height="20" fill="#6FA8FF"/>'+
+      '<rect x="66" y="0" width="1.5" height="20" fill="#0A0A0B"/>'+
+      '<rect x="133" y="0" width="1.5" height="20" fill="#0A0A0B"/>'+
+    '</g></svg>';
+}
+var RAD=[
+ ["MF","Malachi Flynn","PG · Scoring Point Guard","Bahçeşehir Koleji","#0F1B4C",0,"Yüksek",
+  "Perde kullanımı ve pull-up şutuyla kendi skorunu yaratabilen, oyun kurmayı da dengeleyen kompakt bir oyun kurucu. Boyu savunmada dezavantaj yaratsa da, hücumdaki karar hızı ve şut menzili bunu telafi ediyor.",
+  "Bu listedeki en hazır isim. Avrupa'daki ilk sezonunda EuroCup'ta All-EuroCup Birinci Beş'e seçildi ve sezon içinde birden fazla EuroLeague kulübünün ilgisini çekti. Yine de Bahçeşehir'de kalmayı seçti. Türk pasaportuna sahip olması onu Türk kulüpleri için ayrıca değerli kılıyor.",
+  ["EuroCup 2025-26",[["17.8","PPG"],["3.9","RPG"],["3.9","APG"]]],
+  [["Kendi şutunu yaratma","Skor ve pas dengesi","Türk pasaportu avantajı"],["Fiziksel dezavantaj","EuroLeague temposunda test edilmemiş"]]],
+ ["CM","Chimezie Metu","PF / C · Stretch Big","Galatasaray","#A90432",0,"Orta",
+  "Hem yayın gerisinden hem çemberin dibinden üretebilen, fiziksel gücü ve atletizmiyle savunması zor bir uzun. İstisnai fiziği sayesinde hem 4 hem 5 numaralara ters eşleşme yaratabiliyor.",
+  "Bu listedeki tek geri dönüş hikâyesi. Metu, Barcelona'da EuroLeague seviyesinde tutunamayan bir oyuncu değildi; tam tersine, ligi kasıp kavurduğu bir dönemde aşil tendonu koptu ve kariyerinin akışı bir anda değişti. Galatasaray sezonu, sakatlık öncesi o seviyeye geri dönüp dönemeyeceğinin cevabını verecek.",
+  ["Liga ACB 2025-26",[["14.1","PPG"],["4.5","RPG"],["50.1","2FG%"]]],
+  [["Hem içerden hem dışardan skor","4 ve 5'e ters eşleşme","Ciddi NBA tecrübesi"],["Aşil sonrası atletizm kaybı","Temastan kaçınma eğilimi"]]],
+ ["DM","Dusan Miletic","C · Post Scorer","Hapoel Jerusalem","#C8102E",1,"Orta",
+  "İki metre on üçlük gövdesini pick-and-roll devrilmelerindeki yumuşak bitiriciliğiyle birleştiren bir pivot. Hücumdaki üretimi büyük ölçüde perde sonrası çembere gidişlerden ve hücum ribaundlarından geliyor.",
+  "Cluj'da geçirdiği sezon, kariyerinin en görünür dönemiydi: EuroCup'ın ribaund sıralamasında dördüncü sırayı aldı, ABA Ligi'nin blok liderliğini kazandı. Hapoel Jerusalem'de Saša Obradović'in altında oynayacak olması, ilk kez üst düzey bir koçun elinde gelişme fırsatı demek.",
+  ["EuroCup 2025-26",[["12.6","PPG"],["7.6","RPG"],["2.3","APG"]]],
+  [["Ribaund hacmi","Çember koruması","Devrilmelerde yumuşak bitiricilik"],["Yatay hareket sınırı","Dış şut tehdidi yokluğu"]]]
+];
+document.getElementById('radarlist').innerHTML=RAD.map(function(p){
+  var club = p[5] ? '<span lang="en">'+p[3]+'</span>' : p[3];
+  var st=p[9], sw=p[10];
+  return '<div class="orow rad" style="--rg:'+p[4]+'">'+
+    '<div class="ol"><span class="oav">'+p[0]+'</span>'+
+    '<div><div class="onm">'+p[1]+'</div>'+
+    '<div class="ocl">'+club+'</div>'+
+    '<div class="oark"><span>'+p[2].split(' · ')[0]+'</span><span>'+p[2].split(' · ')[1]+'</span></div></div></div>'+
+    '<div class="orr"><p>'+p[7]+'</p>'+
+    '<div class="ostats">'+st[1].map(function(x){
+      return '<span class="ost"><b>'+x[0]+'</b><span>'+x[1]+'</span></span>';
+    }).join('')+'<span class="ostl">'+st[0]+'</span></div>'+
+    '<div class="opotbox"><div class="lb">EuroLeague Potansiyeli</div>'+
+    '<div class="opotrow">'+gauge(LVL[p[6]])+
+    '<span class="opotval">'+p[6]+'</span></div></div>'+
+    '<div class="osw"><ul>'+sw[0].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+
+    '<ul class="neg">'+sw[1].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></div>'+
+    '<button class="obtn">Profile git →</button></div></div>';
+}).join('');
+
+var C7=[["Go-Go","2019-20"],["Wizards","2019-22"],["Vipers","2022"],["Rockets","2022-23"],
+        ["Hawks","2023-25"],["Pacers","2025-26"],["Milano","2026-"]];
+var C12=[["Go-Go","2019-20"],["Wizards","2019-22"],["Vipers","2022"],["Rockets","2022-23"],
+        ["Hawks","2023-24"],["Legends","2024"],["Pistons","2024-25"],["Blue Coats","2025"],
+        ["Pacers","2025-26"],["Zalgiris","2026"],["Valencia","2026"],["Milano","2026-"]];
+function drawPath(list){
+  var h='';
+  list.forEach(function(n,i){
+    var last = i===list.length-1;
+    if(i) h+='<div class="pline'+(last?' cur':'')+'"></div>';
+    h+='<div class="pnode'+(last?' cur':'')+'"><span class="pdot"></span>'+
+       '<span class="pclub" lang="en">'+n[0]+'</span><span class="pyear">'+n[1]+'</span></div>';
+  });
+  [].forEach.call(document.querySelectorAll('.path:not([data-path])'),function(el){el.innerHTML=h});
+}
+drawPath(C7);
+var FLY=[["Raptors","2020-23"],["Knicks","2023-24"],["Pistons","2024"],
+         ["Austin Spurs","2024-25"],["Hornets","2025"],["Bahçeşehir","2025-"]];
+(function(){
+  var el=document.querySelector('[data-path="flynn"]'), h='';
+  FLY.forEach(function(n,i){
+    var last=i===FLY.length-1;
+    if(i) h+='<div class="pline'+(last?' cur':'')+'"></div>';
+    h+='<div class="pnode'+(last?' cur':'')+'"><span class="pdot"></span>'+
+       '<span class="pclub">'+n[0]+'</span><span class="pyear">'+n[1]+'</span></div>';
+  });
+  el.innerHTML=h;
+})();
+
+
+
+var ARKS=[["Guards",["Floor General","Oyunu yöneten, pas önceliği yüksek oyun kurucu."],
+ ["Combo Guard","Hem skor üretebilen hem oyun kurabilen guard."],
+ ["Scoring Point Guard","Asıl kimliği skor üretmek olan oyun kurucu."],
+ ["Slasher","Çembere agresif gidişleriyle öne çıkan guard."],
+ ["Sharpshooter","Kimliğini dış şuttan alan, yüksek hacimli nişancı."]],
+ ["Wings",["3&D Wing","Savunma ve dış şut üzerine kurulu kanat."],
+ ["Scoring Wing","Kendi şutunu yaratabilen, birincil tehdit kanat."],
+ ["Point Forward","Boyunu pas ve oyun kurma yeteneğiyle birleştiren forvet."],
+ ["Athletic Forward","Fiziksel gücünü merkeze koyan enerjik forvet."]],
+ ["Bigs",["Stretch Big","Sahayı açan, dış şut atabilen uzun."],
+ ["Athletic Center","Fiziksel üstünlüğüyle öne çıkan geleneksel pivot."],
+ ["Rim Protector","Asıl görevi çemberi korumak olan pivot."],
+ ["Post Scorer","Alçak post ve devrilmelerden skor üreten uzun."]]];
+(function(){
+  var h='';
+  ARKS.forEach(function(g){
+    h+='<div class="ogrp">'+g[0]+'</div><div class="arkgrid">';
+    for(var i=1;i<g.length;i++){
+      h+='<div class="acard" data-go="ark">'+
+         '<div class="anm">'+g[i][0]+'</div><div class="adsc">'+g[i][1]+'</div></div>';
+    }
+    h+='</div>';
+  });
+  document.getElementById('arkgrid').innerHTML=h;
+})();
+
+(function(){
+  var h=CP.slice(0,3).map(function(p){
+    return '<div class="pcard" data-go="pnew" style="--rg:'+p[5]+'">'+
+     '<span class="pstripe"><i style="background:'+p[5]+'"></i><i style="background:'+p[6]+'"></i></span>'+
+     '<span class="pav">'+p[0]+'</span>'+
+     '<div class="pname">'+p[1]+'</div><div class="pmeta">'+p[2]+'</div>'+
+     '<div class="pozet">'+p[3]+'</div>'+
+     '<div class="prate"><b>'+p[4]+'</b><span>MtN Rating</span></div></div>';
+  }).join('');
+  document.getElementById('arkgrid2').innerHTML=h;
+})();
+
+var SCREENS=['home','class','otw','radar','pnew','prad','arks','ark'];
+function go(k){
+  SCREENS.forEach(function(x){
+    var el=document.getElementById('s-'+x);
+    if(el) el.classList.toggle('on', x===k);
+  });
+  [].forEach.call(document.querySelectorAll('.ctrl .cb'),function(b){
+    b.classList.toggle('on', b.dataset.go===k);
+  });
+  window.scrollTo({top:0});
+}
+document.addEventListener('click',function(e){
+  var t=e.target.closest('[data-go]');
+  if(t){go(t.dataset.go);}
+});
+</script>
+</body>
+</html>

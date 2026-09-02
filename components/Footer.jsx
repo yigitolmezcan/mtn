@@ -6,17 +6,21 @@ export default function Footer() {
   const { t } = useLang();
 
   return (
-    <footer className="wrap sitefoot">
-      <p className="sitefoot__disclaimer">{t.disclaimer}</p>
-      <div className="sitefoot__row">
-        <a href="https://x.com/meetnewcomers" target="_blank" rel="noopener noreferrer" className="follow-btn follow-btn--plain">
-          <X size={12} strokeWidth={2} />
-          <span>Meet the Newcomers</span>
-        </a>
-        <a href="https://x.com/yolmezcan" target="_blank" rel="noopener noreferrer" className="follow-btn">
-          <X size={12} strokeWidth={2} />
-          <span>@yolmezcan</span>
-        </a>
+    <footer>
+      <div className="wrap sitefoot">
+        <p className="sitefoot__tag">{t.footerTagline}</p>
+        <p className="sitefoot__disclaimer">{t.disclaimer}</p>
+        <div className="sitefoot__row">
+          <a
+            href="https://x.com/yolmezcan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="sitefoot__x"
+          >
+            <X size={12} strokeWidth={2} />
+            <span>@yolmezcan</span>
+          </a>
+        </div>
       </div>
     </footer>
   );

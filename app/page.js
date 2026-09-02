@@ -1,8 +1,5 @@
-import HomeView from '@/components/HomeView';
-import { getAllPlayers, sezon } from '@/lib/players';
-
+// 1. aşama: kabuk. Topbar ve Footer app/layout.js'ten geliyor,
+// ekranlar sonraki aşamada kurulacak.
 export default function Home() {
-  const players = getAllPlayers();
-
-  return <HomeView players={players} sezon={sezon} />;
+  return <main className="wrap" />;
 }
