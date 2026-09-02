@@ -302,7 +302,7 @@ h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .prate span{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--mutedd)}
 .ogrp{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--court);
   padding:28px 0 10px;margin-bottom:4px}
-.orow{position:relative;display:flex;gap:32px;padding:26px 28px;margin-bottom:11px;
+.orow{position:relative;cursor:pointer;display:flex;gap:32px;padding:26px 28px;margin-bottom:11px;
   background:var(--surface);border-radius:13px;align-items:flex-start;overflow:hidden}
 .orow::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--rg)}
 .orow::after{content:"";position:absolute;inset:0;pointer-events:none;
@@ -450,7 +450,7 @@ footer{padding:30px 0 52px;border-top:1px solid var(--lines);margin-top:40px}
     </div>
     <p class="bld">EuroLeague seviyesinde ilk kez test edilecek oyuncuların detaylı scouting raporları.</p>
     <p class="bst">44 rapor</p>
-    <span class="bgo">Sınıfa gir →</span>
+    <span class="bgo">Gözat →</span>
   </div>
   <div class="bv"><div class="stack">
     <div class="f" style="--rg:#5B2A86">MS</div>
@@ -471,7 +471,7 @@ footer{padding:30px 0 52px;border-top:1px solid var(--lines);margin-top:40px}
     </div>
     <p class="bld">Avrupa'nın yeni isimleri arasından editör gözüyle dikkat çekenler.</p>
     <p class="bst">9 oyuncu</p>
-    <span class="bgo">Seçkiye gir →</span>
+    <span class="bgo">Gözat →</span>
   </div>
   <div class="bv"><div class="stack">
     <div class="f" style="--rg:#A50044">UG</div>
@@ -493,7 +493,7 @@ footer{padding:30px 0 52px;border-top:1px solid var(--lines);margin-top:40px}
     </div>
     <p class="bld">Avrupa'nın çeşitli liglerinden, bir üst seviyeye atlamaya aday oyuncuları takip ediyoruz.</p>
     <p class="bst">18 isim</p>
-    <span class="bgo r">Radar'a gir →</span>
+    <span class="bgo r">Gözat →</span>
   </div>
   <div class="bv"><div class="stack">
     <div class="f" style="--rg:#0F1B4C">MF</div>
@@ -850,7 +850,7 @@ document.getElementById('otwlist').innerHTML=OTW.map(function(g){
       }).join('')+'<span class="ostl">'+st[0]+'</span></div>'+
       '<div class="osw"><ul>'+sw[0].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+
       '<ul class="neg">'+sw[1].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></div>'+
-      '<button class="obtn">Profile git →</button></div></div>';
+      '<button class="obtn">Gözat →</button></div></div>';
   }).join('');
 }).join('');
 
@@ -900,7 +900,7 @@ document.getElementById('radarlist').innerHTML=RAD.map(function(p){
     '<span class="opotval">'+p[6]+'</span></div></div>'+
     '<div class="osw"><ul>'+sw[0].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+
     '<ul class="neg">'+sw[1].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></div>'+
-    '<button class="obtn">Profile git →</button></div></div>';
+    '<button class="obtn">Gözat →</button></div></div>';
 }).join('');
 
 var C7=[["Go-Go","2019-20"],["Wizards","2019-22"],["Vipers","2022"],["Rockets","2022-23"],

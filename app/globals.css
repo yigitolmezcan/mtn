@@ -287,7 +287,7 @@ h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .prate span{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--mutedd)}
 .ogrp{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--court);
   padding:28px 0 10px;margin-bottom:4px}
-.orow{position:relative;display:flex;gap:32px;padding:26px 28px;margin-bottom:11px;
+.orow{position:relative;cursor:pointer;display:flex;gap:32px;padding:26px 28px;margin-bottom:11px;
   background:var(--surface);border-radius:13px;align-items:flex-start;overflow:hidden}
 .orow::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--rg)}
 .orow::after{content:"";position:absolute;inset:0;pointer-events:none;
@@ -417,7 +417,19 @@ select.csort{appearance:none;font-family:var(--sans)}
 select.csort option{background:var(--surface);color:var(--bone)}
 
 /* Referansta .obtn bir <button> (içeriği kadar yer kaplar, margin-left:auto
-   onu sağa iter). Sitede gerçek bir link olduğu için <a> kullanılıyor ve
-   display:block bir <a> tüm satırı doldurup metni solda bırakıyor.
+   onu sağa iter). Sitede satırın tamamı link olduğu için .obtn bir <span>;
+   display:block bir span tüm satırı doldurup metni solda bırakıyor.
    Shrink-to-fit vererek referanstaki sağa yaslı görünüm korunuyor. */
-a.obtn{width:fit-content}
+.obtn{width:fit-content}
+
+/* YouTube facade — referansta .vid statik bir kutu, sitede oynatılabilir */
+.vid--embed{padding:0;overflow:hidden;position:relative}
+.vid__facade{width:100%;height:100%;padding:0;border:0;background:none;position:relative;display:block}
+.vid__facade img{width:100%;height:100%;object-fit:cover;display:block}
+.vid__play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-size:34px;color:var(--bone);background:rgba(10,10,11,.35)}
+.vid__facade:hover .vid__play{background:rgba(10,10,11,.15)}
+.vid--embed iframe{width:100%;height:100%;border:0;display:block}
+
+/* benzer oyuncu chip'i içindeki bilgi butonu */
+.chip{display:inline-flex;align-items:center;gap:6px}

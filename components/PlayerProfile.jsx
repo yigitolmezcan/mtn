@@ -1,297 +1,215 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-import { Rating } from '@/components/PlayerCard';
-import RatingInfo from '@/components/RatingInfo';
+import PlayerPhoto from '@/components/PlayerPhoto';
+import CourtDiagram from '@/components/CourtDiagram';
+import CareerPath from '@/components/CareerPath';
+import PotentialGauge from '@/components/PotentialGauge';
 import ChipInfo from '@/components/ChipInfo';
-import ProfileNav from '@/components/ProfileNav';
-import { ARCHETYPE_ICONS } from '@/lib/archetypeIcons';
-import PositionCourt from '@/components/PositionCourt';
-import ShareButton from '@/components/ShareButton';
 import { useLang } from '@/lib/LanguageContext';
 import { countryEn } from '@/lib/i18n';
 import { translateLeague } from '@/lib/leagueTranslate';
-import { playerHref } from '@/lib/playerHref';
+
+const POT_KEY = { Yüksek: 'potHigh', Orta: 'potMid', Düşük: 'potLow' };
+
+function initials(name) {
+  return name.split(' ').filter(Boolean).slice(0, 2).map((w) => w[0]).join('');
+}
 
 function localizeNationality(milliyet, lang) {
   if (lang !== 'en') return milliyet;
   return milliyet.split(' / ').map((c) => countryEn[c] || c).join(' / ');
 }
 
-function StatBlock({ comp, featured, featuredLabel, lang }) {
-  return (
-    <div className={`comp${featured ? '' : ' comp--minor'}`}>
-      <div className="comp__head">
-        <span lang="en">
-          {lang === 'en' ? translateLeague(comp.yarisma) : comp.yarisma} · {comp.sezon}
-        </span>
-        {featured && <span className="tag">{featuredLabel}</span>}
-      </div>
-      <div className="stats">
-        {comp.items.map(([v, k]) => (
-          <div className="stat" key={k}>
-            <div className="stat__v">{v}</div>
-            <div className="stat__k" lang="en">{k}</div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 function getYoutubeId(url) {
-  try {
-    const u = new URL(url);
-    if (u.hostname.includes('youtu.be')) return u.pathname.slice(1);
-    return u.searchParams.get('v');
-  } catch { return null; }
+  const m = url.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/);
+  return m ? m[1] : null;
 }
 
-function Ledger({ items, kind }) {
-  const sign = kind === 'plus' ? '+' : '−';
+function Section({ label, children, extra = '' }) {
   return (
-    <ul className={`ledger__list ledger__list--${kind}`}>
-      {items.map((o) => (
-        <li key={o.t}>
-          <span className="ledger__sign">{sign}</span>
-          <span>
-            {o.t}
-            {o.v && <span className="metric">{o.v}</span>}
-          </span>
-        </li>
-      ))}
-    </ul>
+    <section className={`sec${extra ? ' ' + extra : ''}`}>
+      <div className="lb">{label}</div>
+      {children}
+    </section>
   );
 }
 
-export default function PlayerProfile({ p, allPlayers = [] }) {
+export default function PlayerProfile({ p }) {
   const { lang, t } = useLang();
-  const ArketipIcon = p.arketip ? ARCHETYPE_ICONS[p.arketip] : null;
-  const [cinematic, setCinematic] = useState(false);
   const [playing, setPlaying] = useState(false);
-  const videoId = p.youtubeUrl ? getYoutubeId(p.youtubeUrl) : null;
+
   const isRadar = p.raporTuru === 'radar';
-  const potentialMap = { 'Yüksek': t.potHigh, 'Orta': t.potMid, 'Düşük': t.potLow };
-  const potentialText = potentialMap[p.euroleaguePotansiyeli] || p.euroleaguePotansiyeli;
+  const videoId = p.youtubeUrl ? getYoutubeId(p.youtubeUrl) : null;
+
+  const takim = lang === 'en' ? p.takimEn : p.takim;
+  const ozetDetay = lang === 'en' ? p.ozetDetayEn : p.ozetDetay;
+  const anahtarSoru = lang === 'en' ? p.anahtarSoruEn : p.anahtarSoru;
+  const transferNotu = lang === 'en' ? p.transferNotuEn : p.transferNotu;
   const nedenRadarda = lang === 'en' ? (p.nedenRadardaEn || p.nedenRadarda) : p.nedenRadarda;
   const neOlmasiLazim = lang === 'en' ? (p.neOlmasiLazimEn || p.neOlmasiLazim) : p.neOlmasiLazim;
+  const guclu = (lang === 'en' ? p.gucluYonlerEn : p.gucluYonler) || [];
+  const gelisim = (lang === 'en' ? p.gelisimAlanlariEn : p.gelisimAlanlari) || [];
+  const stats = p.featuredStats;
+  const pot = p.euroleaguePotansiyeli;
 
-  const teammates = allPlayers.filter(
-    (tm) => tm.takimSlug === p.takimSlug && tm.slug !== p.slug && tm.lig === p.lig
-  );
+  const backHref = isRadar ? '/radar' : '/newcomer-class-26-27';
+  const backLabel = isRadar ? t.radar : t.classTitle;
 
-  const ozet = lang === 'en' ? (p.ozetDetayEn || p.ozetEn || p.ozet) : (p.ozetDetay || p.ozet);
-  const gucluYonler = lang === 'en' ? (p.gucluYonlerEn || p.gucluYonler) : p.gucluYonler;
-  const gelisimAlanlari = lang === 'en' ? (p.gelisimAlanlariEn || p.gelisimAlanlari) : p.gelisimAlanlari;
-  const transferNotu = lang === 'en' ? (p.transferNotuEn || p.transferNotu) : p.transferNotu;
-  const milliyetNotu = lang === 'en' ? (p.milliyetNotuEn || p.milliyetNotu) : p.milliyetNotu;
-  const ratingNotu = lang === 'en' ? (p.ratingNotuEn || p.ratingNotu) : p.ratingNotu;
-  const milliyet = localizeNationality(p.milliyet, lang);
+  const court = <CourtDiagram pozisyon={p.pozisyon} className="crt mCourt" />;
 
   return (
-    <main className="profile" style={{ '--team': p.takimRenk }}>
-      <div className="wrap profile-nav">
-        <Link href="/" className="backlink">
-          ← {t.allTransfers}
-        </Link>
-        <ShareButton url={`https://meetnewcomers.com${playerHref(p.slug, lang)}`} />
-      </div>
+    <main className={`wrap${isRadar ? ' rad' : ''}`} style={{ '--team': p.halkaRenk }}>
+      <Link href={backHref} className="back">← {backLabel}</Link>
 
-      <header className="head">
-        <div className="wrap head__inner">
-          <div className="crest">
-            <div>
-              <div className="crest__name" lang={p.digerDil ? 'en' : 'tr'}>{lang === 'en' ? p.takimEn : p.takim}</div>
-              <div className="crest__meta">EuroLeague · 2026-27</div>
-            </div>
-          </div>
-
-          <div className="head__top">
-            <div className="head__idcol">
-              <h1 className="head__h1">{p.adProfil || p.ad}</h1>
-              {p.arketip && (
-                <span className="tag tag--soft">
-                  {ArketipIcon && <ArketipIcon size={14} strokeWidth={2} color="currentColor" />}
-                  <span lang="en">{p.arketip}</span>
-                </span>
-              )}
-            </div>
-            <div className="head__pos" lang="en">{p.pozisyon}</div>
-          </div>
-
-          <dl className="vitalrow">
-            <div className="vital">
-              <dt>{t.height}</dt>
-              <dd>{p.boy}</dd>
-            </div>
-            <div className="vital">
-              <dt>{t.age}</dt>
-              <dd>{p.yas}</dd>
-            </div>
-            <div className="vital">
-              <dt>{t.nationality}</dt>
-              <dd>{milliyet}</dd>
-            </div>
-            <div className="vital">
-              <dt>{t.hand}</dt>
-              <dd>{lang === 'en' ? p.elEn : p.el}</dd>
-            </div>
-          </dl>
-
-          <PositionCourt pozisyon={p.pozisyon} renk={p.takimRenk} />
-
-          {milliyetNotu && <p className="note">{milliyetNotu}</p>}
-        </div>
-      </header>
-
-      <ProfileNav onVideoClick={() => setCinematic(true)} isRadar={isRadar} />
-
-      <section className="blk wrap" id="section-ozet">
-        <div className="lbl">{t.assessment}</div>
-        <div className="verdict-row">
-          <p className="verdict">{ozet}</p>
-          {isRadar ? (
-            <div className="potential">
-              <span className="potential__label">{t.potentialLabel}</span>
-              <span className="potential__pill">{potentialText}</span>
-            </div>
-          ) : (
-            <span className="rating-holder">
-              <Rating value={p.mtnRating} size="lg" />
-              <RatingInfo />
+      <div className="bGrid">
+        <aside className="bRail">
+          <div className="bCard">
+            <span className="av">
+              <PlayerPhoto slug={p.slug} foto={p.foto} name={p.ad} size={112} fallback={initials(p.ad)} />
             </span>
+            <div style={{ textAlign: 'center' }}>
+              <p className="club" lang={p.digerDil ? 'en' : 'tr'}>{takim}</p>
+              <h1 className="pname" style={{ margin: '5px 0 4px' }}>{p.ad}</h1>
+              <p className="ark" lang="en">{p.pozisyon} · {p.arketip}</p>
+            </div>
+
+            <dl className="bVit">
+              {[
+                [t.height, p.boy],
+                [t.age, p.yas],
+                [t.nationality, localizeNationality(p.milliyet, lang)],
+                [t.hand, lang === 'en' ? (p.elEn || p.el) : p.el],
+              ]
+                // Radar kayıtlarında el bilgisi null olabiliyor; boş künye satırı gösterme
+                .filter(([, deger]) => deger)
+                .map(([etiket, deger]) => (
+                  <div className="vt" key={etiket}><dt>{etiket}</dt><dd>{deger}</dd></div>
+                ))}
+            </dl>
+
+            {isRadar ? (
+              pot && (
+                <div className="potwrap">
+                  <div className="potmain">
+                    <span className="potlb">{t.potentialLabel}</span>
+                    <PotentialGauge level={pot} className="potg" />
+                    <span className="potv">{t[POT_KEY[pot]] ?? pot}</span>
+                  </div>
+                  {court}
+                </div>
+              )
+            ) : (
+              <div className="bRate rate">
+                <div
+                  className="potmain"
+                  style={{ flexDirection: 'row', alignItems: 'baseline', gap: 11, justifyContent: 'center' }}
+                >
+                  <span className="n">{p.mtnRating || '—'}</span>
+                  <span className="l">MtN<br /><span lang="en">Rating</span></span>
+                </div>
+                {court}
+              </div>
+            )}
+          </div>
+
+          <div className="bCourt">
+            <CourtDiagram pozisyon={p.pozisyon} style={{ maxWidth: 158 }} />
+          </div>
+        </aside>
+
+        <div className="bMain">
+          {ozetDetay && (
+            <Section label={t.assessment}><p>{ozetDetay}</p></Section>
           )}
-        </div>
-        {ratingNotu && <p className="rating-note">{ratingNotu}</p>}
-      </section>
 
-      {isRadar && nedenRadarda && (
-        <section className="blk wrap">
-          <div className="lbl">{t.nedenRadarda}</div>
-          <p className="verdict">{nedenRadarda}</p>
-        </section>
-      )}
+          {isRadar
+            ? neOlmasiLazim && (
+                <Section label={t.neOlmasiLazim} extra="keyq"><p>{neOlmasiLazim}</p></Section>
+              )
+            : anahtarSoru && (
+                <Section label={t.keyQuestion} extra="keyq"><p>{anahtarSoru}</p></Section>
+              )}
 
-      {isRadar ? (
-        neOlmasiLazim && (
-          <section className="blk wrap">
-            <div className="keyq">
-              <div className="keyq__label">{t.neOlmasiLazim}</div>
-              <p className="keyq__text">{neOlmasiLazim}</p>
-            </div>
-          </section>
-        )
-      ) : (
-        p.anahtarSoru && (
-          <section className="blk wrap">
-            <div className="keyq">
-              <div className="keyq__label">{t.keyQuestion}</div>
-              <p className="keyq__text">
-                {lang === 'tr' ? p.anahtarSoru : p.anahtarSoruEn}
-              </p>
-            </div>
-          </section>
-        )
-      )}
+          {p.kariyerYolu?.length > 0 && (
+            <Section label={t.careerPath}>
+              <CareerPath duraklar={p.kariyerYolu} digerDil={p.digerDil} />
+            </Section>
+          )}
 
-      {!isRadar && (
-        <section className="blk wrap" id="section-transfer">
-          <div className="lbl">{t.transfer}</div>
-          <div className="transfer">
-            <div className="node">
-              <div className="node__club">{p.geldigiKulup}</div>
-              <div className="node__league">{lang === 'en' ? translateLeague(p.geldigiLig) : p.geldigiLig}</div>
-            </div>
-            <div className="link">
-              <span className="link__stem" />
-              <span className="link__arrow">↓</span>
-            </div>
-            <div className="node node--to">
-              <div className="node__club">{lang === 'en' ? p.takimEn : p.takim}</div>
-              <div className="node__league">{t.euroleagueEurope}</div>
-            </div>
-          </div>
-          {transferNotu && <p className="note">{transferNotu}</p>}
-        </section>
-      )}
+          {isRadar
+            ? nedenRadarda && (
+                <Section label={t.nedenRadarda}><p>{nedenRadarda}</p></Section>
+              )
+            : transferNotu && (
+                <Section label={t.transferNote}><p>{transferNotu}</p></Section>
+              )}
 
-      {!isRadar && (
-        <section className="blk wrap" id="section-istatistik">
-          <div className="lbl">{t.stats}</div>
-          <StatBlock comp={p.featuredStats} featured featuredLabel={t.featured} lang={lang} />
-          {p.digerIstatistikler.map((c) => (
-            <StatBlock key={c.yarisma} comp={c} lang={lang} />
-          ))}
-        </section>
-      )}
+          {stats && (
+            <Section
+              label={
+                <>
+                  {t.stats} · <span lang="en">{lang === 'en' ? translateLeague(stats.yarisma) : stats.yarisma} {stats.sezon}</span>
+                </>
+              }
+            >
+              <div className="stg">
+                {stats.items.map(([deger, etiket]) => (
+                  <div className="st" key={etiket}>
+                    <b>{deger}</b>
+                    <span lang="en">{etiket}</span>
+                  </div>
+                ))}
+              </div>
+            </Section>
+          )}
 
-      <section className="blk wrap" id="section-ozellikler">
-        <div className="ledger">
-          <div>
-            <div className="lbl">{t.strengths}</div>
-            <Ledger items={gucluYonler} kind="plus" />
-          </div>
-          <div>
-            <div className="lbl">{t.improve}</div>
-            <Ledger items={gelisimAlanlari} kind="minus" />
-          </div>
-        </div>
-      </section>
+          {(guclu.length > 0 || gelisim.length > 0) && (
+            <Section label={t.strengthsWeaknesses}>
+              <div className="led">
+                <ul>{guclu.map((x) => <li key={x.t}>{x.t}</li>)}</ul>
+                <ul className="neg">{gelisim.map((x) => <li key={x.t}>{x.t}</li>)}</ul>
+              </div>
+            </Section>
+          )}
 
-      <section className="blk wrap">
-        <div className="lbl">{t.comparables}</div>
-        <div className="chips">
-          {p.benzerOyuncular.map((o) => (
-            <span className="chip" key={o.isim}>
-              {o.isim}
-              <ChipInfo text={lang === 'en' ? o.nedenEn : o.neden} />
-            </span>
-          ))}
-        </div>
-      </section>
+          {p.benzerOyuncular?.length > 0 && (
+            <Section label={t.comparables}>
+              <div className="chips">
+                {p.benzerOyuncular.map((o) => (
+                  <span className="chip" key={o.isim}>
+                    {o.isim}
+                    <ChipInfo text={lang === 'en' ? o.nedenEn : o.neden} />
+                  </span>
+                ))}
+              </div>
+            </Section>
+          )}
 
-      {teammates.length > 0 && (
-        <section className="blk wrap">
-          <div className="lbl">{t.otherSignings(lang === 'en' ? p.takimEn : p.takim)}</div>
-          <div className="chips">
-            {teammates.map((tm) => (
-              <Link key={tm.slug} href={playerHref(tm.slug, lang)} className="chip chip--link">
-                {tm.ad}
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
-
-      <section className="blk wrap" id="section-video">
-        <div className="lbl">{t.watch}</div>
-        {p.youtubeUrl ? (
-          <div className={`hl-embed${cinematic ? ' hl-embed--wide' : ''}`}>
-            {!playing ? (
-              <button className="hl-facade" onClick={() => setPlaying(true)}>
-                <img src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`} alt="" />
-                <span className="hl-facade__play">▶</span>
-              </button>
+          <Section label={t.watch}>
+            {videoId ? (
+              <div className="vid vid--embed">
+                {!playing ? (
+                  <button className="vid__facade" onClick={() => setPlaying(true)} aria-label={t.watch}>
+                    <img src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`} alt="" />
+                    <span className="vid__play">▶</span>
+                  </button>
+                ) : (
+                  <iframe
+                    src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                    title={`${p.ad} highlights`}
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                )}
+              </div>
             ) : (
-              <iframe
-                src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
-                title={`${p.ad} highlights`}
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              <div className="vid">{t.highlightsSoon}</div>
             )}
-          </div>
-        ) : (
-          <button className="hl" disabled>
-            {lang === 'tr' ? (
-              <span><span lang="en">Highlights</span> eklenecek</span>
-            ) : (
-              <span>{t.highlightsSoon}</span>
-            )}
-          </button>
-        )}
-      </section>
+          </Section>
+        </div>
+      </div>
     </main>
   );
 }

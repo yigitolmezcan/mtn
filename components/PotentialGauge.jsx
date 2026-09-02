@@ -5,13 +5,13 @@ import { useId } from 'react';
 // Düşük 67, Orta 134, Yüksek 200. 66 ve 133'teki kesikler üç kademeyi işaretler.
 const WIDTH = { Düşük: 67, Orta: 134, Yüksek: 200 };
 
-export default function PotentialGauge({ level }) {
+export default function PotentialGauge({ level, className = 'opotgauge' }) {
   // Aynı sayfada birden fazla kama olduğunda clipPath id'leri çakışmasın.
   const clipId = useId().replace(/:/g, '');
   const w = WIDTH[level] ?? 0;
 
   return (
-    <svg className="opotgauge" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true">
+    <svg className={className} viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true">
       <defs>
         <clipPath id={clipId}>
           <polygon points="0,18 200,2 200,18" />

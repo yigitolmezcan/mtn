@@ -67,7 +67,7 @@ export default function HubView({ searchData, classPreview, owPreview, radarPrev
         title={t.classTitle}
         lede={t.classIntro}
         stat={t.reportCount(counts.newcomer)}
-        go={t.classGo}
+        go={t.browse}
         href="/newcomer-class-26-27"
         players={classPreview}
       />
@@ -76,7 +76,7 @@ export default function HubView({ searchData, classPreview, owPreview, radarPrev
         title={t.onesToWatch}
         lede={t.owBandIntro}
         stat={t.playerCountLabel(counts.ow)}
-        go={t.owGo}
+        go={t.browse}
         href="/ones-to-watch"
         players={owPreview}
       />
@@ -85,7 +85,7 @@ export default function HubView({ searchData, classPreview, owPreview, radarPrev
         title={t.radar}
         lede={t.radarBandIntro}
         stat={t.nameCount(counts.radar)}
-        go={t.radarGo}
+        go={t.browse}
         href="/radar"
         players={radarPreview}
         radar

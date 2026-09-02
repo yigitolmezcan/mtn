@@ -20,7 +20,11 @@ export default function ProfileRow({ player: p, metin, radar = false }) {
   const pot = radar ? p.euroleaguePotansiyeli : null;
 
   return (
-    <div className={`orow${radar ? ' rad' : ''}`} style={{ '--rg': p.halkaRenk }}>
+    <Link
+      href={playerHref(p.slug, lang)}
+      className={`orow${radar ? ' rad' : ''}`}
+      style={{ '--rg': p.halkaRenk }}
+    >
       <div className="ol">
         <span className="oav">
           <PlayerPhoto slug={p.slug} foto={p.foto} name={p.ad} size={104} fallback={initials(p.ad)} />
@@ -69,8 +73,8 @@ export default function ProfileRow({ player: p, metin, radar = false }) {
           </ul>
         </div>
 
-        <Link href={playerHref(p.slug, lang)} className="obtn">{t.profileGo}</Link>
+        <span className="obtn">{t.browse}</span>
       </div>
-    </div>
+    </Link>
   );
 }
