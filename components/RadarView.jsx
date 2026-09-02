@@ -7,7 +7,7 @@ import PlayerPhoto from './PlayerPhoto';
 export default function RadarView({ players }) {
   const { lang, t } = useLang();
   if (!players.length) return null;
-  const potentialMap = { 'Yüksek': t.potHigh, 'Orta': t.potMid, 'Uzak': t.potFar };
+  const potentialMap = { 'Yüksek': t.potHigh, 'Orta': t.potMid, 'Düşük': t.potLow };
 
   return (
     <div className="wrap ow">

@@ -2,8 +2,8 @@
 import { useId } from 'react';
 
 // Soldan sağa incelen kama. Dolgu genişliği seviyeye göre:
-// Uzak 67, Orta 134, Yüksek 200. 66 ve 133'teki kesikler üç kademeyi işaretler.
-const WIDTH = { Uzak: 67, Orta: 134, Yüksek: 200 };
+// Düşük 67, Orta 134, Yüksek 200. 66 ve 133'teki kesikler üç kademeyi işaretler.
+const WIDTH = { Düşük: 67, Orta: 134, Yüksek: 200 };
 
 export default function PotentialGauge({ level }) {
   // Aynı sayfada birden fazla kama olduğunda clipPath id'leri çakışmasın.

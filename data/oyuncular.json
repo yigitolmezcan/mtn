@@ -3129,7 +3129,7 @@
       "milliyet": "ABD",
       "el": "Sağ",
       "elEn": "Right",
-      "euroleaguePotansiyeli": null,
+      "euroleaguePotansiyeli": "Düşük",
       "milliyetNotu": null,
       "geldigiKulup": "Salt Lake City Stars",
       "geldigiLig": "NBA G League (ABD)",
@@ -3235,7 +3235,7 @@
       "milliyet": "Almanya / Fildişi Sahili",
       "el": "Sağ",
       "elEn": "Right",
-      "euroleaguePotansiyeli": null,
+      "euroleaguePotansiyeli": "Orta",
       "milliyetNotu": null,
       "geldigiKulup": "La Laguna Tenerife",
       "geldigiLig": "Liga ACB (İspanya)",
@@ -3359,7 +3359,7 @@
       "milliyet": "ABD",
       "el": "Sağ",
       "elEn": "Right",
-      "euroleaguePotansiyeli": null,
+      "euroleaguePotansiyeli": "Düşük",
       "milliyetNotu": null,
       "geldigiKulup": "Le Mans",
       "geldigiLig": "Betclic ÉLITE (Fransa)",
@@ -3577,7 +3577,7 @@
       "milliyet": "ABD / Polonya",
       "el": "Sol",
       "elEn": "Left",
-      "euroleaguePotansiyeli": null,
+      "euroleaguePotansiyeli": "Orta",
       "milliyetNotu": null,
       "geldigiKulup": "Rytas Vilnius",
       "geldigiLig": "LKL (Litvanya)",
@@ -3815,7 +3815,7 @@
       "milliyet": "ABD",
       "el": "Sol",
       "elEn": "Left",
-      "euroleaguePotansiyeli": null,
+      "euroleaguePotansiyeli": "Düşük",
       "milliyetNotu": null,
       "geldigiKulup": "Aris",
       "geldigiLig": "GBL (Yunanistan)",
@@ -4459,7 +4459,7 @@
       "milliyet": "Mali",
       "el": "Sağ",
       "elEn": "Right",
-      "euroleaguePotansiyeli": null,
+      "euroleaguePotansiyeli": "Orta",
       "milliyetNotu": null,
       "geldigiKulup": "Pallacanestro Cantù",
       "geldigiLig": "İtalya Serie A",
@@ -4967,6 +4967,24 @@
       "ozetEn": "Pairing his 2.13m frame with soft finishing on pick-and-roll rolls, he's a center who has proven his consistency across Europe's lower tiers.",
       "ozetDetay": "İki metre on üçlük gövdesini pick-and-roll devrilmelerindeki yumuşak bitiriciliğiyle birleştiren, Avrupa'nın alt kademelerinde istikrarını kanıtlamış bir pivot. Hücumdaki üretimi büyük ölçüde perde sonrası çembere gidişlerden ve hücum ribaundlarından geliyor; dış şut denemesi az, ama pota çevresindeki dokunuşu güvenilir.",
       "ozetDetayEn": "Pairing his 2.13m frame with soft finishing on pick-and-roll rolls, he's a center who has proven his consistency across Europe's lower tiers. Most of his offensive production comes from rolling to the rim off screens and from offensive rebounds; he rarely attempts from outside, but his touch around the basket is reliable.",
+      "featuredStats": {
+        "yarisma": "EuroCup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "12.6",
+            "PPG"
+          ],
+          [
+            "7.6",
+            "RPG"
+          ],
+          [
+            "2.3",
+            "APG"
+          ]
+        ]
+      },
       "nedenRadarda": "Cluj'da geçirdiği sezon, kariyerinin en görünür dönemiydi: EuroCup'ın ribaund sıralamasında dördüncü sırayı aldı, ABA Ligi'nin blok liderliğini kazandı. Yaz boşta geçmesin diye Lübnan'da Al Riyadi'ye gidip şampiyonluk kazandı. Hapoel Jerusalem'de Saša Obradović'in altında oynayacak olması, ilk kez üst düzey bir koçun elinde gelişme fırsatı demek. Partizan altyapısından çıkmış ama ilk fırsatını değerlendirememiş bir isim — bu, ikinci şansı.",
       "nedenRadardaEn": "His season at Cluj was the most visible stretch of his career: he finished fourth in EuroCup rebounding and led the ABA League in blocks. Rather than let the summer go to waste, he joined Al Riyadi in Lebanon and won a championship. At Hapoel Jerusalem he'll play under Saša Obradović — his first chance to develop under a genuinely top-level coach. A product of Partizan's academy who couldn't seize his first opportunity, this is his second one.",
       "neOlmasiLazim": "Ayak hızını, üst düzey pick-and-roll savunmasında hedef olmayacak seviyeye çekmesi.",
@@ -5013,6 +5031,24 @@
       "ozetEn": "Creating his own shot through screen usage and pull-ups while balancing playmaking, he's a compact point guard.",
       "ozetDetay": "Perde kullanımı ve pull-up şutuyla kendi skorunu yaratabilen, oyun kurmayı da dengeleyen kompakt bir oyun kurucu. Topu elinde tutarak hücumu yönetiyor, ikili oyunlarda hem şut hem pas seçeneğini açık tutuyor. Boyu savunmada dezavantaj yaratsa da, hücumdaki karar hızı ve şut menzili bunu telafi ediyor.",
       "ozetDetayEn": "Creating his own shot through screen usage and pull-ups while balancing playmaking, he's a compact point guard. He runs the offense with the ball in his hands, keeping both the shot and the pass alive out of pick-and-roll. His height is a disadvantage defensively, but his decision-making speed and shooting range make up for it.",
+      "featuredStats": {
+        "yarisma": "EuroCup",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "17.8",
+            "PPG"
+          ],
+          [
+            "3.9",
+            "RPG"
+          ],
+          [
+            "3.9",
+            "APG"
+          ]
+        ]
+      },
       "nedenRadarda": "Bu listedeki en hazır isim. Avrupa'daki ilk sezonunda EuroCup'ta All-EuroCup Birinci Beş'e seçildi ve sezon içinde birden fazla EuroLeague kulübünün ilgisini çekti. Yine de Bahçeşehir'de kalmayı seçti. Türk pasaportuna sahip olması onu Türk kulüpleri için ayrıca değerli kılıyor — yabancı kontenjanını işgal etmeden EuroLeague seviyesinde oyun kurabilecek bir isim. Sorun yetenek değil, doğru fırsatın gelmesi.",
       "nedenRadardaEn": "The most ready name on this list. In his first season in Europe he was named to the All-EuroCup First Team and drew interest from multiple EuroLeague clubs during the season. He still chose to stay at Bahçeşehir. Holding a Turkish passport makes him especially valuable to Turkish clubs — a guard who can run a EuroLeague-level offense without taking up a foreign roster spot. The issue isn't talent; it's the right opportunity arriving.",
       "neOlmasiLazim": "Doğru teklifin gelmesi — eksik olan yetenek değil, fırsat.",
@@ -5056,11 +5092,29 @@
       "yas": "29",
       "milliyet": "Nijerya / ABD",
       "el": null, "elEn": null, "milliyetNotu": null,
-      "euroleaguePotansiyeli": "Orta",
+      "euroleaguePotansiyeli": "Yüksek",
       "ozet": "Hem yayın gerisinden hem çemberin dibinden üretebilen, fiziksel gücü ve atletizmiyle savunması zor bir uzun.",
       "ozetEn": "Able to produce from beyond the arc and at the rim alike, he's a big whose physicality and athleticism make him tough to guard.",
       "ozetDetay": "Hem yayın gerisinden hem çemberin dibinden üretebilen, fiziksel gücü ve atletizmiyle savunması zor bir uzun. İstisnai fiziği sayesinde hem 4 hem 5 numaralara ters eşleşme yaratabiliyor. Aşil sakatlığı sonrası atletizmi eski seviyesinde değil ve fiziksel temaslardan kaçınan bir görüntü veriyor.",
       "ozetDetayEn": "Able to produce from beyond the arc and at the rim alike, he's a big whose physicality and athleticism make him tough to guard. His exceptional frame lets him create mismatches against both 4s and 5s. Since his Achilles injury his athleticism isn't at its former level, and he can appear to shy away from physical contact.",
+      "featuredStats": {
+        "yarisma": "Liga ACB",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "14.1",
+            "PPG"
+          ],
+          [
+            "4.5",
+            "RPG"
+          ],
+          [
+            "50.1",
+            "2FG%"
+          ]
+        ]
+      },
       "nedenRadarda": "Bu listedeki tek 'geri dönüş' hikâyesi. Metu, Barcelona'da EuroLeague seviyesinde tutunamayan bir oyuncu değildi — tam tersine, ligi kasıp kavurduğu bir dönemde aşil tendonu koptu ve kariyerinin akışı bir anda değişti. Galatasaray sezonu, sakatlık öncesi o seviyeye geri dönüp dönemeyeceğinin cevabını verecek. Radarda tutmamızın sebebi potansiyel değil, kanıtlanmış bir geçmiş: bu adam orada ne yapabileceğini zaten göstermişti.",
       "nedenRadardaEn": "The only comeback story on this list. Metu wasn't a player who failed to hold his own at EuroLeague level with Barcelona — quite the opposite: he tore his Achilles while tearing the league apart, and the arc of his career changed overnight. His season at Galatasaray will answer whether he can get back to that level. We're tracking him not for potential but for a proven past: this man had already shown what he could do there.",
       "neOlmasiLazim": "Aşil öncesi fiziksel oyununa ve temastan kaçınmayan haline geri dönmesi.",

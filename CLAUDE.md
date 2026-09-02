@@ -51,7 +51,7 @@ Sitede iki tür rapor var, her oyuncu kaydında `raporTuru` alanıyla ayrılır:
 
 - `radar` — henüz üst seviyede olmayan, ya hiç oynamamış ya da oynayıp
   tutunamamış oyuncu. Daha kompakt bir yapı kullanır:
-  * MtN Rating YOK → yerine `euroleaguePotansiyeli` ("Yüksek"/"Orta"/"Uzak")
+  * MtN Rating YOK → yerine `euroleaguePotansiyeli` ("Yüksek"/"Orta"/"Düşük")
   * İstatistik bloğu VAR — ama haftalık güncellenmez; tek sezonluk sabit
     kayıt olarak durur. `featuredStats` ve `digerIstatistikler` korunur.
   * Transfer bloğu YOK — `transferNotu`/`transferNotuEn` veride kalabilir

@@ -9,7 +9,7 @@ function initials(name) {
   return name.split(' ').filter(Boolean).slice(0, 2).map((w) => w[0]).join('');
 }
 
-const POT_KEY = { Yüksek: 'potHigh', Orta: 'potMid', Uzak: 'potFar' };
+const POT_KEY = { Yüksek: 'potHigh', Orta: 'potMid', Düşük: 'potLow' };
 
 export default function ProfileRow({ player: p, metin, radar = false }) {
   const { lang, t } = useLang();

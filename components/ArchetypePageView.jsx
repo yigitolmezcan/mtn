@@ -33,7 +33,7 @@ export default function ArchetypePageView({ players, archetype }) {
               <div className="ow__cmeta">{p.takim} · {p.pozisyon}</div>
               {p.raporTuru === 'radar' ? (
                 <div className="ow__crating ow__crating--potential">
-                  {{ 'Yüksek': t.potHigh, 'Orta': t.potMid, 'Uzak': t.potFar }[p.euroleaguePotansiyeli] || p.euroleaguePotansiyeli}
+                  {{ 'Yüksek': t.potHigh, 'Orta': t.potMid, 'Düşük': t.potLow }[p.euroleaguePotansiyeli] || p.euroleaguePotansiyeli}
                 </div>
               ) : (
                 <div className="ow__crating">{p.mtnRating}<span>/10</span></div>

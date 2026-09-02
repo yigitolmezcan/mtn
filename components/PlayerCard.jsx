@@ -22,7 +22,7 @@ export default function PlayerCard({ player }) {
   const { lang, t } = useLang();
   const ozet = lang === 'en' ? (player.ozetEn || player.ozet) : player.ozet;
   const isRadar = player.raporTuru === 'radar';
-  const potentialMap = { 'Yüksek': t.potHigh, 'Orta': t.potMid, 'Uzak': t.potFar };
+  const potentialMap = { 'Yüksek': t.potHigh, 'Orta': t.potMid, 'Düşük': t.potLow };
   const potentialText = potentialMap[player.euroleaguePotansiyeli] || player.euroleaguePotansiyeli;
 
   return (

@@ -249,7 +249,8 @@ h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .sempty .go span:hover{border-color:var(--court);color:var(--bone)}
 /* bantlar */
 .band{padding:44px 0;position:relative}
-.band::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+.band::after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+  width:min(calc(100% - 44px),1016px);height:1px;
   background:linear-gradient(90deg,var(--court),rgba(224,116,47,.18) 45%,transparent 78%)}
 .band:last-of-type::after{display:none}
 .band .wrap{display:flex;align-items:center;gap:48px}
@@ -336,10 +337,10 @@ h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .osw li::before{content:"+";color:var(--court);font-weight:700;flex-shrink:0}
 .osw .neg li::before{content:"−";color:var(--mutedd)}
 @media(max-width:700px){.osw{grid-template-columns:1fr;gap:12px}.ostats{gap:18px}}
-.obtn{display:inline-flex;align-items:center;gap:8px;background:rgba(224,116,47,.12);
-  border:1px solid rgba(224,116,47,.3);color:var(--court);font-size:11.5px;font-weight:600;
-  padding:9px 16px;border-radius:8px;cursor:pointer;font-family:var(--sans);margin-top:16px}
-.obtn:hover{background:var(--court);border-color:var(--court);color:var(--ink)}
+.obtn{display:block;margin-left:auto;margin-top:18px;background:none;border:0;padding:0;
+  color:var(--court);font-size:12.5px;font-weight:600;letter-spacing:.01em;
+  cursor:pointer;font-family:var(--sans)}
+.obtn:hover{text-decoration:underline;text-underline-offset:4px}
 @media(max-width:700px){
   .orow{flex-direction:column;gap:16px}
   .ol{width:100%;flex-direction:row;text-align:left;align-items:center;gap:15px}
@@ -355,8 +356,7 @@ h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .opotgauge{width:200px;height:20px;flex-shrink:0;display:block}
 .opotval{font-size:12.5px;font-weight:700;color:var(--radar);letter-spacing:.09em;text-transform:uppercase}
 .orow.rad .osw li::before{color:var(--radar)}
-.orow.rad .obtn{background:rgba(111,168,255,.12);border-color:rgba(111,168,255,.3);color:var(--radar)}
-.orow.rad .obtn:hover{background:var(--radar);border-color:var(--radar);color:var(--ink)}
+.orow.rad .obtn{color:var(--radar)}
 footer{padding:30px 0 52px;border-top:1px solid var(--lines);margin-top:40px}
 .fdisc{font-size:10.5px;color:var(--mutedd);line-height:1.6;max-width:70ch;margin:0 auto;text-align:center}
 .frow{display:flex;align-items:center;justify-content:space-between;margin-top:18px;
@@ -854,7 +854,7 @@ document.getElementById('otwlist').innerHTML=OTW.map(function(g){
   }).join('');
 }).join('');
 
-var LVL={"Uzak":1,"Orta":2,"Yüksek":3};
+var LVL={"Düşük":1,"Orta":2,"Yüksek":3};
 function gauge(lv){
   var w=[0,67,134,200][lv];
   return '<svg class="opotgauge" viewBox="0 0 200 20" preserveAspectRatio="none">'+

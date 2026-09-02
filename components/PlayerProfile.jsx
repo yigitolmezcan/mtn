@@ -71,7 +71,7 @@ export default function PlayerProfile({ p, allPlayers = [] }) {
   const [playing, setPlaying] = useState(false);
   const videoId = p.youtubeUrl ? getYoutubeId(p.youtubeUrl) : null;
   const isRadar = p.raporTuru === 'radar';
-  const potentialMap = { 'Yüksek': t.potHigh, 'Orta': t.potMid, 'Uzak': t.potFar };
+  const potentialMap = { 'Yüksek': t.potHigh, 'Orta': t.potMid, 'Düşük': t.potLow };
   const potentialText = potentialMap[p.euroleaguePotansiyeli] || p.euroleaguePotansiyeli;
   const nedenRadarda = lang === 'en' ? (p.nedenRadardaEn || p.nedenRadarda) : p.nedenRadarda;
   const neOlmasiLazim = lang === 'en' ? (p.neOlmasiLazimEn || p.neOlmasiLazim) : p.neOlmasiLazim;
