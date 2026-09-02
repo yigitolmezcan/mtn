@@ -5,7 +5,6 @@ import PlayerPhoto from '@/components/PlayerPhoto';
 import CourtDiagram from '@/components/CourtDiagram';
 import CareerPath from '@/components/CareerPath';
 import PotentialGauge from '@/components/PotentialGauge';
-import ChipInfo from '@/components/ChipInfo';
 import { useLang } from '@/lib/LanguageContext';
 import { countryEn } from '@/lib/i18n';
 import { translateLeague } from '@/lib/leagueTranslate';
@@ -177,10 +176,7 @@ export default function PlayerProfile({ p }) {
             <Section label={t.comparables}>
               <div className="chips">
                 {p.benzerOyuncular.map((o) => (
-                  <span className="chip" key={o.isim}>
-                    {o.isim}
-                    <ChipInfo text={lang === 'en' ? o.nedenEn : o.neden} />
-                  </span>
+                  <span className="chip" key={o.isim}>{o.isim}</span>
                 ))}
               </div>
             </Section>

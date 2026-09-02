@@ -4662,7 +4662,36 @@
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=p15mwgf2pW8",
-      "kariyerYolu": []
+      "kariyerYolu": [
+        {
+          "kulup": "Go-Go",
+          "yil": "2019-20"
+        },
+        {
+          "kulup": "Wizards",
+          "yil": "2019-22"
+        },
+        {
+          "kulup": "Vipers",
+          "yil": "2022"
+        },
+        {
+          "kulup": "Rockets",
+          "yil": "2022-23"
+        },
+        {
+          "kulup": "Hawks",
+          "yil": "2023-25"
+        },
+        {
+          "kulup": "Pacers",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Milano",
+          "yil": "2026-"
+        }
+      ]
     },
     {
       "slug": "keaton-wallace",
@@ -5012,7 +5041,36 @@
       "arketip": "Post Scorer",
       "benzerOyuncular": [{"isim":"Tonye Jekiri","neden":"Boy ve ribaund odaklı pivot profili","nedenEn":"Size and rebounding-driven center profile"}],
       "youtubeUrl": "https://www.youtube.com/watch?v=40Zp6aSA66Y",
-      "kariyerYolu": []
+      "kariyerYolu": [
+        {
+          "kulup": "Sloga",
+          "yil": "2017-19"
+        },
+        {
+          "kulup": "Partizan",
+          "yil": "2019-22"
+        },
+        {
+          "kulup": "Girona",
+          "yil": "2022-23"
+        },
+        {
+          "kulup": "Śląsk",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Spartak",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Cluj",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Hapoel Jerusalem",
+          "yil": "2026-"
+        }
+      ]
     },
     {
       "slug": "malachi-flynn",
@@ -5078,7 +5136,32 @@
       "arketip": "Scoring Point Guard",
       "benzerOyuncular": [{"isim":"Shane Larkin","neden":"Kompakt gövdeyle kendi şutunu yaratan skorer oyun kurucu","nedenEn":"A compact scoring point guard who creates his own shot"}],
       "youtubeUrl": "https://www.youtube.com/watch?v=sC4xEcuuaa4",
-      "kariyerYolu": []
+      "kariyerYolu": [
+        {
+          "kulup": "Raptors",
+          "yil": "2020-23"
+        },
+        {
+          "kulup": "Knicks",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Pistons",
+          "yil": "2024"
+        },
+        {
+          "kulup": "Austin Spurs",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Hornets",
+          "yil": "2025"
+        },
+        {
+          "kulup": "Bahçeşehir",
+          "yil": "2025-"
+        }
+      ]
     },
     {
       "slug": "chimezie-metu",
@@ -5145,7 +5228,36 @@
         {"isim":"Derrick Brown","neden":"4-5 arası oynayabilen atletik uzun","nedenEn":"Athletic big who can play the 4 and 5"}
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=uXz0der3tS4",
-      "kariyerYolu": []
+      "kariyerYolu": [
+        {
+          "kulup": "Spurs",
+          "yil": "2018-20"
+        },
+        {
+          "kulup": "Kings",
+          "yil": "2020-23"
+        },
+        {
+          "kulup": "Suns",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Pistons",
+          "yil": "2024"
+        },
+        {
+          "kulup": "Barcelona",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Gran Canaria",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Galatasaray",
+          "yil": "2026-"
+        }
+      ]
     }
   ]
 }
