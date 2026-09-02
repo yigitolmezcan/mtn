@@ -393,3 +393,21 @@ button{font-family:inherit;color:inherit;background:none;border:0;cursor:pointer
 .mainmenu__group + .mainmenu__group{border-top:1px solid var(--lines);margin-top:7px}
 .mainmenu__link{display:block;font-size:13.5px;color:var(--paper);padding:9px 11px;border-radius:8px}
 .mainmenu__link:hover{background:var(--surface2);color:var(--bone)}
+
+/* fotoğraflar — referansta baş harf yazan dairelerin içine gerçek görsel */
+.pphoto{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+.pav,.oav,.srav,.stack .f,.av{overflow:hidden}
+.pav .pphoto,.oav .pphoto,.srav .pphoto,.stack .f .pphoto,.av .pphoto{width:100%;height:100%}
+
+/* arama kutusu — prototipte sahte bir span, burada gerçek input */
+.sbox{position:relative}
+.sbox input.q{flex:1;min-width:0;background:none;border:0;outline:0;padding:0;
+  font-family:var(--sans);font-size:14.5px;color:var(--bone)}
+.sbox input.q::placeholder{color:var(--mutedd)}
+.sres{max-height:min(64vh,430px);overflow-y:auto}
+.sr{text-decoration:none}
+.sempty .go a{text-decoration:none}
+
+/* sıralama seçicisi — .csort gerçek bir <select> */
+select.csort{appearance:none;font-family:var(--sans)}
+select.csort option{background:var(--surface);color:var(--bone)}
