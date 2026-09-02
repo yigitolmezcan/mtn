@@ -1,12 +1,13 @@
+import RadarListView from '@/components/RadarListView';
 import { getAllPlayers } from '@/lib/players';
-import RadarView from '@/components/RadarView';
 
 export const metadata = {
   title: 'Radar',
-  description: "Henüz üst seviyede değiller. Ama olabilirler. Avrupa liglerinde takip ettiğimiz isimler.",
+  description:
+    "Avrupa'nın çeşitli liglerinden, bir üst seviyeye atlamaya aday oyuncuları takip ediyoruz.",
 };
 
-export default function Page() {
+export default function Radar() {
   const players = getAllPlayers().filter((p) => p.raporTuru === 'radar');
-  return <RadarView players={players} />;
+  return <RadarListView players={players} />;
 }

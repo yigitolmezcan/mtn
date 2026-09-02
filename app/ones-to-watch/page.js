@@ -1,22 +1,30 @@
-import { getPlayer } from '@/lib/players';
+import OtwView from '@/components/OtwView';
+import { getAllPlayers } from '@/lib/players';
 import { onesToWatch } from '@/data/onesToWatch';
-import OnesToWatchView from '@/components/OnesToWatchView';
 
 export const metadata = {
   title: 'Ones to Watch',
-  description: "Bu sezon EuroLeague'e gelen oyuncular arasından, kendi editoryal bakışımızla öne çıkardığımız isimler.",
+  description: "Avrupa'nın yeni isimleri arasından editör gözüyle dikkat çekenler.",
 };
 
-function resolve(list) {
-  return list.map((item) => ({ ...item, player: getPlayer(item.slug) })).filter((x) => x.player);
-}
+const GROUPS = [
+  { key: 'guards', labelKey: 'owGuards' },
+  { key: 'forwards', labelKey: 'owForwards' },
+  { key: 'bigs', labelKey: 'owBigs' },
+];
 
-export default function Page() {
-  return (
-    <OnesToWatchView
-      guards={resolve(onesToWatch.guards)}
-      forwards={resolve(onesToWatch.forwards)}
-      bigs={resolve(onesToWatch.bigs)}
-    />
-  );
+export default function OnesToWatch() {
+  const players = getAllPlayers();
+
+  const groups = GROUPS.map((g) => ({
+    ...g,
+    entries: (onesToWatch[g.key] || [])
+      .map((entry) => {
+        const player = players.find((p) => p.slug === entry.slug);
+        return player ? { player, metin: entry.metin, metinEn: entry.metinEn } : null;
+      })
+      .filter(Boolean),
+  })).filter((g) => g.entries.length > 0);
+
+  return <OtwView groups={groups} />;
 }

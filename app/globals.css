@@ -234,7 +234,8 @@ h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .sempty .go span:hover{border-color:var(--court);color:var(--bone)}
 /* bantlar */
 .band{padding:44px 0;position:relative}
-.band::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+.band::after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+  width:min(calc(100% - 44px),1016px);height:1px;
   background:linear-gradient(90deg,var(--court),rgba(224,116,47,.18) 45%,transparent 78%)}
 .band:last-of-type::after{display:none}
 .band .wrap{display:flex;align-items:center;gap:48px}
