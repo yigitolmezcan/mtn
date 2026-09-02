@@ -248,7 +248,10 @@ h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
   color:var(--muted);cursor:pointer}
 .sempty .go span:hover{border-color:var(--court);color:var(--bone)}
 /* bantlar */
-.band{padding:44px 0;border-bottom:1px solid var(--lines)}
+.band{padding:44px 0;position:relative}
+.band::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:linear-gradient(90deg,var(--court),rgba(224,116,47,.18) 45%,transparent 78%)}
+.band:last-of-type::after{display:none}
 .band .wrap{display:flex;align-items:center;gap:48px}
 .bl{flex:1;min-width:0}
 .bhead{display:flex;align-items:center;gap:13px;margin-bottom:11px}
@@ -291,7 +294,8 @@ h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .pav::after{content:"";position:absolute;inset:-13px;border-radius:50%;
   background:radial-gradient(circle,var(--rg) 0%,transparent 70%);opacity:.13;z-index:-1}
 .pmeta{font-size:11px;color:var(--mutedd)}
-.pozet{font-size:12.5px;color:var(--paper);line-height:1.45;margin-top:4px;flex:1}
+.park{font-size:12px;color:var(--muted);margin-top:11px;padding-top:11px;
+  border-top:1px solid var(--lines);width:100%;flex:1}
 .prate{margin-top:auto;padding-top:12px;display:flex;flex-direction:column;align-items:center;gap:3px}
 .prate b{font-family:var(--display);font-weight:700;font-size:21px;color:var(--court);line-height:1}
 .prate span{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--mutedd)}
@@ -411,7 +415,7 @@ footer{padding:30px 0 52px;border-top:1px solid var(--lines);margin-top:40px}
   <div class="sblock">
     <div class="sbox" id="sbox">
       <span class="bm"></span>
-      <span class="q" id="sq">Oyuncu veya takım ara…</span>
+      <span class="q" id="sq">Oyuncu ara…</span>
     </div>
 
     <div class="sres" id="sres">
@@ -750,7 +754,7 @@ footer{padding:30px 0 52px;border-top:1px solid var(--lines);margin-top:40px}
   </div>
 </div></footer><script>
 var S={
- idle:function(){document.getElementById('sq').textContent='Oyuncu veya takım ara…';
+ idle:function(){document.getElementById('sq').textContent='Oyuncu ara…';
    document.getElementById('sq').classList.remove('typed');
    document.getElementById('sbox').classList.remove('act');
    document.getElementById('sres').classList.remove('on');},
@@ -767,6 +771,10 @@ var S={
    document.getElementById('hits').style.display='none';
    document.getElementById('miss').style.display='block';}
 };
+var ARKMAP={"MarJon Beauchamp":"Athletic Forward","Max Shulga":"Combo Guard",
+ "Ethan Thompson":"Scoring Wing","Daron Russell":"Scoring Point Guard",
+ "Garrison Mathews":"Sharpshooter","Keaton Wallace":"Combo Guard",
+ "Johnny Juzang":"Sharpshooter","Trent Frazier":"Scoring Point Guard"};
 var CP=[
  ["MB","MarJon Beauchamp","SF · Bayern Münih","Patlayıcı atletizmi ve açık sahadaki bitiriciliğiyle iki yönlü bir kanat.","8.5","#DC052D","#ECEAE7"],
  ["MS","Max Shulga","PG / SG · Real Madrid","Şut tehdidini oyun görüşü ve doğru kararlarla birleştiren combo guard.","7.5","#5B2A86","#ECEAE7"],
@@ -782,7 +790,7 @@ document.getElementById('cgrid').innerHTML=CP.map(function(p){
    '<span class="pstripe"><i style="background:'+p[5]+'"></i><i style="background:'+p[6]+'"></i></span>'+
    '<span class="pav">'+p[0]+'</span>'+
    '<div class="pname">'+p[1]+'</div><div class="pmeta">'+p[2]+'</div>'+
-   '<div class="pozet">'+p[3]+'</div>'+
+   '<div class="park">'+(ARKMAP[p[1]]||'')+'</div>'+
    '<div class="prate"><b>'+p[4]+'</b><span>MtN Rating</span></div></div>';
 }).join('');
 
@@ -958,7 +966,7 @@ var ARKS=[["Guards",["Floor General","Oyunu yöneten, pas önceliği yüksek oyu
      '<span class="pstripe"><i style="background:'+p[5]+'"></i><i style="background:'+p[6]+'"></i></span>'+
      '<span class="pav">'+p[0]+'</span>'+
      '<div class="pname">'+p[1]+'</div><div class="pmeta">'+p[2]+'</div>'+
-     '<div class="pozet">'+p[3]+'</div>'+
+     '<div class="park">'+(ARKMAP[p[1]]||'')+'</div>'+
      '<div class="prate"><b>'+p[4]+'</b><span>MtN Rating</span></div></div>';
   }).join('');
   document.getElementById('arkgrid2').innerHTML=h;

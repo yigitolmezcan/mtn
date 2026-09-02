@@ -11,7 +11,6 @@ function initials(name) {
 export default function PCard({ player: p }) {
   const { lang } = useLang();
   const takim = lang === 'en' ? p.takimEn : p.takim;
-  const ozet = lang === 'en' ? p.ozetEn : p.ozet;
 
   return (
     <Link href={playerHref(p.slug, lang)} className="pcard" style={{ '--rg': p.halkaRenk }}>
@@ -28,7 +27,7 @@ export default function PCard({ player: p }) {
         {' · '}
         <span lang={p.digerDil ? 'en' : 'tr'}>{takim}</span>
       </div>
-      <div className="pozet">{ozet}</div>
+      <div className="park" lang="en">{p.arketip}</div>
       <div className="prate">
         <b>{p.mtnRating || '—'}</b>
         <span>MtN <span lang="en">Rating</span></span>

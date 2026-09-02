@@ -233,7 +233,10 @@ h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
   color:var(--muted);cursor:pointer}
 .sempty .go span:hover{border-color:var(--court);color:var(--bone)}
 /* bantlar */
-.band{padding:44px 0;border-bottom:1px solid var(--lines)}
+.band{padding:44px 0;position:relative}
+.band::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:linear-gradient(90deg,var(--court),rgba(224,116,47,.18) 45%,transparent 78%)}
+.band:last-of-type::after{display:none}
 .band .wrap{display:flex;align-items:center;gap:48px}
 .bl{flex:1;min-width:0}
 .bhead{display:flex;align-items:center;gap:13px;margin-bottom:11px}
@@ -276,7 +279,8 @@ h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .pav::after{content:"";position:absolute;inset:-13px;border-radius:50%;
   background:radial-gradient(circle,var(--rg) 0%,transparent 70%);opacity:.13;z-index:-1}
 .pmeta{font-size:11px;color:var(--mutedd)}
-.pozet{font-size:12.5px;color:var(--paper);line-height:1.45;margin-top:4px;flex:1}
+.park{font-size:12px;color:var(--muted);margin-top:11px;padding-top:11px;
+  border-top:1px solid var(--lines);width:100%;flex:1}
 .prate{margin-top:auto;padding-top:12px;display:flex;flex-direction:column;align-items:center;gap:3px}
 .prate b{font-family:var(--display);font-weight:700;font-size:21px;color:var(--court);line-height:1}
 .prate span{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--mutedd)}
