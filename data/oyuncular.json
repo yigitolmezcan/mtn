@@ -6162,6 +6162,744 @@
           "yil": "2026-"
         }
       ]
+    },
+    {
+      "slug": "tosan-evbuomwan",
+      "ad": "Tosan Evbuomwan",
+      "resmiAd": "Tosan Evbuomwan",
+      "raporTuru": "newcomer",
+      "takimSlug": "barcelona",
+      "lig": "euroleague",
+      "pozisyon": "SF / PF",
+      "boy": "2.03 m",
+      "yas": "25",
+      "milliyet": "İngiltere",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Greensboro Swarm",
+      "geldigiLig": "NBA G League (ABD)",
+      "transferNotu": "Barcelona bu yaz Vesely, Satoransky, Willy Hernangomez, Laprovittola ve Clyburn'ü kaybetti; Evbuomwan, Sekulić yönetimindeki yeni kadroya katılan sekizinci transfer oldu. Nisan ayında Greensboro Swarm'ı G Lig şampiyonluğuna taşımış ve final maçında 22 sayı, 7 ribaund, 3 asistle seri MVP'si seçilmişti. Kariyerinde ilk kez ABD dışında oynayacak.",
+      "transferNotuEn": "Barcelona lost Vesely, Satoransky, Willy Hernangomez, Laprovittola and Clyburn this summer; Evbuomwan is the eighth addition to the squad Sekulić is rebuilding. In April he carried the Greensboro Swarm to the G League title and was named Finals MVP after 22 points, seven rebounds and three assists in the clinching game. He'll play outside the United States for the first time.",
+      "ozet": "Geçiş hücumunda ve çembere gidişlerde etkili, birden fazla ön alan rolünü üstlenebilen çok yönlü bir forvet.",
+      "ozetEn": "Effective in transition and attacking the rim, he's a versatile forward who can fill several frontcourt roles.",
+      "ozetDetay": "Geçiş hücumunda ve çembere gidişlerde etkili, birden fazla ön alan rolünü üstlenebilen çok yönlü bir forvet. Princeton çıkışlı; NBA'de dört farklı takımda 50 maç oynadı ama asıl sıçramasını G Lig'de yaptı. Greensboro Swarm'ı şampiyonluğa taşıdı ve final serisinin MVP'si seçildi. Hem potaya gidip bitirebiliyor hem dış şutla savunmayı dürüst tutuyor; 3.4 asistiyle ön alandan oyun da kurabiliyor.",
+      "ozetDetayEn": "Effective in transition and attacking the rim, he's a versatile forward who can fill several frontcourt roles. A Princeton product, he played 50 NBA games across four franchises but made his real leap in the G League, carrying the Greensboro Swarm to a title and being named Finals MVP. He can get to the rim and finish while keeping defences honest from outside, and his 3.4 assists show he can create from the frontcourt too.",
+      "anahtarSoru": "G Lig'de ana silah olan bir oyuncu, Avrupa'nın en kalabalık kadrolarından birinde rolünü bulabilecek mi?",
+      "anahtarSoruEn": "Can a player who was the main weapon in the G League carve out a role in one of Europe's deepest squads?",
+      "featuredStats": {
+        "yarisma": "NBA G League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "18.1",
+            "PPG"
+          ],
+          [
+            "6.4",
+            "RPG"
+          ],
+          [
+            "3.4",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "NBA kariyeri",
+          "sezon": "50 maç",
+          "items": [
+            [
+              "4.6",
+              "PPG"
+            ],
+            [
+              "2.4",
+              "RPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Geçiş hücumunda etkinlik"
+        },
+        {
+          "t": "Çembere gidiş ve bitiricilik"
+        },
+        {
+          "t": "Ön alandan oyun kurma",
+          "v": "3.4 APG"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Effectiveness in transition"
+        },
+        {
+          "t": "Attacking and finishing at the rim"
+        },
+        {
+          "t": "Creating from the frontcourt",
+          "v": "3.4 APG"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Dış şut istikrarı",
+          "v": "%32.9 3PT"
+        },
+        {
+          "t": "NBA'de kalıcı rol bulamaması"
+        },
+        {
+          "t": "Kalabalık rotasyonda test edilmemiş"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Outside shooting consistency",
+          "v": "32.9% 3PT"
+        },
+        {
+          "t": "Never secured a lasting NBA role"
+        },
+        {
+          "t": "Untested in a deep rotation"
+        }
+      ],
+      "arketip": "Athletic Forward",
+      "mtnRating": "8.0",
+      "ratingNotu": "G Lig'de ana silah olmakla Avrupa'nın en derin kadrolarından birinde tamamlayıcı olmak farklı işler. Fiziksel araçları EuroLeague'de de işe yarayacak kadar güçlü; asıl mesele Sekulić'in rotasyonunda kendine yer açabilmesi.",
+      "ratingNotuEn": "Being the main weapon in the G League and a complementary piece in one of Europe's deepest squads are different jobs. His physical tools are strong enough to translate; the real question is whether he can carve out room in Sekulić's rotation.",
+      "benzerOyuncular": [
+        {
+          "isim": "Pete Mickeal",
+          "neden": "Fiziksel gücünü geçiş hücumu ve çembere gidişlerle birleştiren forvet",
+          "nedenEn": "A forward who pairs physical strength with transition play and rim attacks"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=uE8h1sqSCc4",
+      "kariyerYolu": [
+        {
+          "kulup": "Princeton",
+          "yil": "2019-23"
+        },
+        {
+          "kulup": "Grizzlies",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Pistons",
+          "yil": "2024"
+        },
+        {
+          "kulup": "Nets",
+          "yil": "2025"
+        },
+        {
+          "kulup": "Knicks",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Greensboro",
+          "yil": "2026"
+        },
+        {
+          "kulup": "Barcelona",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "tremont-waters",
+      "ad": "Tremont Waters",
+      "resmiAd": "Tremont Waters",
+      "raporTuru": "newcomer",
+      "takimSlug": "asvel",
+      "lig": "euroleague",
+      "pozisyon": "PG",
+      "boy": "1.80 m",
+      "yas": "28",
+      "milliyet": "ABD / Porto Riko",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": "Porto Riko milli takımını temsil ediyor.",
+      "milliyetNotuEn": "Represents the Puerto Rico national team.",
+      "geldigiKulup": "Gigantes de Carolina",
+      "geldigiLig": "BSN (Porto Riko)",
+      "transferNotu": "ASVEL'in yeniden kurulan arka sahasına katılıyor, ama kalabalık bir gruba giriyor: Patty Mills, Hugo Besson ve Edwin Jackson da aynı pozisyonlarda. Daha önce 2022-23 sezonunda Metropolitans 92'de Wembanyama'nın yanında oynayarak Fransa'yı tanımıştı.",
+      "transferNotuEn": "He joins ASVEL's rebuilt backcourt, but into a crowded group: Patty Mills, Hugo Besson and Edwin Jackson occupy the same positions. He already knows France, having played alongside Wembanyama at Metropolitans 92 in 2022-23.",
+      "ozet": "Patlayıcı hızını kendi şutunu yaratma becerisiyle birleştiren, Porto Riko'da hem skor hem asist üretmiş kompakt bir oyun kurucu.",
+      "ozetEn": "Pairing explosive speed with the ability to create his own shot, he's a compact point guard who produced both scoring and assists in Puerto Rico.",
+      "ozetDetay": "Patlayıcı hızını kendi şutunu yaratma becerisiyle birleştiren, Porto Riko'da hem skor hem asist üretmiş kompakt bir oyun kurucu. 2019 draftında 51. sıradan seçildi ve G Lig'in yılın çaylağı ödülünü kazandı, ama NBA'de sadece 44 maç oynayabildi. Kariyerini Avrupa, Çin ve Porto Riko arasında kurdu; Gigantes de Carolina ile BSN şampiyonluğu yaşadı.",
+      "ozetDetayEn": "Pairing explosive speed with the ability to create his own shot, he's a compact point guard who produced both scoring and assists in Puerto Rico. Drafted 51st in 2019 and named G League Rookie of the Year, he managed only 44 NBA games. He built his career across Europe, China and Puerto Rico, winning a BSN title with Gigantes de Carolina.",
+      "anahtarSoru": "Bu kadar kalabalık bir arka sahada yeterli dakikayı bulabilecek mi?",
+      "anahtarSoruEn": "Can he find enough minutes in a backcourt this crowded?",
+      "featuredStats": {
+        "yarisma": "BSN",
+        "sezon": "2026",
+        "items": [
+          [
+            "16.3",
+            "PPG"
+          ],
+          [
+            "6.8",
+            "APG"
+          ],
+          [
+            "2.5",
+            "RPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "NBA kariyeri",
+          "sezon": "44 maç",
+          "items": [
+            [
+              "3.9",
+              "PPG"
+            ],
+            [
+              "2.5",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Patlayıcı ilk adım"
+        },
+        {
+          "t": "Kendi şutunu yaratma"
+        },
+        {
+          "t": "Milli takım tecrübesi",
+          "v": "Paris 2024 Olimpiyatları"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Explosive first step"
+        },
+        {
+          "t": "Creating his own shot"
+        },
+        {
+          "t": "International experience",
+          "v": "Paris 2024 Olympics"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Fiziksel boyut",
+          "v": "1.80 m"
+        },
+        {
+          "t": "Kalabalık rotasyon"
+        },
+        {
+          "t": "Üst düzeyde uzun süre test edilmemiş"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Physical size",
+          "v": "1.80 m"
+        },
+        {
+          "t": "Crowded rotation"
+        },
+        {
+          "t": "Never tested at the top level for long"
+        }
+      ],
+      "arketip": "Scoring Point Guard",
+      "mtnRating": "7.0",
+      "ratingNotu": "Yeteneğin değil, dakikanın sorusu. Patlayıcılığı ve skor üretimi EuroLeague'de işe yarar ama ASVEL'in arka sahası dolu; oynadığı kadar etkili olacak.",
+      "ratingNotuEn": "This is a question of minutes, not talent. His explosiveness and scoring can work in the EuroLeague, but ASVEL's backcourt is full; he'll be as effective as his playing time allows.",
+      "benzerOyuncular": [
+        {
+          "isim": "Markus Howard",
+          "neden": "Kısa boylu, skor öncelikli oyun kurucu",
+          "nedenEn": "An undersized, scoring-first point guard"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=W2GXiTrxhMg",
+      "kariyerYolu": [
+        {
+          "kulup": "LSU",
+          "yil": "2017-19"
+        },
+        {
+          "kulup": "Celtics",
+          "yil": "2019-21"
+        },
+        {
+          "kulup": "Raptors",
+          "yil": "2021-22"
+        },
+        {
+          "kulup": "Wizards",
+          "yil": "2022"
+        },
+        {
+          "kulup": "Metropolitans 92",
+          "yil": "2022-23"
+        },
+        {
+          "kulup": "Guangdong",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Gigantes",
+          "yil": "2024-26"
+        },
+        {
+          "kulup": "ASVEL",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "amir-coffey",
+      "ad": "Amir Coffey",
+      "resmiAd": "Amir Coffey",
+      "raporTuru": "newcomer",
+      "takimSlug": "hapoel-tel-aviv",
+      "lig": "euroleague",
+      "pozisyon": "SF / SG",
+      "boy": "2.01 m",
+      "yas": "29",
+      "milliyet": "ABD",
+      "el": "Sol",
+      "elEn": "Left",
+      "milliyetNotu": null,
+      "geldigiKulup": "Phoenix Suns",
+      "geldigiLig": "NBA (ABD)",
+      "transferNotu": "Yedi NBA sezonunun ardından kariyerinde ilk kez ABD dışında oynayacak. Hapoel geçen sezon EuroLeague'de 23-15 yapıp playoff ilk turunda Real Madrid'e elenmişti; Coffey, Micić, Wainright ve Oturu gibi NBA geçmişli isimlerle dolu bir kadroya katılıyor.",
+      "transferNotuEn": "After seven NBA seasons he'll play outside the United States for the first time. Hapoel went 23-15 in the EuroLeague last season before losing to Real Madrid in the first round of the playoffs; Coffey joins a roster stocked with NBA-experienced names like Micić, Wainright and Oturu.",
+      "ozet": "Yedi NBA sezonunda boyunu dış şut isabetiyle birleştirmiş, düşük kullanımla verimli üreten tecrübeli bir kanat.",
+      "ozetEn": "Having spent seven NBA seasons pairing his size with accurate outside shooting, he's a wing who stays efficient on low usage.",
+      "ozetDetay": "Yedi NBA sezonunda boyunu dış şut isabetiyle birleştirmiş, düşük kullanımla verimli üreten tecrübeli bir kanat. Draft edilmeden Clippers'a girdi ve altı sezon orada kaldı; 369 NBA maçında %38.2 üçlük isabeti tutturdu. En iyi sezonu 2024-25'te Clippers formasıyla geldi: 72 maçta 9.7 sayı ve %40.9 üçlük. Solak oluşu şut açılarında ek bir zorluk yaratıyor.",
+      "ozetDetayEn": "Having spent seven NBA seasons pairing his size with accurate outside shooting, he's a wing who stays efficient on low usage. He joined the Clippers undrafted and stayed six seasons, shooting 38.2% from three across 369 NBA games. His best year came in 2024-25 with the Clippers: 9.7 points and 40.9% from deep across 72 games. Being left-handed adds an extra wrinkle to his shooting angles.",
+      "anahtarSoru": "NBA'de düşük kullanımla verimli olan profili, EuroLeague'de daha büyük bir rol istendiğinde ne olacak?",
+      "anahtarSoruEn": "What happens to a profile built on low-usage efficiency when the EuroLeague asks for a bigger role?",
+      "featuredStats": {
+        "yarisma": "NBA kariyeri",
+        "sezon": "369 maç",
+        "items": [
+          [
+            "6.2",
+            "PPG"
+          ],
+          [
+            "1.8",
+            "RPG"
+          ],
+          [
+            "38.2",
+            "3PT%"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "NBA",
+          "sezon": "2024-25",
+          "items": [
+            [
+              "9.7",
+              "PPG"
+            ],
+            [
+              "2.2",
+              "RPG"
+            ],
+            [
+              "40.9",
+              "3PT%"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Dış şut isabeti",
+          "v": "%38.2 3PT, 369 maç"
+        },
+        {
+          "t": "Boyuyla çok pozisyonlu savunma"
+        },
+        {
+          "t": "Düşük kullanımla verimlilik"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Outside shooting accuracy",
+          "v": "38.2% 3PT, 369 games"
+        },
+        {
+          "t": "Multi-positional defence with size"
+        },
+        {
+          "t": "Efficiency on low usage"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Bireysel yaratıcılık sınırı"
+        },
+        {
+          "t": "Son iki sezondaki üretim düşüşü"
+        },
+        {
+          "t": "Avrupa tecrübesi yokluğu"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Limited self-creation"
+        },
+        {
+          "t": "Declining output over the last two seasons"
+        },
+        {
+          "t": "No European experience"
+        }
+      ],
+      "arketip": "3&D Wing",
+      "mtnRating": "8.0",
+      "ratingNotu": "Yedi sezonluk NBA rotasyon oyuncusu olmak kolay değil ve Coffey bunu tek bir beceriyle değil, güvenilirlikle başardı. Itoudis'in sisteminde topa ihtiyaç duymadan katkı verebilecek türden bir parça.",
+      "ratingNotuEn": "Lasting seven seasons in an NBA rotation isn't easy, and Coffey managed it through reliability rather than one standout skill. In Itoudis's system he's the kind of piece who contributes without needing the ball.",
+      "benzerOyuncular": [
+        {
+          "isim": "James Nunnally",
+          "neden": "Boyunu üçlükle birleştiren, topa ihtiyaç duymayan kanat",
+          "nedenEn": "A wing who pairs size with three-point shooting and doesn't need the ball"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=XgrUkZ8dWfE",
+      "kariyerYolu": [
+        {
+          "kulup": "Minnesota",
+          "yil": "2016-19"
+        },
+        {
+          "kulup": "Clippers",
+          "yil": "2019-25"
+        },
+        {
+          "kulup": "Bucks",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Suns",
+          "yil": "2026"
+        },
+        {
+          "kulup": "Hapoel",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "mario-saint-supery",
+      "ad": "Mario Saint-Supéry",
+      "resmiAd": "Mario Saint-Supéry Fernández",
+      "raporTuru": "newcomer",
+      "takimSlug": "valencia-basket",
+      "lig": "euroleague",
+      "pozisyon": "PG",
+      "boy": "1.94 m",
+      "yas": "20",
+      "milliyet": "İspanya",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Gonzaga",
+      "geldigiLig": "NCAA (ABD)",
+      "transferNotu": "Gonzaga'da ikinci sezonuna başlamak yerine İspanya'ya dönmeyi seçti ve Valencia ile 2030'a kadar dört yıllık sözleşme imzaladı. Karar Amerikan basketbol çevresinde şaşkınlık yarattı; Gonzaga sezona başlangıç oyun kurucusu olmadan giriyor.",
+      "transferNotuEn": "Rather than start a second season at Gonzaga, he chose to return to Spain and signed a four-year deal with Valencia through 2030. The decision stunned American college basketball; Gonzaga enters the season without a starting point guard.",
+      "ozet": "Hız, top kullanımı ve çember baskısını dış şut tehdidiyle birleştiren, İspanya'nın en dikkat çekici genç oyun kurucusu.",
+      "ozetEn": "Combining speed, ball-handling and rim pressure with an outside shooting threat, he's Spain's most talked-about young point guard.",
+      "ozetDetay": "Hız, top kullanımı ve çember baskısını dış şut tehdidiyle birleştiren, İspanya'nın en dikkat çekici genç oyun kurucusu. Unicaja altyapısından çıktı ve 15 yaşında hem Liga Endesa'da hem Şampiyonlar Ligi'nde oynayarak İspanya'nın en genç debütanlarından biri oldu. 2025 EuroBasket'te milli takımda oynadı ve 2009'da Ricky Rubio'dan bu yana turnuvaya çıkan en genç İspanyol oldu.",
+      "ozetDetayEn": "Combining speed, ball-handling and rim pressure with an outside shooting threat, he's Spain's most talked-about young point guard. A Unicaja academy product, he debuted in both the Liga Endesa and the Champions League at 15, among the youngest ever in Spain. He played for the senior national team at EuroBasket 2025, becoming the youngest Spaniard at the tournament since Ricky Rubio in 2009.",
+      "anahtarSoru": "Yirmi yaşında ve EuroLeague'de ilk kez oynayacak bir oyuncuya verilen bu büyüklükteki sözleşmenin ağırlığını taşıyabilecek mi?",
+      "anahtarSoruEn": "At 20, and playing his first EuroLeague season, can he carry the weight of a contract this size?",
+      "featuredStats": {
+        "yarisma": "NCAA",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "8.6",
+            "PPG"
+          ],
+          [
+            "3.8",
+            "APG"
+          ],
+          [
+            "40.3",
+            "3PT%"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "EuroBasket",
+          "sezon": "2025",
+          "items": [
+            [
+              "8.4",
+              "PPG"
+            ],
+            [
+              "2.8",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Yaşına göre olgun oyun kuruculuk"
+        },
+        {
+          "t": "Dış şut isabeti",
+          "v": "%40.3 3PT"
+        },
+        {
+          "t": "Milli takım tecrübesi",
+          "v": "EuroBasket 2025"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Playmaking maturity for his age"
+        },
+        {
+          "t": "Outside shooting accuracy",
+          "v": "40.3% 3PT"
+        },
+        {
+          "t": "Senior international experience",
+          "v": "EuroBasket 2025"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Sınırlı patlayıcılık"
+        },
+        {
+          "t": "EuroLeague'de test edilmemiş"
+        },
+        {
+          "t": "Beklenti baskısı"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Limited explosiveness"
+        },
+        {
+          "t": "Untested in the EuroLeague"
+        },
+        {
+          "t": "Weight of expectation"
+        }
+      ],
+      "arketip": "Combo Guard",
+      "mtnRating": "7.5",
+      "ratingNotu": "Bu sınıftaki en zor puanlanan isim. Bugünkü seviyesi bu puanın altında olabilir ama Valencia dört yıllık bir sözleşmeyi bugünkü seviyesine değil, tavanına verdi; puan da o ikisinin ortasında duruyor.",
+      "ratingNotuEn": "The hardest name on this class to rate. His level today may sit below this number, but Valencia gave a four-year deal to his ceiling rather than his present; the rating sits between the two.",
+      "benzerOyuncular": [
+        {
+          "isim": "Juan Núñez",
+          "neden": "İspanyol altyapısından çıkan modern oyun kurucu",
+          "nedenEn": "A modern point guard out of the Spanish academy system"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=-YaqJMQ5djU",
+      "kariyerYolu": [
+        {
+          "kulup": "Unicaja",
+          "yil": "2022-25"
+        },
+        {
+          "kulup": "Tizona",
+          "yil": "2024"
+        },
+        {
+          "kulup": "Manresa",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Gonzaga",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Valencia",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "marcus-carr",
+      "ad": "Marcus Carr",
+      "resmiAd": "Marcus Carr",
+      "raporTuru": "newcomer",
+      "takimSlug": "virtus-bologna",
+      "lig": "euroleague",
+      "pozisyon": "PG",
+      "boy": "1.88 m",
+      "yas": "27",
+      "milliyet": "Kanada",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Würzburg Baskets",
+      "geldigiLig": "BBL (Almanya)",
+      "transferNotu": "Virtus Bologna'nın beşinci yaz transferi ve Alex Mumbrù'nun kuracağı takımın başlangıç oyun kurucusu olarak geliyor. Çok yıllık, opsiyonlu bir sözleşme imzaladı ve EuroLeague'de ilk kez forma giyecek.",
+      "transferNotuEn": "He arrives as Virtus Bologna's fifth summer signing and as the starting point guard of the team Alex Mumbrù is building. He signed a multi-year deal with an option and will play in the EuroLeague for the first time.",
+      "ozet": "Yüksek hacimli skor üretimini altı asistle dengeleyen, oyunun temposunu elinde tutan bir oyun kurucu.",
+      "ozetEn": "Balancing high-volume scoring with six assists a game, he's a point guard who keeps the tempo in his hands.",
+      "ozetDetay": "Yüksek hacimli skor üretimini altı asistle dengeleyen, oyunun temposunu elinde tutan bir oyun kurucu. Würzburg'da hem BBL'de hem Şampiyonlar Ligi'nde 17+ sayı ortalaması tutturdu ve takımı son 16'ya taşıdı. 2024'ten beri Kanada milli takımının düzenli oyuncusu; Dünya Kupası elemelerinde 17 sayı, 7 asist üretti.",
+      "ozetDetayEn": "Balancing high-volume scoring with six assists a game, he's a point guard who keeps the tempo in his hands. At Würzburg he averaged over 17 points in both the BBL and the Champions League, carrying the club into the Round of 16. A regular for Canada since 2024, he produced 17 points and seven assists in World Cup qualifying.",
+      "anahtarSoru": "Şampiyonlar Ligi'ndeki üretimini bir üst seviyede koruyabilecek mi?",
+      "anahtarSoruEn": "Can he sustain his Champions League production one level up?",
+      "featuredStats": {
+        "yarisma": "Şampiyonlar Ligi",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "17.5",
+            "PPG"
+          ],
+          [
+            "6.7",
+            "APG"
+          ],
+          [
+            "3.2",
+            "RPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "BBL",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "17.3",
+              "PPG"
+            ],
+            [
+              "5.7",
+              "APG"
+            ],
+            [
+              "2.5",
+              "RPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Skor ve pas dengesi"
+        },
+        {
+          "t": "Milli takım tecrübesi",
+          "v": "Kanada, 17 PPG"
+        },
+        {
+          "t": "İki kulvarda birden üretim"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Balance of scoring and passing"
+        },
+        {
+          "t": "International experience",
+          "v": "Canada, 17 PPG"
+        },
+        {
+          "t": "Production across two competitions"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "EuroLeague'de test edilmemiş"
+        },
+        {
+          "t": "Fiziksel boyut"
+        },
+        {
+          "t": "Savunmada hedef olma riski"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Untested in the EuroLeague"
+        },
+        {
+          "t": "Physical size"
+        },
+        {
+          "t": "Risk of being targeted on defence"
+        }
+      ],
+      "arketip": "Floor General",
+      "mtnRating": "8.0",
+      "ratingNotu": "Kariyerini basamak basamak kurmuş bir oyuncu; Yunanistan, İsrail ve Kanada'daki duraklardan sonra Almanya'da kendini kanıtladı. Virtus'un başlangıç oyun kurucusu olarak geliyor, yani ilk kez gerçek bir üst seviye sorumluluk alacak.",
+      "ratingNotuEn": "A player who built his career step by step; after stops in Greece, Israel and Canada he proved himself in Germany. He arrives as Virtus's starting point guard, taking on genuine top-level responsibility for the first time.",
+      "benzerOyuncular": [
+        {
+          "isim": "TJ Shorts",
+          "neden": "Kompakt gövdeyle hem skor hem asist üreten guard",
+          "nedenEn": "A guard producing both scoring and assists from a compact frame"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=ToBSeKPMcj8",
+      "kariyerYolu": [
+        {
+          "kulup": "Aris",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Bnei Herzliya",
+          "yil": "2024"
+        },
+        {
+          "kulup": "Fraser Valley",
+          "yil": "2024"
+        },
+        {
+          "kulup": "Galil Elion",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Hamilton",
+          "yil": "2025"
+        },
+        {
+          "kulup": "Würzburg",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Virtus",
+          "yil": "2026-"
+        }
+      ]
     }
   ]
 }
