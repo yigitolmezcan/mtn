@@ -342,6 +342,30 @@ h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .opotval{font-size:12.5px;font-weight:700;color:var(--radar);letter-spacing:.09em;text-transform:uppercase}
 .orow.rad .osw li::before{color:var(--radar)}
 .orow.rad .obtn{color:var(--radar)}
+
+/* --- Newcomer Class: mobilde kart yerine kompakt satır --- */
+@media(max-width:640px){
+  .cgrid{display:flex;flex-direction:column;gap:0}
+  .pcard{flex-direction:row;align-items:center;text-align:left;gap:13px;
+    background:none;border:0;border-bottom:1px solid var(--lines);border-radius:0;
+    padding:11px 0 11px 11px}
+  .pcard::before{display:none}
+  .pstripe{width:3px;top:8px;bottom:8px;border-radius:2px}
+  .pav{width:42px;height:42px;font-size:12px;border-width:2px;flex-shrink:0}
+  .pav::after{display:none}
+  .pbody{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+  .pname{font-size:14.5px;line-height:1.2}
+  .pmeta{font-size:10.5px}
+  .park{display:none}
+  .prate{margin:0;padding:0;flex-shrink:0}
+  .prate b{font-size:17px}
+  .prate span{display:none}
+  .csearch{display:flex}
+}
+.csearch{display:none;align-items:center;gap:10px;background:var(--surface);
+  border:1px solid var(--line);border-radius:10px;padding:11px 14px;margin-bottom:14px}
+.csearch .q{font-size:12.5px;color:var(--mutedd)}
+
 footer{padding:30px 0 52px;border-top:1px solid var(--lines);margin-top:40px}
 .fdisc{font-size:10.5px;color:var(--mutedd);line-height:1.6;max-width:70ch;margin:0 auto;text-align:center}
 .frow{display:flex;align-items:center;justify-content:space-between;margin-top:18px;
@@ -448,6 +472,20 @@ select.csort option{background:var(--surface);color:var(--bone)}
 /* Izgarada 37 kart yan yana gelince şeritler alacalanıyordu; renk geri
    çekiliyor, karta gelince tam tonuna kavuşuyor. Sadece .pcard için —
    .orow şeritleri zaten seyrek, onlara dokunulmuyor. */
-.pstripe{width:4px;filter:saturate(.4) brightness(.7);opacity:.75;
+.pstripe{filter:saturate(.4) brightness(.7);opacity:.75;
   transition:filter .25s,opacity .25s}
 .pcard:hover .pstripe{filter:none;opacity:1}
+
+/* sayfa içi arama — referansta sahte bir span, burada gerçek input */
+.csearch input.q{flex:1;min-width:0;background:none;border:0;outline:0;padding:0;
+  font-family:var(--sans);font-size:12.5px;color:var(--bone)}
+.csearch input.q::placeholder{color:var(--mutedd)}
+.csearch--empty{color:var(--muted);font-size:13px;padding:22px 0 8px}
+
+/* Referansta `.csearch{display:none}` temel kuralı, onu açan
+   @media(max-width:640px) bloğundan SONRA geliyor; eşit özgüllükte sonraki
+   kural kazandığı için kutu mobilde de gizli kalıyordu. Medya kuralı burada
+   yeniden veriliyor (dosyanın sonunda olduğu için kaskadı o kazanıyor). */
+@media(max-width:640px){
+  .csearch{display:flex}
+}

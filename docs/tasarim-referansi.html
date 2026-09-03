@@ -357,6 +357,30 @@ h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .opotval{font-size:12.5px;font-weight:700;color:var(--radar);letter-spacing:.09em;text-transform:uppercase}
 .orow.rad .osw li::before{color:var(--radar)}
 .orow.rad .obtn{color:var(--radar)}
+
+/* --- Newcomer Class: mobilde kart yerine kompakt satır --- */
+@media(max-width:640px){
+  .cgrid{display:flex;flex-direction:column;gap:0}
+  .pcard{flex-direction:row;align-items:center;text-align:left;gap:13px;
+    background:none;border:0;border-bottom:1px solid var(--lines);border-radius:0;
+    padding:11px 0 11px 11px}
+  .pcard::before{display:none}
+  .pstripe{width:3px;top:8px;bottom:8px;border-radius:2px}
+  .pav{width:42px;height:42px;font-size:12px;border-width:2px;flex-shrink:0}
+  .pav::after{display:none}
+  .pbody{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+  .pname{font-size:14.5px;line-height:1.2}
+  .pmeta{font-size:10.5px}
+  .park{display:none}
+  .prate{margin:0;padding:0;flex-shrink:0}
+  .prate b{font-size:17px}
+  .prate span{display:none}
+  .csearch{display:flex}
+}
+.csearch{display:none;align-items:center;gap:10px;background:var(--surface);
+  border:1px solid var(--line);border-radius:10px;padding:11px 14px;margin-bottom:14px}
+.csearch .q{font-size:12.5px;color:var(--mutedd)}
+
 footer{padding:30px 0 52px;border-top:1px solid var(--lines);margin-top:40px}
 .fdisc{font-size:10.5px;color:var(--mutedd);line-height:1.6;max-width:70ch;margin:0 auto;text-align:center}
 .frow{display:flex;align-items:center;justify-content:space-between;margin-top:18px;
@@ -513,6 +537,7 @@ footer{padding:30px 0 52px;border-top:1px solid var(--lines);margin-top:40px}
     <h2>26-27 Newcomer Class</h2>
   </div>
   <p class="cintro">EuroLeague seviyesinde ilk kez test edilecek oyuncuların detaylı scouting raporları.</p>
+  <div class="csearch"><span class="bm"></span><span class="q">Bu sınıfta ara…</span></div>
   <div class="ctools">
     <span class="ccount">44 rapor</span>
     <span class="csort">Güncelleme sırası ▾</span>
@@ -788,7 +813,7 @@ document.getElementById('cgrid').innerHTML=CP.map(function(p){
   return '<div class="pcard" style="--rg:'+p[5]+'">'+
    '<span class="pstripe"><i style="background:'+p[5]+'"></i><i style="background:'+p[6]+'"></i></span>'+
    '<span class="pav">'+p[0]+'</span>'+
-   '<div class="pname">'+p[1]+'</div><div class="pmeta">'+p[2]+'</div>'+
+   '<div class="pbody"><div class="pname">'+p[1]+'</div><div class="pmeta">'+p[2]+'</div></div>'+
    '<div class="park">'+(ARKMAP[p[1]]||'')+'</div>'+
    '<div class="prate"><b>'+p[4]+'</b><span>MtN Rating</span></div></div>';
 }).join('');

@@ -25,11 +25,13 @@ export default function PCard({ player: p }) {
       <span className="pav">
         <PlayerPhoto slug={p.slug} foto={p.foto} name={p.ad} size={88} fallback={initials(p.ad)} />
       </span>
-      <div className="pname">{p.ad}</div>
-      <div className="pmeta">
-        <span lang="en">{p.pozisyon}</span>
-        {' · '}
-        <span lang={p.digerDil ? 'en' : 'tr'}>{takim}</span>
+      <div className="pbody">
+        <div className="pname">{p.ad}</div>
+        <div className="pmeta">
+          <span lang="en">{p.pozisyon}</span>
+          {' · '}
+          <span lang={p.digerDil ? 'en' : 'tr'}>{takim}</span>
+        </div>
       </div>
       <div className="park" lang="en">{p.arketip}</div>
       {p.raporTuru === 'radar' ? (
