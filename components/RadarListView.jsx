@@ -4,8 +4,27 @@ import ProfileRow from './ProfileRow';
 import { RadarMark } from './SectionMark';
 import { useLang } from '@/lib/LanguageContext';
 
+// Potansiyele göre üç grup. 18 isme çıkınca düz liste taranamaz hale
+// geliyor; gruplama hem yapı veriyor hem dereceyi sayfanın omurgası yapıyor.
+const GROUPS = [
+  { seviye: 'Yüksek', labelKey: 'potGroupHigh' },
+  { seviye: 'Orta', labelKey: 'potGroupMid' },
+  { seviye: 'Düşük', labelKey: 'potGroupLow' },
+];
+
 export default function RadarListView({ players }) {
   const { lang, t } = useLang();
+
+  const gruplar = GROUPS.map((g) => ({
+    ...g,
+    // Grup içi sıralama veriden geldiği gibi korunuyor.
+    oyuncular: players.filter((p) => p.euroleaguePotansiyeli === g.seviye),
+  })).filter((g) => g.oyuncular.length > 0);
+
+  // Potansiyeli henüz girilmemiş oyuncu olursa kaybolmasın.
+  const gruplanmayan = players.filter(
+    (p) => !GROUPS.some((g) => g.seviye === p.euroleaguePotansiyeli)
+  );
 
   return (
     <main>
@@ -27,7 +46,20 @@ export default function RadarListView({ players }) {
 
       <section style={{ padding: '8px 0 40px' }}>
         <div className="wrap">
-          {players.map((p) => (
+          {gruplar.map((g) => (
+            <div key={g.seviye}>
+              <div className="ogrp ogrp--radar">{t[g.labelKey]}</div>
+              {g.oyuncular.map((p) => (
+                <ProfileRow
+                  key={p.slug}
+                  player={p}
+                  metin={lang === 'en' ? p.ozetDetayEn : p.ozetDetay}
+                  radar
+                />
+              ))}
+            </div>
+          ))}
+          {gruplanmayan.map((p) => (
             <ProfileRow
               key={p.slug}
               player={p}

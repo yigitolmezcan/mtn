@@ -2,12 +2,15 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import PlayerPhoto from '@/components/PlayerPhoto';
+import ShareButton from '@/components/ShareButton';
 import CourtDiagram from '@/components/CourtDiagram';
 import CareerPath from '@/components/CareerPath';
 import PotentialGauge from '@/components/PotentialGauge';
 import { useLang } from '@/lib/LanguageContext';
 import { countryEn } from '@/lib/i18n';
 import { translateLeague } from '@/lib/leagueTranslate';
+import { playerHref } from '@/lib/playerHref';
+import { SITE_URL } from '@/lib/site';
 
 const POT_KEY = { Yüksek: 'potHigh', Orta: 'potMid', Düşük: 'potLow' };
 
@@ -59,7 +62,10 @@ export default function PlayerProfile({ p }) {
 
   return (
     <main className={`wrap${isRadar ? ' rad' : ''}`} style={{ '--team': p.halkaRenk }}>
-      <Link href={backHref} className="back">← {backLabel}</Link>
+      <div className="prow">
+        <Link href={backHref} className="back">← {backLabel}</Link>
+        <ShareButton url={`${SITE_URL}${playerHref(p.slug, lang)}`} />
+      </div>
 
       <div className="bGrid">
         <aside className="bRail">

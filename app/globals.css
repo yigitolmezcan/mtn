@@ -214,14 +214,14 @@ h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .sres{margin-top:9px;background:var(--surface);border:1px solid var(--line);border-radius:11px;
   padding:7px;display:none}
 .sres.on{display:block}
-.sr{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:8px;cursor:pointer}
+.sr{display:flex;align-items:center;gap:15px;padding:13px;border-radius:8px;cursor:pointer}
 .sr:hover{background:var(--surface2)}
 .srav{width:34px;height:34px;border-radius:50%;background:var(--surface2);border:2px solid var(--rg);
   display:flex;align-items:center;justify-content:center;font-family:var(--display);
   font-weight:700;font-size:11px;color:var(--rg);flex-shrink:0}
 .srt{flex:1;min-width:0}
-.srn{font-family:var(--display);font-weight:700;font-size:14px}
-.srs{font-size:11px;color:var(--mutedd);margin-top:1px}
+.srn{font-family:var(--display);font-weight:700;font-size:14px;color:var(--bone)}
+.srs{font-size:11.5px;font-weight:400;color:var(--mutedd);margin-top:4px}
 .srg{font-size:9px;letter-spacing:.09em;text-transform:uppercase;padding:3px 9px;border-radius:999px;
   background:rgba(224,116,47,.12);color:var(--court)}
 .srg.r{background:rgba(111,168,255,.13);color:var(--radar)}
@@ -433,3 +433,18 @@ select.csort option{background:var(--surface);color:var(--bone)}
 
 /* kartta radar oyuncusu: rating yerine potansiyel */
 .prate--radar b{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--radar)}
+
+/* Radar'da grup başlıkları mavi; Ones to Watch'takiler turuncu kalıyor */
+.ogrp--radar{color:var(--radar)}
+
+/* profil üstü: geri linki solda, paylaş sağda */
+.prow{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.prow .back{padding-top:22px}
+.pshare{display:inline-flex;align-items:center;gap:7px;margin-top:22px;padding:0;
+  font-size:11.5px;color:var(--muted);background:none;border:0;cursor:pointer;font-family:var(--sans)}
+.pshare:hover{color:var(--bone)}
+.pshare.ok{color:var(--court)}
+
+/* .srn ve .srs birer <span>; .srt kolon olmadan aynı satıra akıyorlardı
+   (referanstaki margin-top da bu yüzden etkisizdi). */
+.srt{display:flex;flex-direction:column}

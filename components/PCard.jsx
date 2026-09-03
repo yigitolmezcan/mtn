@@ -14,8 +14,10 @@ export default function PCard({ player: p }) {
   const { lang, t } = useLang();
   const takim = lang === 'en' ? p.takimEn : p.takim;
 
+  // Halka bilerek tek renk: takım kimliğini sol şerit taşıyor,
+  // halka da renkli olunca ızgara alacalanıyor.
   return (
-    <Link href={playerHref(p.slug, lang)} className="pcard" style={{ '--rg': p.halkaRenk }}>
+    <Link href={playerHref(p.slug, lang)} className="pcard" style={{ '--rg': 'var(--bone)' }}>
       <span className="pstripe">
         <i style={{ background: p.renk1 }} />
         <i style={{ background: p.renk2 || p.renk1 }} />
