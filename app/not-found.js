@@ -1,15 +1,9 @@
-import Link from 'next/link';
+import NotFoundView from '@/components/NotFoundView';
 
-// Global 404 — herhangi bir eşleşmeyen URL. Oyuncuya özel 404 için
-// app/oyuncu/[slug]/not-found.js ve app/player/[slug]/not-found.js var.
+// Next.js not-found sayfasına <meta name="robots" content="noindex"> etiketini
+// kendisi ekliyor (production'da da doğrulandı), o yüzden burada tekrarlanmıyor.
+// Canonical bilerek yok: layout'taki kök canonical app/page.js'e taşındı ki
+// 404 onu miras almasın.
 export default function NotFound() {
-  return (
-    <main className="wrap" style={{ padding: '60px 0 80px' }}>
-      <div className="bhead"><h2>Sayfa bulunamadı</h2></div>
-      <p className="cintro">Aradığınız sayfa mevcut değil ya da taşınmış olabilir.</p>
-      <p style={{ marginTop: 8 }}>
-        <Link href="/" className="back">← Ana sayfa</Link>
-      </p>
-    </main>
-  );
+  return <NotFoundView />;
 }

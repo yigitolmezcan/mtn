@@ -24,7 +24,6 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
-  alternates: { canonical: '/' },
   title: {
     default: "Meet the Newcomers — EuroLeague'in Yeni İsimleri",
     template: '%s — Meet the Newcomers',

@@ -11,7 +11,7 @@ function initials(name) {
 
 const POT_KEY = { Yüksek: 'potHigh', Orta: 'potMid', Düşük: 'potLow' };
 
-export default function ProfileRow({ player: p, metin, radar = false }) {
+export default function ProfileRow({ player: p, metin, radar = false, from = null }) {
   const { lang, t } = useLang();
   const takim = lang === 'en' ? p.takimEn : p.takim;
   const guclu = (lang === 'en' ? p.gucluYonlerEn : p.gucluYonler) || [];
@@ -21,7 +21,7 @@ export default function ProfileRow({ player: p, metin, radar = false }) {
 
   return (
     <Link
-      href={playerHref(p.slug, lang)}
+      href={`${playerHref(p.slug, lang)}${from ? `?from=${from}` : ''}`}
       className={`orow${radar ? ' rad' : ''}`}
       style={{ '--rg': p.halkaRenk }}
     >

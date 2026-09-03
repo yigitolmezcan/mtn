@@ -1,8 +1,8 @@
 'use client';
-import { useState } from 'react';
-import Link from 'next/link';
+import { useState, Suspense } from 'react';
 import PlayerPhoto from '@/components/PlayerPhoto';
 import ShareButton from '@/components/ShareButton';
+import ProfileBackLink from '@/components/ProfileBackLink';
 import CourtDiagram from '@/components/CourtDiagram';
 import CareerPath from '@/components/CareerPath';
 import PotentialGauge from '@/components/PotentialGauge';
@@ -55,15 +55,15 @@ export default function PlayerProfile({ p }) {
   const stats = p.featuredStats;
   const pot = p.euroleaguePotansiyeli;
 
-  const backHref = isRadar ? '/radar' : '/newcomer-class-26-27';
-  const backLabel = isRadar ? t.radar : t.classTitle;
-
   const court = <CourtDiagram pozisyon={p.pozisyon} className="crt mCourt" />;
 
   return (
     <main className={`wrap${isRadar ? ' rad' : ''}`} style={{ '--team': p.halkaRenk }}>
       <div className="prow">
-        <Link href={backHref} className="back">← {backLabel}</Link>
+        {/* useSearchParams statik prerender'da Suspense sınırı istiyor */}
+        <Suspense fallback={<span className="back" />}>
+          <ProfileBackLink isRadar={isRadar} />
+        </Suspense>
         <ShareButton url={`${SITE_URL}${playerHref(p.slug, lang)}`} />
       </div>
 

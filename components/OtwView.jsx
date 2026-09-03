@@ -30,6 +30,7 @@ export default function OtwView({ groups }) {
                   key={player.slug}
                   player={player}
                   metin={lang === 'en' ? metinEn : metin}
+                  from="ones-to-watch"
                 />
               ))}
             </div>

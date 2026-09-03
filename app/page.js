@@ -2,6 +2,10 @@ import HubView from '@/components/HubView';
 import { getAllPlayers } from '@/lib/players';
 import { onesToWatch } from '@/data/onesToWatch';
 
+export const metadata = {
+  alternates: { canonical: '/' },
+};
+
 // Bantlardaki dairesel fotoğraflar için gereken en küçük alan kümesi.
 function preview(p) {
   return { slug: p.slug, ad: p.ad, foto: p.foto, halkaRenk: p.halkaRenk };
