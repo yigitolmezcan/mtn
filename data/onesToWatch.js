@@ -9,6 +9,9 @@ export const onesToWatch = {
     { slug: 'rj-cole',
       metin: "Sınıfın çoğu isminden farklı olarak oyununu ikili oyunların tempo kontrolü üzerine kuruyor. Bu soğukkanlı yaklaşım, Milano'nun hücumuna diğer transferlerden farklı bir soluk getirebilir.",
       metinEn: "Unlike much of the class, he builds his game around controlling pace in pick-and-roll actions. That composed approach could give Milano's offense a different rhythm than its other new arrivals." },
+    { slug: 'mario-saint-supery',
+      metin: "Sınıfın en genç ismi ve tek üniversite dönüşü. Gonzaga'da ikinci sezonuna başlamak yerine Valencia'nın 2030'a kadar uzanan sözleşmesini seçmesi, kariyer planı olarak bu listedeki herkesten farklı. 15 yaşında Liga Endesa'da, 20 yaşında EuroBasket'te oynamış bir oyuncunun EuroLeague'de ne kadar hazır olduğunu bu sezon göreceğiz.",
+      metinEn: "The youngest name in the class and the only one turning back from college. Choosing Valencia's deal through 2030 over a second season at Gonzaga sets his career path apart from everyone else on this list. Having played in the Liga Endesa at 15 and at EuroBasket at 20, how ready he is for the EuroLeague is what this season will show." },
   ],
   forwards: [
     { slug: 'dj-stewart',
