@@ -12,6 +12,8 @@ export default function sitemap() {
     { url: `${SITE_URL}/ones-to-watch`, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE_URL}/radar`, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE_URL}/arketipler`, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${SITE_URL}/nasil-calisiyoruz`, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${SITE_URL}/how-it-works`, changeFrequency: 'monthly', priority: 0.5 },
   ];
 
   const archetypes = Object.keys(archetypeDefs).map((ad) => ({

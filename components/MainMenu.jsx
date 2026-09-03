@@ -18,10 +18,17 @@ const GROUPS = [
       { key: 'archetypes', labelKey: 'menuArchetypes', href: '/arketipler' },
     ],
   },
+  {
+    labelKey: 'menuSite',
+    items: [
+      // Bu sayfanın iki dilde ayrı adresi var; hangisine gidileceğini dil seçer.
+      { key: 'howItWorks', labelKey: 'howTitle', href: { tr: '/nasil-calisiyoruz', en: '/how-it-works' } },
+    ],
+  },
 ];
 
 export default function MainMenu() {
-  const { t } = useLang();
+  const { lang, t } = useLang();
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -53,7 +60,7 @@ export default function MainMenu() {
               {group.items.map((item) => (
                 <Link
                   key={item.key}
-                  href={item.href}
+                  href={typeof item.href === 'string' ? item.href : item.href[lang]}
                   className="mainmenu__link"
                   onClick={() => setOpen(false)}
                 >

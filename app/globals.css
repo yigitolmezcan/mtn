@@ -513,3 +513,18 @@ select.csort option{background:var(--surface);color:var(--bone)}
   .path--dense .pyear,.path--xdense .pyear{font-size:11px}
   .path--dense .pline,.path--xdense .pline{width:1.5px;flex:none;height:14px}
 }
+
+/* Nasıl Çalışıyoruz — düz metin sayfası */
+.sec p + p{margin-top:14px}
+.scale + p{margin-top:16px}
+.scale{margin:14px 0 4px;display:flex;flex-direction:column;gap:9px}
+.scale__row{display:flex;gap:16px;align-items:baseline}
+.scale__row dt{flex:0 0 62px;font-family:var(--display);font-weight:700;font-size:15px;
+  color:var(--court);font-variant-numeric:tabular-nums}
+.scale__row dd{flex:1;min-width:0;font-size:15px;color:var(--paper);line-height:1.6}
+.seclink{color:var(--court);font-size:14.5px;font-weight:600}
+.seclink:hover{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:520px){
+  .scale__row{flex-direction:column;gap:2px}
+  .scale__row dt{flex:none}
+}

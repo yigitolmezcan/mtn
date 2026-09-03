@@ -3232,14 +3232,9 @@
       "arketip": "Scoring Point Guard",
       "benzerOyuncular": [
         {
-          "isim": "Markus Howard",
-          "neden": "Şut hacmi",
-          "nedenEn": "Shooting volume"
-        },
-        {
-          "isim": "Jordan Crawford",
-          "neden": "Kısa boyu avantaja çevirmek",
-          "nedenEn": "Turning his lack of size into an advantage"
+          "isim": "Daron Russell",
+          "neden": "Kısa boylu, yüksek hacimli skorer oyun kurucu profili",
+          "nedenEn": "An undersized, high-volume scoring point guard profile"
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=d9cjL1IA58U",
@@ -5062,7 +5057,13 @@
         { "t": "Untested at the top level" }
       ],
       "arketip": "Post Scorer",
-      "benzerOyuncular": [{"isim":"Tonye Jekiri","neden":"Boy ve ribaund odaklı pivot profili","nedenEn":"Size and rebounding-driven center profile"}],
+      "benzerOyuncular": [
+        {
+          "isim": "Marek Blazevic",
+          "neden": "Alçak post ve devrilme bitirişleriyle üreten uzun",
+          "nedenEn": "A big who produces from the low post and on rolls"
+        }
+      ],
       "youtubeUrl": "https://www.youtube.com/watch?v=40Zp6aSA66Y",
       "kariyerYolu": [
         {
@@ -5552,9 +5553,9 @@
       "ratingNotuEn": "A player whose contribution is predictable: physicality in the paint, efficient finishing, blocks. He'll play limited minutes behind Tavares at Real Madrid, so the point isn't impact but being reliable when called upon.",
       "benzerOyuncular": [
         {
-          "isim": "Austin Wiley",
-          "neden": "Fizik ve çember çevresi odaklı pivot profili",
-          "nedenEn": "A center profile built on physicality and rim finishing"
+          "isim": "Willy Hernangomez",
+          "neden": "Boyalı alanda fizik ve ribaund ağırlıklı pivot",
+          "nedenEn": "A center built on paint physicality and rebounding"
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=zhXBoyDLuAw",
@@ -5846,9 +5847,9 @@
       "arketip": "3&D Wing",
       "benzerOyuncular": [
         {
-          "isim": "DaQuan Jeffries",
-          "neden": "Savunma öncelikli fiziksel kanat",
-          "nedenEn": "A defence-first physical wing"
+          "isim": "Alpha Diallo",
+          "neden": "Fiziksel yapısıyla savunmada birden fazla pozisyon tutabilen kanat",
+          "nedenEn": "A wing whose frame lets him guard multiple positions"
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=BwauyS2ZFsA",
@@ -5970,9 +5971,9 @@
       "arketip": "Sharpshooter",
       "benzerOyuncular": [
         {
-          "isim": "Conor Morgan",
-          "neden": "Şut öncelikli, ribaund katkılı forvet",
-          "nedenEn": "A shooting-first forward who contributes on the glass"
+          "isim": "Tarık Biberović",
+          "neden": "Şut tehdidini boyuyla birleştiren kanat",
+          "nedenEn": "A wing who pairs a shooting threat with size"
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=_l1SL0MlG8U",
@@ -6125,9 +6126,9 @@
       "arketip": "Athletic Forward",
       "benzerOyuncular": [
         {
-          "isim": "Maozinha Pereira",
-          "neden": "Atletizm öncelikli, enerji odaklı forvet",
-          "nedenEn": "An athleticism-first, energy-driven forward"
+          "isim": "James Anderson",
+          "neden": "Atletizmiyle Türkiye'de öne çıkan fiziksel kanat",
+          "nedenEn": "A physical wing who stood out in Turkey on athleticism"
         }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=meQXbhre53c",
