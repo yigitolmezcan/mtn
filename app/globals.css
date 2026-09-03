@@ -489,3 +489,27 @@ select.csort option{background:var(--surface);color:var(--bone)}
 @media(max-width:640px){
   .csearch{display:flex}
 }
+
+/* Kariyer yolunda kelime ortadan bölünmesin: referanstaki
+   word-break:break-word "Vanderb-ilt" gibi kırılmalara yol açıyordu.
+   Kelime bütün kalır, gerekirse iki satıra sarar. */
+.pclub{word-break:normal;overflow-wrap:break-word;hyphens:none}
+
+/* Durak sayısı arttıkça yazı küçülür. CSS eleman sayamadığı için
+   sınıfı CareerPath bileşeni kariyerYolu.length'e bakarak veriyor. */
+.path--dense .pclub{font-size:10.5px;line-height:1.25}
+.path--dense .pyear{font-size:8.5px}
+.path--dense .pline{width:10px;flex:0 0 10px}
+
+.path--xdense .pclub{font-size:9.5px;line-height:1.22}
+.path--xdense .pyear{font-size:8px}
+.path--xdense .pline{width:8px;flex:0 0 8px}
+
+/* Mobilde yol dikeye döndüğü için yer bol; sıkıştırma geri alınır.
+   (Sınıflı seçiciler referansın tek sınıflı medya kuralını ezdiği için
+   burada aynı özgüllükle geri veriliyor.) */
+@media(max-width:700px){
+  .path--dense .pclub,.path--xdense .pclub{font-size:14px;line-height:1.3}
+  .path--dense .pyear,.path--xdense .pyear{font-size:11px}
+  .path--dense .pline,.path--xdense .pline{width:1.5px;flex:none;height:14px}
+}

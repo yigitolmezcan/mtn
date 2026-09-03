@@ -5,9 +5,14 @@ import { Fragment } from 'react';
 export default function CareerPath({ duraklar, digerDil = false }) {
   if (!duraklar || duraklar.length === 0) return null;
 
+  // Durak arttıkça sütun daralıyor; yazıyı küçülterek kelimenin
+  // bütün kalmasını sağlıyoruz (kaydırma yok kuralı bozulmadan).
+  const yogunluk =
+    duraklar.length > 11 ? ' path--xdense' : duraklar.length > 8 ? ' path--dense' : '';
+
   return (
     <div className="pathwrap">
-      <div className="path">
+      <div className={`path${yogunluk}`}>
         {duraklar.map((d, i) => {
           const son = i === duraklar.length - 1;
           return (
