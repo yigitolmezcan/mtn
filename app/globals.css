@@ -449,3 +449,10 @@ select.csort option{background:var(--surface);color:var(--bone)}
   font-size:11.5px;color:var(--muted);background:none;border:0;cursor:pointer;font-family:var(--sans)}
 .pshare:hover{color:var(--bone)}
 .pshare.ok{color:var(--court)}
+
+/* Izgarada 37 kart yan yana gelince şeritler alacalanıyordu; renk geri
+   çekiliyor, karta gelince tam tonuna kavuşuyor. Sadece .pcard için —
+   .orow şeritleri zaten seyrek, onlara dokunulmuyor. */
+.pstripe{width:4px;filter:saturate(.4) brightness(.7);opacity:.75;
+  transition:filter .25s,opacity .25s}
+.pcard:hover .pstripe{filter:none;opacity:1}
