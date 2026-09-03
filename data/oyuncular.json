@@ -203,6 +203,29 @@
       "vurgu": "#FDB912",
       "renk1": "#FDB912",
       "renk2": "#A90432"
+    },
+    "denizli": {
+      "ad": "Yukatel Denizli Basket",
+      "marka": "#1B7A3E",
+      "vurgu": "#1B7A3E",
+      "renk1": "#1B7A3E",
+      "renk2": "#1D4E8F"
+    },
+    "alba-berlin": {
+      "ad": "Alba Berlin",
+      "marka": "#F2C300",
+      "vurgu": "#F2C300",
+      "renk1": "#F2C300",
+      "renk2": "#0A3D8F",
+      "digerDil": true
+    },
+    "tenerife": {
+      "ad": "La Laguna Tenerife",
+      "marka": "#F2C300",
+      "vurgu": "#F2C300",
+      "renk1": "#0A0A0B",
+      "renk2": "#F2C300",
+      "digerDil": true
     }
   },
   "oyuncular": [
@@ -3821,9 +3844,9 @@
       "geldigiLig": "GBL (Yunanistan)",
       "transferNotu": "Avrupa kariyerine Karadağ'da başlayan Jones, basamakları teker teker çıkarak FMP, Limoges, Cluj, Igokea ve Aris formalarıyla EuroCup seviyesinde bir oyuncuya dönüştü.",
       "transferNotuEn": "Having started his European career in Montenegro, Jones climbed the ladder step by step through FMP, Limoges, Cluj, Igokea, and Aris to become a genuine EuroCup-level player.",
-      "ozet": "Pick and roll üzerinden hücum yöneten, çembere gidişler ve faul alma becerisiyle öne çıkan lider özellikli oyun kurucu.",
+      "ozet": "Pick-and-roll üzerinden hücum yöneten, çembere gidişler ve faul alma becerisiyle öne çıkan lider özellikli oyun kurucu.",
       "ozetEn": "Running the offense through pick-and-roll, he's a leadership-driven point guard known for his drives and ability to draw fouls.",
-      "ozetDetay": "Pick and roll üzerinden hücum yöneten, çembere gidişler ve faul alma becerisiyle öne çıkan lider özellikli oyun kurucu. Eski koçu Massimo Cancellieri ile yeniden buluşan Jones, baştan aşağı yenilenen Tofaş kadrosunun parkedeki karar vericisi olacak.",
+      "ozetDetay": "Pick-and-roll üzerinden hücum yöneten, çembere gidişler ve faul alma becerisiyle öne çıkan lider özellikli oyun kurucu. Eski koçu Massimo Cancellieri ile yeniden buluşan Jones, baştan aşağı yenilenen Tofaş kadrosunun parkedeki karar vericisi olacak.",
       "ozetDetayEn": "Running the offense through pick-and-roll, he's a leadership-driven point guard known for his drives and ability to draw fouls. Reuniting with his former coach Massimo Cancellieri, Jones will be the on-court decision-maker for a completely rebuilt Tofaş roster.",
       "nedenRadarda": null,
       "nedenRadardaEn": null,
@@ -4657,7 +4680,7 @@
         },
         {
           "isim": "Jaycee Carroll",
-          "neden": "Hücumdaki sprint temposu ve catch and shoot yeteneği",
+          "neden": "Hücumdaki sprint temposu ve catch-and-shoot yeteneği",
           "nedenEn": "Sprint tempo in offense and catch-and-shoot ability"
         }
       ],
@@ -5255,6 +5278,886 @@
         },
         {
           "kulup": "Galatasaray",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "aj-lawson",
+      "ad": "AJ Lawson",
+      "resmiAd": "Anthony Lawson Jr.",
+      "raporTuru": "newcomer",
+      "takimSlug": "baskonia",
+      "lig": "euroleague",
+      "pozisyon": "SG / SF",
+      "boy": "2.00 m",
+      "yas": "26",
+      "milliyet": "Kanada",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": "Jamaika pasaportuna da sahip.",
+      "milliyetNotuEn": "Also holds a Jamaican passport.",
+      "geldigiKulup": "Toronto Raptors",
+      "geldigiLig": "NBA (ABD)",
+      "transferNotu": "Baskonia bu yaz Luwawu-Cabarrot, Trent Forrest, Markquis Nowell, Eugene Omoruyi ve Mamadi Diakite'yi kaybetti; Lawson, DJ Stewart ve Chris Duarte'nin ardından kanat rotasyonuna eklenen üçüncü NBA geçmişli isim oldu. İki yıllık sözleşmeyle geliyor ve EuroLeague'de ilk kez forma giyecek.",
+      "transferNotuEn": "Baskonia lost Luwawu-Cabarrot, Trent Forrest, Markquis Nowell, Eugene Omoruyi and Mamadi Diakite this summer; Lawson becomes the third NBA-experienced name added to the wing rotation after DJ Stewart and Chris Duarte. He arrives on a two-year deal and will play in the EuroLeague for the first time.",
+      "ozet": "Atletizmini yüksek hacimli skor üretimiyle birleştiren, G Lig'de gerçek bir başrol oyuncusuna dönüşmüş enerjik kanat.",
+      "ozetEn": "Pairing athleticism with high-volume scoring, he turned himself into a genuine lead option in the G League.",
+      "ozetDetay": "Atletizmini yüksek hacimli skor üretimiyle birleştiren, G Lig'de gerçek bir başrol oyuncusuna dönüşmüş enerjik kanat. Draft edilmemesine rağmen üç NBA takımında 107 maç oynadı, ama asıl sıçramasını Raptors 905'te yaptı: 36 maçta 21.6 sayı ortalamasıyla ligin en üretken isimlerinden biri oldu. Baskonia'da kadro baştan aşağı yenilendiği için hücumda gerçek bir alan bulabilir.",
+      "ozetDetayEn": "Pairing athleticism with high-volume scoring, he turned himself into a genuine lead option in the G League. Despite going undrafted he appeared in 107 NBA games across three franchises, but his real leap came with Raptors 905: 21.6 points a game over 36 outings made him one of the league's most productive scorers. With Baskonia's roster rebuilt from scratch, there is real offensive room waiting for him.",
+      "anahtarSoru": "G Lig'deki yüksek kullanım oranını kaybettiğinde verimliliğini koruyabilecek mi?",
+      "anahtarSoruEn": "Can he stay efficient once he loses the heavy usage he enjoyed in the G League?",
+      "featuredStats": {
+        "yarisma": "NBA G League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "21.6",
+            "PPG"
+          ],
+          [
+            "4.8",
+            "RPG"
+          ],
+          [
+            "2.3",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "NBA",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "4.2",
+              "PPG"
+            ],
+            [
+              "1.8",
+              "RPG"
+            ],
+            [
+              "42.2",
+              "3PT%"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Yüksek hacimli skor üretimi",
+          "v": "21.6 PPG, G Lig"
+        },
+        {
+          "t": "Atletizm ve geçiş hücumu"
+        },
+        {
+          "t": "Dış şut isabeti",
+          "v": "%42.2 3PT, NBA"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "High-volume scoring",
+          "v": "21.6 PPG, G League"
+        },
+        {
+          "t": "Athleticism in transition"
+        },
+        {
+          "t": "Outside shooting accuracy",
+          "v": "42.2% 3PT, NBA"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Düşük kullanımda test edilmemiş"
+        },
+        {
+          "t": "NBA'de kalıcı rol bulamaması"
+        },
+        {
+          "t": "Sınırlı oyun kurma katkısı"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Untested in a low-usage role"
+        },
+        {
+          "t": "Never secured a lasting NBA role"
+        },
+        {
+          "t": "Limited playmaking contribution"
+        }
+      ],
+      "arketip": "Scoring Wing",
+      "mtnRating": "7.5",
+      "ratingNotu": "G Lig'de yıldız, NBA'de kenar oyuncusu olan bir profil. Baskonia'nın yeniden kurulan kanat rotasyonu ona gerçek bir alan açıyor; asıl soru bu alanı doldurup dolduramayacağı.",
+      "ratingNotuEn": "A profile that was a star in the G League and a fringe piece in the NBA. Baskonia's rebuilt wing rotation opens genuine room for him; the question is whether he can fill it.",
+      "benzerOyuncular": [
+        {
+          "isim": "DaQuan Jeffries",
+          "neden": "NBA ve G Lig arasında gidip gelen atletik kanat profili",
+          "nedenEn": "An athletic wing profile shuttling between the NBA and G League"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=_xNSyVC3zE8",
+      "kariyerYolu": [
+        {
+          "kulup": "South Carolina",
+          "yil": "2018-21"
+        },
+        {
+          "kulup": "Skyhawks",
+          "yil": "2020-21"
+        },
+        {
+          "kulup": "Timberwolves",
+          "yil": "2021-22"
+        },
+        {
+          "kulup": "Mavericks",
+          "yil": "2022-23"
+        },
+        {
+          "kulup": "Raptors 905",
+          "yil": "2024-26"
+        },
+        {
+          "kulup": "Raptors",
+          "yil": "2024-26"
+        },
+        {
+          "kulup": "Baskonia",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "damian-jones",
+      "ad": "Damian Jones",
+      "resmiAd": "Damian Jones",
+      "raporTuru": "newcomer",
+      "takimSlug": "real-madrid",
+      "lig": "euroleague",
+      "pozisyon": "C",
+      "boy": "2.10 m",
+      "yas": "31",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Vaqueros de Bayamón",
+      "geldigiLig": "BSN (Porto Riko)",
+      "transferNotu": "Yedi farklı NBA takımında 293 maç oynadı ve Golden State ile 2017-2018'de üst üste iki şampiyonluk kazandı. Real Madrid'e Bayamón'da kazandığı Porto Riko şampiyonluğunun hemen ardından, Tavares'in yanında ön alan derinliği olarak katılıyor.",
+      "transferNotuEn": "He played 293 NBA games across seven franchises and won back-to-back titles with Golden State in 2017 and 2018. He joins Real Madrid straight off a Puerto Rican championship with Bayamón, arriving as frontcourt depth alongside Tavares.",
+      "ozet": "İki kez NBA şampiyonu olmuş, fiziksel gücü ve çember çevresi verimliliğiyle öne çıkan tecrübeli bir pivot.",
+      "ozetEn": "A two-time NBA champion, this experienced center stands out for his physical strength and efficiency around the rim.",
+      "ozetDetay": "İki kez NBA şampiyonu olmuş, fiziksel gücü ve çember çevresi verimliliğiyle öne çıkan tecrübeli bir pivot. 2016 draftının son sırasında Golden State tarafından seçildi, ilk iki sezonunda iki şampiyonluk yaşadı ama hiçbir zaman kalıcı bir rotasyon rolü bulamadı. Sekiz NBA sezonunun ardından Çin ve Porto Riko'da oynadı.",
+      "ozetDetayEn": "A two-time NBA champion, this experienced center stands out for his physical strength and efficiency around the rim. Taken with the final pick of the 2016 first round by Golden State, he won two titles in his first two seasons but never carved out a lasting rotation role. After eight NBA seasons he played in China and Puerto Rico.",
+      "anahtarSoru": "NBA'de bulamadığı kalıcı rolü, 31 yaşında EuroLeague'de bulabilecek mi?",
+      "anahtarSoruEn": "At 31, can he find in the EuroLeague the lasting role he never secured in the NBA?",
+      "featuredStats": {
+        "yarisma": "BSN",
+        "sezon": "2026",
+        "items": [
+          [
+            "13.6",
+            "PPG"
+          ],
+          [
+            "6.3",
+            "RPG"
+          ],
+          [
+            "1.7",
+            "BPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "NBA kariyeri",
+          "sezon": "293 maç",
+          "items": [
+            [
+              "4.9",
+              "PPG"
+            ],
+            [
+              "3.1",
+              "RPG"
+            ],
+            [
+              "65.6",
+              "FG%"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Çember çevresi verimliliği",
+          "v": "%65.6 FG, NBA"
+        },
+        {
+          "t": "Fiziksel güç ve boy"
+        },
+        {
+          "t": "Şampiyonluk tecrübesi",
+          "v": "2x NBA"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Efficiency around the rim",
+          "v": "65.6% FG, NBA"
+        },
+        {
+          "t": "Physical strength and size"
+        },
+        {
+          "t": "Championship experience",
+          "v": "2x NBA"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Hücum repertuarının darlığı"
+        },
+        {
+          "t": "Dış şut tehdidi yokluğu"
+        },
+        {
+          "t": "Kalıcı rol bulamamış olması"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Narrow offensive repertoire"
+        },
+        {
+          "t": "No outside shooting threat"
+        },
+        {
+          "t": "Never held down a lasting role"
+        }
+      ],
+      "arketip": "Athletic Center",
+      "mtnRating": "7.5",
+      "ratingNotu": "Ne vereceği belli bir oyuncu: pota altında fizik, verimli bitiriş, blok. Real Madrid'de Tavares'in arkasında sınırlı dakikalarda oynayacak, o yüzden asıl mesele etki değil, hazır olduğunda güvenilir olmak.",
+      "ratingNotuEn": "A player whose contribution is predictable: physicality in the paint, efficient finishing, blocks. He'll play limited minutes behind Tavares at Real Madrid, so the point isn't impact but being reliable when called upon.",
+      "benzerOyuncular": [
+        {
+          "isim": "Austin Wiley",
+          "neden": "Fizik ve çember çevresi odaklı pivot profili",
+          "nedenEn": "A center profile built on physicality and rim finishing"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=zhXBoyDLuAw",
+      "kariyerYolu": [
+        {
+          "kulup": "Vanderbilt",
+          "yil": "2013-16"
+        },
+        {
+          "kulup": "Warriors",
+          "yil": "2016-19"
+        },
+        {
+          "kulup": "Hawks",
+          "yil": "2019-20"
+        },
+        {
+          "kulup": "Kings",
+          "yil": "2020-21"
+        },
+        {
+          "kulup": "Suns",
+          "yil": "2021"
+        },
+        {
+          "kulup": "Lakers",
+          "yil": "2021-22"
+        },
+        {
+          "kulup": "Jazz",
+          "yil": "2022-23"
+        },
+        {
+          "kulup": "Cavaliers",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Golden Bulls",
+          "yil": "2024-26"
+        },
+        {
+          "kulup": "Vaqueros",
+          "yil": "2026"
+        },
+        {
+          "kulup": "Real Madrid",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "tj-warren",
+      "ad": "T.J. Warren",
+      "resmiAd": "Tony Jerome Warren Jr.",
+      "raporTuru": "newcomer",
+      "takimSlug": "paris-basketball",
+      "lig": "euroleague",
+      "pozisyon": "SF",
+      "boy": "2.03 m",
+      "yas": "33",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Westchester Knicks",
+      "geldigiLig": "NBA G League (ABD)",
+      "transferNotu": "NBA'de 385 maç oynadı ve 2019-20 sezonunda Indiana formasıyla ligin en tartışılan skorerlerinden birine dönüştü. Ayak kırığı kariyerinin akışını değiştirdi; Paris Basketball, kariyerinde ilk kez ABD dışında oynayacak bir skorere hücumun anahtarlarını veriyor.",
+      "transferNotuEn": "He played 385 NBA games and, in 2019-20 with Indiana, became one of the league's most talked-about scorers. A foot fracture altered the course of his career; Paris Basketball is handing the offensive keys to a scorer who will play outside the United States for the first time.",
+      "ozet": "Orta mesafeden beslenen skor içgüdüsüyle NBA'de iz bırakmış, kariyerinde ilk kez Avrupa'ya adım atan bir skorer kanat.",
+      "ozetEn": "Known for a midrange-driven scoring instinct that left its mark in the NBA, he's a scoring wing stepping into Europe for the first time.",
+      "ozetDetay": "Orta mesafeden beslenen skor içgüdüsüyle NBA'de iz bırakmış, kariyerinde ilk kez Avrupa'ya adım atan bir skorer kanat. 2019-20 sezonunda Indiana formasıyla yakaladığı çıkış onu ligin en tartışılan skorerlerinden biri yapmıştı; ayak kırığı sonrası aynı seviyeye dönemedi ama G Lig'de skor üretebildiğini göstermeye devam etti. Paris'in hızlı tempolu sisteminde hücumun ana silahı olması bekleniyor.",
+      "ozetDetayEn": "Known for a midrange-driven scoring instinct that left its mark in the NBA, he's a scoring wing stepping into Europe for the first time. His 2019-20 breakout with Indiana made him one of the league's most talked-about scorers; he never returned to that level after a foot fracture, but has kept showing he can still produce in the G League. He's expected to be the main offensive weapon in Paris's up-tempo system.",
+      "anahtarSoru": "Sakatlık öncesi skor içgüdüsünü EuroLeague temposunda yeniden bulabilecek mi?",
+      "anahtarSoruEn": "Can he rediscover his pre-injury scoring instinct at EuroLeague pace?",
+      "featuredStats": {
+        "yarisma": "NBA G League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "18.3",
+            "PPG"
+          ],
+          [
+            "4.3",
+            "RPG"
+          ],
+          [
+            "3.0",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "NBA kariyeri",
+          "sezon": "385 maç",
+          "items": [
+            [
+              "14.3",
+              "PPG"
+            ],
+            [
+              "3.9",
+              "RPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Orta mesafe skor üretimi"
+        },
+        {
+          "t": "Kariyer boyu kanıtlanmış skorerlik",
+          "v": "385 NBA maçı"
+        },
+        {
+          "t": "Boyuna göre yumuşak bitiricilik"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Midrange scoring"
+        },
+        {
+          "t": "Scoring proven across a career",
+          "v": "385 NBA games"
+        },
+        {
+          "t": "Soft finishing touch for his size"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Sakatlık geçmişi"
+        },
+        {
+          "t": "Sınırlı örneklem",
+          "v": "G Lig'de 8 maç"
+        },
+        {
+          "t": "Savunma katkısı"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Injury history"
+        },
+        {
+          "t": "Small sample",
+          "v": "8 G League games"
+        },
+        {
+          "t": "Defensive contribution"
+        }
+      ],
+      "arketip": "Scoring Wing",
+      "mtnRating": "8.0",
+      "ratingNotu": "Listedeki en tanınmış isim ve en büyük soru işareti aynı kişide. Sağlıklı kaldığı sürece EuroLeague'de rahatlıkla 15+ sayı üretebilir; asıl belirsizlik bedeninin sezonu taşıyıp taşımayacağı.",
+      "ratingNotuEn": "The most recognisable name on this list and the biggest question mark are the same person. As long as he stays healthy he can comfortably produce 15+ points in the EuroLeague; the real uncertainty is whether his body carries him through a season.",
+      "benzerOyuncular": [
+        {
+          "isim": "Jordan Nwora",
+          "neden": "NBA'den gelen skor odaklı kanat profili",
+          "nedenEn": "A scoring-first wing arriving from the NBA"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=OyLCO8esZ4U",
+      "kariyerYolu": [
+        {
+          "kulup": "NC State",
+          "yil": "2012-14"
+        },
+        {
+          "kulup": "Suns",
+          "yil": "2014-20"
+        },
+        {
+          "kulup": "Pacers",
+          "yil": "2020-22"
+        },
+        {
+          "kulup": "Nets",
+          "yil": "2022-23"
+        },
+        {
+          "kulup": "Timberwolves",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Westchester",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Paris",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "tj-bamba",
+      "ad": "TJ Bamba",
+      "resmiAd": "Ahmed Tijani Bamba",
+      "raporTuru": "radar",
+      "takimSlug": "tenerife",
+      "lig": "euroleague",
+      "pozisyon": "SG / SF",
+      "boy": "1.96 m",
+      "yas": "25",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": "Bronx doğumlu; çocukluğunun bir bölümünü Senegal'de geçirdi.",
+      "milliyetNotuEn": "Born in the Bronx; spent part of his childhood in Senegal.",
+      "euroleaguePotansiyeli": "Yüksek",
+      "ozet": "Kolejde savunmasıyla ödül almış, Avrupa'daki ilk sezonunda çift haneye çıkmış genç bir iki yönlü kanat.",
+      "ozetEn": "An award-winning college defender who reached double figures in his first European season, he's a young two-way wing.",
+      "ozetDetay": "Kolejde savunmasıyla ödül almış, Avrupa'daki ilk sezonunda çift haneye çıkmış genç bir iki yönlü kanat. Fiziksel yapısı ve yatay hareketiyle birden fazla kanat tipine eşleşebiliyor; hücumda ise henüz ikincil bir rolde duruyor.",
+      "ozetDetayEn": "An award-winning college defender who reached double figures in his first European season, he's a young two-way wing. His frame and lateral movement let him match up with several wing types, while his offence still sits in a secondary role.",
+      "nedenRadarda": "Listedeki en genç isim. Üç farklı NCAA okulunda oynadı ve son sezonunda Big Ten'in en iyi savunma beşine seçildi. 2025'te draft edilmedi, Almanya'da Rasta Vechta ile ilk profesyonel sezonunda 12.6 sayı üretti. Tenerife ile EuroCup'a çıkıyor ve bu yaz Denver'ın Yaz Ligi kadrosundaydı; gelişim eğrisi hâlâ yukarı bakıyor.",
+      "nedenRadardaEn": "The youngest name on this list. He played at three different NCAA schools and was named to the Big Ten All-Defensive Team in his final season. Undrafted in 2025, he produced 12.6 points in his first professional season with Rasta Vechta in Germany. He steps up to the EuroCup with Tenerife and spent this summer on Denver's Summer League roster; his development curve still points upward.",
+      "neOlmasiLazim": "Dış şutunu savunmasının seviyesine çıkarması.",
+      "neOlmasiLazimEn": "Raising his outside shooting to the level of his defence.",
+      "featuredStats": {
+        "yarisma": "BBL",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "12.6",
+            "PPG"
+          ],
+          [
+            "3.6",
+            "RPG"
+          ],
+          [
+            "1.5",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Kanıtlanmış savunma kimliği",
+          "v": "Big Ten En İyi Savunma Beşi"
+        },
+        {
+          "t": "Fiziksel kanat profili"
+        },
+        {
+          "t": "Genç yaş ve gelişim alanı"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Proven defensive identity",
+          "v": "Big Ten All-Defensive Team"
+        },
+        {
+          "t": "Physical wing profile"
+        },
+        {
+          "t": "Youth and room to grow"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Tek sezonluk profesyonel örneklem"
+        },
+        {
+          "t": "Hücumda ikincil rol"
+        },
+        {
+          "t": "Üst düzeyde test edilmemiş"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Only one professional season of evidence"
+        },
+        {
+          "t": "Secondary offensive role"
+        },
+        {
+          "t": "Untested at the top level"
+        }
+      ],
+      "arketip": "3&D Wing",
+      "benzerOyuncular": [
+        {
+          "isim": "DaQuan Jeffries",
+          "neden": "Savunma öncelikli fiziksel kanat",
+          "nedenEn": "A defence-first physical wing"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=BwauyS2ZFsA",
+      "kariyerYolu": [
+        {
+          "kulup": "Washington State",
+          "yil": "2020-23"
+        },
+        {
+          "kulup": "Villanova",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Oregon",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Rasta Vechta",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Tenerife",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "joe-wieskamp",
+      "ad": "Joe Wieskamp",
+      "resmiAd": "Joe Wieskamp",
+      "raporTuru": "radar",
+      "takimSlug": "alba-berlin",
+      "lig": "euroleague",
+      "pozisyon": "SF / PF",
+      "boy": "1.98 m",
+      "yas": "26",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "euroleaguePotansiyeli": "Orta",
+      "ozet": "Yüksek isabetli dış şutunu forvet boyunda ribaund katkısıyla birleştiren, Almanya Ligi'nin en verimli oyuncusu.",
+      "ozetEn": "Combining accurate outside shooting with forward-sized rebounding, he was the German league's most efficient player.",
+      "ozetDetay": "Yüksek isabetli dış şutunu forvet boyunda ribaund katkısıyla birleştiren, Almanya Ligi'nin en verimli oyuncusu. Hem 3 hem 4 numarada oynayabiliyor; kimliğini büyük ölçüde şut tehdidinden alıyor ama ribaunt katkısı onu tek boyutlu olmaktan çıkarıyor.",
+      "ozetDetayEn": "Combining accurate outside shooting with forward-sized rebounding, he was the German league's most efficient player. He can play both the 3 and the 4; his identity rests largely on his shooting threat, but his rebounding keeps him from being one-dimensional.",
+      "nedenRadarda": "2021 draftında Spurs tarafından ikinci turda seçildi ve NBA'de 38 maç oynadı ama tutunamadı; G Lig ve Avustralya'da dolaştıktan sonra Almanya'da patladı. Jena formasıyla BBL'in en verimli oyuncusu seçildi. Alba Berlin'in üç yıllık sözleşme vermesi ciddi bir bahis; Şampiyonlar Ligi'nde iyi bir sezon geçirirse bir üst basamak yakın.",
+      "nedenRadardaEn": "Taken in the second round of the 2021 draft by the Spurs, he played 38 NBA games without sticking; after stints in the G League and Australia he broke out in Germany, named the BBL's most efficient player with Jena. Alba Berlin handing him a three-year deal is a serious bet; a strong Champions League season would put the next step within reach.",
+      "neOlmasiLazim": "Şampiyonlar Ligi seviyesinde de aynı isabeti koruyup savunma katkısını artırması.",
+      "neOlmasiLazimEn": "Holding the same accuracy at Champions League level while adding more on defence.",
+      "featuredStats": {
+        "yarisma": "BBL",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "16.2",
+            "PPG"
+          ],
+          [
+            "7.7",
+            "RPG"
+          ],
+          [
+            "41.1",
+            "3PT%"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Yüksek hacimli isabetli dış şut",
+          "v": "%41.1 3PT"
+        },
+        {
+          "t": "Forvet boyunda ribaund",
+          "v": "7.7 RPG"
+        },
+        {
+          "t": "Kanıtlanmış verimlilik",
+          "v": "BBL'in en verimli oyuncusu"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Accurate high-volume outside shooting",
+          "v": "41.1% 3PT"
+        },
+        {
+          "t": "Forward-sized rebounding",
+          "v": "7.7 RPG"
+        },
+        {
+          "t": "Proven efficiency",
+          "v": "BBL's most efficient player"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "NBA'de tutunamaması"
+        },
+        {
+          "t": "Bireysel yaratıcılık sınırı"
+        },
+        {
+          "t": "Üst düzeyde savunma testi"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Failed to stick in the NBA"
+        },
+        {
+          "t": "Limited self-creation"
+        },
+        {
+          "t": "Untested defensively at the top level"
+        }
+      ],
+      "arketip": "Sharpshooter",
+      "benzerOyuncular": [
+        {
+          "isim": "Conor Morgan",
+          "neden": "Şut öncelikli, ribaund katkılı forvet",
+          "nedenEn": "A shooting-first forward who contributes on the glass"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=_l1SL0MlG8U",
+      "kariyerYolu": [
+        {
+          "kulup": "Iowa",
+          "yil": "2018-21"
+        },
+        {
+          "kulup": "Spurs",
+          "yil": "2021-22"
+        },
+        {
+          "kulup": "Wisconsin Herd",
+          "yil": "2022-23"
+        },
+        {
+          "kulup": "Raptors",
+          "yil": "2023"
+        },
+        {
+          "kulup": "Texas Legends",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Maine Celtics",
+          "yil": "2024"
+        },
+        {
+          "kulup": "Melbourne",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Jena",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Alba",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "ty-brewer",
+      "ad": "Ty Brewer",
+      "resmiAd": "Ty Brewer",
+      "raporTuru": "radar",
+      "takimSlug": "denizli",
+      "lig": "bsl",
+      "pozisyon": "SF / PF",
+      "boy": "2.01 m",
+      "yas": "26",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "euroleaguePotansiyeli": "Orta",
+      "ozet": "Atletizmini savunma sertliği ve pozisyon esnekliğiyle birleştiren, tek sezonda üç ayrı kulvarda oynamış bir kanat.",
+      "ozetEn": "Blending athleticism with defensive toughness and positional flexibility, he played across three different competitions in a single season.",
+      "ozetDetay": "Atletizmini savunma sertliği ve pozisyon esnekliğiyle birleştiren, tek sezonda üç ayrı kulvarda oynamış bir kanat. Hem 3 hem 4 numarada savunabilmesi taktiksel esneklik sağlıyor; hücumda ise henüz kendi şutunu yaratma konusunda sınırlı.",
+      "ozetDetayEn": "Blending athleticism with defensive toughness and positional flexibility, he played across three different competitions in a single season. Being able to defend both the 3 and the 4 gives real tactical flexibility, though creating his own shot is still a limitation.",
+      "nedenRadarda": "Geçen sezonu tek başına ilginç: Chemnitz'le hem Almanya Ligi'nde hem EuroCup'ta oynadı, sezon ortasında UNICS Kazan'a transfer oldu ve VTB Ligi'nde haftanın oyuncusu seçildi; All-Star'da smaç şampiyonu oldu. Üç farklı seviyede de üretmesi uyum kabiliyetini gösteriyor. Denizli'de kariyerinde ilk kez ana rol alacak.",
+      "nedenRadardaEn": "Last season alone is interesting: he played both the German league and the EuroCup with Chemnitz, moved mid-season to UNICS Kazan, was named VTB League Player of the Week and won the All-Star dunk contest. Producing at three different levels shows genuine adaptability. At Denizli he'll take a lead role for the first time in his career.",
+      "neOlmasiLazim": "Bir yerde uzun süre kalıp istikrarlı bir rol kurması.",
+      "neOlmasiLazimEn": "Staying somewhere long enough to build a consistent role.",
+      "featuredStats": {
+        "yarisma": "VTB Ligi",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "11.4",
+            "PPG"
+          ],
+          [
+            "2.6",
+            "RPG"
+          ],
+          [
+            "1.1",
+            "SPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "EuroCup",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "8.4",
+              "PPG"
+            ],
+            [
+              "3.7",
+              "RPG"
+            ],
+            [
+              "1.4",
+              "SPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Atletizm ve dikine patlayıcılık",
+          "v": "VTB smaç şampiyonu"
+        },
+        {
+          "t": "Savunmada çok pozisyonluluk"
+        },
+        {
+          "t": "Farklı liglere hızlı uyum"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Athleticism and vertical explosiveness",
+          "v": "VTB dunk champion"
+        },
+        {
+          "t": "Multi-positional defence"
+        },
+        {
+          "t": "Quick adaptation across leagues"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Sık kulüp değişimi"
+        },
+        {
+          "t": "Ana rol tecrübesi yokluğu"
+        },
+        {
+          "t": "Hücumda sınırlı yaratıcılık"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Frequent club changes"
+        },
+        {
+          "t": "No experience in a lead role"
+        },
+        {
+          "t": "Limited offensive creation"
+        }
+      ],
+      "arketip": "Athletic Forward",
+      "benzerOyuncular": [
+        {
+          "isim": "Maozinha Pereira",
+          "neden": "Atletizm öncelikli, enerji odaklı forvet",
+          "nedenEn": "An athleticism-first, energy-driven forward"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=meQXbhre53c",
+      "kariyerYolu": [
+        {
+          "kulup": "UAB",
+          "yil": "2018-22"
+        },
+        {
+          "kulup": "Esperos Lamia",
+          "yil": "2022-23"
+        },
+        {
+          "kulup": "Panerythraikos",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "MBC",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Chemnitz",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "UNICS",
+          "yil": "2026"
+        },
+        {
+          "kulup": "Denizli",
           "yil": "2026-"
         }
       ]
