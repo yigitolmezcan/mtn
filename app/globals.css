@@ -106,14 +106,9 @@ h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .vid{aspect-ratio:16/9;background:var(--surface2);border:1px solid var(--line);border-radius:11px;
   display:flex;align-items:center;justify-content:center;color:var(--mutedd);font-size:13px}
 .rad{--team:#0F1B4C}
-.rad .club{color:var(--radar)}
 .rad .keyq{background:rgba(111,168,255,.07);border-left-color:var(--radar)}
 .rad .keyq .lb{color:var(--radar)}
 .rad .led li::before{color:var(--radar)}
-.rad .crt .act{fill:var(--radar)}
-.rad .av{border-color:var(--radar);color:var(--radar)}
-.rad .av::after{background:radial-gradient(circle,var(--radar) 0%,transparent 70%)}
-.rad .bCard::before{background:var(--radar)}
 .rad .pnode.cur .pdot{background:var(--radar);box-shadow:0 0 0 4px rgba(111,168,255,.18)}
 .rad .pline.cur{background:linear-gradient(90deg,var(--line),var(--radar))}
 .rad .chip:hover{border-color:var(--radar)}
