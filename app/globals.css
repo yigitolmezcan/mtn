@@ -7,23 +7,26 @@
 
 :root{
   --ink:#0A0A0B; --surface:#111113; --surface2:#17171A;
-  --bone:#ECEAE7; --paper:#C3C2C0; --muted:#8A8A92; --mutedd:#5D5D66;
+  --bone:#ECEAE7; --paper:#C3C2C0; --muted:#9A9AA2; --mutedd:#7C7C86;
   --line:#25252B; --lines:#1B1B20; --court:#E0742F; --radar:#6FA8FF;
   --team:#C8102E;
-  --display:var(--font-display),'Space Grotesk',system-ui,sans-serif;
-  --sans:var(--font-sans),'Inter',system-ui,sans-serif;
+  --display:'Space Grotesk',system-ui,sans-serif;
+  --sans:'Inter',system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{overflow-x:clip}
 body{background:var(--ink);color:var(--bone);font-family:var(--sans);font-size:15px;line-height:1.5}
 body::before{content:"";position:fixed;inset:0;z-index:-1;
-  background-image:linear-gradient(var(--lines) 1px,transparent 1px),linear-gradient(90deg,var(--lines) 1px,transparent 1px);
-  background-size:36px 36px;opacity:.6}
+  background:
+    radial-gradient(95% 62% at 50% -8%, rgba(224,116,47,.13), transparent 58%),
+    radial-gradient(120% 100% at 50% 120%, rgba(0,0,0,.55), transparent 55%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");}
 .wrap{width:100%;max-width:1060px;margin:0 auto;padding:0 22px}
 h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 
 
-.topbar{border-bottom:1px solid var(--lines);position:sticky;top:0;z-index:50;background:var(--ink)}
+.topbar{border-bottom:1px solid var(--lines);position:sticky;top:0;z-index:50;
+  background:rgba(10,10,11,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:54px}
 .tbl{display:flex;align-items:center;gap:20px;min-width:0}
 .mark{font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:-.02em;
@@ -214,14 +217,14 @@ h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .sres{margin-top:9px;background:var(--surface);border:1px solid var(--line);border-radius:11px;
   padding:7px;display:none}
 .sres.on{display:block}
-.sr{display:flex;align-items:center;gap:15px;padding:13px;border-radius:8px;cursor:pointer}
+.sr{display:flex;align-items:center;gap:15px;padding:13px 12px;border-radius:8px;cursor:pointer}
 .sr:hover{background:var(--surface2)}
 .srav{width:34px;height:34px;border-radius:50%;background:var(--surface2);border:2px solid var(--rg);
   display:flex;align-items:center;justify-content:center;font-family:var(--display);
   font-weight:700;font-size:11px;color:var(--rg);flex-shrink:0}
-.srt{flex:1;min-width:0}
+.srt{flex:1;min-width:0;display:flex;flex-direction:column}
 .srn{font-family:var(--display);font-weight:700;font-size:14px;color:var(--bone)}
-.srs{font-size:11.5px;font-weight:400;color:var(--mutedd);margin-top:4px}
+.srs{font-size:11.5px;color:var(--mutedd);margin-top:4px}
 .srg{font-size:9px;letter-spacing:.09em;text-transform:uppercase;padding:3px 9px;border-radius:999px;
   background:rgba(224,116,47,.12);color:var(--court)}
 .srg.r{background:rgba(111,168,255,.13);color:var(--radar)}
@@ -444,7 +447,3 @@ select.csort option{background:var(--surface);color:var(--bone)}
   font-size:11.5px;color:var(--muted);background:none;border:0;cursor:pointer;font-family:var(--sans)}
 .pshare:hover{color:var(--bone)}
 .pshare.ok{color:var(--court)}
-
-/* .srn ve .srs birer <span>; .srt kolon olmadan aynı satıra akıyorlardı
-   (referanstaki margin-top da bu yüzden etkisizdi). */
-.srt{display:flex;flex-direction:column}
