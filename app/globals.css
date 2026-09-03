@@ -203,8 +203,10 @@ h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .hero{padding:52px 0 46px;border-bottom:1px solid var(--lines)}
 .hgrid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,5vw,58px);align-items:center}
 .hleft{min-width:0}
-.hlock{display:flex;align-items:center;gap:clamp(14px,2vw,22px)}
-.hlogo{height:clamp(52px,8vw,78px);width:auto;flex-shrink:0;display:block}
+.hlock{display:block}
+.hlogo{display:inline-block;height:1.12em;width:auto;margin-left:.12em;
+  vertical-align:baseline;position:relative;top:.26em}
+@media(max-width:520px){.hlogo{height:.95em;top:.18em}}
 .hero h1{font-size:clamp(33px,5.6vw,54px);line-height:1.02}
 .hero h1 .sf{display:block;font-weight:400;color:var(--muted)}
 .hero .lede{font-size:15.5px;color:var(--paper);max-width:50ch;margin-top:16px;line-height:1.6}

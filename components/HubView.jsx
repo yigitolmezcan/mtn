@@ -52,8 +52,11 @@ export default function HubView({ searchData, classPreview, owPreview, radarPrev
           <div className="hgrid">
             <div className="hleft">
               <div className="hlock">
-                <h1>Meet the<span className="sf">Newcomers</span></h1>
-                <img className="hlogo" src="/logo-final.png" alt="" />
+                <h1>
+                  Meet the
+                  <img className="hlogo" src="/logo-final.png" alt="" />
+                  <span className="sf">Newcomers</span>
+                </h1>
               </div>
               <p className="lede">{t.heroLede}</p>
             </div>
