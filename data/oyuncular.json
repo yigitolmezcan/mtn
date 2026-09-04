@@ -226,6 +226,62 @@
       "renk1": "#0A0A0B",
       "renk2": "#F2C300",
       "digerDil": true
+    },
+    "murcia": {
+      "ad": "UCAM Murcia",
+      "marka": "#1B3A6B",
+      "vurgu": "#1B3A6B",
+      "renk1": "#1B3A6B",
+      "renk2": "#ECEAE7",
+      "digerDil": true
+    },
+    "aek": {
+      "ad": "AEK",
+      "marka": "#F2C300",
+      "vurgu": "#F2C300",
+      "renk1": "#F2C300",
+      "renk2": "#0A0A0B",
+      "digerDil": true
+    },
+    "derthona": {
+      "ad": "Derthona Tortona",
+      "marka": "#1B4D8F",
+      "vurgu": "#1B4D8F",
+      "renk1": "#1B4D8F",
+      "renk2": "#ECEAE7",
+      "digerDil": true
+    },
+    "bamberg": {
+      "ad": "Bamberg Baskets",
+      "marka": "#D42A2A",
+      "vurgu": "#D42A2A",
+      "renk1": "#D42A2A",
+      "renk2": "#ECEAE7",
+      "digerDil": true
+    },
+    "napoli": {
+      "ad": "Napoli Basket",
+      "marka": "#1C9AD6",
+      "vurgu": "#1C9AD6",
+      "renk1": "#1C9AD6",
+      "renk2": "#ECEAE7",
+      "digerDil": true
+    },
+    "venezia": {
+      "ad": "Reyer Venezia",
+      "marka": "#8B1A2B",
+      "vurgu": "#8B1A2B",
+      "renk1": "#8B1A2B",
+      "renk2": "#E8B33A",
+      "digerDil": true
+    },
+    "bourg": {
+      "ad": "JL Bourg",
+      "marka": "#D42A2A",
+      "vurgu": "#D42A2A",
+      "renk1": "#D42A2A",
+      "renk2": "#0A0A0B",
+      "digerDil": true
     }
   },
   "oyuncular": [
@@ -6897,6 +6953,1056 @@
         },
         {
           "kulup": "Virtus",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "jahmius-ramsey",
+      "ad": "Jahmi'us Ramsey",
+      "resmiAd": "Jahmi'us Ramsey",
+      "raporTuru": "radar",
+      "takimSlug": "napoli",
+      "lig": "euroleague",
+      "pozisyon": "SG",
+      "boy": "1.91 m",
+      "yas": "25",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "euroleaguePotansiyeli": "Yüksek",
+      "ozet": "Avrupa'daki ilk sezonunda Serie A'nın sayı kralı olan, NBA draftından çıkmış patlayıcı bir skorer guard.",
+      "ozetEn": "Top scorer of Serie A in his first European season, he's an explosive scoring guard who came out of the NBA draft.",
+      "ozetDetay": "Avrupa'daki ilk sezonunda Serie A'nın sayı kralı olan, NBA draftından çıkmış patlayıcı bir skorer guard. Atletizmini yüksek hacimli skor üretimiyle birleştiriyor; hem çembere gidip bitirebiliyor hem dış şutla tehdit oluşturuyor. Kimliği net biçimde skor üzerine kurulu.",
+      "ozetDetayEn": "Top scorer of Serie A in his first European season, he's an explosive scoring guard who came out of the NBA draft. He pairs athleticism with high-volume production, able to attack the rim and threaten from outside. His identity is built squarely on scoring.",
+      "nedenRadarda": "Bu listedeki en yüksek tavanlı isim. 2020'de Sacramento tarafından 43. sıradan seçildi, NBA'de tutunamadı ama G Lig'de dört sezon üst üste 20 sayı bandında üretti ve şampiyonluk yaşadı. Avrupa'ya ilk kez geçen sezon geldi ve doğrudan Serie A'nın sayı kralı oldu. Şampiyonlar Ligi'nde 17.9 sayı üretti, ardından ABD milli takımıyla AmeriCup'a çağrıldı. Napoli'de EuroCup oynayacak; bir üst basamak artık çok yakın.",
+      "nedenRadardaEn": "The highest ceiling on this list. Taken 43rd by Sacramento in 2020, he never stuck in the NBA but produced around 20 points a game for four straight G League seasons and won a title. He came to Europe for the first time last season and immediately led Serie A in scoring. He averaged 17.9 points in the Champions League and was then called up to the USA national team for the AmeriCup. He'll play the EuroCup at Napoli; the next step is now very close.",
+      "neOlmasiLazim": "Skor üretimini daha az topla ve daha dar bir rolde de sürdürebildiğini göstermesi.",
+      "neOlmasiLazimEn": "Showing he can sustain his scoring with less ball and in a narrower role.",
+      "featuredStats": {
+        "yarisma": "Serie A",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "19.3",
+            "PPG"
+          ],
+          [
+            "2.8",
+            "RPG"
+          ],
+          [
+            "1.9",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "Şampiyonlar Ligi",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "17.9",
+              "PPG"
+            ],
+            [
+              "2.8",
+              "RPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Yüksek hacimli skor üretimi",
+          "v": "Serie A sayı kralı"
+        },
+        {
+          "t": "Atletizm ve patlayıcılık"
+        },
+        {
+          "t": "Milli takım tecrübesi",
+          "v": "AmeriCup"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "High-volume scoring",
+          "v": "Serie A top scorer"
+        },
+        {
+          "t": "Athleticism and explosiveness"
+        },
+        {
+          "t": "International experience",
+          "v": "AmeriCup"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Tek Avrupa sezonu"
+        },
+        {
+          "t": "Yüksek kullanıma bağımlılık"
+        },
+        {
+          "t": "Savunma katkısı"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Only one European season"
+        },
+        {
+          "t": "Reliance on heavy usage"
+        },
+        {
+          "t": "Defensive contribution"
+        }
+      ],
+      "arketip": "Combo Guard",
+      "benzerOyuncular": [
+        {
+          "isim": "Jaylen Nowell"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=UV-NeUrOkrc",
+      "kariyerYolu": [
+        {
+          "kulup": "Texas Tech",
+          "yil": "2019-20"
+        },
+        {
+          "kulup": "Kings",
+          "yil": "2020-22"
+        },
+        {
+          "kulup": "Stockton",
+          "yil": "2021-22"
+        },
+        {
+          "kulup": "OKC Blue",
+          "yil": "2022-24"
+        },
+        {
+          "kulup": "Raptors",
+          "yil": "2024"
+        },
+        {
+          "kulup": "OKC Blue",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Trieste",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Napoli",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "nelly-joseph",
+      "ad": "Nelly Junior Joseph",
+      "resmiAd": "Nelly Junior Joseph",
+      "raporTuru": "radar",
+      "takimSlug": "aek",
+      "lig": "euroleague",
+      "pozisyon": "PF / C",
+      "boy": "2.06 m",
+      "yas": "24",
+      "milliyet": "Nijerya",
+      "el": "Sol",
+      "elEn": "Left",
+      "milliyetNotu": null,
+      "euroleaguePotansiyeli": "Yüksek",
+      "ozet": "Fransa Ligi'nin ribaund kralı; fiziksel gücünü çember çevresinde yüksek yüzdeli bitirişle birleştiren genç bir uzun.",
+      "ozetEn": "The French league's leading rebounder, he's a young big who pairs physical strength with high-percentage finishing at the rim.",
+      "ozetDetay": "Fransa Ligi'nin ribaund kralı; fiziksel gücünü çember çevresinde yüksek yüzdeli bitirişle birleştiren genç bir uzun. Hücumdaki üretimi neredeyse tamamen boyalı alandan geliyor; dış şut tehdidi yok ama pota çevresindeki verimliliği çok yüksek. Hem 4 hem 5 numarada oynayabiliyor.",
+      "ozetDetayEn": "The French league's leading rebounder, he's a young big who pairs physical strength with high-percentage finishing at the rim. Almost all of his offence comes from the paint; there's no outside threat, but his efficiency around the basket is very high. He can play both the 4 and the 5.",
+      "nedenRadarda": "Profesyonel ilk sezonunda Fransa Ligi'nin ribaund liderliğini aldı: 8.4 ribaund, 12.4 sayı, %61.9 iki sayılık. Beş kez haftanın oyuncusu seçildi, All-Star ve yabancılar karmasına girdi. AEK'te Šakota onu doğrudan başlangıç pivotu ilan etti; 24 yaşında, iki yıllık sözleşmeyle ve net bir rolle geliyor. Bu listedeki en hazır uzun.",
+      "nedenRadardaEn": "He led the French league in rebounding in his first professional season: 8.4 boards, 12.4 points, 61.9% from two. He was named player of the week five times and made both the All-Star Game and the All-Imports Team. At AEK, Šakota named him the starting centre outright; at 24 he arrives on a two-year deal with a clear role. The most ready big on this list.",
+      "neOlmasiLazim": "Şampiyonlar Ligi'nde de aynı ribaund hakimiyetini kurup hücum repertuarını genişletmesi.",
+      "neOlmasiLazimEn": "Establishing the same rebounding dominance in the Champions League while widening his offensive repertoire.",
+      "featuredStats": {
+        "yarisma": "LNB Élite",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "12.4",
+            "PPG"
+          ],
+          [
+            "8.4",
+            "RPG"
+          ],
+          [
+            "61.9",
+            "2FG%"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Ribaund hakimiyeti",
+          "v": "Fransa Ligi lideri"
+        },
+        {
+          "t": "Çember çevresinde verimlilik",
+          "v": "%61.9 2FG"
+        },
+        {
+          "t": "Yaşına göre olgun fiziksel oyun"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Rebounding dominance",
+          "v": "French league leader"
+        },
+        {
+          "t": "Efficiency around the rim",
+          "v": "61.9% 2FG"
+        },
+        {
+          "t": "Physical maturity for his age"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Dış şut tehdidi yokluğu"
+        },
+        {
+          "t": "Hücum repertuarının darlığı"
+        },
+        {
+          "t": "Tek profesyonel sezon"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "No outside shooting threat"
+        },
+        {
+          "t": "Narrow offensive repertoire"
+        },
+        {
+          "t": "Only one professional season"
+        }
+      ],
+      "arketip": "Athletic Center",
+      "benzerOyuncular": [
+        {
+          "isim": "Chris Silva"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=3Ho2W9w4BEo",
+      "kariyerYolu": [
+        {
+          "kulup": "Iona",
+          "yil": "2020-23"
+        },
+        {
+          "kulup": "New Mexico",
+          "yil": "2023-25"
+        },
+        {
+          "kulup": "Strasbourg",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "AEK",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "zach-nutall",
+      "ad": "Zach Nutall",
+      "resmiAd": "Zachary Markeith Nutall",
+      "raporTuru": "radar",
+      "takimSlug": "tofas",
+      "lig": "bsl",
+      "pozisyon": "SG / PG",
+      "boy": "1.91 m",
+      "yas": "26",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "euroleaguePotansiyeli": "Orta",
+      "ozet": "Kolejde konferansın yılın oyuncusu seçilmiş, Bosna'dan Çin'e uzanan bir yolda skor üretmeyi sürdürmüş bir guard.",
+      "ozetEn": "A conference player of the year in college, he's a guard who kept producing on a path running from Bosnia to China.",
+      "ozetDetay": "Kolejde konferansın yılın oyuncusu seçilmiş, Bosna'dan Çin'e uzanan bir yolda skor üretmeyi sürdürmüş bir guard. Top elinde skor üretmeye yatkın; oyun kurma katkısı da var ama kimliği önce skor üzerine kurulu.",
+      "ozetDetayEn": "A conference player of the year in college, he's a guard who kept producing on a path running from Bosnia to China. He's built to score with the ball in his hands; there's playmaking too, but his identity is scoring first.",
+      "nedenRadarda": "Sam Houston'da Southland Konferansı'nın yılın oyuncusu seçildi, SMU'da da çift hanede skor üretti. Profesyonel kariyeri Bosna, Rusya ve Çin arasında geçti; Avrupa'nın üst kademelerine ilk kez Tofaş'la dönüyor. BSL ve EuroCup, kariyerinde ilk kez gerçek bir Avrupa vitrininde oynayacağı anlamına geliyor.",
+      "nedenRadardaEn": "He was named Southland Conference Player of the Year at Sam Houston and scored in double figures at SMU too. His professional career has run through Bosnia, Russia and China; he returns to Europe's upper tiers for the first time with Tofaş. The BSL and the EuroCup mean a genuine European shop window for the first time in his career.",
+      "neOlmasiLazim": "Uzak liglerdeki üretimini Avrupa'nın rekabetçi seviyesinde de tekrarlaması.",
+      "neOlmasiLazimEn": "Repeating his production from distant leagues at Europe's competitive level.",
+      "featuredStats": {
+        "yarisma": "CBA",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "12.5",
+            "PPG"
+          ],
+          [
+            "3.6",
+            "RPG"
+          ],
+          [
+            "4.0",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Skor üretimi"
+        },
+        {
+          "t": "Kolejde kanıtlanmış liderlik",
+          "v": "Southland Yılın Oyuncusu"
+        },
+        {
+          "t": "Farklı liglere uyum"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Scoring production"
+        },
+        {
+          "t": "Leadership proven in college",
+          "v": "Southland Player of the Year"
+        },
+        {
+          "t": "Adaptation across leagues"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Avrupa'nın üst kademelerinde tecrübe yokluğu"
+        },
+        {
+          "t": "Sürekli kıta değişimi"
+        },
+        {
+          "t": "Savunma katkısı"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "No experience in Europe's upper tiers"
+        },
+        {
+          "t": "Constant changes of continent"
+        },
+        {
+          "t": "Defensive contribution"
+        }
+      ],
+      "arketip": "Scoring Point Guard",
+      "benzerOyuncular": [
+        {
+          "isim": "Rob Gray"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=13VplCbfuEY",
+      "kariyerYolu": [
+        {
+          "kulup": "Sam Houston",
+          "yil": "2018-21"
+        },
+        {
+          "kulup": "SMU",
+          "yil": "2021-23"
+        },
+        {
+          "kulup": "Široki",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Nizhny Novgorod",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Beijing",
+          "yil": "2025"
+        },
+        {
+          "kulup": "Xinjiang",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Tofaş",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "dante-maddox",
+      "ad": "Dante Maddox Jr.",
+      "resmiAd": "Dante Maddox Jr.",
+      "raporTuru": "radar",
+      "takimSlug": "derthona",
+      "lig": "euroleague",
+      "pozisyon": "SG",
+      "boy": "1.88 m",
+      "yas": "24",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "euroleaguePotansiyeli": "Yüksek",
+      "ozet": "İlk profesyonel sezonunda ligin MVP'si ve sayı kralı olmuş, olağanüstü yüzdelerle atan bir skorer guard.",
+      "ozetEn": "League MVP and top scorer in his first professional season, he's a scoring guard shooting extraordinary percentages.",
+      "ozetDetay": "İlk profesyonel sezonunda ligin MVP'si ve sayı kralı olmuş, olağanüstü yüzdelerle atan bir skorer guard. Kimliğini büyük ölçüde şut tehdidinden alıyor; hem yüksek hacimde atıyor hem çok yüksek yüzdelerle atıyor, bu ikisini birlikte tutturması onu ayrıştıran şey.",
+      "ozetDetayEn": "League MVP and top scorer in his first professional season, he's a scoring guard shooting extraordinary percentages. His identity rests largely on his shooting threat; he takes a high volume and converts at a very high rate, and holding both together is what sets him apart.",
+      "nedenRadarda": "Bu listedeki en net yol. Belçika-Hollanda ortak ligi BNXT'de ilk profesyonel sezonunda MVP, sayı kralı ve verimlilik lideri oldu: 24.9 sayı, %46.9 üçlük, %62.4 iki sayılık, %88.6 serbest atış. Sekiz kez haftanın oyuncusu seçildi. Olimpia Milano onu çok yıllık sözleşmeyle bağladı ama bu sezon Tortona'ya kiraladı; yani EuroLeague sözleşmesi zaten cebinde, mesele sadece zamanlama. Yaz Ligi'nde Philadelphia formasıyla 15.6 sayı üretti.",
+      "nedenRadardaEn": "The clearest path on this list. In his first professional season in the BNXT League, the joint Belgian-Dutch competition, he was MVP, top scorer and efficiency leader: 24.9 points, 46.9% from three, 62.4% from two, 88.6% from the line. He was named player of the round eight times. Olimpia Milano signed him to a multi-year deal but immediately loaned him to Tortona; the EuroLeague contract is already in his pocket, and this is only a question of timing. He averaged 15.6 points for Philadelphia in Summer League.",
+      "neOlmasiLazim": "EuroCup ve Serie A'da bu yüzdeleri koruyup Milano'nun onu bir yıl daha beklemesine gerek bırakmaması.",
+      "neOlmasiLazimEn": "Holding these percentages in the EuroCup and Serie A so Milano doesn't need to wait another year.",
+      "featuredStats": {
+        "yarisma": "BNXT Ligi",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "24.9",
+            "PPG"
+          ],
+          [
+            "5.8",
+            "RPG"
+          ],
+          [
+            "46.9",
+            "3PT%"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "NBA Yaz Ligi",
+          "sezon": "2026",
+          "items": [
+            [
+              "15.6",
+              "PPG"
+            ],
+            [
+              "3.6",
+              "RPG"
+            ],
+            [
+              "2.0",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Elit şut yüzdeleri",
+          "v": "%46.9 3PT, %88.6 FT"
+        },
+        {
+          "t": "Yüksek hacimde verimlilik",
+          "v": "BNXT MVP ve sayı kralı"
+        },
+        {
+          "t": "EuroLeague sözleşmesi hazır"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Elite shooting percentages",
+          "v": "46.9% 3PT, 88.6% FT"
+        },
+        {
+          "t": "Efficiency at high volume",
+          "v": "BNXT MVP and top scorer"
+        },
+        {
+          "t": "EuroLeague contract already in place"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Tek profesyonel sezon"
+        },
+        {
+          "t": "Düşük seviyeli ligde üretim"
+        },
+        {
+          "t": "Fiziksel boyut"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Only one professional season"
+        },
+        {
+          "t": "Production came in a lower-tier league"
+        },
+        {
+          "t": "Physical size"
+        }
+      ],
+      "arketip": "Sharpshooter",
+      "benzerOyuncular": [
+        {
+          "isim": "Carsen Edwards"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=S8cjHS8I460",
+      "kariyerYolu": [
+        {
+          "kulup": "Cal State Fullerton",
+          "yil": "2020-22"
+        },
+        {
+          "kulup": "Toledo",
+          "yil": "2022-24"
+        },
+        {
+          "kulup": "Xavier",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Okapi Aalst",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Tortona",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "souley-boum",
+      "ad": "Souley Boum",
+      "resmiAd": "Souleymane Boum",
+      "raporTuru": "radar",
+      "takimSlug": "murcia",
+      "lig": "euroleague",
+      "pozisyon": "PG / SG",
+      "boy": "1.90 m",
+      "yas": "27",
+      "milliyet": "ABD / Gine",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": "Gine milli takımını temsil ediyor.",
+      "milliyetNotuEn": "Represents the Guinea national team.",
+      "euroleaguePotansiyeli": "Orta",
+      "ozet": "Birebirde kendi şutunu yaratabilen, derin menzilden yüksek isabetle atan gezgin bir skorer guard.",
+      "ozetEn": "Able to create his own shot one-on-one and accurate from deep, he's a well-travelled scoring guard.",
+      "ozetDetay": "Birebirde kendi şutunu yaratabilen, derin menzilden yüksek isabetle atan gezgin bir skorer guard. Hücumda topu elinde tutarak üretiyor; oyun kurma katkısı var ama önceliği skor. Savunmada boyu ve gövdesi sınır oluşturuyor.",
+      "ozetDetayEn": "Able to create his own shot one-on-one and accurate from deep, he's a well-travelled scoring guard. He produces with the ball in his hands; there's playmaking, but scoring comes first. His size and frame set limits on defence.",
+      "nedenRadarda": "Dört yılda beş ülke: G Lig, Polonya, Fransa, Avusturya, şimdi İspanya. Her durakta skor üretti ama hiçbirinde uzun kalmadı. Geçen sezon Viyana'da ABA Ligi'nde 18.6 sayı ve %44 üçlükle kariyerinin en verimli dönemini geçirdi. Murcia, ACB'de ilk kez gerçek bir üst düzey sınav demek; oradaki performansı bir sonraki basamağı belirler.",
+      "nedenRadardaEn": "Five countries in four years: the G League, Poland, France, Austria, now Spain. He scored at every stop but stayed long at none. Last season in Vienna he had the most efficient stretch of his career in the ABA League, 18.6 points on 44% from three. Murcia means a genuine top-level test in the ACB for the first time; how he performs there will determine the next step.",
+      "neOlmasiLazim": "Bir kulüpte kalıp üretimini bir sezon boyunca sürdürmesi.",
+      "neOlmasiLazimEn": "Staying at one club and sustaining his production across a full season.",
+      "featuredStats": {
+        "yarisma": "ABA Ligi",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "18.6",
+            "PPG"
+          ],
+          [
+            "4.3",
+            "APG"
+          ],
+          [
+            "44.0",
+            "3PT%"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Derin menzilden isabet",
+          "v": "%44 3PT"
+        },
+        {
+          "t": "Birebirde kendi şutunu yaratma"
+        },
+        {
+          "t": "Her lige hızlı uyum"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Accuracy from deep",
+          "v": "44% 3PT"
+        },
+        {
+          "t": "Creating his own shot one-on-one"
+        },
+        {
+          "t": "Quick adaptation to every league"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Sürekli kulüp değişimi"
+        },
+        {
+          "t": "Savunma katkısı"
+        },
+        {
+          "t": "Küçük örneklemler"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Constant club changes"
+        },
+        {
+          "t": "Defensive contribution"
+        },
+        {
+          "t": "Small samples"
+        }
+      ],
+      "arketip": "Scoring Point Guard",
+      "benzerOyuncular": [
+        {
+          "isim": "Jared Harper"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=LHD-l7aHWPE",
+      "kariyerYolu": [
+        {
+          "kulup": "San Francisco",
+          "yil": "2017-18"
+        },
+        {
+          "kulup": "UTEP",
+          "yil": "2019-22"
+        },
+        {
+          "kulup": "Xavier",
+          "yil": "2022-23"
+        },
+        {
+          "kulup": "Grand Rapids",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Dąbrowa",
+          "yil": "2024"
+        },
+        {
+          "kulup": "Limoges",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Viyana",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Murcia",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "keith-jordan",
+      "ad": "Keith Jordan Jr.",
+      "resmiAd": "Keith Jordan Jr.",
+      "raporTuru": "radar",
+      "takimSlug": "bourg",
+      "lig": "euroleague",
+      "pozisyon": "SF",
+      "boy": "1.98 m",
+      "yas": "28",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "euroleaguePotansiyeli": "Düşük",
+      "ozet": "Savunmadaki aktifliğini boyuyla birleştiren, en alt basamaktan başlayıp Fransa'ya kadar yükselmiş bir kanat.",
+      "ozetEn": "Pairing defensive activity with size, he's a wing who climbed from the bottom rung all the way to France.",
+      "ozetDetay": "Savunmadaki aktifliğini boyuyla birleştiren, en alt basamaktan başlayıp Fransa'ya kadar yükselmiş bir kanat. Pas kanallarını okuyup top çalabiliyor, boyuna göre de skor üretebiliyor. Hücumda bireysel yaratıcılığı sınırlı.",
+      "ozetDetayEn": "Pairing defensive activity with size, he's a wing who climbed from the bottom rung all the way to France. He reads passing lanes and gets steals, and scores well for his size. His individual creation on offence is limited.",
+      "nedenRadarda": "Bu listedeki en uzun yol. NAIA'da, yani kolej basketbolunun en alt kademesinde oynadı, draft edilmedi, kariyerine Dominik Cumhuriyeti'nde başladı; İzlanda, İrlanda, Slovakya ve Azerbaycan'dan geçti. Geçen sezon Sabah'la Azerbaycan şampiyonu oldu ve Şampiyonlar Ligi'nde altı maçta 17.2 sayı, 2.7 top çalma üretti. JL Bourg, kariyerinde ilk kez Avrupa'nın üst düzey liglerinden birinde oynayacağı anlamına geliyor.",
+      "nedenRadardaEn": "The longest road on this list. He played in the NAIA, the bottom rung of American college basketball, went undrafted and began his career in the Dominican Republic, then passed through Iceland, Ireland, Slovakia and Azerbaijan. Last season he won the Azerbaijani title with Sabah and produced 17.2 points and 2.7 steals across six Champions League games. JL Bourg means playing in one of Europe's top-tier leagues for the first time in his career.",
+      "neOlmasiLazim": "Fransa Ligi seviyesinde de rotasyon oyuncusu olabildiğini kanıtlaması.",
+      "neOlmasiLazimEn": "Proving he can be a rotation player at French league level too.",
+      "featuredStats": {
+        "yarisma": "Azerbaycan Ligi",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "13.2",
+            "PPG"
+          ],
+          [
+            "4.5",
+            "RPG"
+          ],
+          [
+            "1.3",
+            "SPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "Şampiyonlar Ligi",
+          "sezon": "2025-26",
+          "items": [
+            [
+              "17.2",
+              "PPG"
+            ],
+            [
+              "5.2",
+              "RPG"
+            ],
+            [
+              "2.7",
+              "SPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Savunmada aktiflik",
+          "v": "2.7 SPG, BCL"
+        },
+        {
+          "t": "Boyuna göre skor üretimi"
+        },
+        {
+          "t": "Her seviyede uyum sağlama"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Defensive activity",
+          "v": "2.7 SPG, BCL"
+        },
+        {
+          "t": "Scoring for his size"
+        },
+        {
+          "t": "Adapting at every level"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Alt kademelerden gelen kariyer"
+        },
+        {
+          "t": "İleri yaş"
+        },
+        {
+          "t": "Küçük örneklemler",
+          "v": "BCL'de 6 maç"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "A career built in lower tiers"
+        },
+        {
+          "t": "Age"
+        },
+        {
+          "t": "Small samples",
+          "v": "6 BCL games"
+        }
+      ],
+      "arketip": "Scoring Wing",
+      "benzerOyuncular": [
+        {
+          "isim": "Malik Hairston"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=wlrmJNpYWzw",
+      "kariyerYolu": [
+        {
+          "kulup": "Siena Heights",
+          "yil": "2016-20"
+        },
+        {
+          "kulup": "Titanes",
+          "yil": "2021"
+        },
+        {
+          "kulup": "Skallagrímur",
+          "yil": "2022-23"
+        },
+        {
+          "kulup": "Breiðablik",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Prievidza",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Sabah",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Bourg",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "demarcus-demonia",
+      "ad": "DeMarcus Demonia",
+      "resmiAd": "DeMarcus Demonia",
+      "raporTuru": "radar",
+      "takimSlug": "bamberg",
+      "lig": "euroleague",
+      "pozisyon": "SF / PF",
+      "boy": "2.01 m",
+      "yas": "27",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "euroleaguePotansiyeli": "Orta",
+      "ozet": "Basketbola geç başlayıp basamak basamak yükselmiş, atletizmini enerji ve ribaundla birleştiren bir forvet.",
+      "ozetEn": "A late starter who climbed step by step, he's a forward who pairs athleticism with energy and rebounding.",
+      "ozetDetay": "Basketbola geç başlayıp basamak basamak yükselmiş, atletizmini enerji ve ribaundla birleştiren bir forvet. Açık sahada ve çember çevresinde etkili; hücumdaki değeri büyük ölçüde fiziksel araçlarından geliyor, teknik repertuarı henüz dar.",
+      "ozetDetayEn": "A late starter who climbed step by step, he's a forward who pairs athleticism with energy and rebounding. He's effective in the open floor and around the rim; most of his offensive value comes from his physical tools, and his technical repertoire is still narrow.",
+      "nedenRadarda": "Basketbolu ciddi olarak 17 yaşında oynamaya başladı, o zamana kadar Amerikan futbolu oynuyordu. Avusturya'dan Almanya'nın ikinci ligine, oradan BBL'e yükseldi. Geçen sezon Bamberg'in Almanya Kupası şampiyonluğunda turnuvanın MVP'si seçildi, ligde 13.3 sayı ve 5.4 ribaund üretti. Geç başlayan bir oyuncu için gelişim eğrisi hâlâ tamamlanmamış olabilir.",
+      "nedenRadardaEn": "He only started playing basketball seriously at 17, having played American football until then. He climbed from Austria to Germany's second division and on to the BBL. Last season he was named MVP of the German Cup as Bamberg took the title, while producing 13.3 points and 5.4 rebounds in the league. For a player who started late, the development curve may not be finished yet.",
+      "neOlmasiLazim": "Dış şutunu güvenilir hale getirip atletizminin ötesine geçen bir hücum kimliği kurması.",
+      "neOlmasiLazimEn": "Making his outside shot reliable and building an offensive identity beyond his athleticism.",
+      "featuredStats": {
+        "yarisma": "BBL",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "13.3",
+            "PPG"
+          ],
+          [
+            "5.4",
+            "RPG"
+          ],
+          [
+            "46.8",
+            "FG%"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Atletizm ve enerji"
+        },
+        {
+          "t": "Kupa MVP'liği",
+          "v": "Almanya Kupası 2026"
+        },
+        {
+          "t": "Basamak basamak yükselen gelişim"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Athleticism and energy"
+        },
+        {
+          "t": "Cup MVP",
+          "v": "German Cup 2026"
+        },
+        {
+          "t": "Step-by-step development"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Geç başlangıç ve teknik eksikler"
+        },
+        {
+          "t": "Dış şut tehdidi"
+        },
+        {
+          "t": "Sınırlı üst seviye tecrübe"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Late start and technical gaps"
+        },
+        {
+          "t": "Outside shooting threat"
+        },
+        {
+          "t": "Limited top-level experience"
+        }
+      ],
+      "arketip": "Athletic Forward",
+      "benzerOyuncular": [
+        {
+          "isim": "DJ Stewart"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=nOqt7ySBpSw",
+      "kariyerYolu": [
+        {
+          "kulup": "Texas A&M-Commerce",
+          "yil": "2020-23"
+        },
+        {
+          "kulup": "Traiskirchen",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Bayreuth",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Bamberg",
+          "yil": "2025-"
+        }
+      ]
+    },
+    {
+      "slug": "sirjabari-rice",
+      "ad": "Sir'Jabari Rice",
+      "resmiAd": "Sir'Jabari Prince Rice",
+      "raporTuru": "radar",
+      "takimSlug": "venezia",
+      "lig": "euroleague",
+      "pozisyon": "PG / SG",
+      "boy": "1.93 m",
+      "yas": "27",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "euroleaguePotansiyeli": "Orta",
+      "ozet": "Skor içgüdüsünü oyun kurmayla birleştiren, dört kıtada oynamış gezgin bir guard.",
+      "ozetEn": "Combining scoring instinct with playmaking, he's a well-travelled guard who has played on four continents.",
+      "ozetDetay": "Skor içgüdüsünü oyun kurmayla birleştiren, dört kıtada oynamış gezgin bir guard. Hem kendisi için hem takım arkadaşları için pozisyon yaratabiliyor; atletizmi ve top kullanımı iki rolü de kaldırmasına imkân veriyor.",
+      "ozetDetayEn": "Combining scoring instinct with playmaking, he's a well-travelled guard who has played on four continents. He can create for himself and for teammates alike; his athleticism and handle let him carry either role.",
+      "nedenRadarda": "Texas'ta Big 12'nin yılın altıncı adamı seçildi ve takımını Elite Eight'e taşıdı. Profesyonel kariyeri ise bir dünya turu: G Lig, Dominik Cumhuriyeti, Ürdün, Çek Cumhuriyeti, Andorra. Geçen sezon Nymburk'ta 14.8 sayı ve 4.2 asist üretip Çek Ligi'nin yabancılar karmasına girdi, sezon ortasında Andorra'ya geçti. Venezia, EuroCup'ta ilk kez istikrarlı bir rol demek.",
+      "nedenRadardaEn": "At Texas he was named Big 12 Sixth Man of the Year and carried his team to the Elite Eight. His professional career, though, has been a world tour: the G League, the Dominican Republic, Jordan, the Czech Republic, Andorra. Last season he produced 14.8 points and 4.2 assists at Nymburk, made the Czech league's All-Imports Team, then moved to Andorra mid-season. Venezia means a settled role in the EuroCup for the first time.",
+      "neOlmasiLazim": "Bir yerde uzun süre kalıp üretimini tek bir ligde bir sezon boyunca sürdürmesi.",
+      "neOlmasiLazimEn": "Staying in one place long enough to sustain his production in a single league across a season.",
+      "featuredStats": {
+        "yarisma": "Çek Ligi",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "14.8",
+            "PPG"
+          ],
+          [
+            "4.2",
+            "APG"
+          ],
+          [
+            "3.6",
+            "RPG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Skor ve oyun kurma dengesi"
+        },
+        {
+          "t": "Her lige hızlı uyum"
+        },
+        {
+          "t": "Kolejde kanıtlanmış üretim",
+          "v": "Big 12 6. Adam"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Balance of scoring and playmaking"
+        },
+        {
+          "t": "Quick adaptation to every league"
+        },
+        {
+          "t": "Production proven in college",
+          "v": "Big 12 Sixth Man"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Sürekli kulüp değişimi"
+        },
+        {
+          "t": "Küçük örneklemler"
+        },
+        {
+          "t": "Üst düzeyde test edilmemiş"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Constant club changes"
+        },
+        {
+          "t": "Small samples"
+        },
+        {
+          "t": "Untested at the top level"
+        }
+      ],
+      "arketip": "Combo Guard",
+      "benzerOyuncular": [
+        {
+          "isim": "Wade Baldwin"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=cqgHpcq1z10",
+      "kariyerYolu": [
+        {
+          "kulup": "New Mexico State",
+          "yil": "2018-22"
+        },
+        {
+          "kulup": "Texas",
+          "yil": "2022-23"
+        },
+        {
+          "kulup": "Austin Spurs",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Metros",
+          "yil": "2024"
+        },
+        {
+          "kulup": "South Bay",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Nymburk",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Andorra",
+          "yil": "2026"
+        },
+        {
+          "kulup": "Venezia",
           "yil": "2026-"
         }
       ]
