@@ -16,6 +16,13 @@ const LINE_STEPS = Array.from({ length: 16 }, (_, i) => {
   return t >= 0.7 ? 0 : Math.round((1 - t / 0.7) * 100) / 100;
 });
 
+// Dairesel fotoğraf: sol yarının dikey ortası. Sağ metin sütunu left:530'da
+// başlıyor; parlama dahil en sağ nokta 487 olduğu için taşma yok.
+const PHOTO_D = 330;
+const PHOTO_CX = 265;
+const PHOTO_CY = 315;
+const GLOW = Math.round(PHOTO_D * 1.35);
+
 const C = {
   ink: '#0A0A0B',
   bone: '#ECEAE7',
@@ -105,23 +112,29 @@ export default async function Image({ params }) {
             'radial-gradient(120% 100% at 50% 120%, rgba(0,0,0,.6), transparent 55%)',
         }} />
 
-        {/* sol yarı: fotoğraf, sağa doğru zemine karışıyor */}
+        {/* halkanın arkasındaki takım rengi parlaması — dairenin 1.35 katı */}
         <div style={{
-          position: 'absolute', left: 0, top: 0, bottom: 0, width: 470, display: 'flex',
-          alignItems: 'center', justifyContent: 'center', overflow: 'hidden',
-          backgroundImage: 'linear-gradient(180deg,#1C1C20,#0D0D0F)',
+          position: 'absolute', left: PHOTO_CX - GLOW / 2, top: PHOTO_CY - GLOW / 2,
+          width: GLOW, height: GLOW, borderRadius: '50%', display: 'flex', opacity: 0.16,
+          backgroundImage: `radial-gradient(50% 50% at 50% 50%, ${takimRenk}, transparent 70%)`,
+        }} />
+
+        {/* dairesel fotoğraf + takım renginde halka.
+            satori'de kırpma yalnızca bu iki katmanlı kalıpla güvenilir çalışıyor:
+            dış katman borderRadius+overflow:hidden, iç katman %100 img + cover. */}
+        <div style={{
+          position: 'absolute', left: PHOTO_CX - PHOTO_D / 2, top: PHOTO_CY - PHOTO_D / 2,
+          width: PHOTO_D, height: PHOTO_D, borderRadius: '50%',
+          border: `6px solid ${takimRenk}`, overflow: 'hidden', backgroundColor: '#17171A',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
         }}>
           {photoUri ? (
-            <img src={photoUri} width={470} height={630} style={{ width: 470, height: 630, objectFit: 'cover' }} />
+            <img src={photoUri} width={PHOTO_D} height={PHOTO_D} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           ) : (
-            <div style={{ display: 'flex', fontFamily: 'Space Grotesk', fontWeight: 700, fontSize: 150, color: takimRenk, opacity: 0.5 }}>
+            <div style={{ display: 'flex', fontFamily: 'Space Grotesk', fontWeight: 700, fontSize: 120, color: takimRenk, opacity: 0.5 }}>
               {initialsOf(p.ad)}
             </div>
           )}
-          <div style={{
-            position: 'absolute', right: 0, top: 0, bottom: 0, width: 210, display: 'flex',
-            backgroundImage: `linear-gradient(90deg, rgba(10,10,11,0), ${C.ink})`,
-          }} />
         </div>
 
         {/* sol kenar: çift tonlu kulüp şeridi */}
