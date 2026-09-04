@@ -115,7 +115,6 @@ h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .potwrap{width:100%;padding-top:15px;border-top:1px solid var(--lines);display:flex;
   flex-direction:column;align-items:center;gap:9px}
 .potmain{display:flex;flex-direction:column;align-items:center;gap:9px;width:100%}
-.mCourt{display:none}
 .potlb{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--mutedd)}
 .potg{width:100%;max-width:180px;height:20px;display:block}
 .potv{font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--radar)}
@@ -147,7 +146,10 @@ h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .bCard .pname{font-size:22px;text-align:center}
 .bVit{display:grid;grid-template-columns:1fr 1fr;gap:13px 18px;width:100%;padding-top:14px;
   border-top:1px solid var(--lines)}
-.bCourt{display:flex;justify-content:center;padding:4px 0}
+.incourt{width:100%;padding-top:14px;border-top:1px solid var(--lines);
+  display:flex;flex-direction:column;align-items:center;gap:9px}
+.incourt .clabel{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--mutedd)}
+.incourt .crt{max-width:150px}
 .bRate{display:flex;align-items:center;justify-content:center;gap:11px;width:100%;padding-top:14px;
   border-top:1px solid var(--lines)}
 .bRate .n{font-size:36px}
@@ -175,11 +177,6 @@ h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 @media(max-width:820px){
   .bGrid{grid-template-columns:1fr;gap:26px}
   .bRail{position:static}
-  /* mobilde: rating / potansiyel ile saha diyagramı yan yana */
-  .bCourt{display:none}
-  .mCourt{display:block;width:92px;flex-shrink:0}
-  .potwrap,.bRate{flex-direction:row;align-items:center;gap:20px;justify-content:center}
-  .potmain{flex:1;max-width:230px}
   .aHead{flex-direction:column;align-items:flex-start;gap:18px}
   .aRight{flex-direction:row;padding-left:0;border-left:0;padding-top:16px;
     border-top:1px solid var(--lines);width:100%;justify-content:space-between;align-items:center}

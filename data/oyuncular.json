@@ -6824,10 +6824,10 @@
       "geldigiLig": "BBL (Almanya)",
       "transferNotu": "Virtus Bologna'nın beşinci yaz transferi ve Alex Mumbrù'nun kuracağı takımın başlangıç oyun kurucusu olarak geliyor. Çok yıllık, opsiyonlu bir sözleşme imzaladı ve EuroLeague'de ilk kez forma giyecek.",
       "transferNotuEn": "He arrives as Virtus Bologna's fifth summer signing and as the starting point guard of the team Alex Mumbrù is building. He signed a multi-year deal with an option and will play in the EuroLeague for the first time.",
-      "ozet": "Yüksek hacimli skor üretimini altı asistle dengeleyen, oyunun temposunu elinde tutan bir oyun kurucu.",
-      "ozetEn": "Balancing high-volume scoring with six assists a game, he's a point guard who keeps the tempo in his hands.",
-      "ozetDetay": "Yüksek hacimli skor üretimini altı asistle dengeleyen, oyunun temposunu elinde tutan bir oyun kurucu. Würzburg'da hem BBL'de hem Şampiyonlar Ligi'nde 17+ sayı ortalaması tutturdu ve takımı son 16'ya taşıdı. 2024'ten beri Kanada milli takımının düzenli oyuncusu; Dünya Kupası elemelerinde 17 sayı, 7 asist üretti.",
-      "ozetDetayEn": "Balancing high-volume scoring with six assists a game, he's a point guard who keeps the tempo in his hands. At Würzburg he averaged over 17 points in both the BBL and the Champions League, carrying the club into the Round of 16. A regular for Canada since 2024, he produced 17 points and seven assists in World Cup qualifying.",
+      "ozet": "Pick-and-roll üzerinden hücumun liderliğini yapan, gerektiğinde kendi skorunu da bulabilen bir oyun kurucu.",
+      "ozetEn": "Leading the offence out of the pick-and-roll while able to find his own scoring when needed, he's a point guard who runs the show.",
+      "ozetDetay": "Pick-and-roll üzerinden hücumun liderliğini yapan, gerektiğinde kendi skorunu da bulabilen bir oyun kurucu. Topu elinde tutarak oyunun ritmini belirliyor; perde sonrası hem pas açısını hem şut fırsatını okuyabildiği için savunmayı sürekli karar vermeye zorluyor. Skor üretimi yüksek ama hücumun merkezinde durmasının sebebi sayıları değil, oyunu yönetme biçimi.",
+      "ozetDetayEn": "Leading the offence out of the pick-and-roll while able to find his own scoring when needed, he's a point guard who runs the show. He sets the rhythm with the ball in his hands, and because he can read both the passing angle and the shot after a screen, he keeps defences making decisions. He scores plenty, but what puts him at the centre of an offence is how he runs it, not his numbers.",
       "anahtarSoru": "Şampiyonlar Ligi'ndeki üretimini bir üst seviyede koruyabilecek mi?",
       "anahtarSoruEn": "Can he sustain his Champions League production one level up?",
       "featuredStats": {
@@ -6919,11 +6919,7 @@
       "ratingNotu": "Kariyerini basamak basamak kurmuş bir oyuncu; Yunanistan, İsrail ve Kanada'daki duraklardan sonra Almanya'da kendini kanıtladı. Virtus'un başlangıç oyun kurucusu olarak geliyor, yani ilk kez gerçek bir üst seviye sorumluluk alacak.",
       "ratingNotuEn": "A player who built his career step by step; after stops in Greece, Israel and Canada he proved himself in Germany. He arrives as Virtus's starting point guard, taking on genuine top-level responsibility for the first time.",
       "benzerOyuncular": [
-        {
-          "isim": "TJ Shorts",
-          "neden": "Kompakt gövdeyle hem skor hem asist üreten guard",
-          "nedenEn": "A guard producing both scoring and assists from a compact frame"
-        }
+        { "isim": "Chris Jones" }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=ToBSeKPMcj8",
       "kariyerYolu": [
@@ -6953,6 +6949,615 @@
         },
         {
           "kulup": "Virtus",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "tyrese-martin",
+      "ad": "Tyrese Martin",
+      "resmiAd": "Tyrese Martin",
+      "raporTuru": "newcomer",
+      "takimSlug": "barcelona",
+      "lig": "euroleague",
+      "pozisyon": "SG / SF",
+      "boy": "1.98 m",
+      "yas": "27",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Philadelphia 76ers",
+      "geldigiLig": "NBA (ABD)",
+      "transferNotu": "2022 draftının 51. sırasından seçildi ve 122 NBA maçında Atlanta, Brooklyn ve Philadelphia formalarını giydi. Barcelona'nın baştan kurulan kanat rotasyonuna Evbuomwan, Nkamhoua ve Gibson'ın ardından katılıyor; kariyerinde ilk kez Avrupa'da oynayacak.",
+      "transferNotuEn": "Selected 51st in the 2022 draft, he appeared in 122 NBA games for Atlanta, Brooklyn and Philadelphia. He joins Barcelona's rebuilt wing rotation after Evbuomwan, Nkamhoua and Gibson, and will play in Europe for the first time.",
+      "ozet": "Boyunu dış şut, savunma sertliği ve kanat ribaunduyla birleştiren, NBA'de rotasyon oyuncusu olmuş çok yönlü bir kanat.",
+      "ozetEn": "Pairing his size with outside shooting, defensive toughness and rebounding from the wing, he became a rotation player in the NBA.",
+      "ozetDetay": "Boyunu dış şut, savunma sertliği ve kanat ribaunduyla birleştiren, NBA'de rotasyon oyuncusu olmuş çok yönlü bir kanat. Brooklyn'de Jordi Fernández'in altında kariyerinin en iyi dönemini geçirdi: 2024-25'te 60 maçta 8.7 sayı ve %35.1 üçlük. G Lig'de çok daha büyük bir yük taşıdı, iki farklı takımda 18 sayı bandında üretip dokuz ribaunda kadar çıktı. Barcelona'ya AB dışı kontenjanından katılıyor.",
+      "ozetDetayEn": "Pairing his size with outside shooting, defensive toughness and rebounding from the wing, he became a rotation player in the NBA. He had the best stretch of his career in Brooklyn under Jordi Fernández: 8.7 points on 35.1% from three across 60 games in 2024-25. He carried a far bigger load in the G League, producing around 18 points and up to nine rebounds at two different clubs. He joins Barcelona on a non-EU roster spot.",
+      "anahtarSoru": "G Lig'de taşıdığı yükün ne kadarını, kalabalık bir Barcelona rotasyonunda gösterme fırsatı bulacak?",
+      "anahtarSoruEn": "How much of the load he carried in the G League will he get the chance to show in a crowded Barcelona rotation?",
+      "featuredStats": {
+        "yarisma": "NBA",
+        "sezon": "2024-25",
+        "items": [
+          [
+            "8.7",
+            "PPG"
+          ],
+          [
+            "3.7",
+            "RPG"
+          ],
+          [
+            "35.1",
+            "3PT%"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "NBA G League",
+          "sezon": "2023-24",
+          "items": [
+            [
+              "17.8",
+              "PPG"
+            ],
+            [
+              "8.0",
+              "RPG"
+            ],
+            [
+              "3.5",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Kanat ribaundu",
+          "v": "G Lig'de 8-9 RPG"
+        },
+        {
+          "t": "Savunma sertliği ve çok pozisyonluluk"
+        },
+        {
+          "t": "Dış şut tehdidi"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Rebounding from the wing",
+          "v": "8-9 RPG, G League"
+        },
+        {
+          "t": "Defensive toughness and versatility"
+        },
+        {
+          "t": "Outside shooting threat"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "NBA'de kalıcı rol bulamaması"
+        },
+        {
+          "t": "Bireysel yaratıcılık sınırı"
+        },
+        {
+          "t": "Kalabalık rotasyonda test edilmemiş"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Never secured a lasting NBA role"
+        },
+        {
+          "t": "Limited self-creation"
+        },
+        {
+          "t": "Untested in a deep rotation"
+        }
+      ],
+      "arketip": "3&D Wing",
+      "mtnRating": "7.5",
+      "ratingNotu": "NBA'de rotasyon oyuncusu olabilmiş bir kanat, ama asıl üretimi hep bir alt seviyede geldi. Barcelona'da rolü dar olacak; savunma ve ribaund katkısıyla kendine yer açması, hücumda parlamasından daha olası.",
+      "ratingNotuEn": "A wing who managed to hold an NBA rotation spot, though his real production always came a level below. His role at Barcelona will be narrow; carving out room through defence and rebounding is likelier than shining on offence.",
+      "benzerOyuncular": [
+        {
+          "isim": "James Anderson"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=W7uk0cmShOU",
+      "kariyerYolu": [
+        {
+          "kulup": "Rhode Island",
+          "yil": "2018-20"
+        },
+        {
+          "kulup": "UConn",
+          "yil": "2020-22"
+        },
+        {
+          "kulup": "Hawks",
+          "yil": "2022-23"
+        },
+        {
+          "kulup": "College Park",
+          "yil": "2022-23"
+        },
+        {
+          "kulup": "Iowa Wolves",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Nets",
+          "yil": "2024-26"
+        },
+        {
+          "kulup": "76ers",
+          "yil": "2026"
+        },
+        {
+          "kulup": "Barcelona",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "jae-crowder",
+      "ad": "Jae Crowder",
+      "resmiAd": "Corey Jae Crowder",
+      "raporTuru": "newcomer",
+      "takimSlug": "asvel",
+      "lig": "euroleague",
+      "pozisyon": "SF / PF",
+      "boy": "1.98 m",
+      "yas": "36",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Vaqueros de Bayamón",
+      "geldigiLig": "BSN (Porto Riko)",
+      "transferNotu": "Yedi farklı NBA takımında oynadı ve 2016'da yılın savunma oyuncusu oylamasında oy aldı. Porto Riko'da Vaqueros'la geçirdiği sezonun ardından kariyerinde ilk kez Avrupa'da oynayacak.",
+      "transferNotuEn": "He played for seven different NBA franchises and received votes for Defensive Player of the Year in 2016. After a season with Vaqueros in Puerto Rico, he'll play in Europe for the first time.",
+      "ozet": "Savunma çok yönlülüğü ve köşe şutu üzerine kurulu oyunuyla NBA'de 13 sezon iz bırakmış tecrübeli bir kanat.",
+      "ozetEn": "Built on defensive versatility and corner shooting, he spent 13 seasons making his mark in the NBA.",
+      "ozetDetay": "Savunma çok yönlülüğü ve köşe şutu üzerine kurulu oyunuyla NBA'de 13 sezon iz bırakmış tecrübeli bir kanat. Boston'da savunmasıyla adını duyurdu ve kariyeri boyunca on bir playoff serisinde forma giydi. Topa ihtiyaç duymadan katkı veren, sistemin içine kolay oturan bir parça. Tony Parker'ın ilk kulüp antrenörlüğü denemesinde genç bir kadroya tecrübe ve savunma kimliği taşıması bekleniyor.",
+      "ozetDetayEn": "Built on defensive versatility and corner shooting, he spent 13 seasons making his mark in the NBA. He made his name with his defence in Boston and played in eleven playoff runs across his career. He contributes without needing the ball and slots easily into a system. In Tony Parker's first attempt at club coaching, he's expected to bring experience and a defensive identity to a young roster.",
+      "anahtarSoru": "36 yaşında, EuroLeague temposunda savunma çok yönlülüğünü koruyabilecek mi?",
+      "anahtarSoruEn": "At 36, can he keep his defensive versatility at EuroLeague pace?",
+      "featuredStats": {
+        "yarisma": "BSN",
+        "sezon": "2026",
+        "items": [
+          [
+            "14.5",
+            "PPG"
+          ],
+          [
+            "5.7",
+            "RPG"
+          ],
+          [
+            "2.8",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "NBA kariyeri",
+          "sezon": "927 maç",
+          "items": [
+            [
+              "9.3",
+              "PPG"
+            ],
+            [
+              "4.2",
+              "RPG"
+            ],
+            [
+              "1.6",
+              "APG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Çok pozisyonlu savunma"
+        },
+        {
+          "t": "Köşe şutu tehdidi"
+        },
+        {
+          "t": "Playoff tecrübesi",
+          "v": "11 sezon"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Multi-positional defence"
+        },
+        {
+          "t": "Corner shooting threat"
+        },
+        {
+          "t": "Playoff experience",
+          "v": "11 seasons"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "İleri yaş ve atletizm kaybı"
+        },
+        {
+          "t": "Son yıllardaki üretim düşüşü"
+        },
+        {
+          "t": "Sınırlı bireysel yaratıcılık"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Age and lost athleticism"
+        },
+        {
+          "t": "Declining output in recent years"
+        },
+        {
+          "t": "Limited self-creation"
+        }
+      ],
+      "arketip": "3&D Wing",
+      "mtnRating": "7.0",
+      "ratingNotu": "Tecrübenin ve savunma kimliğinin karşılığı olarak geliyor, sayıların değil. Genç bir ASVEL kadrosunda ne kadar oynadığı değil, soyunma odasında ve savunma organizasyonunda ne kadar iz bıraktığı önemli olacak.",
+      "ratingNotuEn": "He arrives for his experience and defensive identity, not for his numbers. In a young ASVEL squad, what matters won't be how much he plays but the mark he leaves in the locker room and on the defensive structure.",
+      "benzerOyuncular": [
+        {
+          "isim": "Semi Ojeleye"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=hsn-1cyo5m4",
+      "kariyerYolu": [
+        {
+          "kulup": "Marquette",
+          "yil": "2010-12"
+        },
+        {
+          "kulup": "Mavericks",
+          "yil": "2012-14"
+        },
+        {
+          "kulup": "Celtics",
+          "yil": "2014-17"
+        },
+        {
+          "kulup": "Cavaliers",
+          "yil": "2017-18"
+        },
+        {
+          "kulup": "Jazz",
+          "yil": "2018-19"
+        },
+        {
+          "kulup": "Heat",
+          "yil": "2019-20"
+        },
+        {
+          "kulup": "Suns",
+          "yil": "2020-22"
+        },
+        {
+          "kulup": "Bucks",
+          "yil": "2023-25"
+        },
+        {
+          "kulup": "Bayamón",
+          "yil": "2026"
+        },
+        {
+          "kulup": "ASVEL",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "wendell-moore",
+      "ad": "Wendell Moore Jr.",
+      "resmiAd": "Wendell Moore Jr.",
+      "raporTuru": "newcomer",
+      "takimSlug": "virtus-bologna",
+      "lig": "euroleague",
+      "pozisyon": "SG / SF",
+      "boy": "1.96 m",
+      "yas": "24",
+      "milliyet": "ABD",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Detroit Pistons",
+      "geldigiLig": "NBA (ABD)",
+      "transferNotu": "2022 draftının 26. sırasından seçildi. Partizan, Hapoel Tel Aviv ve Roma'nın da ilgilendiği söyleniyordu; Virtus'un bu yaz imzaladığı üçüncü NBA geçmişli isim oldu, Kessler Edwards ve Bobi Klintman'ın ardından katılıyor.",
+      "transferNotuEn": "Selected 26th in the 2022 draft. Partizan, Hapoel Tel Aviv and Roma were also reported to be interested; he became the third NBA-experienced name Virtus signed this summer, joining after Kessler Edwards and Bobi Klintman.",
+      "ozet": "Yedi ayaklık kulaç açıklığını savunma çok yönlülüğüyle birleştiren, G Lig'de hücum tarafını da geliştirmiş genç bir kanat.",
+      "ozetEn": "Pairing a seven-foot wingspan with defensive versatility, he's a young wing who also developed his offence in the G League.",
+      "ozetDetay": "Yedi ayaklık kulaç açıklığını savunma çok yönlülüğüyle birleştiren, G Lig'de hücum tarafını da geliştirmiş genç bir kanat. Duke'ta ACC'nin en iyi savunma beşine seçildi ve son sezonunda 39 maçın hepsinde ilk beşte başladı. NBA'de dört yıl boyunca kalıcı bir rotasyon rolü bulamadı, ama geçen sezon Motor City Cruise'da 19.5 sayı ve %39.1 üçlükle hücum tarafını da geliştirdiğini gösterdi. Savunmada birden fazla çevre pozisyonunu tutabiliyor.",
+      "ozetDetayEn": "Pairing a seven-foot wingspan with defensive versatility, he's a young wing who also developed his offence in the G League. He was named to the ACC All-Defensive Team at Duke and started all 39 games in his final season. He never found a lasting NBA rotation role across four years, but last season with the Motor City Cruise he showed he had developed his offence too, averaging 19.5 points on 39.1% from three. He can guard several perimeter positions.",
+      "anahtarSoru": "G Lig'de gelişen dış şutu, EuroLeague savunmalarına karşı da güvenilir kalacak mı?",
+      "anahtarSoruEn": "Will the outside shot he developed in the G League hold up against EuroLeague defences?",
+      "featuredStats": {
+        "yarisma": "NBA G League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "19.5",
+            "PPG"
+          ],
+          [
+            "5.0",
+            "RPG"
+          ],
+          [
+            "39.1",
+            "3PT%"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "NCAA",
+          "sezon": "2021-22",
+          "items": [
+            [
+              "13.4",
+              "PPG"
+            ],
+            [
+              "5.3",
+              "RPG"
+            ],
+            [
+              "41.3",
+              "3PT%"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Savunmada çok pozisyonluluk",
+          "v": "ACC En İyi Savunma Beşi"
+        },
+        {
+          "t": "Kulaç açıklığı ve fiziksel araçlar"
+        },
+        {
+          "t": "Gelişen dış şut"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Multi-positional defence",
+          "v": "ACC All-Defensive Team"
+        },
+        {
+          "t": "Wingspan and physical tools"
+        },
+        {
+          "t": "Improving outside shot"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "NBA'de hiç kalıcı rol bulamaması"
+        },
+        {
+          "t": "Kendi şutunu yaratma sınırı"
+        },
+        {
+          "t": "Avrupa tecrübesi yokluğu"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Never held down an NBA role"
+        },
+        {
+          "t": "Limited self-creation"
+        },
+        {
+          "t": "No European experience"
+        }
+      ],
+      "arketip": "Athletic Forward",
+      "mtnRating": "7.5",
+      "ratingNotu": "Fiziksel araçları EuroLeague'de karşılığını bulabilecek kadar iyi; asıl belirsizlik hücum tarafında. Virtus'ta savunmayla oynayacağı dakikaları garantiler, hücumda ne kadar büyüyeceği ise şutunun ne kadar gerçek olduğuna bağlı.",
+      "ratingNotuEn": "His physical tools are good enough to translate to the EuroLeague; the uncertainty sits on the offensive end. At Virtus his defence will secure him minutes, and how much his role grows depends on how real his shooting turns out to be.",
+      "benzerOyuncular": [
+        {
+          "isim": "Will Clyburn"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=B--5AUapT-o",
+      "kariyerYolu": [
+        {
+          "kulup": "Duke",
+          "yil": "2019-22"
+        },
+        {
+          "kulup": "Timberwolves",
+          "yil": "2022-24"
+        },
+        {
+          "kulup": "Iowa Wolves",
+          "yil": "2022-24"
+        },
+        {
+          "kulup": "Pistons",
+          "yil": "2024-25"
+        },
+        {
+          "kulup": "Hornets",
+          "yil": "2025"
+        },
+        {
+          "kulup": "Motor City",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "Virtus",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "patty-mills",
+      "ad": "Patty Mills",
+      "resmiAd": "Patrick Sammie Mills",
+      "raporTuru": "newcomer",
+      "takimSlug": "asvel",
+      "lig": "euroleague",
+      "pozisyon": "PG",
+      "boy": "1.88 m",
+      "yas": "37",
+      "milliyet": "Avustralya",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "La Laguna Tenerife",
+      "geldigiLig": "Liga Endesa (İspanya)",
+      "transferNotu": "Tenerife'de Real Madrid'i çeyrek finalde eleyen kadronun parçasıydı. ASVEL'e geçişinde San Antonio'da 430 maç birlikte oynadığı Tony Parker'ın başantrenör olması belirleyici oldu.",
+      "transferNotuEn": "He was part of the Tenerife side that knocked Real Madrid out in the quarter-finals. Tony Parker, alongside whom he played 430 games in San Antonio, being head coach was decisive in his move to ASVEL.",
+      "ozet": "Şut menzili ve büyük an soğukkanlılığıyla tanınan, NBA şampiyonluğu bulunan tecrübeli bir oyun kurucu.",
+      "ozetEn": "Known for his shooting range and composure in big moments, he's an experienced point guard with an NBA championship.",
+      "ozetDetay": "Şut menzili ve büyük an soğukkanlılığıyla tanınan, NBA şampiyonluğu bulunan tecrübeli bir oyun kurucu. Geçen sezon Tenerife'de sezon ortasında katılmasına rağmen 18.1 sayı ortalaması tutturdu ve takımı yarı finale taşıdı; Barcelona karşısındaki 36 sayılık performansı hâlâ skor üretebildiğinin en net kanıtıydı. Topsuz hareketle şuta kalkma alışkanlığı yaşına rağmen korunuyor.",
+      "ozetDetayEn": "Known for his shooting range and composure in big moments, he's an experienced point guard with an NBA championship. Despite joining mid-season, he averaged 18.1 points at Tenerife last year and carried the team to the semi-finals; his 36-point game against Barcelona was the clearest proof he can still score. His habit of getting into his shot off the ball has survived his age.",
+      "anahtarSoru": "37 yaşında, EuroLeague'in fiziksel savunmalarına karşı skor verimliliğini koruyabilecek mi?",
+      "anahtarSoruEn": "At 37, can he keep his scoring efficiency against EuroLeague's physical defences?",
+      "featuredStats": {
+        "yarisma": "Liga Endesa",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "18.1",
+            "PPG"
+          ],
+          [
+            "1.7",
+            "APG"
+          ]
+        ]
+      },
+      "digerIstatistikler": [],
+      "gucluYonler": [
+        {
+          "t": "Derin şut menzili"
+        },
+        {
+          "t": "Kritik anlarda soğukkanlılık"
+        },
+        {
+          "t": "Şampiyonluk ve milli takım tecrübesi"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Deep shooting range"
+        },
+        {
+          "t": "Composure in clutch moments"
+        },
+        {
+          "t": "Championship and international experience"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "İleri yaş"
+        },
+        {
+          "t": "Savunmada fiziksel dezavantaj"
+        },
+        {
+          "t": "Sınırlı asist üretimi",
+          "v": "1.7 APG"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Age"
+        },
+        {
+          "t": "Physical disadvantage on defence"
+        },
+        {
+          "t": "Limited assist production",
+          "v": "1.7 APG"
+        }
+      ],
+      "arketip": "Scoring Point Guard",
+      "mtnRating": "7.5",
+      "ratingNotu": "Yaşına rağmen geçen sezon İspanya'da hâlâ skor üretebildiğini gösterdi, ama orada taşıdığı yükü ASVEL'de taşıması beklenmiyor. Parker'ın sistemine tecrübe ve bitirici bir şut olarak katılıyor; asıl değeri maçların son beş dakikasında görülecek.",
+      "ratingNotuEn": "He showed in Spain last season that he can still score despite his age, but he isn't expected to carry that same load at ASVEL. He joins Parker's system as experience and a closing shot; his real value will show in the last five minutes of games.",
+      "benzerOyuncular": [
+        {
+          "isim": "Sergio Llull"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=tHhx5FumdUY",
+      "kariyerYolu": [
+        {
+          "kulup": "Saint Mary's",
+          "yil": "2007-09"
+        },
+        {
+          "kulup": "Blazers",
+          "yil": "2009-11"
+        },
+        {
+          "kulup": "Melbourne",
+          "yil": "2011"
+        },
+        {
+          "kulup": "Xinjiang",
+          "yil": "2011-12"
+        },
+        {
+          "kulup": "Spurs",
+          "yil": "2012-21"
+        },
+        {
+          "kulup": "Nets",
+          "yil": "2021-23"
+        },
+        {
+          "kulup": "Rockets",
+          "yil": "2023"
+        },
+        {
+          "kulup": "Hawks",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Heat",
+          "yil": "2024"
+        },
+        {
+          "kulup": "Jazz",
+          "yil": "2025"
+        },
+        {
+          "kulup": "Tenerife",
+          "yil": "2025-26"
+        },
+        {
+          "kulup": "ASVEL",
           "yil": "2026-"
         }
       ]

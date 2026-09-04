@@ -55,8 +55,6 @@ export default function PlayerProfile({ p }) {
   const stats = p.featuredStats;
   const pot = p.euroleaguePotansiyeli;
 
-  const court = <CourtDiagram pozisyon={p.pozisyon} className="crt mCourt" />;
-
   return (
     <main className={`wrap${isRadar ? ' rad' : ''}`} style={{ '--team': p.halkaRenk }}>
       <div className="prow">
@@ -101,7 +99,6 @@ export default function PlayerProfile({ p }) {
                     <PotentialGauge level={pot} className="potg" />
                     <span className="potv">{t[POT_KEY[pot]] ?? pot}</span>
                   </div>
-                  {court}
                 </div>
               )
             ) : (
@@ -113,13 +110,13 @@ export default function PlayerProfile({ p }) {
                   <span className="n">{p.mtnRating || '—'}</span>
                   <span className="l">MtN<br /><span lang="en">Rating</span></span>
                 </div>
-                {court}
               </div>
             )}
-          </div>
 
-          <div className="bCourt">
-            <CourtDiagram pozisyon={p.pozisyon} style={{ maxWidth: 158 }} />
+            <div className="incourt">
+              <span className="clabel">{t.positionLabel}</span>
+              <CourtDiagram pozisyon={p.pozisyon} />
+            </div>
           </div>
         </aside>
 
