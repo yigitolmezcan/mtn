@@ -145,14 +145,15 @@ h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.03em}
 .bCard .av{width:112px;height:112px;font-size:29px}
 .bCard .pname{font-size:22px;text-align:center}
 .bVit{display:grid;grid-template-columns:1fr 1fr;gap:13px 18px;width:100%;padding-top:14px;
-  border-top:1px solid var(--lines)}
+  border-top:1px solid var(--lines);justify-items:center;text-align:center}
 .incourt{width:100%;padding-top:14px;border-top:1px solid var(--lines);
   display:flex;flex-direction:column;align-items:center;gap:9px}
 .incourt .clabel{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--mutedd)}
 .incourt .crt{max-width:150px}
-.bRate{display:flex;align-items:center;justify-content:center;gap:11px;width:100%;padding-top:14px;
-  border-top:1px solid var(--lines)}
-.bRate .n{font-size:36px}
+.bRate{display:flex;flex-direction:column;align-items:center;gap:6px;width:100%;
+  padding-top:14px;border-top:1px solid var(--lines)}
+.bRate .l{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--mutedd)}
+.bRate .n{font-family:var(--display);font-weight:700;font-size:44px;color:var(--court);line-height:.9}
 .bMain{min-width:0}
 .bMain h1{display:none}
 .bMain .sec:first-child{margin-top:0}

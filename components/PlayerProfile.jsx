@@ -103,13 +103,8 @@ export default function PlayerProfile({ p }) {
               )
             ) : (
               <div className="bRate rate">
-                <div
-                  className="potmain"
-                  style={{ flexDirection: 'row', alignItems: 'baseline', gap: 11, justifyContent: 'center' }}
-                >
-                  <span className="n">{p.mtnRating || '—'}</span>
-                  <span className="l">MtN<br /><span lang="en">Rating</span></span>
-                </div>
+                <span className="l" lang="en">MtN Rating</span>
+                <span className="n">{p.mtnRating || '—'}</span>
               </div>
             )}
 
