@@ -103,8 +103,8 @@
       "ad": "Hapoel Tel Aviv",
       "marka": "#C8102E",
       "vurgu": "#C8102E",
-      "renk1": "var(--bone)",
-      "renk2": "#C8102E",
+      "renk1": "#C8102E",
+      "renk2": "var(--bone)",
       "digerDil": true
     },
     "virtus-bologna": {
@@ -5511,10 +5511,10 @@
       "geldigiLig": "BSN (Porto Riko)",
       "transferNotu": "Yedi farklı NBA takımında 293 maç oynadı ve Golden State ile 2017-2018'de üst üste iki şampiyonluk kazandı. Real Madrid'e Bayamón'da kazandığı Porto Riko şampiyonluğunun hemen ardından, Tavares'in yanında ön alan derinliği olarak katılıyor.",
       "transferNotuEn": "He played 293 NBA games across seven franchises and won back-to-back titles with Golden State in 2017 and 2018. He joins Real Madrid straight off a Puerto Rican championship with Bayamón, arriving as frontcourt depth alongside Tavares.",
-      "ozet": "İki kez NBA şampiyonu olmuş, fiziksel gücü ve çember çevresi verimliliğiyle öne çıkan tecrübeli bir pivot.",
-      "ozetEn": "A two-time NBA champion, this experienced center stands out for his physical strength and efficiency around the rim.",
-      "ozetDetay": "İki kez NBA şampiyonu olmuş, fiziksel gücü ve çember çevresi verimliliğiyle öne çıkan tecrübeli bir pivot. 2016 draftının son sırasında Golden State tarafından seçildi, ilk iki sezonunda iki şampiyonluk yaşadı ama hiçbir zaman kalıcı bir rotasyon rolü bulamadı. Sekiz NBA sezonunun ardından Çin ve Porto Riko'da oynadı.",
-      "ozetDetayEn": "A two-time NBA champion, this experienced center stands out for his physical strength and efficiency around the rim. Taken with the final pick of the 2016 first round by Golden State, he won two titles in his first two seasons but never carved out a lasting rotation role. After eight NBA seasons he played in China and Puerto Rico.",
+      "ozet": "Fiziksel gücünü çember çevresindeki yüksek yüzdeli bitiriciliğiyle birleştiren, perde ve devrilme oyunundan üreten klasik bir pivot.",
+      "ozetEn": "Pairing physical strength with high-percentage finishing at the rim, he's a classic centre who produces off screens and rolls.",
+      "ozetDetay": "Fiziksel gücünü çember çevresindeki yüksek yüzdeli bitiriciliğiyle birleştiren, perde ve devrilme oyunundan üreten klasik bir pivot. Hücumdaki üretimi neredeyse tamamen boyalı alanın içinden geliyor; sağlam perde kurup çembere devriliyor, alley-oop ve hücum ribaundu bitirişlerinde güvenilir. İki metre onluk gövdesiyle pota altında yer kapatabiliyor ve savunmada blok üretiyor. Buna karşılık dış şut tehdidi yok, kendi skorunu yaratamıyor; hücumdaki değeri tamamen çevresindeki oyuncuların yaratacağı fırsatlara bağlı.",
+      "ozetDetayEn": "Pairing physical strength with high-percentage finishing at the rim, he's a classic centre who produces off screens and rolls. Almost all of his offence comes from inside the paint; he sets solid screens, rolls hard to the basket and finishes reliably on lobs and offensive rebounds. At 2.10m he can hold ground under the rim and generate blocks on defence. He has no outside shooting threat and can't create his own scoring, so his offensive value depends entirely on the opportunities his teammates generate.",
       "anahtarSoru": "NBA'de bulamadığı kalıcı rolü, 31 yaşında EuroLeague'de bulabilecek mi?",
       "anahtarSoruEn": "At 31, can he find in the EuroLeague the lasting role he never secured in the NBA?",
       "featuredStats": {
@@ -5608,11 +5608,7 @@
       "ratingNotu": "Ne vereceği belli bir oyuncu: pota altında fizik, verimli bitiriş, blok. Real Madrid'de Tavares'in arkasında sınırlı dakikalarda oynayacak, o yüzden asıl mesele etki değil, hazır olduğunda güvenilir olmak.",
       "ratingNotuEn": "A player whose contribution is predictable: physicality in the paint, efficient finishing, blocks. He'll play limited minutes behind Tavares at Real Madrid, so the point isn't impact but being reliable when called upon.",
       "benzerOyuncular": [
-        {
-          "isim": "Willy Hernangomez",
-          "neden": "Boyalı alanda fizik ve ribaund ağırlıklı pivot",
-          "nedenEn": "A center built on paint physicality and rebounding"
-        }
+        { "isim": "Daniel Oturu" }
       ],
       "youtubeUrl": "https://www.youtube.com/watch?v=zhXBoyDLuAw",
       "kariyerYolu": [
@@ -6630,7 +6626,7 @@
           "t": "No European experience"
         }
       ],
-      "arketip": "3&D Wing",
+      "arketip": "Scoring Wing",
       "mtnRating": "8.0",
       "ratingNotu": "Yedi sezonluk NBA rotasyon oyuncusu olmak kolay değil ve Coffey bunu tek bir beceriyle değil, güvenilirlikle başardı. Itoudis'in sisteminde topa ihtiyaç duymadan katkı verebilecek türden bir parça.",
       "ratingNotuEn": "Lasting seven seasons in an NBA rotation isn't easy, and Coffey managed it through reliability rather than one standout skill. In Itoudis's system he's the kind of piece who contributes without needing the ball.",
@@ -8359,7 +8355,7 @@
           "t": "Physical size"
         }
       ],
-      "arketip": "Sharpshooter",
+      "arketip": "Combo Guard",
       "benzerOyuncular": [
         {
           "isim": "Carsen Edwards"
