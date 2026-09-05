@@ -7563,6 +7563,305 @@
       ]
     },
     {
+      "slug": "bobi-klintman",
+      "ad": "Bobi Klintman",
+      "resmiAd": "Bobi Klintman",
+      "raporTuru": "newcomer",
+      "takimSlug": "virtus-bologna",
+      "lig": "euroleague",
+      "pozisyon": "PF / SF",
+      "boy": "2.06 m",
+      "yas": "23",
+      "milliyet": "İsveç",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": "İsveçli anne ve Senegalli babanın çocuğu.",
+      "milliyetNotuEn": "Born to a Swedish mother and a Senegalese father.",
+      "geldigiKulup": "Detroit Pistons",
+      "geldigiLig": "NBA (ABD)",
+      "transferNotu": "2024 draftının 37. sırasından Minnesota tarafından seçildi ve hemen Detroit'e takas edildi, ancak iki sezonda yalnızca 20 maçta 113 dakika oynayabildi. Alex Mumbrù dönemindeki üçüncü transfer olarak Virtus'a katılıyor; 2021'de İsveç'ten ayrıldığından beri ilk kez Avrupa kulüp basketbolunda oynayacak.",
+      "transferNotuEn": "Selected 37th in the 2024 draft by Minnesota and traded to Detroit immediately, he managed only 113 minutes across 20 games in two seasons. He joins Virtus as the third signing of the Alex Mumbrù era, and will play European club basketball for the first time since leaving Sweden in 2021.",
+      "ozet": "İki metre altı boyunda dış şut atabilen, topu taşıyıp pas verebilen çok yönlü bir forvet.",
+      "ozetEn": "Able to shoot from outside at 2.06m while carrying the ball and passing, he's a versatile forward.",
+      "ozetDetay": "İki metre altı boyunda dış şut atabilen, topu taşıyıp pas verebilen çok yönlü bir forvet. Yay gerisinden hacimli atabiliyor ve şut mekaniği temiz; savunmanın onu potadan uzakta karşılamak zorunda kalması takım arkadaşlarına alan açıyor. Ribaund sonrası topu kendi çıkarabiliyor, geçiş hücumunda boyuna göre rahat koşuyor. Buna karşılık gövdesi hâlâ ince; pota altındaki temaslı pozisyonlarda ve fiziksel savunmalara karşı zorlanıyor.",
+      "ozetDetayEn": "Able to shoot from outside at 2.06m while carrying the ball and passing, he's a versatile forward. He shoots in volume from beyond the arc with clean mechanics, and forcing defences to meet him away from the basket opens space for his teammates. He can push the ball himself off a rebound and runs the floor comfortably for his size. His frame is still slight, though, and he struggles in contact situations under the rim and against physical defenders.",
+      "anahtarSoru": "Boyunun getirdiği avantajı, fiziksel gücünü artırmadan EuroLeague seviyesinde de kullanabilecek mi?",
+      "anahtarSoruEn": "Can he use the advantage his size gives him at EuroLeague level without adding physical strength?",
+      "featuredStats": {
+        "yarisma": "NBA G League",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "12.9",
+            "PPG"
+          ],
+          [
+            "5.3",
+            "RPG"
+          ],
+          [
+            "39.0",
+            "3PT%"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "NBA",
+          "sezon": "20 maç, 2 sezon",
+          "items": [
+            [
+              "1.8",
+              "PPG"
+            ],
+            [
+              "1.6",
+              "RPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "Boyuna göre dış şut",
+          "v": "%39.0 3PT"
+        },
+        {
+          "t": "Ön alandan pas kabiliyeti"
+        },
+        {
+          "t": "Geçiş hücumunda hareketlilik"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Outside shooting for his size",
+          "v": "39.0% 3PT"
+        },
+        {
+          "t": "Passing from the frontcourt"
+        },
+        {
+          "t": "Mobility in transition"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Fiziksel güç eksikliği"
+        },
+        {
+          "t": "NBA'de hiç oynayamaması",
+          "v": "2 sezonda 113 dakika"
+        },
+        {
+          "t": "İstikrarsız kariyer rotası"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Lack of physical strength"
+        },
+        {
+          "t": "Barely played in the NBA",
+          "v": "113 minutes in two seasons"
+        },
+        {
+          "t": "An unsettled career path"
+        }
+      ],
+      "arketip": "Athletic Forward",
+      "mtnRating": "7.5",
+      "ratingNotu": "Yirmi üç yaşında, dört farklı ülkede oynamış ve hiçbirinde uzun kalmamış bir oyuncu. Virtus çok yıllık sözleşme vererek gelişimine bahis oynuyor; bu sezon oynayacağı dakikalar değil, gövdesini ne kadar geliştireceği belirleyici olacak.",
+      "ratingNotuEn": "At 23 he has played in four countries and stayed long in none. Virtus is betting on his development with a multi-year deal; what matters this season isn't his minutes but how much he builds his frame.",
+      "benzerOyuncular": [
+        {
+          "isim": "Chima Moneke"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=9GMuDzIqWtM",
+      "kariyerYolu": [
+        {
+          "kulup": "RIG Mark",
+          "yil": "2019-21"
+        },
+        {
+          "kulup": "Borås",
+          "yil": "2021"
+        },
+        {
+          "kulup": "Wake Forest",
+          "yil": "2022-23"
+        },
+        {
+          "kulup": "Cairns",
+          "yil": "2023-24"
+        },
+        {
+          "kulup": "Pistons",
+          "yil": "2024-26"
+        },
+        {
+          "kulup": "Motor City",
+          "yil": "2024-26"
+        },
+        {
+          "kulup": "Virtus",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
+      "slug": "elias-valtonen",
+      "ad": "Elias Valtonen",
+      "resmiAd": "Elias Veikko Juhani Valtonen",
+      "raporTuru": "newcomer",
+      "takimSlug": "valencia-basket",
+      "lig": "euroleague",
+      "pozisyon": "SG / SF",
+      "boy": "2.01 m",
+      "yas": "27",
+      "milliyet": "Finlandiya",
+      "el": "Sağ",
+      "elEn": "Right",
+      "milliyetNotu": null,
+      "geldigiKulup": "Covirán Granada",
+      "geldigiLig": "Liga Endesa (İspanya)",
+      "transferNotu": "Valencia'ya garantisiz bir sözleşmeyle katılıyor; kadroda kalması performansına bağlı. Granada'daki üç sezonun ardından serbest oyuncu olarak geldi ve kariyerinde ilk kez EuroLeague oynama şansı yakaladı. Finlandiya milli takımıyla 2025 EuroBasket'te yarı finale çıkan kadronun parçasıydı.",
+      "transferNotuEn": "He joins Valencia on a non-guaranteed contract; keeping his roster spot depends on his performance. He arrived as a free agent after three seasons at Granada and has his first chance to play in the EuroLeague. He was part of the Finland side that reached the semi-finals at EuroBasket 2025.",
+      "ozet": "Kimliğini dış şuttan alan, boyuyla savunmada birden fazla pozisyon tutabilen bir kanat.",
+      "ozetEn": "Built around his outside shooting and able to guard several positions with his size, he's a wing.",
+      "ozetDetay": "Kimliğini dış şuttan alan, boyuyla savunmada birden fazla pozisyon tutabilen bir kanat. Topsuz hareket edip köşede pozisyon alıyor, pas geldiğinde hızlı şuta kalkabiliyor. Kendi şutunu yaratmaya çalışmıyor; üretimi büyük ölçüde sistemin içinden, doğru yerde durmaktan geliyor. Savunmada boyunu ve kulaç açıklığını kullanıyor ama yatay hızı elit seviyede değil.",
+      "ozetDetayEn": "Built around his outside shooting and able to guard several positions with his size, he's a wing. He moves off the ball into corner spots and gets into his shot quickly when the pass arrives. He doesn't try to create for himself; his production comes largely from within the system, from being in the right place. He uses his size and length on defence, though his lateral quickness isn't elite.",
+      "anahtarSoru": "Garantisiz bir sözleşmeyle gelen bir oyuncu, EuroLeague seviyesinde kendine yer açabilecek mi?",
+      "anahtarSoruEn": "Can a player arriving on a non-guaranteed contract carve out a place for himself at EuroLeague level?",
+      "featuredStats": {
+        "yarisma": "Liga Endesa",
+        "sezon": "2025-26",
+        "items": [
+          [
+            "9.8",
+            "PPG"
+          ],
+          [
+            "3.1",
+            "RPG"
+          ],
+          [
+            "37.1",
+            "3PT%"
+          ]
+        ]
+      },
+      "digerIstatistikler": [
+        {
+          "yarisma": "EuroBasket",
+          "sezon": "2025",
+          "items": [
+            [
+              "7.7",
+              "PPG"
+            ],
+            [
+              "3.2",
+              "RPG"
+            ]
+          ]
+        }
+      ],
+      "gucluYonler": [
+        {
+          "t": "İstikrarlı dış şut",
+          "v": "%37.1 3PT"
+        },
+        {
+          "t": "Boyuyla savunma çok yönlülüğü"
+        },
+        {
+          "t": "Milli takım tecrübesi",
+          "v": "EuroBasket yarı finali"
+        }
+      ],
+      "gucluYonlerEn": [
+        {
+          "t": "Consistent outside shooting",
+          "v": "37.1% 3PT"
+        },
+        {
+          "t": "Defensive versatility with his size"
+        },
+        {
+          "t": "International experience",
+          "v": "EuroBasket semi-final"
+        }
+      ],
+      "gelisimAlanlari": [
+        {
+          "t": "Garantisiz sözleşme"
+        },
+        {
+          "t": "Bireysel yaratıcılık yokluğu"
+        },
+        {
+          "t": "Yatay hız"
+        }
+      ],
+      "gelisimAlanlariEn": [
+        {
+          "t": "Non-guaranteed contract"
+        },
+        {
+          "t": "No self-creation"
+        },
+        {
+          "t": "Lateral quickness"
+        }
+      ],
+      "arketip": "Sharpshooter",
+      "mtnRating": "7.0",
+      "ratingNotu": "Ne vereceği belli, sınırları da belli bir oyuncu: köşede duracak, şutunu atacak, boyuyla savunacak. Garantisiz sözleşme Valencia'nın ondan beklentisini de gösteriyor; rotasyonun sonunda başlayıp kendini kabul ettirmesi gerekiyor.",
+      "ratingNotuEn": "A player whose contribution and limits are both clear: he'll stand in the corner, take his shot and defend with his size. The non-guaranteed deal shows what Valencia expects of him; he starts at the end of the rotation and has to earn his way up.",
+      "benzerOyuncular": [
+        {
+          "isim": "David Kramer"
+        }
+      ],
+      "youtubeUrl": "https://www.youtube.com/watch?v=yegm--HTLpw",
+      "kariyerYolu": [
+        {
+          "kulup": "Korihait",
+          "yil": "2013-15"
+        },
+        {
+          "kulup": "HBA-Märsky",
+          "yil": "2015-18"
+        },
+        {
+          "kulup": "Arizona State",
+          "yil": "2018-20"
+        },
+        {
+          "kulup": "Tübingen",
+          "yil": "2020-21"
+        },
+        {
+          "kulup": "Manresa",
+          "yil": "2021-24"
+        },
+        {
+          "kulup": "Rostock",
+          "yil": "2022-23"
+        },
+        {
+          "kulup": "Granada",
+          "yil": "2024-26"
+        },
+        {
+          "kulup": "Valencia",
+          "yil": "2026-"
+        }
+      ]
+    },
+    {
       "slug": "jahmius-ramsey",
       "ad": "Jahmi'us Ramsey",
       "resmiAd": "Jahmi'us Ramsey",
